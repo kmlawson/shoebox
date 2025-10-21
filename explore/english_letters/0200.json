@@ -1,0 +1,35 @@
+{
+  "id": 200,
+  "added": "2010-12-30 22:01:32",
+  "modified": "2010-12-31 03:40:06",
+  "public": true,
+  "metadata": {
+    "Creator": [
+      "Ola Holm",
+      "Siri Lawson, trans."
+    ],
+    "Language": [
+      "English"
+    ],
+    "Text": [],
+    "Title": [
+      "Ola Holm to Alma C. Wilson Undated"
+    ],
+    "Description": [
+      "POSTCARD FROM OLA HOLM TO MRS BERT WILSON, 102 W. 5 ST., DELL RAPIDS, SO. DAK., U.S.A.  IT HAS A PICTURE OF HELL RAILWAY STATION, WHICH IS VERY CLOSE TO STJØRDAL.  TO THIS DATE THE POSTCARDS FROM HELL WITH A PICTURE OF THE RAILWAY STATION ARE VERY POPULAR AMONG TOURISTS. \r\nTHE STAMP HAS BEEN REMOVED AND IT'S IMPOSSIBLE TO READ THE DATE BUT IT MUST BE FAIRLY EARLY IN THE 1900'S.  I'M NOT SURE WHEN BERT DIED."
+    ]
+  },
+  "tags": [
+    "Alma C. Wilson",
+    "Hell",
+    "Norway to US",
+    "Ola Holm"
+  ],
+  "files": [
+    {
+      "original": "Ola Holm-Hell Jernbanestation.pdf",
+      "filename": "61d8f00b72b311e53ab68534b19130d9.pdf",
+      "mime_type": "application/pdf"
+    }
+  ]
+}

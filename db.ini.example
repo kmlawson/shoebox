@@ -1,0 +1,23 @@
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+; Database Configuration - EXAMPLE FILE
+;
+; INSTRUCTIONS:
+; 1. Copy this file to 'db.ini' in the same directory
+; 2. Replace the placeholder values with your actual database credentials
+; 3. NEVER commit the actual db.ini file to version control
+;
+; Omeka requires MySQL 5 to work properly.  To configure
+; your database, replace the X's with your specific settings.
+; If you're unsure about your database information, ask your
+; server administrator, or consult the codex
+; http://omeka.org/codex/configuring_omeka_database
+;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+[database]
+host     = "localhost"              ; Your MySQL server hostname
+username = "your_database_username" ; Your MySQL username
+password = "your_database_password" ; Your MySQL password
+name     = "your_database_name"     ; Your database name
+prefix   = "omeka_"                 ; Table prefix (usually omeka_)
+;port     = ""                      ; Port number (optional, usually 3306)

@@ -1,0 +1,211 @@
+# ============================================================================
+# Shoebox of Norwegian Letters - Git Ignore File
+# ============================================================================
+# This file protects sensitive configuration data and prevents large/temporary
+# files from being committed to the repository.
+#
+# SECURITY CRITICAL: Database credentials, API keys, and passwords
+# ============================================================================
+
+# ============================================================================
+# DATABASE CONFIGURATION FILES (CONTAINS MYSQL CREDENTIALS)
+# ============================================================================
+# These files contain database usernames, passwords, and connection strings
+db.ini
+**/db.ini
+letters/db.ini
+charset-test/db.ini
+letters/application/config/config.ini
+
+# ============================================================================
+# GUESTBOOK CONFIGURATION (CONTAINS ADMIN PASSWORD & AKISMET API KEY)
+# ============================================================================
+# Contains JibberBook admin password and Akismet API key
+gb/inc/config.php
+
+# ============================================================================
+# BACKUP FILES (MAY CONTAIN SENSITIVE DATA)
+# ============================================================================
+*.backup
+*.bak
+*.old
+*.orig
+*~
+*.swp
+*.swo
+*.sql
+*.sql.gz
+*.dump
+huginn_shoebox*.sql
+
+# XML backup files (often contain user data)
+*.xml.backup
+gb/data_layer/xml/comments.xml.backup
+
+# ============================================================================
+# LARGE DATA FILES
+# ============================================================================
+# The guestbook XML file is 43MB+ and contains spam/user data
+gb/data_layer/xml/comments.xml
+
+# ============================================================================
+# PYTHON VIRTUAL ENVIRONMENTS
+# ============================================================================
+explore/ner/venv/
+venv/
+env/
+ENV/
+.venv/
+*.pyc
+__pycache__/
+*.pyo
+*.pyd
+.Python
+
+# ============================================================================
+# UPLOADED/GENERATED FILES
+# ============================================================================
+# Archive files uploaded through Omeka
+letters/archive/files/*.pdf
+letters/archive/files/*.ps
+letters/archive/files/*.jpg
+letters/archive/files/*.png
+letters/archive/files/*.gif
+
+# Thumbnails and derivatives
+letters/archive/thumbnails/
+letters/archive/fullsize/
+letters/archive/square_thumbnails/
+
+# ============================================================================
+# LOGS (MAY CONTAIN SENSITIVE DEBUGGING INFO)
+# ============================================================================
+*.log
+logs/
+log/
+*.log.*
+error_log
+access_log
+
+# ============================================================================
+# TEMPORARY FILES
+# ============================================================================
+tmp/
+temp/
+cache/
+*.tmp
+*.cache
+
+# ============================================================================
+# OPERATING SYSTEM FILES
+# ============================================================================
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+*.stackdump
+[Dd]esktop.ini
+$RECYCLE.BIN/
+
+# Linux
+*~
+
+# ============================================================================
+# IDE/EDITOR FILES
+# ============================================================================
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+*.code-workspace
+.project
+.settings/
+.buildpath
+
+# ============================================================================
+# FTP/DEPLOYMENT CONFIGURATION
+# ============================================================================
+# Common FTP client configuration files
+.ftpconfig
+.ftppass
+sftp-config.json
+deploy.json
+.deploy
+.deployment
+
+# ============================================================================
+# ENVIRONMENT VARIABLES
+# ============================================================================
+.env
+.env.local
+.env.*.local
+.envrc
+
+# ============================================================================
+# OTHER SENSITIVE PATTERNS
+# ============================================================================
+# Files that commonly contain credentials or secrets
+*secret*
+*password*
+*credentials*
+*.pem
+*.key
+*.crt
+*.cer
+*.p12
+*.pfx
+
+# SSH keys (should never be in a repository)
+id_rsa
+id_rsa.pub
+id_dsa
+id_dsa.pub
+id_ecdsa
+id_ecdsa.pub
+id_ed25519
+id_ed25519.pub
+
+# ============================================================================
+# COMPOSER & PHP DEPENDENCIES
+# ============================================================================
+vendor/
+composer.lock
+
+# ============================================================================
+# NODE MODULES (if any JavaScript tools are added)
+# ============================================================================
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# ============================================================================
+# ARCHIVES & COMPRESSED FILES (often large)
+# ============================================================================
+*.zip
+*.tar
+*.tar.gz
+*.tgz
+*.rar
+*.7z
+*.dmg
+*.iso
+
+# ============================================================================
+# GIT METADATA (don't track git in git)
+# ============================================================================
+.git/
+.gitattributes

@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(grep \"INSERT INTO \\`omeka_tags\\`\" /Users/kml8/shell/shoebox/huginn_shoebox_CLEAN.sql)",
+      "Bash(grep -A 200 \"Dumping data for table \\`omeka_tags\\`\" /Users/kml8/shell/shoebox/huginn_shoebox_CLEAN.sql)",
+      "Bash(grep -A 300 \"Dumping data for table \\`omeka_tags\\`\" /Users/kml8/shell/shoebox/huginn_shoebox_CLEAN.sql)",
+      "Bash(grep -A 500 \"INSERT INTO \\`omeka_tags\\`\" /Users/kml8/shell/shoebox/huginn_shoebox_CLEAN.sql)",
+      "Bash(curl -s \"https://huginn.net/shoebox/letters/items/show/200\")"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}

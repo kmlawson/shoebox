@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Locations Mentioned in the Shoebox</title>
+
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+          integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+          crossorigin=""/>
+
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+        #map {
+            height: 100%;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div id="map"></div>
+
+    <!-- Leaflet JavaScript -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+            integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+            crossorigin=""></script>
+
+    <script>
+        // Initialize map centered on Norway
+        var map = L.map('map').setView([66.22821, 13.688965], 4);
+
+        // Add OpenStreetMap tiles
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+            maxZoom: 19
+        }).addTo(map);
+
+        // Load and display locations from CSV
+        fetch('locations.csv')
+            .then(response => response.text())
+            .then(data => {
+                const lines = data.split('\n');
+                lines.forEach(line => {
+                    if (line.trim()) {
+                        const parts = line.split(',');
+                        if (parts.length >= 4) {
+                            const name = parts[0].trim();
+                            const description = parts[1].trim();
+                            const lat = parseFloat(parts[2]);
+                            const lng = parseFloat(parts[3]);
+
+                            if (!isNaN(lat) && !isNaN(lng)) {
+                                // Add marker
+                                var marker = L.marker([lat, lng]).addTo(map);
+                                marker.bindPopup('<strong>' + name + '</strong><br>' + description);
+                            }
+                        }
+                    }
+                });
+            })
+            .catch(error => console.error('Error loading locations:', error));
+    </script>
+</body>
+</html>

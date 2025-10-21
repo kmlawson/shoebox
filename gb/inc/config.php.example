@@ -1,0 +1,67 @@
+<?php
+//------------------------------------------------------------------------------
+//	JibberBook v2.3
+//	(c) 2009 Chris Jaure
+//	license: MIT License
+//	website: http://www.jibberbook.com/
+//
+//	inc/config.php - EXAMPLE CONFIGURATION FILE
+//
+//	INSTRUCTIONS:
+//	1. Copy this file to 'config.php' in the same directory (gb/inc/)
+//	2. Replace the placeholder values with your actual settings
+//	3. NEVER commit the actual config.php file to version control
+//
+//------------------------------------------------------------------------------
+
+// misc settings
+define('JB_STORAGE', 'xml');
+define('JB_INDEX', 'index.php');
+define('JB_SHOW', 20);
+define('JB_DATE_FORMAT', 'F j, Y - H:i:s');
+define('JB_THEME', 'default');
+#define('JB_LANGUAGE', 'en');
+define('JB_EMOTICONS', 'emoticons/');
+define('JB_EMAIL', false);
+define('JB_KEEP_SPAM', true);
+define('JB_CHAR_LIMIT', false);
+
+// XML settings
+define('JB_XML_FILENAME', 'comments.xml');
+
+// MySQL settings (if using MySQL instead of XML)
+define('JB_MYSQL_HOST', '');
+define('JB_MYSQL_USERNAME', '');
+define('JB_MYSQL_PASSWORD', '');
+define('JB_MYSQL_DATABASE', '');
+define('JB_MYSQL_TABLE', '');
+
+// password for admin area
+// SECURITY: Replace this with a strong password
+define('JB_PASSWORD', 'your_admin_password_here');
+define('JB_PWD_ENCRYPTED', false);
+
+// For more information on HTML Purifier go to http://www.htmlpurifier.org/
+define('JB_ENABLE_HTML_PURIFIER', true);
+define('JB_ENCODING', 'UTF-8');
+define('JB_DOCTYPE', 'XHTML 1.0 Strict');
+define('JB_ALLOWED_ELEMENTS', 'a[href|title],img[src|title|alt],blockquote,p,em,strong,i,b,br,cite');
+
+// Akismet settings (spam protection)
+// Get your API key from https://akismet.com/
+define('JB_AKISMET_KEY', 'your_akismet_api_key_here');
+define('JB_GUESTBOOK_URL', 'http://your-site.com/path/to/gb/');
+
+// emoticons
+$EMOTICONS = array(
+    ':<' =>    'sigh.gif',
+    ':">' =>   'blush.gif',
+);
+
+
+// STOP EDITING ----------------------------------------------------------------
+
+// version numbers
+define('JB_VERSION', '2.3');
+define('JB_MA_VERSION', '1.2');
+?>
