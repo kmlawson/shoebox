@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Browse 246 letters from Norwegian-American family correspondence (1911-1956)">
+  <title>A Shoebox of Norwegian Letters</title>
+
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preload" href="letters.json.gz" as="fetch" crossorigin>
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-content">
+      <h1 class="site-title"><a href="/" id="site-title-link">A Shoebox of Norwegian Letters</a></h1>
+
+      <div class="header-controls">
+        <!-- Language toggle -->
+        <div class="language-toggle" role="group" aria-label="Language selection">
+          <button data-lang="both" class="active" aria-pressed="true">Both</button>
+          <button data-lang="norwegian" aria-pressed="false">Norwegian</button>
+          <button data-lang="english" aria-pressed="false">English</button>
+        </div>
+
+        <!-- Dark mode toggle -->
+        <button id="dark-mode-toggle" class="icon-button" aria-label="Toggle dark mode" title="Toggle dark mode">
+          <span class="icon-sun">☀</span>
+          <span class="icon-moon">☾</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <div class="main-container">
+    <!-- Sidebar for filters -->
+    <aside id="sidebar" class="sidebar">
+      <button id="sidebar-toggle" class="sidebar-toggle" aria-expanded="false" aria-label="Toggle filters sidebar">
+        <span class="toggle-icon">☰</span>
+        <span class="toggle-text">Filters & Search</span>
+      </button>
+
+      <div class="sidebar-content">
+        <!-- Search box -->
+        <div class="search-section">
+          <label for="search-box" class="visually-hidden">Search letters</label>
+          <div class="search-input-wrapper">
+            <input
+              type="search"
+              id="search-box"
+              placeholder="Search letters..."
+              aria-label="Search letters"
+            >
+            <button id="clear-search" class="search-clear-btn" aria-label="Clear search" title="Clear search" hidden>×</button>
+          </div>
+          <div id="prefix-hint" class="prefix-hint" hidden>
+            Press <kbd>Enter</kbd> to recognize prefix
+          </div>
+          <button id="advanced-search-btn" class="btn-secondary">Advanced</button>
+        </div>
+
+        <!-- Active filters display -->
+        <div id="active-filters" class="active-filters" hidden>
+          <div class="active-filters-header">
+            <span class="label">Active filters:</span>
+            <button id="clear-filters" class="btn-link">Clear all</button>
+          </div>
+          <div id="active-filters-list" class="filter-chips"></div>
+          <div class="filter-hint-small">
+            Click to remove individual filters
+          </div>
+        </div>
+
+        <!-- Filter buttons -->
+        <div class="filter-section">
+          <h3 class="filter-heading">Browse by:</h3>
+          <div class="filter-buttons">
+            <button class="filter-button" data-filter="years">By Year</button>
+            <button class="filter-button" data-filter="creators">By Creator</button>
+            <button class="filter-button" data-filter="tags">By Tag</button>
+            <button class="filter-button" data-filter="locations">By Location</button>
+            <button class="filter-button" data-filter="destinations">By Destination</button>
+          </div>
+        </div>
+
+        <div class="results-summary">
+          Showing <strong id="results-count">0</strong> letters
+        </div>
+
+        <hr class="sidebar-separator">
+
+        <div class="map-link-section">
+          <a href="map/map.html" class="map-link" target="_blank">
+            See Map
+          </a>
+        </div>
+
+        <hr class="sidebar-separator">
+
+        <div class="search-help-section">
+          <button id="search-help-btn" class="search-help-btn">Search Help</button>
+        </div>
+      </div>
+    </aside>
+
+    <!-- Main content area -->
+    <main id="main-content" class="main-content">
+      <!-- Loading state -->
+      <div id="loading" class="loading-screen" aria-live="polite">
+        <div class="loading-spinner"></div>
+        <p>Loading letters...</p>
+      </div>
+
+      <!-- LIST VIEW - shown by default and when filtering -->
+      <div id="list-view" class="view list-view">
+        <div class="list-header">
+          <h2>
+            Letters
+            <span id="results-count-display" class="count-badge">(0)</span>
+          </h2>
+          <div class="sort-controls">
+            <label for="sort-by">Sort by:</label>
+            <select id="sort-by">
+              <option value="date-asc">Oldest to Newest</option>
+              <option value="date-desc">Newest to Oldest</option>
+              <option value="creator">From (Creator)</option>
+              <option value="location">Location</option>
+              <option value="destination">Destination</option>
+              <option value="length">Length (longest first)</option>
+            </select>
+
+            <div class="font-size-controls">
+              <label>Text size:</label>
+              <button id="font-smaller" class="font-size-btn" aria-label="Decrease font size" title="Smaller text">A-</button>
+              <button id="font-larger" class="font-size-btn" aria-label="Increase font size" title="Larger text">A+</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Filter options display area -->
+        <div id="filter-options" class="filter-options" hidden>
+          <div class="filter-options-header">
+            <h3 id="filter-options-title">Select filters:</h3>
+            <button id="close-filter-options" class="btn-link">Close</button>
+          </div>
+          <div id="filter-hint" class="filter-hint">
+            Click to toggle selection
+          </div>
+          <div id="filter-options-chips" class="filter-chips-large"></div>
+        </div>
+
+        <!-- Active search summary -->
+        <div id="search-summary" class="search-summary" hidden>
+          <span id="search-summary-text"></span>
+        </div>
+
+        <ul id="letters-list" class="letters-list" role="list">
+          <!-- Letter list items rendered here by JavaScript -->
+        </ul>
+
+        <div id="list-bottom-nav" class="list-bottom-nav">
+          <a href="index.html" class="bottom-nav-btn home-btn">Home</a>
+          <a href="index.html" id="reset-all-btn" class="bottom-nav-btn reset-btn" hidden>Reset</a>
+        </div>
+
+        <div id="no-results" class="no-results" hidden>
+          <p>No letters found matching your search.</p>
+          <button id="reset-filters" class="btn-primary">Reset filters</button>
+        </div>
+      </div>
+
+      <!-- SINGLE LETTER VIEW - shown when letter is clicked -->
+      <div id="letter-view" class="view letter-view">
+        <div class="letter-view-header">
+          <button id="back-to-list" class="back-button">
+            <span aria-hidden="true">←</span> Back to list
+          </button>
+
+          <div class="font-size-controls">
+            <label>Text size:</label>
+            <button id="font-smaller-letter" class="font-size-btn" aria-label="Decrease font size" title="Smaller text">A-</button>
+            <button id="font-larger-letter" class="font-size-btn" aria-label="Increase font size" title="Larger text">A+</button>
+          </div>
+        </div>
+
+        <article id="current-letter" class="letter-article">
+          <!-- Single letter content rendered here by JavaScript -->
+        </article>
+
+        <!-- Navigation controls -->
+        <nav class="letter-navigation" aria-label="Letter navigation">
+          <button id="prev-letter" class="nav-button nav-prev" aria-label="Previous letter">
+            <span class="nav-icon" aria-hidden="true">←</span>
+            <span class="nav-label">Previous</span>
+          </button>
+
+          <div class="letter-position" aria-live="polite">
+            <span id="current-index">1</span> of <span id="total-letters">0</span>
+          </div>
+
+          <button id="next-letter" class="nav-button nav-next" aria-label="Next letter">
+            <span class="nav-label">Next</span>
+            <span class="nav-icon" aria-hidden="true">→</span>
+          </button>
+        </nav>
+
+        <!-- Keyboard shortcuts hint -->
+        <div class="keyboard-hint" role="note">
+          <kbd>←</kbd> <kbd>→</kbd> Navigate • <kbd>Esc</kbd> Back to list
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <!-- Advanced search modal -->
+  <div id="advanced-search-modal" class="modal" role="dialog" aria-labelledby="modal-title" aria-modal="true" hidden>
+    <div class="modal-backdrop"></div>
+    <div class="modal-content">
+      <header class="modal-header">
+        <h2 id="modal-title">Advanced Search</h2>
+        <button id="close-modal" class="close-button" aria-label="Close advanced search">×</button>
+      </header>
+
+      <form id="advanced-search-form">
+        <div class="form-row">
+          <label for="search-title">Title contains:</label>
+          <input type="text" id="search-title" name="title">
+        </div>
+
+        <div class="form-row">
+          <label for="search-text">Letter text contains:</label>
+          <input type="text" id="search-text" name="text">
+        </div>
+
+        <div class="form-row-inline">
+          <label for="search-creator">Creator:</label>
+          <input type="text" id="search-creator" name="creator">
+        </div>
+
+        <div class="form-row-inline">
+          <label for="search-tag">Tag:</label>
+          <input type="text" id="search-tag" name="tag">
+        </div>
+
+        <div class="form-row-double">
+          <div class="form-col">
+            <label for="search-location">Location:</label>
+            <input type="text" id="search-location" name="location">
+          </div>
+          <div class="form-col">
+            <label for="search-destination">Destination:</label>
+            <input type="text" id="search-destination" name="destination">
+          </div>
+        </div>
+
+        <div class="form-row-double">
+          <div class="form-col">
+            <label for="search-date-before">Date before:</label>
+            <input type="date" id="search-date-before" name="before">
+          </div>
+          <div class="form-col">
+            <label for="search-date-after">Date after:</label>
+            <input type="date" id="search-date-after" name="after">
+          </div>
+        </div>
+
+        <div class="modal-buttons">
+          <button type="submit" class="btn-primary">Search</button>
+          <button type="button" id="cancel-advanced" class="btn-secondary">Cancel</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- Search help modal -->
+  <div id="search-help-modal" class="modal" role="dialog" aria-labelledby="search-help-title" aria-modal="true" hidden>
+    <div class="modal-backdrop"></div>
+    <div class="modal-content search-help-content">
+      <header class="modal-header">
+        <h2 id="search-help-title">Search Help</h2>
+        <button id="close-search-help" class="close-button" aria-label="Close search help">×</button>
+      </header>
+
+      <div class="search-help-body">
+        <section class="help-section">
+          <h3>Simple Search</h3>
+          <p>Type any text to search across letter titles, descriptions, and content. Multiple words are treated as AND (all must match).</p>
+          <div class="help-example">
+            <code>farm weather</code> → finds letters containing both "farm" AND "weather"
+          </div>
+        </section>
+
+        <section class="help-section">
+          <h3>Quoted Phrases</h3>
+          <p>Use quotes to search for exact phrases.</p>
+          <div class="help-example">
+            <code>"Dell Rapids"</code> → finds the exact phrase "Dell Rapids"
+          </div>
+        </section>
+
+        <section class="help-section">
+          <h3>Filter by Prefix</h3>
+          <p>Use these prefixes to filter by specific fields. Press <kbd>Enter</kbd> or <kbd>Space</kbd> to apply.</p>
+          <ul class="help-list">
+            <li><code>year:</code> or <code>y:</code> → Filter by year (e.g., <code>y:1945</code>)</li>
+            <li><code>from:</code> or <code>f:</code> → Filter by creator/sender (e.g., <code>f:Axel</code>)</li>
+            <li><code>tag:</code> or <code>t:</code> → Filter by tag (e.g., <code>t:WWII</code>)</li>
+            <li><code>location:</code> or <code>l:</code> → Filter by location (e.g., <code>l:Oslo</code>)</li>
+            <li><code>destination:</code> or <code>d:</code> → Filter by destination (e.g., <code>d:"Dell Rapids"</code>)</li>
+            <li><code>title:</code> or <code>n:</code> → Filter by title (e.g., <code>n:Christmas</code>)</li>
+            <li><code>text:</code> → Filter by letter text content</li>
+          </ul>
+        </section>
+
+        <section class="help-section">
+          <h3>Negative Search</h3>
+          <p>Use <code>!</code> before a term or prefix to <strong>exclude</strong> matching letters.</p>
+          <ul class="help-list">
+            <li><code>!Axel</code> → exclude letters containing "Axel"</li>
+            <li><code>!y:1945</code> → exclude letters from 1945</li>
+            <li><code>!f:Ola</code> → exclude letters from Ola</li>
+            <li><code>!t:WWII</code> → exclude letters tagged with WWII</li>
+            <li><code>!d:"Dell Rapids"</code> → exclude letters sent to Dell Rapids</li>
+          </ul>
+          <p class="help-note">Negative filters appear as red chips and show "NOT" in the search summary.</p>
+        </section>
+
+        <section class="help-section">
+          <h3>Combining Filters</h3>
+          <p>You can combine multiple filters. Separate with spaces and press <kbd>Enter</kbd>.</p>
+          <div class="help-example">
+            <code>y:1945 f:Axel !t:WWII</code> → letters from 1945, by Axel, excluding WWII tag
+          </div>
+        </section>
+
+        <section class="help-section">
+          <h3>Browse By Buttons</h3>
+          <p>Click "By Year", "By Creator", etc. to see all available options and select multiple filters visually.</p>
+        </section>
+      </div>
+
+      <div class="modal-buttons">
+        <button id="close-search-help-btn" class="btn-primary">Got it</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- App JavaScript -->
+  <script src="app.js"></script>
+</body>
+</html>
