@@ -1744,7 +1744,7 @@ a:hover {
   max-width: 650px;
   max-height: 85vh;
   overflow-y: auto;
-  font-size: 1.1rem;
+  font-size: 1.4rem;
 }
 
 .search-help-body {
@@ -1756,7 +1756,7 @@ a:hover {
 }
 
 .help-section h3 {
-  font-size: 1.05rem;
+  font-size: 1.6rem;
   font-family: var(--font-sans);
   color: var(--color-heading);
   margin-bottom: var(--spacing-xs);

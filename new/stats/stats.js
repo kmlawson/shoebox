@@ -186,12 +186,13 @@ async function loadLettersData() {
     const text = await response.text();
     lettersData = JSON.parse(text);
 
-    console.log('Letters loaded:', Object.keys(lettersData).length);
+    const dataLength = Array.isArray(lettersData) ? lettersData.length : Object.keys(lettersData).length;
+    console.log('Letters loaded:', dataLength, 'Type:', Array.isArray(lettersData) ? 'array' : 'object');
 
     loading.style.display = 'none';
     resultsView.hidden = false;
 
-    document.getElementById('results-count').textContent = `${Object.keys(lettersData).length} letters loaded`;
+    document.getElementById('results-count').textContent = `${dataLength} letters loaded`;
 
     // Calculate and display corpus statistics
     calculateCorpusStats();
@@ -209,10 +210,12 @@ async function loadLettersData() {
 
 function generateFrequencyList() {
   console.log('generateFrequencyList called');
-  console.log('lettersData:', lettersData ? Object.keys(lettersData).length : 'undefined');
+  console.log('lettersData type:', Array.isArray(lettersData) ? 'array' : typeof lettersData);
+  console.log('lettersData length/keys:', Array.isArray(lettersData) ? lettersData.length : Object.keys(lettersData).length);
 
-  if (!lettersData || Object.keys(lettersData).length === 0) {
+  if (!lettersData || (Array.isArray(lettersData) ? lettersData.length === 0 : Object.keys(lettersData).length === 0)) {
     console.error('No letters data available');
+    alert('No letters data available. Please check console for errors.');
     return;
   }
 
@@ -227,7 +230,8 @@ function generateFrequencyList() {
   const stopwords = language === 'norwegian' ? NORWEGIAN_STOPWORDS : ENGLISH_STOPWORDS;
 
   // Filter letters by year range
-  const filteredLetters = Object.entries(lettersData).filter(([id, letter]) => {
+  const lettersArray = Array.isArray(lettersData) ? lettersData : Object.values(lettersData);
+  const filteredLetters = lettersArray.filter(letter => {
     if (!letter.metadata || !letter.metadata.Date || !letter.metadata.Date[0]) return false;
     const dateStr = letter.metadata.Date[0]; // Date is an array
     const year = parseInt(dateStr.split('.')[0]); // Extract year from "YYYY.MM.DD" format
@@ -240,11 +244,11 @@ function generateFrequencyList() {
   const wordCounts = {};
   let totalWords = 0;
 
-  filteredLetters.forEach(([id, letter]) => {
+  filteredLetters.forEach(letter => {
     const text = extractText(letter, language);
 
     if (!text) {
-      console.log(`Letter ${id} has no text for ${language}`);
+      console.log(`Letter ${letter.id || 'unknown'} has no text for ${language}`);
     }
 
     // Tokenize and count
@@ -388,9 +392,10 @@ function generateTFIDF() {
 
   // First pass: count document frequency (how many docs contain the term)
   let documentFrequency = 0;
-  const totalDocs = Object.keys(lettersData).length;
+  const lettersArray = Array.isArray(lettersData) ? lettersData : Object.values(lettersData);
+  const totalDocs = lettersArray.length;
 
-  Object.entries(lettersData).forEach(([id, letter]) => {
+  lettersArray.forEach(letter => {
     const text = extractText(letter, language).toLowerCase();
 
     if (text.includes(searchTerm)) {
@@ -407,7 +412,7 @@ function generateTFIDF() {
   const idf = Math.log(totalDocs / documentFrequency);
 
   // Second pass: calculate TF-IDF for each document
-  Object.entries(lettersData).forEach(([id, letter]) => {
+  lettersArray.forEach(letter => {
     const text = extractText(letter, language).toLowerCase();
 
     // Count term frequency in this document
@@ -419,7 +424,7 @@ function generateTFIDF() {
       const tfidf = tf * idf;
 
       docScores.push({
-        id,
+        id: letter.id,
         letter,
         tf,
         idf,
@@ -619,8 +624,9 @@ function generateTagExplorer() {
   // Count tags across all letters (or filtered by word)
   const tagCounts = {};
   const tagToLetters = {}; // Map tags to letters containing them
+  const lettersArray = Array.isArray(lettersData) ? lettersData : Object.values(lettersData);
 
-  Object.entries(lettersData).forEach(([id, letter]) => {
+  lettersArray.forEach(letter => {
     // Get tags for this letter
     const tags = letter.metadata?.Tags || [];
 
@@ -638,8 +644,8 @@ function generateTagExplorer() {
           tagToLetters[tag] = [];
         }
         tagToLetters[tag].push({
-          id,
-          title: letter.metadata?.Title?.[0] || `Letter ${id}`,
+          id: letter.id,
+          title: letter.metadata?.Title?.[0] || `Letter ${letter.id}`,
           date: letter.metadata?.Date?.[0] || 'Unknown',
           creator: letter.metadata?.Creator?.[0] || 'Unknown'
         });
@@ -802,8 +808,9 @@ function generateContextExplorer() {
 
   // Find all occurrences of the term with context
   const contexts = [];
+  const lettersArray = Array.isArray(lettersData) ? lettersData : Object.values(lettersData);
 
-  Object.entries(lettersData).forEach(([id, letter]) => {
+  lettersArray.forEach(letter => {
     const text = extractText(letter, language);
 
     if (!text) return;
@@ -823,8 +830,8 @@ function generateContextExplorer() {
         const rightContext = words.slice(index + 1, endIdx).join(' ');
 
         contexts.push({
-          letterId: id,
-          letterTitle: letter.metadata?.Title?.[0] || `Letter ${id}`,
+          letterId: letter.id,
+          letterTitle: letter.metadata?.Title?.[0] || `Letter ${letter.id}`,
           date: letter.metadata?.Date?.[0] || 'Unknown',
           creator: letter.metadata?.Creator?.[0] || 'Unknown',
           tags: letter.metadata?.Tags || [],
@@ -924,7 +931,8 @@ function generateWordCloud() {
   const stopwords = language === 'norwegian' ? NORWEGIAN_STOPWORDS : ENGLISH_STOPWORDS;
 
   // Filter letters by year range and optional word filter
-  const filteredLetters = Object.entries(lettersData).filter(([id, letter]) => {
+  const lettersArray = Array.isArray(lettersData) ? lettersData : Object.values(lettersData);
+  const filteredLetters = lettersArray.filter(letter => {
     if (!letter.metadata || !letter.metadata.Date || !letter.metadata.Date[0]) return false;
     const dateStr = letter.metadata.Date[0]; // Date is an array
     const year = parseInt(dateStr.split('.')[0]); // Extract year from "YYYY.MM.DD" format
@@ -949,7 +957,7 @@ function generateWordCloud() {
   const wordCounts = {};
   let totalWords = 0;
 
-  filteredLetters.forEach(([id, letter]) => {
+  filteredLetters.forEach(letter => {
     const text = extractText(letter, language);
 
     // Tokenize and count
@@ -1058,14 +1066,15 @@ function calculateCorpusStats() {
     language = document.getElementById('wordcloud-language-select').value;
   }
 
-  const totalLetters = Object.keys(lettersData).length;
+  const totalLetters = Array.isArray(lettersData) ? lettersData.length : Object.keys(lettersData).length;
   let totalWords = 0;
   let lettersWithText = 0;
   const uniqueCreators = new Set();
   const uniqueLocations = new Set();
   const uniqueDestinations = new Set();
 
-  Object.values(lettersData).forEach(letter => {
+  const lettersArray = Array.isArray(lettersData) ? lettersData : Object.values(lettersData);
+  lettersArray.forEach(letter => {
     // Count words for selected language only
     const text = extractText(letter, language);
     const words = text.split(/\s+/).filter(w => w.length > 0);
