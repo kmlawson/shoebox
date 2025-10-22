@@ -1,0 +1,180 @@
+{
+  "id": 51,
+  "added": "2010-12-26 15:35:07",
+  "modified": "2010-12-26 18:50:43",
+  "public": true,
+  "metadata": {
+    "Title": [
+      "Mathilda Halvorson to Karoline Holm 1911.10.10"
+    ],
+    "Description": [
+      "BREV FRA MRS MATHILDA HALVORSON, STURGES ALKOLY(?) PO, S.  DAK., DATERT 10.  OKTOBER 1911 TIL KAROLINE (HOLM?).  INGEN KONVOLUTT, SKREVET PÅ NORSK MED BLYANT OG VELDIG VANSKELIG Å TYDE.  INGEN KOMMA ELLER PUNKTUM, INGEN STORE BOKSTAVER.\n\n\n<-SPLITDESC->\n\n\nLETTER FROM MATHILDA HALVORSON, STURGES ALKOLY(?) PO, S.  DAK.  TO KAROLINE (HOLM?) DATED OCT. 10-1911.  NO ENVELOPE.  WRITTEN IN PENCIL IN OLDFASHIONED NORWEGIAN (DANISH GRAMMAR AND SPELLING).  HARD TO READ, NO COMMAS OR PERIODS, NO CAPITAL LETTERS."
+    ],
+    "Creator": [
+      "Mathilda Halvorson",
+      "Siri Lawson, trans."
+    ],
+    "Date": [
+      "1911.10.10"
+    ],
+    "Language": [
+      "Norwegian",
+      "English trans."
+    ],
+    "Text": [
+      "Alkoly october 10th 1911\n\nKjere søster Karoline\n\nefter som jeg aldrig faar høre ifra dig saa maa jeg nu skrive igjen jeg og Helmer og John er ude paa landet og gullies (gullick?) signe og netta er i deadwood paa arbeide og Knute er nede i minista (mener hun Minnesota?) paa tresking det er 24 mil til byen her ifra saa det er saa ont at komme til byen janna arbeider i sturges og hendes lille gut er tyk og fed mine folk vil at jeg skal komme til deadwood i vinter over den verste kulde da det er saa langt til byen for mig det er saa tørt ude her saa folk reiste ikke engang lidt hø her i sommer nu er det ganske fint men det er ikke tørt nok græset til at slaa jeg fik brev ifra alma en stund siden men jeg har ikke svaret endu hun siger hun har det saa godt og det gleder mig at høre for du ved det er ingen af os som har havt det for godt og signe hun er aldrig frisk men hun maa arbeide hele tiden aligevel ellers kom vi vel til at svelte igjel tror jeg vel min nabo skal til post oficen saa jeg maa slutte jeg haaber at høre ifra dig strax at du er med hilsen (helsen?) som vi jeg var ryselig syg igaar men idag er jeg frisk jeg skal skrive mere neste brev bare du skriver nu stax du faar mit brev saa jeg faar vide hvor du er og hvordan du lever om det er tørt der eller om folk reiser noget at leve af til vinteren her ser det mørkt ud men vi faar haabe paa bedre dage har du hørt ifra fader jeg har skrevet mange brev men ikke faaet svar vel jeg maa slutte med en venlig hilsen til eder alle ifra din søster med familie.\n\nMrs Mathilda Halvorson\n\nSturges Alkoly PO\n\nS Dak\n\n\n<-SPLITTLETTER->\n\n\nAlkoly october 10th 1911\n\n \n\nDear sister Karoline\n\nSince I never hear from you I have to write again Helmer and John and I are out in the country and gullies (gullick?) signe and netta are in deadwood working and knute is down in minista (does she mean Minnesota?) threshing it’s 24 miles to town from here so it’s so hard to get to town janna works in sturges and her little boy is fat my folks want me to come to deadwood this winter during the worst of the cold as it’s so far to town for me it’s so dry out here that people didn’t even raise a little hay here this summer now it’s quite nice but the grass isn’t dry enough to cut I had a letter from Alma a while back but I haven’t replied yet she says things have turned out so well for her and that pleases me to hear as you know none of us have had an easy time of it and signe is never well but she has to work all the time anyway otherwise we would starve to death I think well my neighbour is going to the post office so I have to quit I hope to hear from you immediately that you are healthy as we are I was terribly sick yesterday but today I’m well I’ll write more in the next letter if only you write immediately when you get my letter so that I’ll know where you are and how you’re living if it’s dry there or if people raise anything to live off of for the winter it doesn’t look good here but we’ll hope for better days have you heard from father I have written many letters but have had no reply well I must quit with a friendly greeting to you all from your sister and family.\n\nMrs Mathilda Halvorson\n\nSturges Alkoly PO\n\nS Dak"
+    ],
+    "LetterDate": [
+      "1911-10-10"
+    ],
+    "Location": [
+      ""
+    ],
+    "Destination": [
+      ""
+    ]
+  },
+  "tags": [
+    "1910s",
+    "Alkoly",
+    "Danish style",
+    "Karoline Holm",
+    "Mathilda Halvorson",
+    "South Dakota",
+    "US to US",
+    "poverty",
+    "prewar",
+    "sickness"
+  ],
+  "files": [
+    {
+      "original": "Mathilda Halvorson 10 okt-1911.pdf",
+      "filename": "a274e720cdce8c26147c6204da8ecb55.pdf",
+      "mime_type": "application/pdf"
+    }
+  ],
+  "norwegian-tfidf": [
+    {
+      "term": "tørt",
+      "score": 0.1114337151844351
+    },
+    {
+      "term": "alkoly",
+      "score": 0.08503561137194814
+    },
+    {
+      "term": "ude",
+      "score": 0.08503561137194814
+    },
+    {
+      "term": "signe",
+      "score": 0.08503561137194814
+    },
+    {
+      "term": "deadwood",
+      "score": 0.08503561137194814
+    },
+    {
+      "term": "sturges",
+      "score": 0.08503561137194814
+    },
+    {
+      "term": "faar",
+      "score": 0.05492170129570069
+    },
+    {
+      "term": "byen",
+      "score": 0.04487090400002887
+    },
+    {
+      "term": "10th",
+      "score": 0.04251780568597407
+    },
+    {
+      "term": "1911",
+      "score": 0.04251780568597407
+    },
+    {
+      "term": "helmer",
+      "score": 0.04251780568597407
+    },
+    {
+      "term": "gullies",
+      "score": 0.04251780568597407
+    },
+    {
+      "term": "gullick",
+      "score": 0.04251780568597407
+    },
+    {
+      "term": "netta",
+      "score": 0.04251780568597407
+    },
+    {
+      "term": "knute",
+      "score": 0.04251780568597407
+    }
+  ],
+  "english-tfidf": [
+    {
+      "term": "alkoly",
+      "score": 0.0839886749701485
+    },
+    {
+      "term": "signe",
+      "score": 0.0839886749701485
+    },
+    {
+      "term": "deadwood",
+      "score": 0.0839886749701485
+    },
+    {
+      "term": "sturges",
+      "score": 0.0839886749701485
+    },
+    {
+      "term": "raise",
+      "score": 0.0839886749701485
+    },
+    {
+      "term": "dry",
+      "score": 0.07325205612711484
+    },
+    {
+      "term": "immediately",
+      "score": 0.0504432615757024
+    },
+    {
+      "term": "town",
+      "score": 0.04208465414691024
+    },
+    {
+      "term": "1911",
+      "score": 0.04199433748507425
+    },
+    {
+      "term": "helmer",
+      "score": 0.04199433748507425
+    },
+    {
+      "term": "gullies",
+      "score": 0.04199433748507425
+    },
+    {
+      "term": "gullick",
+      "score": 0.04199433748507425
+    },
+    {
+      "term": "netta",
+      "score": 0.04199433748507425
+    },
+    {
+      "term": "knute",
+      "score": 0.04199433748507425
+    },
+    {
+      "term": "minista",
+      "score": 0.04199433748507425
+    }
+  ]
+}

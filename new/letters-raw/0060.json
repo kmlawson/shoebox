@@ -1,0 +1,182 @@
+{
+  "id": 60,
+  "added": "2010-12-26 17:49:37",
+  "modified": "2010-12-30 04:01:51",
+  "public": true,
+  "metadata": {
+    "Title": [
+      "Sonja Holm to John Holm 1925.3.17"
+    ],
+    "Description": [
+      "BREV FRA SONJA HOLM (OLAVS DATTER) DATERT TRONDHJEM 17.  MARS-1925\n\n\n<-SPLITDESC->\n\n\nLETTER FROM SONJA HOLM (OLAV'S DAUGHTER) DATED TRONDHJEM MARCH 17-1925."
+    ],
+    "Creator": [
+      "Sonja Holm"
+    ],
+    "Date": [
+      "1925.03.17"
+    ],
+    "Language": [
+      "Norwegian",
+      "English trans."
+    ],
+    "Text": [
+      "Goddag kjære onkel Jon.\n\nDet var morsomt å høre at du vilde ha brev fra mig.  Jeg er blitt stor sinden du så mig sist.  Da lå jeg visst i vuggen og sparket og skrek.  Men det er nu 11 år siden også.  Nu nylig blev jeg K.F.W.K. speider.  Jeg er skrekkelig vill og ustyrlig av mig.  Jeg går i femte klasse på Bisbehaugens skole som ligger like ovenfor oss.  Hver eftermiddag er jeg ute å render mig på ski, skøiter, eller kjelke det vil si visst jeg ikke er optat med lekser, eller jeg er på syforening med mit håndarbeide.  Og om søndagen er jeg på ski langt opover landet med noen av mine veninder.  Jeg har mange veninder 5 eller 6 stykker.  Om formiddagen er jeg på skolen og der slutter jeg klokken 2.  Jeg skal snart fotografere mig og da skal du også få et bilde av mig.  Denne gang har jeg ikke mere å fortelle, men næste gang skal de bli mere.\n\nKjærlig hilsen\n\ndin\n\nSonja Holm\n\n\n<-SPLITTLETTER->\n\n\nGood day dear uncle Jon.\n\nIt was nice to hear that you wanted a letter from me.  I have gotten big since you last saw me.  Then I was kicking and screaming in my cradle.  But that was 11 years ago.  I recently became a girl scout with the K.F.W.K.  I’m terribly wild and unruly. I’m in 5th grade at Bisbehaugen school which is located just up the road from us.  Every afternoon I’m outside skiing, skating or sledding that is if I’m not busy doing home work, or at my sewing club with my needle work.  And on Sundays I ski way up into the coutry with some of my friends.  I have many friends 5 or 6 of them.  During the day I’m at school untill 2.  I’ll have my picture taken soon and then I’ll let you have a picture of me too.  I don’t have any more to tell you this time, but there will be more next time.\n\nWith love\n\nYour Sonja Holm"
+    ],
+    "LetterDate": [
+      "1925-03-17"
+    ],
+    "Location": [
+      "Trondheim"
+    ],
+    "Destination": [
+      "USA"
+    ]
+  },
+  "tags": [
+    "1920s",
+    "John Holm",
+    "K.F.W.K. Bisbehaugen",
+    "Norway to US",
+    "Sonja Holm",
+    "Trondheim",
+    "girl scouts",
+    "needle work",
+    "prewar",
+    "school",
+    "skating",
+    "skiing",
+    "sledding"
+  ],
+  "files": [
+    {
+      "original": "Sonja Holm 17 mars-1925.pdf",
+      "filename": "a392b393ef5f75dfe047c23bade6cc48.pdf",
+      "mime_type": "application/pdf"
+    }
+  ],
+  "norwegian-tfidf": [
+    {
+      "term": "k",
+      "score": 0.13497604937832985
+    },
+    {
+      "term": "veninder",
+      "score": 0.13497604937832985
+    },
+    {
+      "term": "ski",
+      "score": 0.09592550399467097
+    },
+    {
+      "term": "visst",
+      "score": 0.08695497635752915
+    },
+    {
+      "term": "sinden",
+      "score": 0.07725066103507965
+    },
+    {
+      "term": "vuggen",
+      "score": 0.07725066103507965
+    },
+    {
+      "term": "sparket",
+      "score": 0.07725066103507965
+    },
+    {
+      "term": "skrek",
+      "score": 0.07725066103507965
+    },
+    {
+      "term": "speider",
+      "score": 0.07725066103507965
+    },
+    {
+      "term": "ustyrlig",
+      "score": 0.07725066103507965
+    },
+    {
+      "term": "femte",
+      "score": 0.07725066103507965
+    },
+    {
+      "term": "bisbehaugens",
+      "score": 0.07725066103507965
+    },
+    {
+      "term": "render",
+      "score": 0.07725066103507965
+    },
+    {
+      "term": "kjelke",
+      "score": 0.07725066103507965
+    },
+    {
+      "term": "lekser",
+      "score": 0.07725066103507965
+    }
+  ],
+  "english-tfidf": [
+    {
+      "term": "k",
+      "score": 0.135439747323515
+    },
+    {
+      "term": "kicking",
+      "score": 0.07748251000767221
+    },
+    {
+      "term": "screaming",
+      "score": 0.07748251000767221
+    },
+    {
+      "term": "cradle",
+      "score": 0.07748251000767221
+    },
+    {
+      "term": "scout",
+      "score": 0.07748251000767221
+    },
+    {
+      "term": "unruly",
+      "score": 0.07748251000767221
+    },
+    {
+      "term": "bisbehaugen",
+      "score": 0.07748251000767221
+    },
+    {
+      "term": "sledding",
+      "score": 0.07748251000767221
+    },
+    {
+      "term": "needle",
+      "score": 0.07748251000767221
+    },
+    {
+      "term": "skating",
+      "score": 0.0677198736617575
+    },
+    {
+      "term": "club",
+      "score": 0.0677198736617575
+    },
+    {
+      "term": "untill",
+      "score": 0.0677198736617575
+    },
+    {
+      "term": "f",
+      "score": 0.06200909749121997
+    },
+    {
+      "term": "located",
+      "score": 0.06200909749121997
+    },
+    {
+      "term": "sundays",
+      "score": 0.06200909749121997
+    }
+  ]
+}

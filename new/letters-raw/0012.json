@@ -1,0 +1,180 @@
+{
+  "id": 12,
+  "added": "2010-12-23 21:42:48",
+  "modified": "2010-12-30 04:09:34",
+  "public": true,
+  "metadata": {
+    "Title": [
+      "Alma C. Wilson to Axel Holm 1948.4.19"
+    ],
+    "Description": [
+      "KOPI AV ET MASKINSKREVET BREV FRA ALMA WILSON DATERT 19.  APRIL – 1948, TIL AXEL HOLM.  INGEN KONVOLUTT.\n\n\n<-SPLITDESC->\n\n\nCOPY OF A TYPE WRITTEN LETTER FROM ALMA WILSON DATED APRIL 19 – 1948, TO AXEL HOLM.  NO ENVELOPE."
+    ],
+    "Creator": [
+      "Alma C. Wilson",
+      "Siri Lawson, trans."
+    ],
+    "Date": [
+      "1948.04.19"
+    ],
+    "Language": [
+      "Norwegian",
+      "English trans."
+    ],
+    "Text": [
+      "Dell Rapids. S.D. 19 april.48\n\nKjere Onkel Axel.\n\nHermed sender jeg Døds attest som forlangt  jeg maate gaa til en an by for den, da mor og jeg har begge veret daarlig. kunde jeg ikke gaa før.\n\ndu ved John vilde du skulde styre med dette. saa nu gjør du vad han sa. han bad ikke Ole om at gjøre dete.  Mor vil intet ha med Ole og gjøre.\n\nMor hade ret til at vide hvormeget var I banken. men du svarte ikke paa det.  Haaber nu at det blir slut paa tøisen. som om john vilde si\n\nDet er for galt at dise strømperne Florence sente til Herborg ikke kom fram.  Florence flytter idag.  Hun er bare daarlig. og kunde ikke staa ut paa pladsen hun var paa.\n\nher er nu ualmindelig varmt veir alerede. ikke noget regn veir ennu\n\nHilsen til dere ale.\n\nDu kan si Laura at jeg skal skrive til hende. men ret nu er det for meget paa hand at gjøre.  jeg er gla hun fik foton. har faat tak fra 3 som fik. af same.\n\nHilsen fra mor og Alma\n\n\n<-SPLITTLETTER->\n\n\nDell Rapids. S.D. 19th of april 48\n\nDear Uncle Axel.\n\nWith this I’m sending the Death certificate as demanded  I had to go to another town for it. as mother and I have both been unwell. I couldn’t go before.\n\nyou know John wanted you to take care of this. so you do what he said now. he did not ask Ole to do this.  Mother wants nothing to do with Ole.\n\nMother had the right to know how much was in the bank. but you did not reply to that.  I hope there will be an end to the nonsense now. as john would have said\n\nIt’s too bad that these stockings Florence sent to Herborg didn’t get there.  Florence is moving today.  She’s sick all the time. and couldn’t handle the place she was at.\n\nwe’re having an unusually warm weather already. no rain yet\n\nRegards to you all.\n\nYou can tell Laura that I’ll write to her. but right now there’s too much at hand to do. I’m glad she got the photos. Have received thank you’s from 3 who got. of same.\n\nRegards from mother and Alma"
+    ],
+    "LetterDate": [
+      "1948-04-19"
+    ],
+    "Location": [
+      "Dell Rapids"
+    ],
+    "Destination": [
+      "Norway"
+    ]
+  },
+  "tags": [
+    "1940s",
+    "Alma C. Wilson",
+    "Axel Holm",
+    "Dell Rapids",
+    "John Holm",
+    "US to Norway",
+    "clothes",
+    "death",
+    "finances",
+    "postwar"
+  ],
+  "files": [
+    {
+      "original": "Alma Wilson 19 april-1948.pdf",
+      "filename": "7e23ec44b25f47a401caaa6bba3a86c0.pdf",
+      "mime_type": "application/pdf"
+    }
+  ],
+  "norwegian-tfidf": [
+    {
+      "term": "ret",
+      "score": 0.10083183091546082
+    },
+    {
+      "term": "tøisen",
+      "score": 0.06304364291368568
+    },
+    {
+      "term": "flytter",
+      "score": 0.06304364291368568
+    },
+    {
+      "term": "pladsen",
+      "score": 0.06304364291368568
+    },
+    {
+      "term": "hand",
+      "score": 0.06304364291368568
+    },
+    {
+      "term": "veir",
+      "score": 0.060955944584699745
+    },
+    {
+      "term": "daarlig",
+      "score": 0.05839903343274056
+    },
+    {
+      "term": "florence",
+      "score": 0.057219877239923306
+    },
+    {
+      "term": "attest",
+      "score": 0.05507643394173229
+    },
+    {
+      "term": "hvormeget",
+      "score": 0.05507643394173229
+    },
+    {
+      "term": "fram",
+      "score": 0.05507643394173229
+    },
+    {
+      "term": "staa",
+      "score": 0.05507643394173229
+    },
+    {
+      "term": "vilde",
+      "score": 0.05502883862373193
+    },
+    {
+      "term": "forlangt",
+      "score": 0.05041591545773041
+    },
+    {
+      "term": "ualmindelig",
+      "score": 0.05041591545773041
+    }
+  ],
+  "english-tfidf": [
+    {
+      "term": "couldn",
+      "score": 0.06929986666203924
+    },
+    {
+      "term": "demanded",
+      "score": 0.06244300038941276
+    },
+    {
+      "term": "florence",
+      "score": 0.05826393954605831
+    },
+    {
+      "term": "19th",
+      "score": 0.05344108895356931
+    },
+    {
+      "term": "moving",
+      "score": 0.05344108895356931
+    },
+    {
+      "term": "48",
+      "score": 0.050543120754683465
+    },
+    {
+      "term": "certificate",
+      "score": 0.050543120754683465
+    },
+    {
+      "term": "unusually",
+      "score": 0.050543120754683465
+    },
+    {
+      "term": "nonsense",
+      "score": 0.04817530832878795
+    },
+    {
+      "term": "ole",
+      "score": 0.047074772894306255
+    },
+    {
+      "term": "photos",
+      "score": 0.04290952770400659
+    },
+    {
+      "term": "right",
+      "score": 0.039279848415076694
+    },
+    {
+      "term": "handle",
+      "score": 0.0391733968929445
+    },
+    {
+      "term": "hand",
+      "score": 0.0391733968929445
+    },
+    {
+      "term": "mother",
+      "score": 0.03622011250968677
+    }
+  ]
+}

@@ -1,0 +1,167 @@
+{
+  "id": 195,
+  "added": "2010-12-30 21:42:08",
+  "modified": "2010-12-30 21:42:08",
+  "public": true,
+  "metadata": {
+    "Title": [
+      "Edvard Eidum Card with Psalm Undated"
+    ],
+    "Description": [
+      "JULEKORT FRA HANNA OG EDVARD EIDUM TIL ALMA WILSON.  INGEN KONVOLUTT, INGEN DATO.\n\n\n<-SPLITDESC->\n\n\nCHRISTMAS CARD FROM EDVARD EIDUM TO ALMA WILSON.  NO ENVELOPE, NO DATE.  THIS SEEMS TO BE A PSALM, WHICH WOULD BE HARD TO TRANSLATE."
+    ],
+    "Creator": [
+      "Edvard Eidum",
+      "Siri Lawson"
+    ],
+    "Language": [
+      "Norwegian"
+    ],
+    "Text": [
+      "Mrs. Alma Wilson\n\nDell Rapids.\n\nU.S.A.\n\nGå omkring i Jesu Navn,\nhjelpe trøste, stille savn,\nVise medynk, tørre tårer,\nlæke  som hjertet sårer.\nVirke sådan i De stille,\nDe var De jeg gjerne vilde.\nKjærlighed opfindsom gjør,\nGud vil opne mig en dør,\nJeg mig med en glad vil glæde\nmed en sorgfull vil jeg græte.\nVirke sådan i De stille,\nDe var De jeg gjerne ville\nHilsen Hanna og E. Eidum\n\n \n\n<-SPLITTLETTER->\n\n\n\nThese two verses basically talk about using your life to share the joys and sorrows of others, and quietly comfort and help where needed, with the help of God and Jesus"
+    ],
+    "Destination": [
+      "Dell Rapids"
+    ]
+  },
+  "tags": [
+    "Bible passage",
+    "Christmas",
+    "Edvard Eidum",
+    "God",
+    "Hanna Eidum",
+    "Jesus",
+    "Norway to US"
+  ],
+  "files": [
+    {
+      "original": "Edvard Eidum julekort m salme.pdf",
+      "filename": "4a9efb3da8a262bbdaa9a8a38c734cd2.pdf",
+      "mime_type": "application/pdf"
+    }
+  ],
+  "norwegian-tfidf": [
+    {
+      "term": "virke",
+      "score": 0.19494153976989093
+    },
+    {
+      "term": "sådan",
+      "score": 0.18215566988314508
+    },
+    {
+      "term": "stille",
+      "score": 0.16935719695494764
+    },
+    {
+      "term": "medynk",
+      "score": 0.12188437629979233
+    },
+    {
+      "term": "læke",
+      "score": 0.12188437629979233
+    },
+    {
+      "term": "opfindsom",
+      "score": 0.12188437629979233
+    },
+    {
+      "term": "opne",
+      "score": 0.12188437629979233
+    },
+    {
+      "term": "sorgfull",
+      "score": 0.12188437629979233
+    },
+    {
+      "term": "græte",
+      "score": 0.12188437629979233
+    },
+    {
+      "term": "trøste",
+      "score": 0.10648110562068243
+    },
+    {
+      "term": "vise",
+      "score": 0.10648110562068243
+    },
+    {
+      "term": "tørre",
+      "score": 0.10648110562068243
+    },
+    {
+      "term": "sårer",
+      "score": 0.10648110562068243
+    },
+    {
+      "term": "kjærlighed",
+      "score": 0.10648110562068243
+    },
+    {
+      "term": "gjerne",
+      "score": 0.09896446202085214
+    }
+  ],
+  "english-tfidf": [
+    {
+      "term": "basically",
+      "score": 0.34382863815904546
+    },
+    {
+      "term": "joys",
+      "score": 0.34382863815904546
+    },
+    {
+      "term": "verses",
+      "score": 0.3005069393740489
+    },
+    {
+      "term": "sorrows",
+      "score": 0.3005069393740489
+    },
+    {
+      "term": "quietly",
+      "score": 0.2751653701172886
+    },
+    {
+      "term": "comfort",
+      "score": 0.24323876863191415
+    },
+    {
+      "term": "help",
+      "score": 0.21750726185639557
+    },
+    {
+      "term": "share",
+      "score": 0.2138635418040557
+    },
+    {
+      "term": "using",
+      "score": 0.17888755505809179
+    },
+    {
+      "term": "needed",
+      "score": 0.1745755005901573
+    },
+    {
+      "term": "talk",
+      "score": 0.15980120196114292
+    },
+    {
+      "term": "others",
+      "score": 0.12161938431595708
+    },
+    {
+      "term": "jesus",
+      "score": 0.12161938431595708
+    },
+    {
+      "term": "life",
+      "score": 0.08689902164821348
+    },
+    {
+      "term": "god",
+      "score": 0.08292943379056812
+    }
+  ]
+}

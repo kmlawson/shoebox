@@ -1,0 +1,122 @@
+{
+  "id": 84,
+  "added": "2010-12-27 00:10:41",
+  "modified": "2010-12-30 03:58:06",
+  "public": true,
+  "metadata": {
+    "Title": [
+      "Odd Conrad Holm to Grace Wilson 1944.11.4"
+    ],
+    "Description": [
+      "BREV FRA ODD HOLM DATERT M/T THORSHOV 4.  NOVEMBER-1944, TIL GRACE  WILSON (ALMAS DATTER).  INGEN KONVOLUTT.  MASKINSKREVET PÅ ENGELSK MED BARE STORE BOKSTAVER.\n\n\n<-SPLITDESC->\n\n\nLETTER FROM ODD HOLM DATED M/T THORSHOV NOVEMBER 4-1944, TO GRACE WILSON.  NO ENVELOPE.  TYPEWRITTEN IN ENGLISH IN UPPER CASE LETTERS.\n"
+    ],
+    "Creator": [
+      "Odd Conrad Holm"
+    ],
+    "Date": [
+      "1944.11.04"
+    ],
+    "Language": [
+      "English"
+    ],
+    "Text": [
+      "\n\n<-SPLITTLETTER->\n\nMy Dear Grace.\n\nThank you very much for your very interesting letter which I received from you when I was in Africa.\n\nIt was very kind of you to write me.  Your letter were dated 6/4-41.  I wrote you at once, but I don’t think you have got my letter because it was very difficult to get any letter through the censor that time.  I was interned a long time, had little and bad food.  The last three months before the American came, I was in a consentration camp 350 miles south of Oran.  It was a terrible place in the desert, sun and sand and of course very hot, so I was very glad to get out of it.  I was working for the American Navy for some time, but later as a Norwegian I had to join a Norwegian ship, and since then I have been sailing all about.  I am now onboard a Norwegian oil tanker.  We use to have 14 days in the Atlantic and two-three days in port, so we are almost always at sea.  But it is all the same to me.  I hope the war soon is over, so I can be able to send a letter home and get an answer without any German interference. \n\nYou told me you were working in a Carnegie Public Library, but I suppose you had to quit the job for the benefit of war production, if so I think you will be able to get your job back again as soon as the war is over if you wish to.\n\nI should like to visit you in Dell Rapids and uncle John too, but I have not got time enough to do so, I am probably going to pay off in an American port some time after Christmas, and then I will be glad to visit my friends (it would be another year and a half before he could finally go home).\n\nMy twin sister and I was born in 1918.  My sister is married and live in Norway.  My other sisters are older than I, except one.  She is 19 year old.  I have two brothers, both past thirty.\n\nAs you may know, my father passed away in February 1942, 62 year old (I think he’s mistaken here, Conrad died January 6-1943 as far as I know).  I have not been home since 1937.  I feel a little lonesome occasionally, but having plenty of work and much to learn, I am too much occupied to feel homesick, and find the life and my job very interesting.\n\nI wrote your mother when I was in Philadelphia for some days ago, I hope she has got my letter.\n\nWe are now laying in New York only for a night.  When I get more time, I will write you a longer letter.  I would appreciate hearing from you and your family.  Wishing you the best of health, and complete happiness.\n\nVery truly yours,\n\nOdd Conrad Holm\n\nM/T Thorshov. The Norwegian Shipping and Trade Mission. New York. N.Y."
+    ],
+    "LetterDate": [
+      "1944-11-04"
+    ],
+    "Location": [
+      "New York"
+    ],
+    "Destination": [
+      "USA"
+    ]
+  },
+  "tags": [
+    "1940s",
+    "Carnegie Public Library",
+    "Dell Rapids",
+    "Germans",
+    "Grace Vilson",
+    "John Holm",
+    "New York",
+    "Odd Conrad Holm",
+    "Oran",
+    "Philadelphia",
+    "US Navy",
+    "censorship",
+    "oil tanker",
+    "prison camp",
+    "sailors",
+    "wartime"
+  ],
+  "files": [
+    {
+      "original": "Odd Holm 4 november-1944.pdf",
+      "filename": "3da688b482f8f2df770ac97aa303b8b6.pdf",
+      "mime_type": "application/pdf"
+    }
+  ],
+  "english-tfidf": [
+    {
+      "term": "port",
+      "score": 0.048813309949084074
+    },
+    {
+      "term": "york",
+      "score": 0.041776282735277524
+    },
+    {
+      "term": "american",
+      "score": 0.03893633347276579
+    },
+    {
+      "term": "interesting",
+      "score": 0.037659885698646416
+    },
+    {
+      "term": "job",
+      "score": 0.037412219890679756
+    },
+    {
+      "term": "4-41",
+      "score": 0.027925168581445316
+    },
+    {
+      "term": "consentration",
+      "score": 0.027925168581445316
+    },
+    {
+      "term": "oran",
+      "score": 0.027925168581445316
+    },
+    {
+      "term": "desert",
+      "score": 0.027925168581445316
+    },
+    {
+      "term": "navy",
+      "score": 0.027925168581445316
+    },
+    {
+      "term": "sailing",
+      "score": 0.027925168581445316
+    },
+    {
+      "term": "onboard",
+      "score": 0.027925168581445316
+    },
+    {
+      "term": "two-three",
+      "score": 0.027925168581445316
+    },
+    {
+      "term": "interference",
+      "score": 0.027925168581445316
+    },
+    {
+      "term": "carnegie",
+      "score": 0.027925168581445316
+    }
+  ]
+}

@@ -1,0 +1,183 @@
+{
+  "id": 161,
+  "added": "2010-12-29 22:16:08",
+  "modified": "2010-12-30 03:46:10",
+  "public": true,
+  "metadata": {
+    "Title": [
+      "Sonja Bakken to John Holm 1947.6.10"
+    ],
+    "Description": [
+      "BREV FRA SONJA BAKKEN (OLA'S DATTER), KLOSTERGT. 36A, TRONDHEIM DATERT 10.  JUNI – 1947, TIL MR.  JOHN HOLM, 108 WEST FIFTH SREET, DELL RAPIDS, SOUTH DAKOTA, U.S.A.  FRIMERKET ER KLIPPET UT.\n\n\n<-SPLITDESC->\n\n\nLETTER FROM SONJA BAKKEN (OLA'S OLDEST DAUGHTER) DATED JUNE 10 – 1947, TO MR.  JOHN HOLM, 108 WEST FIFTH STREE, DELL RAPIDS, SOUTH DAKOTA, U.S.A.  THE STAMP HAS BEEN REMOVED."
+    ],
+    "Creator": [
+      "Sonja Bakken",
+      "Siri Lawson, trans."
+    ],
+    "Date": [
+      "1947.06.10"
+    ],
+    "Language": [
+      "Norwegian",
+      "English trans."
+    ],
+    "Text": [
+      "Trondheim 10 juni 1947\n\nKjære onkel John!\n\nEvelyn fortalte meg at du hadde skrevet til henne og at du ble gla over brev fra oss i Norge.\n\nJeg heter Sonja og er den eldste av oss født i 1914 det året du var i Norge.\n\nNo har jeg vært gift i 7 år.  Har en liten pike på 2 år som heter Berit som mor.  Dessuten har jeg to store snille gutter av min manns første ekteskap.  Han var nemlig enkemann.  Min mann er lokomotivfører så vi har det riktig godt.  Vi har leilighet like ved Domkirken.\n\nJeg og min mann har tatt imot Jesus som vår personlige frelser, så vi er lykkelige.  Det er det beste av alt og ha ordnet den sak enten man er ung eller gammel.  Mor er en kristen og likeså Agnes vår halvsøster.  Far går ofte og hører Guds ord, men har dessverre ikke tatt imot Jesus enda.  Vi må bare fortsette og be at så må skje.  Forstår av ditt brev at du er rede og det gleder meg meget.\n\nHer i Trondheim får vi snart besøk av et sangkor fra Minnesota.  De skal reise rundt i landet og holde konserter.  Ellers er det mange fra U.S.A. på besøk her i sommer.\n\nVi har et lite sommerhus som ligger utenfor byen.  Dit reiser vi og bor til høsten setter inn.  Skal ved anledning sende deg noen billeder så du får se.\n\nFar er ofte på besøk hos oss og morrer seg med barnebarna.\n\nSå må du hilse dine kjære og lev så vel\n\nfra Sonja Bakken\n\nKlostergaten 36 a, Trondheim, Norge\n\n\n<-SPLITTLETTER->\n\n\nTrondheim 10 June 1947\n\nDear uncle John!\n\nEvelyn told me that you had written to her and that you like receiving letters from us in Norway.\n\nMy name is Sonja and I’m the oldest one of us  born in 1914 the year you were in Norway.\n\nI’ve been married for 7 years now.  Have a little girl who’s 2 years old and called Berit like mother.  I also have two big, good boys from my husband’s first marriage.  He was a widower you see.  My husband is a locomotive driver so we’re doing really well.  We have an apartment close to the Domkirke (the Cathedral in Trondheim).\n\nMy husband and I have received Jesus as our personal saviour, so we are happy.  The best of all is to have such matters taken care of whether you’re young or old.  Mother is a christian and so is Agnes our half sister.  Father often goes to listen to God’s word, but has unfortunately not received Jesus yet.  We’ll just have to keep praying that he will.  Understand from your letter that you’re ready and that pleases me very much.\n\nHere in Trondheim we’ll soon get a visit from a choir from Minnesota.  They’re going to travel around the country and give concerts.  There are also many others from U.S.A. visiting here this summer.\n\nWe have a little summer house outside of town.  We go there and live until the autumn starts.  I’ll send you some pictures some time so that you’ll see it.\n\nFather often visits us and has fun playing with his grandchildren.\n\nSay hello to your loved ones and keep well\n\nfrom Sonja Bakken\n\nKlostergaten 36a, Trondheim, Norway."
+    ],
+    "LetterDate": [
+      "1947-06-10"
+    ],
+    "Location": [
+      "Trondheim"
+    ],
+    "Destination": [
+      "Dell Rapids"
+    ]
+  },
+  "tags": [
+    "1940s",
+    "Evelyn Holm",
+    "God",
+    "Jesus",
+    "John Holm",
+    "Minnesota",
+    "Norway to US",
+    "Sonja Bakken",
+    "Trondheim",
+    "cathedral",
+    "choir",
+    "postwar",
+    "train"
+  ],
+  "files": [
+    {
+      "original": "Sonja Bakken 10 juni-1947.pdf",
+      "filename": "b645c8916f08081d79fd02ab2ac13fea.pdf",
+      "mime_type": "application/pdf"
+    }
+  ],
+  "norwegian-tfidf": [
+    {
+      "term": "besøk",
+      "score": 0.0477667416798657
+    },
+    {
+      "term": "sonja",
+      "score": 0.047477196358197055
+    },
+    {
+      "term": "imot",
+      "score": 0.04515035337216984
+    },
+    {
+      "term": "lokomotivfører",
+      "score": 0.044591844987728904
+    },
+    {
+      "term": "personlige",
+      "score": 0.044591844987728904
+    },
+    {
+      "term": "lykkelige",
+      "score": 0.044591844987728904
+    },
+    {
+      "term": "sangkor",
+      "score": 0.044591844987728904
+    },
+    {
+      "term": "konserter",
+      "score": 0.044591844987728904
+    },
+    {
+      "term": "morrer",
+      "score": 0.044591844987728904
+    },
+    {
+      "term": "klostergaten",
+      "score": 0.044591844987728904
+    },
+    {
+      "term": "heter",
+      "score": 0.042185775212918546
+    },
+    {
+      "term": "manns",
+      "score": 0.038956502056347236
+    },
+    {
+      "term": "enkemann",
+      "score": 0.038956502056347236
+    },
+    {
+      "term": "domkirken",
+      "score": 0.038956502056347236
+    },
+    {
+      "term": "halvsøster",
+      "score": 0.038956502056347236
+    }
+  ],
+  "english-tfidf": [
+    {
+      "term": "trondheim",
+      "score": 0.04705275670274822
+    },
+    {
+      "term": "sonja",
+      "score": 0.04624108430052268
+    },
+    {
+      "term": "husband",
+      "score": 0.04530092768713269
+    },
+    {
+      "term": "domkirke",
+      "score": 0.04331699378381675
+    },
+    {
+      "term": "personal",
+      "score": 0.04331699378381675
+    },
+    {
+      "term": "concerts",
+      "score": 0.04331699378381675
+    },
+    {
+      "term": "klostergaten",
+      "score": 0.04331699378381675
+    },
+    {
+      "term": "36a",
+      "score": 0.04331699378381675
+    },
+    {
+      "term": "receiving",
+      "score": 0.03785914196838411
+    },
+    {
+      "term": "widower",
+      "score": 0.03785914196838411
+    },
+    {
+      "term": "cathedral",
+      "score": 0.03785914196838411
+    },
+    {
+      "term": "matters",
+      "score": 0.03785914196838411
+    },
+    {
+      "term": "choir",
+      "score": 0.03785914196838411
+    },
+    {
+      "term": "locomotive",
+      "score": 0.03466650332186313
+    },
+    {
+      "term": "driver",
+      "score": 0.03466650332186313
+    }
+  ]
+}

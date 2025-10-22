@@ -1,0 +1,180 @@
+{
+  "id": 27,
+  "added": "2010-12-23 23:08:32",
+  "modified": "2010-12-30 04:07:19",
+  "public": true,
+  "metadata": {
+    "Title": [
+      "John Holm to Axel Holm 1946.7.8 Partial Letter"
+    ],
+    "Description": [
+      "MASKINSKREVET AVSKRIFT AV EN DEL AV ET BREV FRA JOHN HOLM DATERT 8.  JULI – 1946, TIL AXEL HOLM.  DET ER MULIG DET VAR DETTE OLA VEDLA I BREV TIL KAROLINE HOLM DATERT 9.  MARS – 1947 (EGENTLIG 1948).  INGEN KONVOLUTT.\n\n\n<-SPLITDESC->\n\n\nTYPEWRITTEN COPY OF PART OF A LETTER FROM JOHN HOLM DATED JULY 8 – 1946, TO AXEL HOLM.  IT'S POSSIBLE THIS IS THE LETTER OLE MENTIONS IN HIS LETTER TO KAROLINE HOLM DATED MARCH 9 – 1947 (SUPPOSED TO BE 1948).  NO ENVELOPE."
+    ],
+    "Creator": [
+      "John Holm",
+      "Siri Lawson, trans."
+    ],
+    "Date": [
+      "1946.07.08"
+    ],
+    "Language": [
+      "Norwegian",
+      "English trans."
+    ],
+    "Text": [
+      "Avskrift\n\nJulay 8 1946\n\nDell Rapids So Dakota.\n\nKjære broder. Axel\n\n…….Nu i Dag sender jeg To hunder Daler tel Stjørdalens Sparebank for å sette inn på banken, i mitt navn.  Du kunde ta vare pa bank boken.  Jeg skal snart sendd mer penger som settes inn.  Om ikke jeg skulle komme til aa dra dem ut av banken selv, det kunne treffe saaledes at jeg kunne dø. Saa skal pengene deles ligt i mellem mine søsken.  Du faar din del, Ole sin og Laura sin og Hanna sin del alle ligt.  Jeg kommer til aa sende litt penger til banken nu og da, til jeg faar lit der.  Du gaar der bort til banken og taler med ham.  Naar pengene kommer der saa skriv til mig og lat mig høre hvor mange kroner det blir for hundre daler…….\n\nBedste hilsen John\n\n \n\nRett avskrift\n\nB. Køhler (signatur)\n\n \n\nStemplet  STJØRDALENS SPAREBANK\n\nKan ikke tyde underskriften, ser ut som O Sivertsen\n\nNederst i venstre hjørne står det skrevet med blyant:\n\n \n\n$ 1.025,-\n\nU. 38.  Kr. 5.160,05\n\n \n\n\n<-SPLITTLETTER->\n\n\nTranscript\n\nJulay 8 1946\n\nDell Rapids So Dakota\n\nDear brother. Axel\n\n \n\n…….Today I’m sending Two hundred Dollars to Stjørdalen Sparebank (savings bank) for deposit in the bank, in my name.  You could take care of the bank book.  I’ll soon send more money to be deposited.  If I were not to withdraw it from the bank myself, it could so happen that I could die. Then the money is to be divided equally between my siblings.  You get your share, Ole his and Laura hers and Hanna her share all equal.  I will be sending a little money to the bank now and then, until I get some there.  You’ll go over there to the bank and talk with him.  When the money gets there write to me and let me know how many kroner a hundred dollars turns out to be…….\n\nBest wishes John\n\nCertified transcript\n\nB. Køhler (signature)\n\nStamped STJØRDALENS SPAREBANK\n\nCan’t quite read the signature, looks like O Sivertsen\n\nIn the lower left corner of the paper it’s written in pencil:\n\n$ 1.025,-\n\nU. 38.  Kr. 5.160,05"
+    ],
+    "LetterDate": [
+      "1948-07-08"
+    ],
+    "Location": [
+      "Dell Rapids"
+    ],
+    "Destination": [
+      "Norway"
+    ]
+  },
+  "tags": [
+    "1940s",
+    "Axel Holm",
+    "Dell Rapids",
+    "John Holm",
+    "Karoline Holm",
+    "Stjørdalens Sparebank",
+    "US to Norway",
+    "bank",
+    "finances",
+    "postwar"
+  ],
+  "files": [
+    {
+      "original": "Avskrift John til Axel-penger.pdf",
+      "filename": "a2475501debbf13cb027eb3679c0970a.pdf",
+      "mime_type": "application/pdf"
+    }
+  ],
+  "norwegian-tfidf": [
+    {
+      "term": "ligt",
+      "score": 0.09583299505861419
+    },
+    {
+      "term": "banken",
+      "score": 0.0939721087024602
+    },
+    {
+      "term": "daler",
+      "score": 0.08772369289645092
+    },
+    {
+      "term": "avskrift",
+      "score": 0.08197005144741529
+    },
+    {
+      "term": "stjørdalens",
+      "score": 0.07386074928525199
+    },
+    {
+      "term": "sparebank",
+      "score": 0.06364423680993218
+    },
+    {
+      "term": "aa",
+      "score": 0.061738033213845696
+    },
+    {
+      "term": "hunder",
+      "score": 0.05484796933490655
+    },
+    {
+      "term": "tel",
+      "score": 0.05484796933490655
+    },
+    {
+      "term": "sendd",
+      "score": 0.05484796933490655
+    },
+    {
+      "term": "settes",
+      "score": 0.05484796933490655
+    },
+    {
+      "term": "lat",
+      "score": 0.05484796933490655
+    },
+    {
+      "term": "køhler",
+      "score": 0.05484796933490655
+    },
+    {
+      "term": "stemplet",
+      "score": 0.05484796933490655
+    },
+    {
+      "term": "underskriften",
+      "score": 0.05484796933490655
+    }
+  ],
+  "english-tfidf": [
+    {
+      "term": "bank",
+      "score": 0.14077157518342964
+    },
+    {
+      "term": "transcript",
+      "score": 0.09367331748673653
+    },
+    {
+      "term": "signature",
+      "score": 0.09367331748673653
+    },
+    {
+      "term": "hundred",
+      "score": 0.08755242232818801
+    },
+    {
+      "term": "sparebank",
+      "score": 0.07280460997584874
+    },
+    {
+      "term": "share",
+      "score": 0.07280460997584874
+    },
+    {
+      "term": "equal",
+      "score": 0.058524023516433266
+    },
+    {
+      "term": "køhler",
+      "score": 0.058524023516433266
+    },
+    {
+      "term": "stamped",
+      "score": 0.058524023516433266
+    },
+    {
+      "term": "025",
+      "score": 0.058524023516433266
+    },
+    {
+      "term": "dollars",
+      "score": 0.055550775588267286
+    },
+    {
+      "term": "money",
+      "score": 0.05392134918925393
+    },
+    {
+      "term": "deposited",
+      "score": 0.05115011734026364
+    },
+    {
+      "term": "sivertsen",
+      "score": 0.05115011734026364
+    },
+    {
+      "term": "lower",
+      "score": 0.05115011734026364
+    }
+  ]
+}

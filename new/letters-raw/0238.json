@@ -1,0 +1,180 @@
+{
+  "id": 238,
+  "added": "2010-12-31 22:44:47",
+  "modified": "2010-12-31 22:44:47",
+  "public": true,
+  "metadata": {
+    "Title": [
+      "Herborg Holm to Alma C. Wilson Card 1948.11.24"
+    ],
+    "Description": [
+      "JULEKORT FRA HERBORG HOLM DATERT 24.  NOVEMBER – 1948, INGEN KONVOLUTT.\n\n\n<-SPLITDESC->\n\n\nCHRISTMAS CARD FROM HERBORG HOLM DATED NOVEMBER 24 – 1948, NO ENVELOPE."
+    ],
+    "Creator": [
+      "Herborg Holm",
+      "Siri Lawson, trans."
+    ],
+    "Date": [
+      "1948.11.24"
+    ],
+    "Language": [
+      "Norwegian",
+      "English trans."
+    ],
+    "Text": [
+      "Stjørdal 24-11-48\n\nKjære Alma!\n\nHvordan lever dere!  Det er så lenge (siden) vi har hørt noe fra deg.  Er Grace helt frisk nu etter at hun brakk en fot i ankelen?  Du må hilse henne og alle dine sønner fra meg.  Lille Ruth Irene er vel stor nu og morsom kan jeg tenke.  Det er bare bra med oss alle her.  Her er sne og kaldt nu.\n\nSå vil jeg ønske dere alle en riktig god jul og et godt nytt år!\n\nHjertelig hilsen fra Herborg\n\nKortet har ett vers av “Det kimer nu til julefest”.\n\n\n<-SPLITTLETTER->\n\n\nStjørdal 24-11-48\n\nDear Alma!\n\nHow are you all!  It’s been so long since we’ve heard anything from you.  Is Grace completely well now after having broken her foot in the ankle?  You must give her and all your sons my regards.  Little Ruth Irene is probably big now and fun I imagine.  All of us here are doing just fine.  We’re having snow and cold weather now.\n\nI wish you all a Merry Christmas and a Happy New Year!\n\nBest wishes from Herborg\n\nThe card has one verse of a Norwegian Christmas carol on it."
+    ],
+    "LetterDate": [
+      "1948-11-24"
+    ],
+    "Location": [
+      "Stjørdal"
+    ],
+    "Destination": [
+      "Dell Rapids"
+    ]
+  },
+  "tags": [
+    "1940s",
+    "Alma C. Wilson",
+    "Christmas",
+    "Grace Vilson",
+    "Herborg Holm",
+    "New Year",
+    "Norway to US",
+    "Ruth Irene",
+    "Stjørdal",
+    "postwar"
+  ],
+  "files": [
+    {
+      "original": "Herborg Holm Jul 24 nov-1948.pdf",
+      "filename": "a32adfe1552b140c37d845aeb6f6e8ab.pdf",
+      "mime_type": "application/pdf"
+    }
+  ],
+  "norwegian-tfidf": [
+    {
+      "term": "24-11-48",
+      "score": 0.14063581880745268
+    },
+    {
+      "term": "ankelen",
+      "score": 0.14063581880745268
+    },
+    {
+      "term": "kimer",
+      "score": 0.14063581880745268
+    },
+    {
+      "term": "brakk",
+      "score": 0.12286281417771049
+    },
+    {
+      "term": "vers",
+      "score": 0.11246627294416783
+    },
+    {
+      "term": "irene",
+      "score": 0.09469326831442564
+    },
+    {
+      "term": "morsom",
+      "score": 0.09469326831442564
+    },
+    {
+      "term": "kortet",
+      "score": 0.09469326831442564
+    },
+    {
+      "term": "fot",
+      "score": 0.09074068678039338
+    },
+    {
+      "term": "ruth",
+      "score": 0.09074068678039338
+    },
+    {
+      "term": "julefest",
+      "score": 0.09074068678039338
+    },
+    {
+      "term": "kaldt",
+      "score": 0.0791513246331355
+    },
+    {
+      "term": "sønner",
+      "score": 0.07296768215065119
+    },
+    {
+      "term": "tenke",
+      "score": 0.06798932280601125
+    },
+    {
+      "term": "grace",
+      "score": 0.06382217076760677
+    }
+  ],
+  "english-tfidf": [
+    {
+      "term": "24-11-48",
+      "score": 0.14476995290907177
+    },
+    {
+      "term": "carol",
+      "score": 0.14476995290907177
+    },
+    {
+      "term": "ankle",
+      "score": 0.12652923763117846
+    },
+    {
+      "term": "verse",
+      "score": 0.11585910320727939
+    },
+    {
+      "term": "irene",
+      "score": 0.0976183879293861
+    },
+    {
+      "term": "foot",
+      "score": 0.09356179109182666
+    },
+    {
+      "term": "ruth",
+      "score": 0.09356179109182666
+    },
+    {
+      "term": "broken",
+      "score": 0.08166744573016727
+    },
+    {
+      "term": "card",
+      "score": 0.07350547393269781
+    },
+    {
+      "term": "sons",
+      "score": 0.07180709179749857
+    },
+    {
+      "term": "merry",
+      "score": 0.07021170701285555
+    },
+    {
+      "term": "christmas",
+      "score": 0.059568966214616076
+    },
+    {
+      "term": "completely",
+      "score": 0.058037403803694675
+    },
+    {
+      "term": "grace",
+      "score": 0.05275659602837491
+    },
+    {
+      "term": "snow",
+      "score": 0.05120816181724508
+    }
+  ]
+}

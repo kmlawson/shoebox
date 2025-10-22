@@ -1,0 +1,113 @@
+{
+  "id": 198,
+  "added": "2010-12-30 21:55:31",
+  "modified": "2010-12-30 21:55:31",
+  "public": true,
+  "metadata": {
+    "Title": [
+      "Funeral of Johan Øyan Undated"
+    ],
+    "Description": [
+      "MALERMESTER JOH. ØYANS\n\n\n<-SPLITDESC->\n\n\nFUNERAL FOR MASTER PAINTER JOH. ØYAN\n\nI don't think this is of any interest to you so I didn't translate it,  it just describes this man's funeral, he was obviously a friend of Axel's, as he mentions him and his family in a couple of his letters.  I'm beginning to think that Axel was a member of some kind of a religious order, because the word –lodge– is used in some of his letters, and also the term –brother–. He may even have been a Mason. I'll ask his daughter in law Astrid next time I speak to her.  Some of the mourners above are referred to as sisters or brothers of so and so order.  The only mention of Axel in the description of the funeral above is that he put down a wreath on behalf of the newly formed Christian association in Stjørdalen called the Friends, or the Association of the Friends.\n"
+    ],
+    "Language": [
+      "Norwegian"
+    ],
+    "Text": [
+      "begravelse foregik fredag den 2den februar fra godtemplarlokalet i Stjørdalen til Værnes kirkegaard under sjelden stor deltagelse.  Den vakre og gripende høitidelighet indlededes med sangen –Jeg vet mig en søvn i Jesu navn– av Stjørdalens mandssangkor.\nSogneprest Selmer holdt en stemningsfuld tale som mindet om avdødes kjærlighet og hjertelige forhold til hustru og barn.  Derefter sang koret:  –Jeg vet mig en morgen lys og skjøn–, hvorefter overlærer Krogstad nedla en vakker krans fra avdødes barn, svigerbarn og barnebarn.\nEndvidere blev nedlagt kranse fra Stjørdalens herredsstyre ved ordfører N. M. Vaagland med tak for 16 aars uavbrutt virke; fra losjene Ole Vig og Forsøk av I. O. G. T.  Ved avdødes ordenssøskende lærer Størret og Olaf Køler med tak for trofast arbeide for avholdssaken i 30 aar; fra indremissionen ved sekretær Svebak med en varm tak for avdødes missionsarbeide, og distriktslosjen ved losjefuldmægtig G. Jonsen med tak for værdifuldt virke for godtemplarordenen, fra barnelosjen Fridheim ved lærerinde Marie Skærvold som takket rørt for avdødes faderlige omhu for alle de barn han paa stedet kunde samle for avholdssaken, fra stedets kristelige ungdomsforeninger ved dens formand urmaker Rød, fra søndagsskolen ved dens bestyrer urmaker Rød, fra Stjørdalens arbeiderlag ved A. Mathisen med nogen velvalgte ord til avdøde som en trofast og god partiets mand som evnet meget ogsaa for arbeiderpartiet.  Endelig nedlagdes krans fra kinamissionen og fra den nye kristelige forening Vennernes lag i Stjørdalen ved bakermester A. Holm.\nDen rikt blomstersmykkede kiste blev baaet ut av lokalet av ordenssøskende.  I spidsen for sørgetoget gik barnelosjen, losje Forsøket og Ole Vig med floromvunden fane.  I toget saaes repræsentanter fra alle foreninger indenbygds og utenbygds som han tilhørte samt stedets ordfører.  Fra kirken til graven blev kisten baaret av indremissionsvenner, hvorefter koret sang.  Sognepresten forrettet og sangkoret sang igjen.  Begravelsen avsluttedes med at 3 ordenssøskende læste begravelsesritualiet, hvorefter alle ordenssøskende dannet ring om graven med avsyngelsen av sangen –Og hvor livets baand er opløst–.  Derefter blev fanerne sænket 3 ganger over graven.\n\n\n\n<-SPLITTLETTER->\n\n\nNo translation.\n"
+    ],
+    "Location": [
+      "Stjørdal"
+    ],
+    "Destination": [
+      ""
+    ]
+  },
+  "tags": [
+    "Society of Friends",
+    "Stjørdal",
+    "Sunday School",
+    "Værnes",
+    "church",
+    "funeral",
+    "grave",
+    "labor party",
+    "preacher",
+    "quakers"
+  ],
+  "files": [
+    {
+      "original": "Malermester Joh Øians begr.pdf",
+      "filename": "29727c8c0681943c9316ea5bf35d6fca.pdf",
+      "mime_type": "application/pdf"
+    }
+  ],
+  "norwegian-tfidf": [
+    {
+      "term": "avdødes",
+      "score": 0.12935841824270414
+    },
+    {
+      "term": "ordenssøskende",
+      "score": 0.1034867345941633
+    },
+    {
+      "term": "hvorefter",
+      "score": 0.07761505094562247
+    },
+    {
+      "term": "graven",
+      "score": 0.07761505094562247
+    },
+    {
+      "term": "stjørdalens",
+      "score": 0.05225996411692358
+    },
+    {
+      "term": "koret",
+      "score": 0.05174336729708165
+    },
+    {
+      "term": "krans",
+      "score": 0.05174336729708165
+    },
+    {
+      "term": "ordfører",
+      "score": 0.05174336729708165
+    },
+    {
+      "term": "vig",
+      "score": 0.05174336729708165
+    },
+    {
+      "term": "g",
+      "score": 0.05174336729708165
+    },
+    {
+      "term": "avholdssaken",
+      "score": 0.05174336729708165
+    },
+    {
+      "term": "barnelosjen",
+      "score": 0.05174336729708165
+    },
+    {
+      "term": "stedets",
+      "score": 0.05174336729708165
+    },
+    {
+      "term": "kristelige",
+      "score": 0.05174336729708165
+    },
+    {
+      "term": "urmaker",
+      "score": 0.05174336729708165
+    }
+  ],
+  "english-tfidf": [
+    {
+      "term": "translation",
+      "score": 4.402645921876617
+    }
+  ]
+}

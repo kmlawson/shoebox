@@ -1,0 +1,161 @@
+{
+  "id": 199,
+  "added": "2010-12-30 21:58:28",
+  "modified": "2011-01-07 14:28:50",
+  "public": true,
+  "metadata": {
+    "Language": [
+      "Norwegian"
+    ],
+    "Text": [
+      "Animia Minn (Onamia)\n\nKjære Mrs Holm,\n\nVi kom hid fredagen  det var en lang trip op here  vi komer hjem en gang dene uge  det regner næsten hver dag men gode veier\n\nMrs. Hall.\n\n \n\n<-SPLITTLETTER->\n\n\n\nAnimia Minn (probably Onamia)\n\nDear Mrs Holm,\n\nWe arrived here on the Friday  it was a long trip up here  we’re coming home some time this week  it rains almost every day but good roads\n\nMrs. Hall.\n\n \n\n2011.1 - Corrected –Animia Minn  (tror Animia er et sted i Minnesota)– - to –Onamia–"
+    ],
+    "Title": [
+      "Mrs. Hall to Karoline Holm Undated"
+    ],
+    "Description": [
+      "POSTKORT TIL MRS.  JOHN HOLM (KAROLINE), COLMAN, S.D.  MED BILDE AV MILLE LAC LAKE.  INGEN DATO, INGEN FRIMERKER.  JEG HUSKER IKKE NØYAKTIG NÅR JOHN OG KAROLINE BODDE I COLMAN, TROR DET VAR LIKE FØR DE KOM TIL DELL RAPIDS.\n\n\n<-SPLITDESC->\n\n\nPOSTCARD TO MRS.  JOHN HOLM, COLMAN, S.D.  WITH A PICTURE OF MILLE LAC LAKE.  NO DATE, NO STAMPS.  I'M NOT SURE WHEN JOHN AND CAROLINE LIVED IN COLMAN."
+    ],
+    "Destination": [
+      "Colman"
+    ]
+  },
+  "tags": [
+    "Karoline Holm",
+    "Mille Lac Lake",
+    "Onamia",
+    "US to US",
+    "rain"
+  ],
+  "files": [
+    {
+      "original": "Mrs Hall-postkort.pdf",
+      "filename": "a45b0698a1ac56604dd27522add49e50.pdf",
+      "mime_type": "application/pdf"
+    }
+  ],
+  "norwegian-tfidf": [
+    {
+      "term": "mrs",
+      "score": 0.2710228194167044
+    },
+    {
+      "term": "animia",
+      "score": 0.2611808063566978
+    },
+    {
+      "term": "onamia",
+      "score": 0.2611808063566978
+    },
+    {
+      "term": "fredagen",
+      "score": 0.2611808063566978
+    },
+    {
+      "term": "trip",
+      "score": 0.2611808063566978
+    },
+    {
+      "term": "dene",
+      "score": 0.2611808063566978
+    },
+    {
+      "term": "hall",
+      "score": 0.2611808063566978
+    },
+    {
+      "term": "minn",
+      "score": 0.20886593546774027
+    },
+    {
+      "term": "here",
+      "score": 0.20886593546774027
+    },
+    {
+      "term": "veier",
+      "score": 0.20886593546774027
+    },
+    {
+      "term": "hid",
+      "score": 0.19516678916051255
+    },
+    {
+      "term": "uge",
+      "score": 0.19516678916051255
+    },
+    {
+      "term": "komer",
+      "score": 0.1758589268696476
+    },
+    {
+      "term": "regner",
+      "score": 0.16851841830644484
+    },
+    {
+      "term": "næsten",
+      "score": 0.15655106457878265
+    }
+  ],
+  "english-tfidf": [
+    {
+      "term": "animia",
+      "score": 0.4854051362245348
+    },
+    {
+      "term": "onamia",
+      "score": 0.32360342414968984
+    },
+    {
+      "term": "minn",
+      "score": 0.2589791718750951
+    },
+    {
+      "term": "-",
+      "score": 0.16836475770173345
+    },
+    {
+      "term": "roads",
+      "score": 0.16180171207484492
+    },
+    {
+      "term": "hall",
+      "score": 0.16180171207484492
+    },
+    {
+      "term": "2011",
+      "score": 0.16180171207484492
+    },
+    {
+      "term": "corrected",
+      "score": 0.16180171207484492
+    },
+    {
+      "term": "tror",
+      "score": 0.16180171207484492
+    },
+    {
+      "term": "er",
+      "score": 0.16180171207484492
+    },
+    {
+      "term": "et",
+      "score": 0.16180171207484492
+    },
+    {
+      "term": "sted",
+      "score": 0.16180171207484492
+    },
+    {
+      "term": "mrs",
+      "score": 0.1417773974815536
+    },
+    {
+      "term": "rains",
+      "score": 0.14141503029367006
+    },
+    {
+      "term": "minnesota",
+      "score": 0.12948958593754756
+    }
+  ]
+}

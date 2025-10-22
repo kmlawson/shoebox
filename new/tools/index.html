@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Analysis tools for Norwegian-American family correspondence (1911-1956)">
+  <title>Tools - A Shoebox of Norwegian Letters</title>
+
+  <link rel="stylesheet" href="../styles.css">
+  <link rel="stylesheet" href="stats.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-content">
+      <h1 class="site-title"><a href="../index.html" id="site-title-link">A Shoebox of Norwegian Letters</a></h1>
+
+      <div class="header-controls">
+        <!-- Dark mode toggle -->
+        <button id="dark-mode-toggle" class="icon-button" aria-label="Toggle dark mode" title="Toggle dark mode">
+          <span class="icon-sun">☀</span>
+          <span class="icon-moon">☾</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <div class="main-container">
+    <!-- Sidebar for analysis options -->
+    <aside id="sidebar" class="sidebar">
+      <button id="sidebar-toggle" class="sidebar-toggle" aria-expanded="false" aria-label="Toggle stats sidebar">
+        <span class="toggle-icon">☰</span>
+        <span class="toggle-text">Statistics Options</span>
+      </button>
+
+      <div class="sidebar-content">
+        <div class="map-link-section">
+          <a href="../index.html" class="map-link">
+            Back to Letters
+          </a>
+        </div>
+
+        <hr class="sidebar-separator">
+
+        <!-- Analysis type selection -->
+        <div class="filter-section">
+          <h3 class="filter-heading">Analysis Type:</h3>
+          <div class="filter-buttons">
+            <button class="filter-button active" data-analysis="frequency">Word Frequency</button>
+            <button class="filter-button" data-analysis="collocation">Collocation</button>
+            <!-- <button class="filter-button" data-analysis="tfidf">TF-IDF Explorer</button> -->
+            <button class="filter-button" data-analysis="context">Context Explorer</button>
+            <button class="filter-button" data-analysis="wordcloud">Word Cloud</button>
+            <button class="filter-button" data-analysis="places">Places</button>
+          </div>
+        </div>
+
+        <hr class="sidebar-separator">
+
+        <div class="results-summary">
+          <span id="results-count">Ready to analyze</span>
+        </div>
+
+        <hr class="sidebar-separator">
+
+        <!-- Corpus Statistics -->
+        <div class="corpus-stats-section">
+          <h3 class="filter-heading">Corpus Statistics:</h3>
+
+          <div class="corpus-stat-item">
+            <span class="stat-label">Total Letters:</span>
+            <span class="stat-value" id="stat-total-letters">-</span>
+          </div>
+          <div class="corpus-stat-item">
+            <span class="stat-label">Total Words:</span>
+            <span class="stat-value" id="stat-total-words">-</span>
+          </div>
+          <div class="corpus-stat-item">
+            <span class="stat-label">Avg. Letter Length:</span>
+            <span class="stat-value" id="stat-avg-length">-</span>
+          </div>
+          <div class="corpus-stat-item">
+            <span class="stat-label">Unique Creators:</span>
+            <span class="stat-value" id="stat-unique-creators">-</span>
+          </div>
+          <div class="corpus-stat-item">
+            <span class="stat-label">Unique Locations:</span>
+            <span class="stat-value" id="stat-unique-locations">-</span>
+          </div>
+          <div class="corpus-stat-item">
+            <span class="stat-label">Unique Destinations:</span>
+            <span class="stat-value" id="stat-unique-destinations">-</span>
+          </div>
+        </div>
+
+        <hr class="sidebar-separator">
+
+        <div class="map-link-section">
+          <a href="../map/map.html" class="map-link" target="_blank">
+            See Map
+          </a>
+        </div>
+
+        <hr class="sidebar-separator">
+
+        <div class="download-section">
+          <h3 class="filter-heading">Download Corpus:</h3>
+          <button id="download-json" class="map-link download-btn">Letters JSON</button>
+          <button id="download-txt" class="map-link download-btn">Letters TXT</button>
+        </div>
+      </div>
+    </aside>
+
+    <!-- Main content area -->
+    <main id="main-content" class="main-content">
+      <!-- Loading state -->
+      <div id="loading" class="loading-screen" aria-live="polite">
+        <div class="loading-spinner"></div>
+        <p>Loading letters data...</p>
+      </div>
+
+      <!-- Tool Options Area (appears at top right when a tool is selected) -->
+      <div id="tool-options-container" class="tool-options-container">
+        <!-- Word Frequency Options -->
+        <div id="frequency-options" class="analysis-options">
+          <h3 class="filter-heading">Frequency Options:</h3>
+
+          <div class="option-group-row">
+            <div class="option-group">
+              <label for="language-select">Language:</label>
+              <select id="language-select" class="stats-select">
+                <option value="norwegian">Norwegian</option>
+                <option value="english">English Translation</option>
+              </select>
+            </div>
+
+            <div class="option-group">
+              <label for="top-n-select">Top N Words:</label>
+              <select id="top-n-select" class="stats-select">
+                <option value="20">20</option>
+                <option value="50">50</option>
+                <option value="100" selected>100</option>
+                <option value="200">200</option>
+                <option value="500">500</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="option-group-row">
+            <div class="option-group">
+              <label for="year-range-start">Year Range:</label>
+              <div class="year-range-inputs">
+                <input type="number" id="year-range-start" min="1911" max="1956" value="1911" class="year-input">
+                <span>to</span>
+                <input type="number" id="year-range-end" min="1911" max="1956" value="1956" class="year-input">
+              </div>
+            </div>
+
+            <div class="option-group" style="display: flex; align-items: flex-end;">
+              <button id="generate-frequency" class="btn-primary" style="width: 100%;">Generate Frequency List</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Collocation Explorer Options -->
+        <div id="collocation-options" class="analysis-options" hidden>
+          <h3 class="filter-heading">Collocation Options:</h3>
+
+          <div class="option-group-row">
+            <div class="option-group">
+              <label for="collocation-language-select">Language:</label>
+              <select id="collocation-language-select" class="stats-select">
+                <option value="norwegian">Norwegian</option>
+                <option value="english">English Translation</option>
+              </select>
+            </div>
+
+            <div class="option-group">
+              <label for="collocation-ngram-type">N-gram Type:</label>
+              <select id="collocation-ngram-type" class="stats-select">
+                <option value="2" selected>Bigrams (2 words)</option>
+                <option value="3">Trigrams (3 words)</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="option-group-row">
+            <div class="option-group">
+              <label for="collocation-min-freq">Minimum Frequency:</label>
+              <select id="collocation-min-freq" class="stats-select">
+                <option value="2">2</option>
+                <option value="3" selected>3</option>
+                <option value="5">5</option>
+                <option value="10">10</option>
+              </select>
+            </div>
+
+            <div class="option-group">
+              <label for="collocation-top-n">Top N Collocations:</label>
+              <select id="collocation-top-n" class="stats-select">
+                <option value="20">20</option>
+                <option value="50">50</option>
+                <option value="100" selected>100</option>
+                <option value="200">200</option>
+              </select>
+            </div>
+          </div>
+
+          <button id="generate-collocation" class="btn-primary">Generate Collocations</button>
+        </div>
+
+        <!-- TF-IDF Options -->
+        <div id="tfidf-options" class="analysis-options" hidden>
+          <h3 class="filter-heading">TF-IDF Options:</h3>
+
+          <div class="option-group">
+            <label for="tfidf-language-select">Language:</label>
+            <select id="tfidf-language-select" class="stats-select">
+              <option value="norwegian">Norwegian</option>
+              <option value="english">English Translation</option>
+            </select>
+          </div>
+
+          <div class="option-group">
+            <label for="tfidf-top-n">Top N Words:</label>
+            <select id="tfidf-top-n" class="stats-select">
+              <option value="10">10</option>
+              <option value="20" selected>20</option>
+              <option value="50">50</option>
+              <option value="100">100</option>
+              <option value="200">200</option>
+              <option value="500">500</option>
+            </select>
+          </div>
+
+          <button id="generate-tfidf" class="btn-primary">Generate TF-IDF Analysis</button>
+        </div>
+
+        <!-- Context Explorer Options -->
+        <div id="context-options" class="analysis-options" hidden>
+          <h3 class="filter-heading">Context Explorer Options:</h3>
+
+          <div class="option-group-row">
+            <div class="option-group">
+              <label for="context-language-select">Language:</label>
+              <select id="context-language-select" class="stats-select">
+                <option value="norwegian">Norwegian</option>
+                <option value="english">English Translation</option>
+              </select>
+            </div>
+
+            <div class="option-group">
+              <label for="context-search-term">Search Term:</label>
+              <input type="text" id="context-search-term" class="search-input" placeholder="Enter word or phrase">
+            </div>
+          </div>
+
+          <div class="option-group-row">
+            <div class="option-group">
+              <label for="context-window">Context Window:</label>
+              <select id="context-window" class="stats-select">
+                <option value="3">3 words</option>
+                <option value="5" selected>5 words</option>
+                <option value="10">10 words</option>
+                <option value="20">20 words</option>
+                <option value="50">50 words</option>
+              </select>
+            </div>
+
+            <div class="option-group">
+              <label for="context-max-results">Max Results:</label>
+              <select id="context-max-results" class="stats-select">
+                <option value="20">20</option>
+                <option value="50" selected>50</option>
+                <option value="100">100</option>
+                <option value="all">All occurrences</option>
+              </select>
+            </div>
+          </div>
+
+          <button id="generate-context" class="btn-primary">Show Contexts</button>
+        </div>
+
+        <!-- Word Cloud Options -->
+        <div id="wordcloud-options" class="analysis-options" hidden>
+          <h3 class="filter-heading">Word Cloud Options:</h3>
+
+          <div class="option-group-row">
+            <div class="option-group">
+              <label for="wordcloud-language-select">Language:</label>
+              <select id="wordcloud-language-select" class="stats-select">
+                <option value="norwegian">Norwegian</option>
+                <option value="english">English Translation</option>
+              </select>
+            </div>
+
+            <div class="option-group">
+              <label for="wordcloud-max-words">Max Words in Cloud:</label>
+              <select id="wordcloud-max-words" class="stats-select">
+                <option value="50">50</option>
+                <option value="100" selected>100</option>
+                <option value="150">150</option>
+                <option value="200">200</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="option-group">
+            <label for="wordcloud-filter-word">Show words only from letters matching (optional):</label>
+            <input type="text" id="wordcloud-filter-word" class="search-input" placeholder="e.g., Christmas, family">
+            <small style="color: #6c757d; font-size: 12px; display: block; margin-top: 5px;">
+              Leave empty for all letters
+            </small>
+          </div>
+
+          <div class="option-group-row">
+            <div class="option-group">
+              <label for="wordcloud-year-range-start">Year Range:</label>
+              <div class="year-range-inputs">
+                <input type="number" id="wordcloud-year-range-start" min="1911" max="1956" value="1911" class="year-input">
+                <span>to</span>
+                <input type="number" id="wordcloud-year-range-end" min="1911" max="1956" value="1956" class="year-input">
+              </div>
+            </div>
+
+            <div class="option-group" style="display: flex; align-items: flex-end;">
+              <button id="generate-wordcloud" class="btn-primary" style="width: 100%;">Generate Word Cloud</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Places Options -->
+        <div id="places-options" class="analysis-options" hidden>
+        </div>
+      </div>
+
+      <!-- Results View -->
+      <div id="results-view" class="view stats-view" hidden>
+        <div class="stats-header">
+          <h2 id="stats-title">Word Frequency Analysis</h2>
+          <div class="stats-controls">
+            <button id="export-csv" class="btn-secondary">Export CSV</button>
+            <button id="export-json" class="btn-secondary">Export JSON</button>
+          </div>
+        </div>
+
+        <div id="stats-info" class="stats-info"></div>
+
+        <!-- Frequency List View -->
+        <div id="frequency-view" class="analysis-view">
+          <div id="frequency-table" class="stats-table-container"></div>
+        </div>
+
+        <!-- Collocation View -->
+        <div id="collocation-view" class="analysis-view" hidden>
+          <div id="collocation-table" class="stats-table-container"></div>
+        </div>
+
+        <!-- TF-IDF View -->
+        <div id="tfidf-view" class="analysis-view" hidden>
+          <div id="tfidf-chart" class="chart-container"></div>
+          <div id="tfidf-table" class="stats-table-container"></div>
+        </div>
+
+        <!-- Context Explorer View -->
+        <div id="context-view" class="analysis-view" hidden>
+          <div id="context-results" class="context-results-container"></div>
+        </div>
+
+        <!-- Word Cloud View -->
+        <div id="wordcloud-view" class="analysis-view" hidden>
+          <div id="wordcloud-container" class="wordcloud-container"></div>
+        </div>
+
+        <!-- Places View -->
+        <div id="places-view" class="analysis-view" hidden>
+          <div id="places-container" class="wordcloud-container"></div>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <!-- D3.js and d3-cloud for word cloud visualization -->
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/d3-cloud@1.2.7/build/d3.layout.cloud.min.js"></script>
+
+  <!-- App JavaScript -->
+  <script src="stats.js"></script>
+</body>
+</html>

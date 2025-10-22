@@ -1,0 +1,178 @@
+{
+  "id": 20,
+  "added": "2010-12-23 22:23:06",
+  "modified": "2010-12-30 04:07:32",
+  "public": true,
+  "metadata": {
+    "Title": [
+      "Alma C. Wilson to Trondhjems Handels Bank 1948.3.16"
+    ],
+    "Description": [
+      "BLÅPAPIR-KOPI AV ET BREV SKREVET AV ALMA WILSON, PÅ VEGNE AV SIN MOR, DATERT 16.  MARS – 1948, TIL TRONDHJEMS HANDELS BANK.\n\n\n<-SPLITDESC->\n\n\nCARBON COPY OF A LETTER WRITTEN BY ALMA WILSON, ON BEHALF OF HER MOTHER, TO TRONDHJEMS HANDELS BANK, DATED MARCH 16 – 1948."
+    ],
+    "Creator": [
+      "Alma C. Wilson",
+      "Siri Lawson, trans."
+    ],
+    "Date": [
+      "1948.03.16"
+    ],
+    "Language": [
+      "Norwegian",
+      "English trans."
+    ],
+    "Text": [
+      "Dell Rapids. S.D. March 16-48\n\nTrondhjems Handels Bank\n\nTrondhjem, norge\n\nÆrede Herrer\n\nJeg her med skriver dere for at spørge om min mand John Holm, Dell Rapids, S.D. nu har nogen penger der i deres bank.\n\nom saa hvor meget er det i amerikanske penger\n\nErbødigst\n\nMrs. John Holm\n\n108 West 5 St.\n\nDell Rapids\n\nS.D.\n\nsvar med luft post please\n\n\n<-SPLITTLETTER->\n\n\nDell Rapids, S.D. March 16-48\n\nTrondhjems Handels Bank  (commercial bank)\n\nTrondhjem, norge\n\nHonorable Gentlemen\n\nI hereby write you to ask if my husband John Holm, Dell Rapids, S.D. presently has any money there in your bank\n\nif so how much is it in American money\n\nSincerely\n\nMrs. John Holm,\n\n108 west 5 St.\n\nDell Rapids\n\nS.D.\n\nReply by air mail please"
+    ],
+    "LetterDate": [
+      "1948-03-16"
+    ],
+    "Location": [
+      "Dell Rapids"
+    ],
+    "Destination": [
+      "Trondheim"
+    ]
+  },
+  "tags": [
+    "Alma C. Wilson",
+    "Dell Rapids",
+    "John Holm",
+    "Trondhjems Handels Bank",
+    "US to Norway",
+    "bank",
+    "finances",
+    "inheritance"
+  ],
+  "files": [
+    {
+      "original": "Alma-Tr heim H bank-1948.pdf",
+      "filename": "82e0f7dca19b963b87b2b81d40829f40.pdf",
+      "mime_type": "application/pdf"
+    }
+  ],
+  "norwegian-tfidf": [
+    {
+      "term": "d",
+      "score": 0.18932364084466666
+    },
+    {
+      "term": "rapids",
+      "score": 0.16638235198412946
+    },
+    {
+      "term": "dell",
+      "score": 0.16321053273629585
+    },
+    {
+      "term": "bank",
+      "score": 0.1403137118496493
+    },
+    {
+      "term": "trondhjems",
+      "score": 0.12465447576115125
+    },
+    {
+      "term": "s",
+      "score": 0.11001790381246118
+    },
+    {
+      "term": "march",
+      "score": 0.10890113074842521
+    },
+    {
+      "term": "handels",
+      "score": 0.10890113074842521
+    },
+    {
+      "term": "16-48",
+      "score": 0.09968601465505786
+    },
+    {
+      "term": "ærede",
+      "score": 0.09968601465505786
+    },
+    {
+      "term": "erbødigst",
+      "score": 0.09968601465505786
+    },
+    {
+      "term": "108",
+      "score": 0.09968601465505786
+    },
+    {
+      "term": "please",
+      "score": 0.09968601465505786
+    },
+    {
+      "term": "herrer",
+      "score": 0.09314778573569918
+    },
+    {
+      "term": "st",
+      "score": 0.09314778573569918
+    }
+  ],
+  "english-tfidf": [
+    {
+      "term": "rapids",
+      "score": 0.16022189822747634
+    },
+    {
+      "term": "dell",
+      "score": 0.15718798416433116
+    },
+    {
+      "term": "bank",
+      "score": 0.14383182681785203
+    },
+    {
+      "term": "trondhjems",
+      "score": 0.1195925697944506
+    },
+    {
+      "term": "handels",
+      "score": 0.1195925697944506
+    },
+    {
+      "term": "commercial",
+      "score": 0.10452415282575613
+    },
+    {
+      "term": "108",
+      "score": 0.10452415282575613
+    },
+    {
+      "term": "16-48",
+      "score": 0.0957096939538395
+    },
+    {
+      "term": "honorable",
+      "score": 0.0957096939538395
+    },
+    {
+      "term": "gentlemen",
+      "score": 0.08460478908936145
+    },
+    {
+      "term": "sincerely",
+      "score": 0.08460478908936145
+    },
+    {
+      "term": "st",
+      "score": 0.08460478908936145
+    },
+    {
+      "term": "hereby",
+      "score": 0.08064127698514505
+    },
+    {
+      "term": "presently",
+      "score": 0.08064127698514505
+    },
+    {
+      "term": "d",
+      "score": 0.07896513713454363
+    }
+  ]
+}

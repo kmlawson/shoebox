@@ -1,0 +1,154 @@
+{
+  "id": 196,
+  "added": "2010-12-30 21:47:12",
+  "modified": "2010-12-30 21:47:12",
+  "public": true,
+  "metadata": {
+    "Title": [
+      "Old Song Undated"
+    ],
+    "Description": [
+      "DETTE SER UT SOM EN SANG.  DEN ER SKREVET MED BLYANT PÅ ET STYKKE PAPIR SOM ER I TRE BITER; VELDIG FALMET OG UTYDELIG, SÅ HER BLIR DET MANGE SPØRSMÅLSTEGN.  DET ER MULIG DETTE BLE SKREVET AV OLAF HOLM, SOM DØDE I MINNESOTA I 1888.\n\n\n<-SPLITDESC->\n\n\nTHIS LOOKS LIKE A SONG.  IT'S WRITTEN DOWN IN PENCIL.  THE PAPER IS FALLING APART AND THE WRITING HAS FADED IN PLACES SO IT'S VERY HARD TO UNDERSTAND.  IT'S POSSIBLE THAT THIS IS OLAF HOLM'S HANDWRITING."
+    ],
+    "Language": [
+      "Norwegian"
+    ],
+    "Text": [
+      "1.  En aften maanen sjen saa klar,\nen liden promtur tar\n2.  Der mødte jeg en Flikka sød\nmed øine blaa og kinder rød.\n3.  O hør nu du min lille ven\nkan jeg faa følge med dig hjem\n4.  og neppe var de ord udtalt\nførend sit ja hun havde sagt\n5.  I talen var hun meget let,\nog hendes hjerte det var hedt.\n6.  Se nu er du vel komfor?? (ser ut som kam for nust)\nnu maa du og bli konstantert? (ser ut som konstionert)\n7.  Et aar var neppe gaaet hen?\nførend jeg var en andens ven?\n8.  En aften jeg hos hende sad\nKongstabler kom derin paa rad? nat?\n9.  o har(hør?) nu her? vor lille ven\nkom følg med oss paa raadstuen\n10.  Jeg hat og frakke paa mig tog\nde hurtig mig gjennem døren jog?\n11.  Op med pungen eller ei\neller tage vi dei pa krov?arbei\n12.  to mark i pungen haver jeg\nmen det forstaas? naturlig ei\n13.  og derfor spente? mig for\nen stor forbanna trillebaar\n14.  to sommre der jeg matte gaa\nmed en stor graa skyggelue paa\n15.  saa tengte jeg det gaar mig ei\njeg reiser her i fra min vei\n16.  til engelan jeg kursen tog\njeg der i fra til Paris drog\n17.  I Paris der erklæres krig\nsom fransk soldat jeg vervet mig\n18.  omsider jeg en kugle faar\nsom gaar ind i mit venstre laar\n19.  Og naa jeg saadan vanred om\nog Pungen den var sjelden tom\n20.  og naar jeg synger disse vers\nog penger kom paa kros? paa? tvers\nforts….\n\nDet skal sikkert være flere vers.  Helt nederst på en bit av arket står det:\n\n \n\nOlaf O Holm.\nEvansville PO\nDouglas Co\nMinn\n\n \n\n<-SPLITTLETTER->\n\n\n\nThis song is about a young man’s life.  It starts off by him meeting a pretty girl, and he’s allowed to go home with her.  Then he finds another girl a year later, but one night when he’s with her he’s taken by some soldiers (the way I understand it anyway).  There’s something about him not having enough money to pay up, so he’s forced to work pushing a wheelbarrow, then after two years he escapes to England, then Paris where he enlists as a soldier in a war.  He gets a bullet in his thigh, but the song ends here.  I get the impression he finally earns a lot of money being an invalid beggar, because the last two lines say his purse was rarely empty, and the money keeps coming in.  It seems incomplete so the person who wrote it down (Olaf?) may not have known any more verses.\n\n \n\nAt the very end of the paper it says, in the same handwriting:\n\n \n\nOlaf O Holm.\nEvansville PO\nDouglas Co\nMinn"
+    ]
+  },
+  "tags": [
+    "song"
+  ],
+  "files": [
+    {
+      "original": "Gammel sang.pdf",
+      "filename": "cdba7a013a06300d213f5f4bb2a945cb.pdf",
+      "mime_type": "application/pdf"
+    }
+  ],
+  "norwegian-tfidf": [
+    {
+      "term": "pungen",
+      "score": 0.10220118509609916
+    },
+    {
+      "term": "ven",
+      "score": 0.07636961314976579
+    },
+    {
+      "term": "førend",
+      "score": 0.06813412339739944
+    },
+    {
+      "term": "paris",
+      "score": 0.06813412339739944
+    },
+    {
+      "term": "ei",
+      "score": 0.06125911222648017
+    },
+    {
+      "term": "hør",
+      "score": 0.059523599415288314
+    },
+    {
+      "term": "vers",
+      "score": 0.05448676577419311
+    },
+    {
+      "term": "neppe",
+      "score": 0.05091307543317719
+    },
+    {
+      "term": "o",
+      "score": 0.04733586250293568
+    },
+    {
+      "term": "tog",
+      "score": 0.042302551451066074
+    },
+    {
+      "term": "aften",
+      "score": 0.03834660448064949
+    },
+    {
+      "term": "sjen",
+      "score": 0.03406706169869972
+    },
+    {
+      "term": "liden",
+      "score": 0.03406706169869972
+    },
+    {
+      "term": "promtur",
+      "score": 0.03406706169869972
+    },
+    {
+      "term": "flikka",
+      "score": 0.03406706169869972
+    }
+  ],
+  "english-tfidf": [
+    {
+      "term": "song",
+      "score": 0.0793776726514928
+    },
+    {
+      "term": "escapes",
+      "score": 0.07238497645453588
+    },
+    {
+      "term": "paris",
+      "score": 0.07238497645453588
+    },
+    {
+      "term": "enlists",
+      "score": 0.07238497645453588
+    },
+    {
+      "term": "thigh",
+      "score": 0.07238497645453588
+    },
+    {
+      "term": "invalid",
+      "score": 0.07238497645453588
+    },
+    {
+      "term": "beggar",
+      "score": 0.07238497645453588
+    },
+    {
+      "term": "incomplete",
+      "score": 0.07238497645453588
+    },
+    {
+      "term": "evansville",
+      "score": 0.07238497645453588
+    },
+    {
+      "term": "douglas",
+      "score": 0.07238497645453588
+    },
+    {
+      "term": "olaf",
+      "score": 0.06870753822759375
+    },
+    {
+      "term": "finds",
+      "score": 0.06326461881558923
+    },
+    {
+      "term": "forced",
+      "score": 0.06326461881558923
+    },
+    {
+      "term": "pushing",
+      "score": 0.06326461881558923
+    },
+    {
+      "term": "soldier",
+      "score": 0.06326461881558923
+    }
+  ]
+}

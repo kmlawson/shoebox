@@ -1,0 +1,13 @@
+{
+  "name": "shoebox-tools",
+  "version": "1.0.0",
+  "description": "Build scripts for A Shoebox of Norwegian Letters",
+  "scripts": {
+    "build:txt": "node build-txt-archive.js"
+  },
+  "dependencies": {
+    "jszip": "^3.10.1"
+  },
+  "author": "",
+  "license": "ISC"
+}

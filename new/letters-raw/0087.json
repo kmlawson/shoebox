@@ -1,0 +1,140 @@
+{
+  "id": 87,
+  "added": "2010-12-27 15:25:43",
+  "modified": "2010-12-30 03:57:35",
+  "public": true,
+  "metadata": {
+    "Creator": [
+      "Ola Holm"
+    ],
+    "Date": [
+      "1945.07.08"
+    ],
+    "Language": [
+      "English"
+    ],
+    "Text": [
+      "Original in English\n\n<-SPLITTLETTER->\n\nTr.heim Juli 8th-45\n\nMy dearest brother John.\n\nI been waiting to hear from you because its at last open passage for the mail.  I hear that they are a few that allready has received letters for over there I hope that you & wife are still well, so are all of us too, even it has been a hard time, but it commence to get better, but still we have eat dark bread.  Well many thing has change in the Worlds situation since we wrote its others.  I wonder so how it is with you, because you are geting old hope you are alive.  I wrote Alma awhile ago.  I dont like to beg for anything, but you know we are in need of so many things especially in clothing.  I am in such need of Overcoat, tell me the price of such as clothings &  clothes.  Do you think it is any possibility of geting an Radio (Broad-caster) from there and what prices, or “Typewriter” or Sawingmachin, all secondhanded of course but useable.  We have a whole lot of British soliers here now, and some Norwegians too those that was escape to Swiden and England.  The Germans are prisineers nothing to say anymore.  But we are all tired of all this soliers, we hope we soon be left alone, so we can start to build up by our self all the damaged property, until now the been mostly keept on with Feasting and Dancing on the “Marketplaces” besides all the horror by aresting and digging up graves of the poor offers for those Nazist terribles, of course I cant write about all the horrible things.  I am thanking my “God” that all of mine are saved, but we been anzease many time.  Will you please great Florence Winters and send me her Adrs.\n\nWell this is just a few words so as you see we are all well and healthy, hope the same to you & the Mrs.  I write in English for its easier for the Censure “Controll” of the letters yet.  Hope to hear from you very soon, and tell me if you can help me with any thing.  Is there anything you wish for form here, so let me know, if I can. Shall great you from all of mine, and from the rest of our relation.  As you know Conrad is dead a year and a half ago.  All well with the rest of us.  My hearty love and greatings\n\nYours Ole\n\nNonnegt. 4. Tr.heim, Norway"
+    ],
+    "Title": [
+      "Ola Holm to John Holm 1945.7.8"
+    ],
+    "Description": [
+      "BREV FRA OLA HOLM DATERT 8.  JULI-1945, SKREVET PÅ ENGELSK, TIL JOHN HOLM, JASPER, MINN.  U.S.A., OMADRESSERT TIL DELL RAPIDS, S.DAK.  POSTSTEMPLET TRONDHEIM 9.7.45, MED LUFTPOST.  FRIMERKENE ER KLIPPET UT.  KONVOLUTTEN ER –EXAMINED BY 6443–.  OLA HAR SKREVET (WRITTEN IN ENGLISH) UTENPÅ KONVOLUTTEN.\n\n\n<-SPLITDESC->\n\n\nLETTER FROM OLA HOLM DATED JULY 8-1945, WRITTEN IN ENGLISH, TO JOHN HOLM, JASPER, MINN., U.S.A., ADDRESS CHANGED TO DELL RAPIDS, S.  DAK.  POST STAMPED TRONDHEIM JULY 9-45.  EXAMINED BY 6443, STAMPS HAVE BEEN CUT OUT.  OLA HAS WRITTEN –WRITTEN IN ENGLISH– ON THE ENVELOPE.\n"
+    ],
+    "LetterDate": [
+      "1945-07-08"
+    ],
+    "Location": [
+      "Trondheim"
+    ],
+    "Destination": [
+      "Jasper"
+    ]
+  },
+  "tags": [
+    "1940s",
+    "Britain",
+    "Florence Winters",
+    "Germans",
+    "John Holm",
+    "Norway to US",
+    "Ola Holm",
+    "POWs",
+    "Sweden",
+    "Trondheim",
+    "WWII",
+    "atrocity",
+    "bread",
+    "censorship",
+    "clothing",
+    "grave",
+    "postwar",
+    "radio",
+    "soldiers",
+    "typewriter"
+  ],
+  "files": [
+    {
+      "original": "Ola Holm 8 juli-1945.pdf",
+      "filename": "bd8c65cd4783768f6197825e2f1de557.pdf",
+      "mime_type": "application/pdf"
+    }
+  ],
+  "norwegian-tfidf": [
+    {
+      "term": "original",
+      "score": 1.0958574520514786
+    },
+    {
+      "term": "english",
+      "score": 1.0607372801655364
+    },
+    {
+      "term": "in",
+      "score": 0.9732825253430395
+    }
+  ],
+  "english-tfidf": [
+    {
+      "term": "soliers",
+      "score": 0.07238497645453588
+    },
+    {
+      "term": "geting",
+      "score": 0.05414426117664258
+    },
+    {
+      "term": "juli",
+      "score": 0.03619248822726794
+    },
+    {
+      "term": "8th-45",
+      "score": 0.03619248822726794
+    },
+    {
+      "term": "allready",
+      "score": 0.03619248822726794
+    },
+    {
+      "term": "worlds",
+      "score": 0.03619248822726794
+    },
+    {
+      "term": "broad-caster",
+      "score": 0.03619248822726794
+    },
+    {
+      "term": "sawingmachin",
+      "score": 0.03619248822726794
+    },
+    {
+      "term": "secondhanded",
+      "score": 0.03619248822726794
+    },
+    {
+      "term": "useable",
+      "score": 0.03619248822726794
+    },
+    {
+      "term": "british",
+      "score": 0.03619248822726794
+    },
+    {
+      "term": "swiden",
+      "score": 0.03619248822726794
+    },
+    {
+      "term": "prisineers",
+      "score": 0.03619248822726794
+    },
+    {
+      "term": "damaged",
+      "score": 0.03619248822726794
+    },
+    {
+      "term": "keept",
+      "score": 0.03619248822726794
+    }
+  ]
+}

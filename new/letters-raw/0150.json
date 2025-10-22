@@ -1,0 +1,186 @@
+{
+  "id": 150,
+  "added": "2010-12-28 23:22:11",
+  "modified": "2010-12-28 23:22:11",
+  "public": true,
+  "metadata": {
+    "Title": [
+      "Klara Krogstad to Alma C. Wilson 1947"
+    ],
+    "Description": [
+      "BREV FRA KLARA KROGSTAD TIL ALMA, UDATERT, INGEN KONVOLUTT.  ANTAGELIG SKREVET I 1947 FOR HUN NEVNER ALMA'S 60-ÅRSDAG (HUN ER FØDT I 1887)\n\n\n<-SPLITDESC->\n\n\nLETTER FROM KLARA KROGSTAD TO ALMA, NO DATE, NO ENVELOPE.  PROBABLY WRITTEN IN 1947 BECAUSE SHE MENTIONS ALMA'S 60TH BIRTHDAY."
+    ],
+    "Creator": [
+      "Klara Krogstad",
+      "Siri Lawson, trans."
+    ],
+    "Date": [
+      "1947"
+    ],
+    "Language": [
+      "Norwegian",
+      "English trans."
+    ],
+    "Text": [
+      "Søndag aften.\n\nKjære kusine!\n\nNu har jeg skrevet nogle ord til onkel John og da maa jeg rable ned nogen til dig ogsaa.  Tak for brevet.\n\nMandag morge.\n\nDu ser jeg er blit træt, naar jeg sitter alene saa blir det slik Alma.  Min største gut var ute en tur og den minste gut har lagt sig.  Min minste gut er færdig med skolen og har hat litt ferie, nu er han begyndt i plads.  Han hadde vældig god karakter altsaa meget flink paa skolen.  Nu er han i en forretning som visergutt.  Han er konfirmant den 7 december det er en stor høitidsdag saa jeg skal begynde og spare litt paa sukker og kaffe for det er strengt rasjonert.  Den dressen du snakker om den har han brukt hele tiden.  Mary min ælste datter som fik den pakken til dig og min søster Karen som mistet sin datter, og jeg vil sende dig en ting til din 60 aars dag.  Er dere noget glad i votter i Selbu-mønster?  Onkel John vet av det sikkert.  Mit maal paa hofteholder er over brystet 110 cm og hoftene 115 cm.  Rundt livet 100 cm.  Da er det utenpaa tøiet, jeg er tykk.  Nu skal jeg til byen og sende brevet.  Længre brev næste gang.  Ha det bra, og hils dine.\n\nKlara\n\n\n<-SPLITTLETTER->\n\n\nSunday evening.\n\nDear cousin!\n\nI have now written a few words to uncle John so must put down a few words for you too.  Thank you for your letter.\n\nMonday morning.\n\nYou can see I got tired, when I’m on my own that’s how it is Alma.  My oldest boy was out and my youngest boy has gone to bed.  My youngest boy has finished school, he has now started working.  He had a very good grade, in other words very good at school.  Now he works as an errand boy at a store.  He will be confirmed on the 7th of December that’s a very special day so I’m going to start saving a little on sugar and coffee because they are strictly rationed.  The suit you are talking about he has worn all the time.  Mary my oldest daughter who got that package of yours and my sister Karen who lost her daughter, and I want to send you something for your 60th birthday.  Do you like mittens in the Selbu pattern?  Uncle John is sure to know what they are. My measurements for a girdle are across the chest 110 cm and the hips 115 cm.  Around the waist 100 cm.  Those are taken  on top of my clothes, I’m fat.  I’m now going into town to mail the letter.  Longer letter next time.\n\nBe well, and greet yours,\n\nKlara"
+    ],
+    "LetterDate": [
+      "1947"
+    ],
+    "Location": [
+      "Norway"
+    ],
+    "Destination": [
+      "Dell Rapids"
+    ]
+  },
+  "tags": [
+    "1940s",
+    "Alma C. Wilson",
+    "John Holm",
+    "Klara Krogstad",
+    "Norway to US",
+    "coffee",
+    "confirmation",
+    "death",
+    "errand boy",
+    "gifts",
+    "measurements",
+    "postwar",
+    "rationing",
+    "selbumittens",
+    "sugar",
+    "suit"
+  ],
+  "files": [
+    {
+      "original": "Klara Krogstad 1947.pdf",
+      "filename": "86ce65c6e8466d9eaafd8be30b83c19b.pdf",
+      "mime_type": "application/pdf"
+    }
+  ],
+  "norwegian-tfidf": [
+    {
+      "term": "cm",
+      "score": 0.10652992685372885
+    },
+    {
+      "term": "gut",
+      "score": 0.0677683476219665
+    },
+    {
+      "term": "minste",
+      "score": 0.05339897562285471
+    },
+    {
+      "term": "skolen",
+      "score": 0.05339897562285471
+    },
+    {
+      "term": "rable",
+      "score": 0.05273843205279476
+    },
+    {
+      "term": "morge",
+      "score": 0.05273843205279476
+    },
+    {
+      "term": "begyndt",
+      "score": 0.05273843205279476
+    },
+    {
+      "term": "vældig",
+      "score": 0.05273843205279476
+    },
+    {
+      "term": "karakter",
+      "score": 0.05273843205279476
+    },
+    {
+      "term": "visergutt",
+      "score": 0.05273843205279476
+    },
+    {
+      "term": "høitidsdag",
+      "score": 0.05273843205279476
+    },
+    {
+      "term": "strengt",
+      "score": 0.05273843205279476
+    },
+    {
+      "term": "votter",
+      "score": 0.05273843205279476
+    },
+    {
+      "term": "selbu-mønster",
+      "score": 0.05273843205279476
+    },
+    {
+      "term": "110",
+      "score": 0.05273843205279476
+    }
+  ],
+  "english-tfidf": [
+    {
+      "term": "cm",
+      "score": 0.10158137318541181
+    },
+    {
+      "term": "boy",
+      "score": 0.05761044434211249
+    },
+    {
+      "term": "errand",
+      "score": 0.05239293533852122
+    },
+    {
+      "term": "strictly",
+      "score": 0.05239293533852122
+    },
+    {
+      "term": "60th",
+      "score": 0.05239293533852122
+    },
+    {
+      "term": "110",
+      "score": 0.05239293533852122
+    },
+    {
+      "term": "115",
+      "score": 0.05239293533852122
+    },
+    {
+      "term": "waist",
+      "score": 0.05239293533852122
+    },
+    {
+      "term": "mittens",
+      "score": 0.04579153361890269
+    },
+    {
+      "term": "pattern",
+      "score": 0.04579153361890269
+    },
+    {
+      "term": "saving",
+      "score": 0.041929961160729695
+    },
+    {
+      "term": "sugar",
+      "score": 0.041929961160729695
+    },
+    {
+      "term": "measurements",
+      "score": 0.041929961160729695
+    },
+    {
+      "term": "hips",
+      "score": 0.041929961160729695
+    },
+    {
+      "term": "words",
+      "score": 0.039260680728561016
+    }
+  ]
+}

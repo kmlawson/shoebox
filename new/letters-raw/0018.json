@@ -1,0 +1,180 @@
+{
+  "id": 18,
+  "added": "2010-12-23 22:14:45",
+  "modified": "2010-12-30 04:08:50",
+  "public": true,
+  "metadata": {
+    "Creator": [
+      "Alma C. Wilson",
+      "Siri Lawson, trans."
+    ],
+    "Date": [
+      "1948.03.16"
+    ],
+    "Language": [
+      "Norwegian",
+      "English trans."
+    ],
+    "Text": [
+      "Dell Rapids, S.D. 3-16-1948\n\nHegre Spare Bank\n\nHegre, norge\n\nÆrede Herrer.  Jeg skulde like at høre fra dere om min mand John Holm nu har nogen penger der i deres bank, samt hvor meget i Amerikanske doller eler regning\n\nSvar strax er di snil luft brev.\n\nMrs. John Holm\n\n108 West 5 St\n\nDell Rapids\n\nS.D.\n\n\n<-SPLITTLETTER->\n\n\nDell Rapids, S.D. 3-16-1948\n\nHegre Spare Bank (Savings Bank)\n\nHegre, norge\n\nHonorable Gentlemen.  I would like to know from you if my husband John Holm presently has any money there in your bank, as well as how much in American dollars or calculations\n\nReply immediately please  air mail\n\nMrs. John Holm\n\n108 West 5 St.\n\nDell Rapids\n\nS.D."
+    ],
+    "Title": [
+      "Alma C. Wilson to Hegre Sparebank 1948.3.16"
+    ],
+    "Description": [
+      "BLÅPAPIR-KOPI AV ET BREV SKREVET AV ALMA WILSON, PÅ VEGNE AV SIN MOR, DATERT 16.  MARS – 1948, TIL HEGRA SPAREBANK.\n\n\n<-SPLITDESC->\n\n\nCARBON COPY OF A LETTER WRITTEN BY ALMA WILSON, ON BEHALF OF HER MOTHER, DATED MARCH 16 – 1948, TO HEGRE SPARE BANK."
+    ],
+    "LetterDate": [
+      "1948-03-16"
+    ],
+    "Location": [
+      "Dell Rapids"
+    ],
+    "Destination": [
+      "Hegra"
+    ]
+  },
+  "tags": [
+    "1940s",
+    "Alma C. Wilson",
+    "Dell Rapids",
+    "Hegra",
+    "Hegra Sparebank",
+    "John Holm",
+    "US to Norway",
+    "bank",
+    "finances",
+    "postwar"
+  ],
+  "files": [
+    {
+      "original": "Alma-Hegre S bank-1948.pdf",
+      "filename": "73baa140b44140ef3ad6c9ede8579167.pdf",
+      "mime_type": "application/pdf"
+    }
+  ],
+  "norwegian-tfidf": [
+    {
+      "term": "hegre",
+      "score": 0.15655106457878265
+    },
+    {
+      "term": "bank",
+      "score": 0.14699531717582306
+    },
+    {
+      "term": "d",
+      "score": 0.13222603487564022
+    },
+    {
+      "term": "3-16-1948",
+      "score": 0.1305904031783489
+    },
+    {
+      "term": "doller",
+      "score": 0.1305904031783489
+    },
+    {
+      "term": "regning",
+      "score": 0.1305904031783489
+    },
+    {
+      "term": "rapids",
+      "score": 0.11620354741748724
+    },
+    {
+      "term": "dell",
+      "score": 0.11398830857773043
+    },
+    {
+      "term": "ærede",
+      "score": 0.10443296773387013
+    },
+    {
+      "term": "108",
+      "score": 0.10443296773387013
+    },
+    {
+      "term": "herrer",
+      "score": 0.09758339458025628
+    },
+    {
+      "term": "st",
+      "score": 0.09758339458025628
+    },
+    {
+      "term": "west",
+      "score": 0.09227045288229892
+    },
+    {
+      "term": "eler",
+      "score": 0.0879294634348238
+    },
+    {
+      "term": "luft",
+      "score": 0.0879294634348238
+    }
+  ],
+  "english-tfidf": [
+    {
+      "term": "bank",
+      "score": 0.16964779573387676
+    },
+    {
+      "term": "hegre",
+      "score": 0.1694376222158209
+    },
+    {
+      "term": "3-16-1948",
+      "score": 0.1410579028344802
+    },
+    {
+      "term": "rapids",
+      "score": 0.12598644988827198
+    },
+    {
+      "term": "dell",
+      "score": 0.1236008080608416
+    },
+    {
+      "term": "calculations",
+      "score": 0.123284898204738
+    },
+    {
+      "term": "108",
+      "score": 0.123284898204738
+    },
+    {
+      "term": "spare",
+      "score": 0.11288835697119531
+    },
+    {
+      "term": "honorable",
+      "score": 0.11288835697119531
+    },
+    {
+      "term": "gentlemen",
+      "score": 0.09979026405411863
+    },
+    {
+      "term": "st",
+      "score": 0.09979026405411863
+    },
+    {
+      "term": "presently",
+      "score": 0.09511535234145313
+    },
+    {
+      "term": "savings",
+      "score": 0.08773888894525361
+    },
+    {
+      "term": "immediately",
+      "score": 0.08471881110791045
+    },
+    {
+      "term": "norge",
+      "score": 0.08201725942437645
+    }
+  ]
+}

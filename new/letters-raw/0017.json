@@ -1,0 +1,179 @@
+{
+  "id": 17,
+  "added": "2010-12-23 22:08:47",
+  "modified": "2010-12-30 04:08:02",
+  "public": true,
+  "metadata": {
+    "Title": [
+      "Alma C. Wilson to Axel Holm 1948.4.28"
+    ],
+    "Description": [
+      "BLÅPAPIR-KOPI AV ET MASKINSKREVET BREV FRA ALMA WILSON DATERT 28.  APRIL – 1948, ANTAGELIG TIL AXEL HOLM.  INGEN KONVOLUTT.\n\n\n<-SPLITDESC->\n\n\nCARBON COPY OF A TYPEWRITTEN LETTER FROM ALMA WILSON DATED APRIL 28 – 1948, PROBABLY TO AXEL HOLM.  NO ENVELOPE."
+    ],
+    "Creator": [
+      "Alma C. Wilson",
+      "Siri Lawson, trans."
+    ],
+    "Date": [
+      "1948.04.28"
+    ],
+    "Language": [
+      "Norwegian",
+      "English trans."
+    ],
+    "Text": [
+      "Dell Rapids. S.D.\n\nApril 28.48\n\nVi har sent brev til Stjørdals Banken som forlangt  De ingen pakker var sent til Gjertine Og Olava som det har veret til dere andre der. vilde john at dem skulde vere med nu. men han glemte at skrive demes navn med da han skrev. nu ser det ut for at det ska vere bare 4  Og Naar John Skrev til Eidum Hade han vel sin egen Aarsag  Det var ikke mig Den gangen.\n\nModtog Herborg Sit brev.  Hun faar vente til enan gang paa svar  Mor Og Jeg Har bege veret daarlig  Grace er bare daarlig.  Tror hendes arbeids dage er forbi\n\nHilsen til dere ale.\n\nFra Alma\n\n\n<-SPLITTLETTER->\n\n\nDell Rapids. S.D.\n\nApril 28.48\n\nWe have sent a letter to Stjørdals Banken as demanded  As no packages were sent to Gjertine And Olava like there has been to the rest of you there. john wanted them to be included now. but he forgot to write their names on when he wrote.  Now it looks like there’s only supposed to be 4  And when John Wrote to Eidum I guess he Had his own Reasons  It wasn’t me That time.\n\nReceived Herborg’s letter.  She’ll have to wait until another time for a reply  Mother And I Have both been sick  Grace is not well.  I think her working days are over\n\nRegards to you all.\n\nFrom Alma"
+    ],
+    "LetterDate": [
+      "1948-04-28"
+    ],
+    "Location": [
+      "Dell Rapids"
+    ],
+    "Destination": [
+      "Norway"
+    ]
+  },
+  "tags": [
+    "1940s",
+    "Alma C. Wilson",
+    "Dell Rapids",
+    "John Holm",
+    "Stjørdalens Sparebank",
+    "US to Norway",
+    "gifts",
+    "postwar",
+    "sickness"
+  ],
+  "files": [
+    {
+      "original": "Alma Wilson-Axel 28 apr-1948.pdf",
+      "filename": "489d105686c7a4db679c0384c0fc81c8.pdf",
+      "mime_type": "application/pdf"
+    }
+  ],
+  "norwegian-tfidf": [
+    {
+      "term": "demes",
+      "score": 0.09622450760509921
+    },
+    {
+      "term": "aarsag",
+      "score": 0.09622450760509921
+    },
+    {
+      "term": "enan",
+      "score": 0.09622450760509921
+    },
+    {
+      "term": "daarlig",
+      "score": 0.08913536681839349
+    },
+    {
+      "term": "arbeids",
+      "score": 0.08406403075317033
+    },
+    {
+      "term": "stjørdals",
+      "score": 0.07695060780390431
+    },
+    {
+      "term": "forlangt",
+      "score": 0.07695060780390431
+    },
+    {
+      "term": "glemte",
+      "score": 0.07695060780390431
+    },
+    {
+      "term": "modtog",
+      "score": 0.07695060780390431
+    },
+    {
+      "term": "ska",
+      "score": 0.07190355390124147
+    },
+    {
+      "term": "bege",
+      "score": 0.07190355390124147
+    },
+    {
+      "term": "forbi",
+      "score": 0.07190355390124147
+    },
+    {
+      "term": "48",
+      "score": 0.06798875475537815
+    },
+    {
+      "term": "skrev",
+      "score": 0.06769996042109618
+    },
+    {
+      "term": "vere",
+      "score": 0.06390299253898275
+    }
+  ],
+  "english-tfidf": [
+    {
+      "term": "banken",
+      "score": 0.10786780804989661
+    },
+    {
+      "term": "reasons",
+      "score": 0.10786780804989661
+    },
+    {
+      "term": "stjørdals",
+      "score": 0.09427668686244671
+    },
+    {
+      "term": "demanded",
+      "score": 0.09427668686244671
+    },
+    {
+      "term": "forgot",
+      "score": 0.08632639062503171
+    },
+    {
+      "term": "48",
+      "score": 0.07631020192373777
+    },
+    {
+      "term": "included",
+      "score": 0.07631020192373777
+    },
+    {
+      "term": "28",
+      "score": 0.07273526943758181
+    },
+    {
+      "term": "names",
+      "score": 0.06971270708802771
+    },
+    {
+      "term": "wrote",
+      "score": 0.0682375723471045
+    },
+    {
+      "term": "supposed",
+      "score": 0.060850253681301106
+    },
+    {
+      "term": "wait",
+      "score": 0.059144148250131895
+    },
+    {
+      "term": "april",
+      "score": 0.05231460522526492
+    },
+    {
+      "term": "wasn",
+      "score": 0.05231460522526492
+    },
+    {
+      "term": "rapids",
+      "score": 0.04817128966316282
+    }
+  ]
+}

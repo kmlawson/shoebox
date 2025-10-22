@@ -1,0 +1,99 @@
+{
+  "id": 104,
+  "added": "2010-12-27 22:39:07",
+  "modified": "2010-12-30 14:46:00",
+  "public": true,
+  "metadata": {
+    "Description": [
+      "NOTE: This item only temporarily available and will eventually be removed. The information here will be incorporated into a separate page on the project background related to stamps."
+    ],
+    "Title": [
+      "Notes on the Stamps During World War II 2000"
+    ],
+    "Creator": [
+      "Siri Lawson"
+    ],
+    "Date": [
+      "2000"
+    ],
+    "Text": [
+      "FRIMERKER UNDER 2. VERDENSKRIG: Tysk brevsensur ble innført i april 1940 administrert av Befehlshaber der Ordnungspolizei. Okkupanten forbød 30.9.1940 alle frimerker med kongens og dronningens portrett. Den første utgivelse under okkupasjonen kom 4.10.1940 og var en endret løvetype på fire merker pål. kr 1,-, 1,50, 2,- og 5,- utformet etter idé av byråsjef S. Hennum. Til sammen 102 utgivelser fulgte så frem til 3.2.1945. Det første propagandafrimerket ble utgitt 16.5.1941 i anledning Hålogalandsutstillingen i Oslo, med motiv «fembøring langs Nordlandskysten med nordlys på himmelen». Merket fikk en tilleggsverdi på 10 øre til understøttelsesfondet for omkomne fiskeres etterlatte. Senere tilleggsverdier for andre propagandamerker gikk til Landshjelpen, Frontkjemperkontoret osv. Under den tyske V-kampanjen fra høsten 1941 ble bruksfrimerket fra 1 øres posthorn opp til kr 5,- løvemerke overtrykt med svart V, mens ti-øres løvemerke fikk inntegnet hvit. V. Quisling ble også brukt som motiv, første gang 1.2.1942 med hans portrett avtegnet etter byste av Wilh. Rasmussen og overtrykt «1.2.1942» i rødt. Samme merke ble brukt under NS' riksmøte september påtrykt -Rikstinget 1942-. Reklametegneren Harald Damsleth var mannen bak de fleste av okkupasjonstidens frimerker. I alt 32 merker var enten tegnet eller bearbeidet av ham. Okkupasjonsfrimerkene ble alle trykt i dyptrykk hos Emil Moestue i Oslo og alle var tagget 13."
+    ],
+    "LetterDate": [
+      "2000"
+    ],
+    "Location": [
+      ""
+    ],
+    "Destination": [
+      ""
+    ]
+  },
+  "tags": [
+    "project background",
+    "stamps"
+  ],
+  "files": [],
+  "norwegian-tfidf": [
+    {
+      "term": "frimerker",
+      "score": 0.08772369289645092
+    },
+    {
+      "term": "1940",
+      "score": 0.0775071804211311
+    },
+    {
+      "term": "-",
+      "score": 0.07404657953035854
+    },
+    {
+      "term": "portrett",
+      "score": 0.0731306257798754
+    },
+    {
+      "term": "motiv",
+      "score": 0.0731306257798754
+    },
+    {
+      "term": "løvemerke",
+      "score": 0.0731306257798754
+    },
+    {
+      "term": "overtrykt",
+      "score": 0.0731306257798754
+    },
+    {
+      "term": "1942",
+      "score": 0.0731306257798754
+    },
+    {
+      "term": "1941",
+      "score": 0.05848246193096728
+    },
+    {
+      "term": "merker",
+      "score": 0.0516714536140874
+    },
+    {
+      "term": "v",
+      "score": 0.0516714536140874
+    },
+    {
+      "term": "1",
+      "score": 0.051118440496974255
+    },
+    {
+      "term": "2",
+      "score": 0.041210056381376536
+    },
+    {
+      "term": "verdenskrig",
+      "score": 0.0365653128899377
+    },
+    {
+      "term": "tysk",
+      "score": 0.0365653128899377
+    }
+  ]
+}

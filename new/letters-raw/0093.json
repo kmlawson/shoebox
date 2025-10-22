@@ -1,0 +1,116 @@
+{
+  "id": 93,
+  "added": "2010-12-27 20:54:03",
+  "modified": "2010-12-30 03:56:09",
+  "public": true,
+  "metadata": {
+    "Creator": [
+      "Florence Winters"
+    ],
+    "Date": [
+      "1945.08.14"
+    ],
+    "Language": [
+      "English"
+    ],
+    "Text": [
+      "\n\n<-SPLITTLETTER->\n\nMon eve\n\nDear Alma\n\nI had a letter from Ole a couple days before rec'd yours, says they are badly in need of clothes – says his shirt size is 15 and a half but he did not say if he wants work shirts or for dress, do you know? Want to send him 4 shirts & other things how about underwear & for his wife how about her? If you know send me sizes etc so get it by Sat want to send some things. What did John send? some people are sending coffee tea rice dried fruits etc over how about it, write at once. Will ans your letter soon.\n\nLove Florence"
+    ],
+    "Title": [
+      "Florence Winters to Alma C. Wilson Card 1945.8.14"
+    ],
+    "Description": [
+      "KORT FRA FLORENCE WINTERS, CHICAGO, ILL., (CRAGIN STA), DATERT 14.  AUGUST-1945 TIL ALMA WILSON.  SKREVET PÅ ENGELSK.  Florence forteller at hun har fått brev fra Ola om at han trenger klær.  Hun spør om Alma vet om det er arbeidsskjorter eller penskjorter han trenger, og om hun bør sende andre ting, f.eks. undertøy, og hva med kona hans, trenger hun noe.  Hun sier også at mange sender kaffe, te, ris, tørket frukt osv., og hun ber Alma om råd, for hun vil sende noe til Norge.\n \n\n1 CENT U.S.\n\n\n<-SPLITDESC->\n\n\nPOSTAL CARD (JEFFERSON) FROM FLORENCE WINTERS DATED CHICAGO, ILL.  (CRAGIN STA.) AUG. 14-1945 TO MRS ALMA WILSON, DELL RAPIDS, SO.  DAK.  IN ENGLISH.\n"
+    ],
+    "LetterDate": [
+      "1945-08-14"
+    ],
+    "Location": [
+      "Chicago"
+    ],
+    "Destination": [
+      "Dell Rapids"
+    ]
+  },
+  "tags": [
+    "Alma C. Wilson",
+    "Florence Winters",
+    "Ola Holm",
+    "US to US",
+    "clothes",
+    "coffee",
+    "dried fruit",
+    "gifts",
+    "rice",
+    "tea"
+  ],
+  "files": [
+    {
+      "original": "Florence Winters 14 aug-1945.pdf",
+      "filename": "3667c6e27bc9801a5097253c554f0acf.pdf",
+      "mime_type": "application/pdf"
+    }
+  ],
+  "english-tfidf": [
+    {
+      "term": "shirts",
+      "score": 0.12930678907276483
+    },
+    {
+      "term": "mon",
+      "score": 0.11460954605301515
+    },
+    {
+      "term": "rice",
+      "score": 0.11460954605301515
+    },
+    {
+      "term": "ans",
+      "score": 0.11460954605301515
+    },
+    {
+      "term": "rec",
+      "score": 0.10016897979134962
+    },
+    {
+      "term": "tea",
+      "score": 0.10016897979134962
+    },
+    {
+      "term": "etc",
+      "score": 0.09509926606985526
+    },
+    {
+      "term": "sizes",
+      "score": 0.0917217900390962
+    },
+    {
+      "term": "dried",
+      "score": 0.0917217900390962
+    },
+    {
+      "term": "fruits",
+      "score": 0.08572841352968409
+    },
+    {
+      "term": "sat",
+      "score": 0.08107958954397138
+    },
+    {
+      "term": "underwear",
+      "score": 0.07406975128102944
+    },
+    {
+      "term": "eve",
+      "score": 0.07128784726801857
+    },
+    {
+      "term": "badly",
+      "score": 0.07128784726801857
+    },
+    {
+      "term": "shirt",
+      "score": 0.06663902328230586
+    }
+  ]
+}

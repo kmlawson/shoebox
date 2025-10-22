@@ -1,0 +1,165 @@
+{
+  "id": 68,
+  "added": "2010-12-26 21:41:57",
+  "modified": "2010-12-26 21:41:57",
+  "public": true,
+  "metadata": {
+    "Title": [
+      "Ola Holm to John Holm Card 1933.12.19"
+    ],
+    "Description": [
+      "POSTKORT MED BILDE AV NORGES TEKNISKE HØISKOLE I TRONDHJEM FRA OLA HOLM, POSTSTEMPLET 19.  DESEMBER-1933, TIL MR.  JOHN HOLM, COLMAN, SO.DAK, U.S.A.  ET RØDT 20–ØRES FRIMERKE MED LØVE.\n\n\n<-SPLITDESC->\n\n\nPOST CARD WITH A PICTURE OF THE TECHNICAL UNIVERSITY AT TRONDHJEM FROM OLA HOLM, POST STAMPED DECEMBER 19-1933, TO MR.  JOHN HOLM, COLMAN, SO DAK, U.S.A.  A RED 20 ØRE STAMP WITH LION."
+    ],
+    "Creator": [
+      "Ola Holm",
+      "Siri Lawson, trans."
+    ],
+    "Date": [
+      "1933.12.19"
+    ],
+    "Language": [
+      "Norwegian",
+      "English trans."
+    ],
+    "Text": [
+      "Dear Brother\n\nGlædelig Jul og gott Nyt år ønskes fra os alle  Vi har det alle bare bra,  Haaper dere det samme.  Tak for brev\n\nBedste hilsen fra os alle.\n\nOle\n\n \n\n<-SPLITTLETTER->\n\n\n\nDear Brother\n\nMerry Christmas and happy New Year is wished by us all.  We are all fine,  Hope the same with you.  Thank you for your letter\n\nBest wishes from us all\n\nOle"
+    ],
+    "LetterDate": [
+      "1933-12-19"
+    ],
+    "Location": [
+      "Trondheim"
+    ],
+    "Destination": [
+      "Colman"
+    ]
+  },
+  "tags": [
+    "1930s",
+    "Christmas",
+    "John Holm",
+    "Norway to US",
+    "Ola Holm",
+    "Trondheim",
+    "prewar"
+  ],
+  "files": [
+    {
+      "original": "Ola Holm-kort des-1933.pdf",
+      "filename": "bf59c0d329fba065a176bfe9c19ebeb6.pdf",
+      "mime_type": "application/pdf"
+    }
+  ],
+  "norwegian-tfidf": [
+    {
+      "term": "brother",
+      "score": 0.2924123096548364
+    },
+    {
+      "term": "glædelig",
+      "score": 0.2732335048247176
+    },
+    {
+      "term": "ønskes",
+      "score": 0.2732335048247176
+    },
+    {
+      "term": "dear",
+      "score": 0.24620249761750665
+    },
+    {
+      "term": "bedste",
+      "score": 0.23592578562902278
+    },
+    {
+      "term": "gott",
+      "score": 0.2191714904102957
+    },
+    {
+      "term": "haaper",
+      "score": 0.2191714904102957
+    },
+    {
+      "term": "nyt",
+      "score": 0.21214745603310728
+    },
+    {
+      "term": "os",
+      "score": 0.13585184197814285
+    },
+    {
+      "term": "ole",
+      "score": 0.12492526805642869
+    },
+    {
+      "term": "jul",
+      "score": 0.11337381997149293
+    },
+    {
+      "term": "år",
+      "score": 0.06420055709610764
+    },
+    {
+      "term": "tak",
+      "score": 0.061363249468187914
+    },
+    {
+      "term": "hilsen",
+      "score": 0.03479682021538319
+    }
+  ],
+  "english-tfidf": [
+    {
+      "term": "wished",
+      "score": 0.27348831242226257
+    },
+    {
+      "term": "merry",
+      "score": 0.20523422049911622
+    },
+    {
+      "term": "ole",
+      "score": 0.13941375049467622
+    },
+    {
+      "term": "happy",
+      "score": 0.11776663823020041
+    },
+    {
+      "term": "christmas",
+      "score": 0.08706233523674659
+    },
+    {
+      "term": "wishes",
+      "score": 0.07703450309342015
+    },
+    {
+      "term": "fine",
+      "score": 0.07207000146745314
+    },
+    {
+      "term": "brother",
+      "score": 0.05685263659592084
+    },
+    {
+      "term": "hope",
+      "score": 0.05685263659592084
+    },
+    {
+      "term": "best",
+      "score": 0.04934198509100423
+    },
+    {
+      "term": "thank",
+      "score": 0.03929427875123006
+    },
+    {
+      "term": "letter",
+      "score": 0.03182014425479561
+    },
+    {
+      "term": "dear",
+      "score": 0.015996414293864194
+    }
+  ]
+}

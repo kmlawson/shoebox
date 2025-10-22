@@ -1,0 +1,184 @@
+{
+  "id": 129,
+  "added": "2010-12-28 18:11:41",
+  "modified": "2010-12-31 03:34:29",
+  "public": true,
+  "metadata": {
+    "Creator": [
+      "Laura Karlson",
+      "Siri Lawson, trans."
+    ],
+    "Date": [
+      "1946.08.02"
+    ],
+    "Language": [
+      "Norwegian",
+      "English trans."
+    ],
+    "Text": [
+      "Stjørdal 2/8-1946\n\nKjere alle sammen.\n\nTusen og atter takk for alt det vi faar sent.  jeg blev saa glad for de pene Skoene  de er saa god og gaa i, for jeg har saa onne ben, men dem var saa store, tusen takk, og for alt det andre jeg fikk.  det er saa kjerkommet.  Jeg var i Byen, paa Beret sin 70. aars dag.  det var 30 mennesker.  det er saa mange Barn og Svigersønner. og hunn har mange Søsken saa huset blir fort fult.  Siste Lørdag blev Konrads, yngste datter Jorun Gift.  alle barna var jemme.  Brulupet var i Hegra.  Odd er og saa jemme nu.  meget kjekk gutt.  Hos Aksel er det som vanlig.  jeg skall hilse fra alle vore slegt.  vær snild og skriv nogen ord ijen, du Alma er saa\n\nflink til og skrive.  Ja dette er saa meget at de faar, høre at jeg har faat den andre Pakken  Jeg maa slutte, for jeg vil legge i Sangen, til Beret.  Ola havde saa fel Hodepine den dagen.  Hils alle vore slegt.  Tusen takk Broder og Alma for alt.  Tusen kjere hilsen fra os alle.\n\nMindor og Laura\n\nStjørdal\n\ner det noget de ønsker vi skal sende fra Norge saa fortell det.\n\n\n<-SPLITTLETTER->\n\n\nStjørdal 2/8-1946\n\nDear everybody.\n\nThanks and thanks again for everything we get sent to us.  I was so pleased with the lovely Shoes  they are so comfortable, because I have such sore feet, but they were so big, thank you so much, and for all the other things I got.  it’s so welcome.  I was in Town, for Beret’s 70th birthday.  30 people were there.  there are so many Children and Sons in law. and she has many Siblings so the house quickly gets full.  Last Saturday Konrad’s, youngest daughter Jorun got Married.  all the children were home. The wedding was in Hegra.  Odd is also home now.  very nice boy.  At Aksel’s it’s as usual.  all of our relatives say hello.  please write a few words again, you Alma are so good at writing.  Well this is just enough to let you, see that I’ve received the other Package.  I must end this, because I want to include the song, of Beret’s.  Ola had such a bad Headache that day.  Greet all our relatives.  Many thanks Brother and Alma for everything.  A thousand dear greetings from us all.\n\nMindor and Laura\n\nStjørdal\n\nis there anything you want us to send from Norway then tell me."
+    ],
+    "Title": [
+      "Laura Karlson to John Holm 1946.8.2"
+    ],
+    "Description": [
+      "BREV FRA LAURA KARLSON DATERT 2.  AUGUST-1946, TIL HER JOHN HOLM, 108 WEST 5 ST., DELL RAPIDS, SO DAK., U.S.A.  SENT MED LUFTPOST, FRIMERKENE ER KLIPPET VEKK.\n\n\n<-SPLITDESC->\n\n\nLETTER FROM LAURA KARLSON DATED AUGUST 2-1946, TO HER JOHN HOLM, 108 WEST 5 ST., DELL RAPIDS, SO DAK., U.S.A.  SENT BY AIR MAIL, THE STAMPS HAVE BEEN REMOVED."
+    ],
+    "LetterDate": [
+      "1946-08-02"
+    ],
+    "Location": [
+      "Stjørdal"
+    ],
+    "Destination": [
+      "Dell Rapids"
+    ]
+  },
+  "tags": [
+    "1940s",
+    "Axel Holm",
+    "Hegra",
+    "John Holm",
+    "Laura Karlson",
+    "Norway to US",
+    "Odd Conrad Holm",
+    "Ola Holm",
+    "Stjørdal",
+    "birthday",
+    "gifts",
+    "postwar",
+    "shoes",
+    "song"
+  ],
+  "files": [
+    {
+      "original": "Laura Karlson 2 august-1946.pdf",
+      "filename": "f145e26689c8b0dccb97577b6c80eb9a.pdf",
+      "mime_type": "application/pdf"
+    }
+  ],
+  "norwegian-tfidf": [
+    {
+      "term": "beret",
+      "score": 0.09968601465505786
+    },
+    {
+      "term": "jemme",
+      "score": 0.07739444072297316
+    },
+    {
+      "term": "slegt",
+      "score": 0.07015685592482465
+    },
+    {
+      "term": "onne",
+      "score": 0.06232723788057563
+    },
+    {
+      "term": "fel",
+      "score": 0.06232723788057563
+    },
+    {
+      "term": "fortell",
+      "score": 0.06232723788057563
+    },
+    {
+      "term": "svigersønner",
+      "score": 0.054450565374212605
+    },
+    {
+      "term": "konrads",
+      "score": 0.054450565374212605
+    },
+    {
+      "term": "brulupet",
+      "score": 0.054450565374212605
+    },
+    {
+      "term": "hunn",
+      "score": 0.04984300732752893
+    },
+    {
+      "term": "kjere",
+      "score": 0.04892255507535116
+    },
+    {
+      "term": "8-1946",
+      "score": 0.04657389286784959
+    },
+    {
+      "term": "kjerkommet",
+      "score": 0.04657389286784959
+    },
+    {
+      "term": "fult",
+      "score": 0.04657389286784959
+    },
+    {
+      "term": "jorun",
+      "score": 0.04657389286784959
+    }
+  ],
+  "english-tfidf": [
+    {
+      "term": "beret",
+      "score": 0.10927525068147233
+    },
+    {
+      "term": "sore",
+      "score": 0.054637625340736164
+    },
+    {
+      "term": "headache",
+      "score": 0.054637625340736164
+    },
+    {
+      "term": "relatives",
+      "score": 0.04849914501268757
+    },
+    {
+      "term": "8-1946",
+      "score": 0.04676095283437314
+    },
+    {
+      "term": "jorun",
+      "score": 0.04676095283437314
+    },
+    {
+      "term": "include",
+      "score": 0.04422523066034803
+    },
+    {
+      "term": "comfortable",
+      "score": 0.04215339478768946
+    },
+    {
+      "term": "70th",
+      "score": 0.04215339478768946
+    },
+    {
+      "term": "pleased",
+      "score": 0.04040168251692516
+    },
+    {
+      "term": "saturday",
+      "score": 0.04040168251692516
+    },
+    {
+      "term": "thanks",
+      "score": 0.03731382829365251
+    },
+    {
+      "term": "feet",
+      "score": 0.036348558153985015
+    },
+    {
+      "term": "song",
+      "score": 0.03427672228132644
+    },
+    {
+      "term": "sons",
+      "score": 0.03100760782164711
+    }
+  ]
+}

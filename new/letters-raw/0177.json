@@ -1,0 +1,176 @@
+{
+  "id": 177,
+  "added": "2010-12-30 01:44:08",
+  "modified": "2010-12-30 03:39:06",
+  "public": true,
+  "metadata": {
+    "Title": [
+      "Herborg Holm to John Holm Card 1947 Summer"
+    ],
+    "Description": [
+      "KORT FRA HERBORG HOLM MED BILDE AV –FROSOTORNET I BELYSNING–, UDATERT, MEN ANTAGELIG SKREVET I MÅNEDSSKIFTET JULI/AUGUST DA HUN VAR PÅ FERIE I ØSTERSUND DA.  TIL HRR.  JOHAN HOLM,108 WEST 5TH.  STREET, DELL RAPIDS, SYD DAKOTA, U.S.A.  FRIMERKET ER KLIPPET VEKK.\n\n\n<-SPLITDESC->\n\n\nPOSTCARD FROM HERBORG HOLM WITH A PICTURE OF –FROSOTORNET LIT UP–, UNDATED BUT PROBABLY WRITTEN END JULY/EARLY AUG.  AS THAT'S WHEN HERBORG WAS ON VACATION IN ØSTERSUND.  TO HRR (MR.) JOHAN HOLM, 108 WEST 5TH.  STREET, DELL RAPIDS, SYD DAKOTA, U.S.A.  THE STAMP HAS BEEN REMOVED."
+    ],
+    "Creator": [
+      "Herborg Holm",
+      "Siri Lawson, trans."
+    ],
+    "Date": [
+      "1947"
+    ],
+    "Language": [
+      "Norwegian",
+      "English trans."
+    ],
+    "Text": [
+      "Kjære onkel Johan!\n\nJeg er nu i Østersund i Sverige sammen med 4 venninner.  Vi ligger i telt og har verdens herligste vær.  Her er vakkert og mye vakre saker å få kjøpt.  Vi skal sykle hjem 27 mil.\n\nHilsen Herborg Holm\n\n \n\n<-SPLITTLETTER->\n\n\n\nDear uncle Johan!\n\nI am now in Østersund in Sweden together with 4 friends.  We sleep in a tent and have the world’s most wonderful weather.  It’s beautiful here and many beautiful things to buy.  We’re going to bike home 27 miles (Norwegian miles).\n\nRegards  Herborg Holm"
+    ],
+    "Location": [
+      "Sweden"
+    ],
+    "Destination": [
+      "Dell Rapids"
+    ]
+  },
+  "tags": [
+    "1940s",
+    "Herborg Holm",
+    "John Holm",
+    "Norway to US",
+    "Sweden",
+    "bicycle",
+    "postwar",
+    "tent",
+    "Østersund"
+  ],
+  "files": [
+    {
+      "original": "Herborg-Kort juli-aug-1947.pdf",
+      "filename": "7e3b2bd49ea32a8a7106c2ce05a70d3e.pdf",
+      "mime_type": "application/pdf"
+    }
+  ],
+  "norwegian-tfidf": [
+    {
+      "term": "herligste",
+      "score": 0.21095372821117905
+    },
+    {
+      "term": "venninner",
+      "score": 0.18429422126656575
+    },
+    {
+      "term": "østersund",
+      "score": 0.16869940941625178
+    },
+    {
+      "term": "telt",
+      "score": 0.16869940941625178
+    },
+    {
+      "term": "verdens",
+      "score": 0.14203990247163847
+    },
+    {
+      "term": "vakre",
+      "score": 0.13611103017059006
+    },
+    {
+      "term": "saker",
+      "score": 0.13611103017059006
+    },
+    {
+      "term": "sykle",
+      "score": 0.1309752073773392
+    },
+    {
+      "term": "27",
+      "score": 0.1309752073773392
+    },
+    {
+      "term": "vakkert",
+      "score": 0.11538039552702517
+    },
+    {
+      "term": "sverige",
+      "score": 0.09573325615141015
+    },
+    {
+      "term": "mil",
+      "score": 0.09573325615141015
+    },
+    {
+      "term": "vær",
+      "score": 0.08419077182639716
+    },
+    {
+      "term": "kjøpt",
+      "score": 0.0827920162813635
+    },
+    {
+      "term": "ligger",
+      "score": 0.06629218529988819
+    }
+  ],
+  "english-tfidf": [
+    {
+      "term": "miles",
+      "score": 0.18400309424058695
+    },
+    {
+      "term": "østersund",
+      "score": 0.15181537661643507
+    },
+    {
+      "term": "tent",
+      "score": 0.15181537661643507
+    },
+    {
+      "term": "beautiful",
+      "score": 0.14257041421100555
+    },
+    {
+      "term": "sleep",
+      "score": 0.12259820901687632
+    },
+    {
+      "term": "27",
+      "score": 0.11799367823672038
+    },
+    {
+      "term": "bike",
+      "score": 0.10701251509470194
+    },
+    {
+      "term": "sweden",
+      "score": 0.0815780687798475
+    },
+    {
+      "term": "wonderful",
+      "score": 0.07870284088539746
+    },
+    {
+      "term": "together",
+      "score": 0.07479495518515597
+    },
+    {
+      "term": "friends",
+      "score": 0.07358490967442251
+    },
+    {
+      "term": "buy",
+      "score": 0.06612894041684886
+    },
+    {
+      "term": "weather",
+      "score": 0.06000200327072981
+    },
+    {
+      "term": "world",
+      "score": 0.05411836475242763
+    },
+    {
+      "term": "johan",
+      "score": 0.05344877558494137
+    }
+  ]
+}

@@ -1,0 +1,181 @@
+{
+  "id": 131,
+  "added": "2010-12-28 18:20:12",
+  "modified": "2010-12-30 03:53:42",
+  "public": true,
+  "metadata": {
+    "Title": [
+      "Klara Krogstad to John Holm 1946.8.25"
+    ],
+    "Description": [
+      "BREV FRA KLARA KROGSTAD DATERT 25.  AUGUST, SER UT SOM DET ER SENDT 25.8.46, TIL JON HOLM, 108 WEST 5TE STREET, DELL RAPIDS, SYD DAKOTA, U.S.A.  FRIMERKENE ER KLIPPET VEKK.\n\n\n<-SPLITDESC->\n\n\nLETTER FROM KLARA KROGSTAD DATED AUGUST 25, NO YEAR,  POST STAMPED IN 1946.  TO JON HOLM, 108 WEST 5TE (5TH) STREET, DELL RAPIDS, SYD DAKOTA, U.S.A.  THE STAMPS HAVE BEEN REMOVED."
+    ],
+    "Creator": [
+      "Klara Krogstad",
+      "Siri Lawson, trans."
+    ],
+    "Date": [
+      "1946.08.25"
+    ],
+    "Language": [
+      "Norwegian",
+      "English trans."
+    ],
+    "Text": [
+      "Sluppen den 25 august\n\nKjære onkel!\n\nJeg hører at du ikke har faat mit brev; men det maa være kommet nu faar jeg skrev for længe siden, og kostet paa flypost for jeg var saa gla for pakken jeg fik.  Skoene har vi brukt hver sin gang min datter og jeg men nu er de mine for min datter har flyttet.  Onkel Ole var her paa vissit hos mig i dag, han og datteren og svigersønnen gik tur, skulde hilse fra ham, jeg fortalte jeg skulde skrive i dag.  Nu skal jeg gaa en tur til mor, min søster og jeg.  Vet du at hennes mor lever enda  hun er i sit 95 aar, er rask og kjæk.  Her er det fin sommer enda, men nu gaar vi vinter i møte, og jeg gruer for det blir meget mer vask men jeg maa ta det for min største gut gaar i lære paa jernbanen og saa er Svenn i 7de klasse paa skolen, er 13 aar.  Du maa hilse Alma  skal skrive til henne næste søndag.  Nu er pakken med overkott   (sikkert “overcoat”=ytterjakke) kommet  skal skal (skrevet to ganger) hente den i morgen.  Hils din frue og Alma og hennes barn.\n\nHa det bra onkel og hilset er du fra din brordatter og hennes barn.\n\nKlara.\n\n \n\n\n<-SPLITTLETTER->\n\n\nSluppen the 25th of August\n\nDear uncle!\n\nI hear you haven’t received my letter; but it must have arrived by now because I wrote a long time ago, and spent air fare on it because I was so happy about the package I received.  The shoes my daughter and I have shared between us but now they’re mine because my daughter has moved.  Uncle Ole was here for a visit today, he and his daughter and son in law were out on for a walk, he told me to tell you hello, I told him I was goind to write today.  Now I’m going to my mother’s, my sister and I.  Do you know her mother is still living  she’s in her 95th year, is doing fine.  We’re still having nice summer weather here, but now we’re approaching winter, and I’m dreading it because there will be a lot more cleaning to do but I have to take it because my biggest boy is an apprentice with the railroads and then Svenn is in 7th grade in school, is 13 years old (in those days, and also when I was in school in the 50’s, kids started school in 1st grade at age 7 and went through 7th grade –that was considered the obligatory elementary school.  This was changed only in recent years).  You must greet Alma  I’ll write her next Sunday.  Now the package with the overcoat (she actually calls it “overkott”) has arrived  I’ll pick it up tomorrow.  Say hello to your wife and Alma and her children.\n\nKeep well uncle and you are greeted from your brother’s daughter and her children.\n\nKlara."
+    ],
+    "LetterDate": [
+      "1946-08-25"
+    ],
+    "Location": [
+      "Sluppen"
+    ],
+    "Destination": [
+      "Dell Rapids"
+    ]
+  },
+  "tags": [
+    "1940s",
+    "Alma C. Wilson",
+    "John Holm",
+    "Klara Krogstad",
+    "Norway to US",
+    "Ola Holm",
+    "Sluppen",
+    "gifts",
+    "overcoat",
+    "postwar",
+    "shoes"
+  ],
+  "files": [
+    {
+      "original": "Klara Krogstad 25 august-1946.pdf",
+      "filename": "59f1c32b5becb29c58fa086295e2e9a5.pdf",
+      "mime_type": "application/pdf"
+    }
+  ],
+  "norwegian-tfidf": [
+    {
+      "term": "svigersønnen",
+      "score": 0.05961735797272451
+    },
+    {
+      "term": "overkott",
+      "score": 0.05961735797272451
+    },
+    {
+      "term": "ytterjakke",
+      "score": 0.05961735797272451
+    },
+    {
+      "term": "vissit",
+      "score": 0.05208314948837727
+    },
+    {
+      "term": "overcoat",
+      "score": 0.05208314948837727
+    },
+    {
+      "term": "hente",
+      "score": 0.05208314948837727
+    },
+    {
+      "term": "95",
+      "score": 0.047675920052418976
+    },
+    {
+      "term": "vask",
+      "score": 0.047675920052418976
+    },
+    {
+      "term": "gaar",
+      "score": 0.046795487463379366
+    },
+    {
+      "term": "kostet",
+      "score": 0.04454894100403004
+    },
+    {
+      "term": "flypost",
+      "score": 0.04454894100403004
+    },
+    {
+      "term": "datteren",
+      "score": 0.04454894100403004
+    },
+    {
+      "term": "rask",
+      "score": 0.04454894100403004
+    },
+    {
+      "term": "7de",
+      "score": 0.04454894100403004
+    },
+    {
+      "term": "gruer",
+      "score": 0.04212346762017994
+    }
+  ],
+  "english-tfidf": [
+    {
+      "term": "grade",
+      "score": 0.08699533903893791
+    },
+    {
+      "term": "school",
+      "score": 0.06694568426876493
+    },
+    {
+      "term": "7th",
+      "score": 0.06026013663541379
+    },
+    {
+      "term": "daughter",
+      "score": 0.048261720903017204
+    },
+    {
+      "term": "fare",
+      "score": 0.04662083229275193
+    },
+    {
+      "term": "goind",
+      "score": 0.04662083229275193
+    },
+    {
+      "term": "95th",
+      "score": 0.04662083229275193
+    },
+    {
+      "term": "overkott",
+      "score": 0.04662083229275193
+    },
+    {
+      "term": "25th",
+      "score": 0.04074670364393883
+    },
+    {
+      "term": "obligatory",
+      "score": 0.04074670364393883
+    },
+    {
+      "term": "arrived",
+      "score": 0.03868444721485638
+    },
+    {
+      "term": "shared",
+      "score": 0.037310558659971335
+    },
+    {
+      "term": "elementary",
+      "score": 0.037310558659971335
+    },
+    {
+      "term": "recent",
+      "score": 0.037310558659971335
+    },
+    {
+      "term": "dreading",
+      "score": 0.034872574995125735
+    }
+  ]
+}

@@ -1,0 +1,182 @@
+{
+  "id": 22,
+  "added": "2010-12-23 22:30:00",
+  "modified": "2010-12-30 04:27:10",
+  "public": true,
+  "metadata": {
+    "Title": [
+      "Anna Pettersen to John Holm 1946.12.2"
+    ],
+    "Description": [
+      "BREV FRA ANNA PETTERSEN, EN DAME I BÅTSFJORD, FINNMARK, DATERT 2.  DESEMBER – 1948, TIL JOHN HOLM, 108 VESTNFIFTH STR.  DELL RAPIDS, SOUT DAKOTA.  KONVOLUTTEN HAR TO GRØNNE 10-ØRES FRIMERKER MED LØVE, OG ET 1-KRONES FRIMERKE MED KONG HAAKON VII I ADMIRALSUNIFORM, SOM KOM UT 7.  JUNI-1946.\n\n\n<-SPLITDESC->\n\n\nLETTER FROM ANNA PETTERSEN, A LADY IN BÅTSFJORD, FINNMARK (WAY UP NORTH OF NORWAY), DATED DECEMBER 2 – 1948, TO JOHN HOLM, 108 VESTNFIFTH STR.  DELL RAPIDS, SOUT DAKOTA.  THE ENVELOPE HAS TWO GREEN 10 ØRE STAMPS WITH LION, AND A GREEN 1 KRONE STAMP WITH KING HAAKON VII WEARING HIS ADMIRAL UNIFORM, WHICH CAME OUT JUNE 7-1946."
+    ],
+    "Date": [
+      "1946.12.02"
+    ],
+    "Language": [
+      "Norwegian",
+      "English trans."
+    ],
+    "Text": [
+      "2/12-48\n\nTil John Holm.\n\nHar idag mottatt Deres adresse fra en god venninde av mig.  Og jeg tar mig den frihet å sende Dem dette brev, får å høre om De har noe tøi som De kan avstå, om det er brukt gjør det ikke noe.  Her i Norge er det vanskelig om klævarer, og metervarer eksisterer ikke mere.  Og da vi under krigen blev helt ribbet har det hittil vært svært vanskelig å skaffet sig det nødvendige.  Ville derfår være Dem meget takknemelig om De kunne hjelpe oss med noe klær.  Jeg er gift og vi har 2 gutter  min mann driver fiske.  alder på barna er 11 og 12 år.  Min mann bruker nr 52 i dressnummer og jeg bruker nr 42 i kjole å kåpe.\n\nØnsker Dem en god jul!\n\nÆrbødigst\n\nAnna Pettersen\n\nBåtsfjord\n\nFinnmark\n\nNorge\n\n\n<-SPLITTLETTER->\n\n\n2/12-48 (December 2)\n\nTo John Holm.\n\nToday I have received Your address from a good friend of mine.  And I take the liberty of sending you this letter, to ask if You have some clothes that You can spare, if they are used it doesn’t matter.  Here in Norway it’s hard to find clothing, and fabrics by the meter don’t exist anymore.  And as we lost everything during the war it has so far been very difficult to provide the necessities.  Therefore I would be very grateful to You if you could help us with some clothes.  I’m married and we have 2 boys  my husband is a fisherman.  the children are 11 and 12 years old.  My husband wears size 52 in suits and I wear size 42 in dresses and coats.\n\nWishing You a Merry Christmas!\n\nSincerely\n\nAnna Pettersen\n\nBåtsfjord\n\nFinnmark\n\nNorway"
+    ],
+    "Creator": [
+      "Siri Lawson, trans.",
+      "Anna Pettersen"
+    ],
+    "LetterDate": [
+      "1948-12-02"
+    ],
+    "Location": [
+      "Båtsfjord"
+    ],
+    "Destination": [
+      "Dell Rapids"
+    ]
+  },
+  "tags": [
+    "1940s",
+    "Anna Pettersen",
+    "Båtsfjord",
+    "Christmas",
+    "Finnmark",
+    "John Holm",
+    "Norway to US",
+    "cloth",
+    "clothes",
+    "postwar",
+    "poverty",
+    "request"
+  ],
+  "files": [
+    {
+      "original": "Anna Pettersen 2 des-1948.pdf",
+      "filename": "1129dade9b35f420932028ee762e14d4.pdf",
+      "mime_type": "application/pdf"
+    }
+  ],
+  "norwegian-tfidf": [
+    {
+      "term": "nr",
+      "score": 0.10344449254147084
+    },
+    {
+      "term": "12-48",
+      "score": 0.09456546437052853
+    },
+    {
+      "term": "frihet",
+      "score": 0.09456546437052853
+    },
+    {
+      "term": "avstå",
+      "score": 0.09456546437052853
+    },
+    {
+      "term": "klævarer",
+      "score": 0.09456546437052853
+    },
+    {
+      "term": "metervarer",
+      "score": 0.09456546437052853
+    },
+    {
+      "term": "eksisterer",
+      "score": 0.09456546437052853
+    },
+    {
+      "term": "ribbet",
+      "score": 0.09456546437052853
+    },
+    {
+      "term": "skaffet",
+      "score": 0.09456546437052853
+    },
+    {
+      "term": "derfår",
+      "score": 0.09456546437052853
+    },
+    {
+      "term": "takknemelig",
+      "score": 0.09456546437052853
+    },
+    {
+      "term": "dressnummer",
+      "score": 0.09456546437052853
+    },
+    {
+      "term": "pettersen",
+      "score": 0.09456546437052853
+    },
+    {
+      "term": "båtsfjord",
+      "score": 0.09456546437052853
+    },
+    {
+      "term": "bruker",
+      "score": 0.08414739640576663
+    }
+  ],
+  "english-tfidf": [
+    {
+      "term": "12-48",
+      "score": 0.07434132716952335
+    },
+    {
+      "term": "necessities",
+      "score": 0.07434132716952335
+    },
+    {
+      "term": "fisherman",
+      "score": 0.07434132716952335
+    },
+    {
+      "term": "coats",
+      "score": 0.07434132716952335
+    },
+    {
+      "term": "pettersen",
+      "score": 0.07434132716952335
+    },
+    {
+      "term": "båtsfjord",
+      "score": 0.07434132716952335
+    },
+    {
+      "term": "size",
+      "score": 0.0721093207159057
+    },
+    {
+      "term": "liberty",
+      "score": 0.06497447337817273
+    },
+    {
+      "term": "52",
+      "score": 0.06497447337817273
+    },
+    {
+      "term": "42",
+      "score": 0.06497447337817273
+    },
+    {
+      "term": "finnmark",
+      "score": 0.06497447337817273
+    },
+    {
+      "term": "spare",
+      "score": 0.05949521516049483
+    },
+    {
+      "term": "wears",
+      "score": 0.05949521516049483
+    },
+    {
+      "term": "meter",
+      "score": 0.05560761958682212
+    },
+    {
+      "term": "exist",
+      "score": 0.05560761958682212
+    }
+  ]
+}

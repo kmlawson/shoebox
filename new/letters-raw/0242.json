@@ -1,0 +1,104 @@
+{
+  "id": 242,
+  "added": "2010-12-31 22:59:01",
+  "modified": "2010-12-31 22:59:01",
+  "public": true,
+  "metadata": {
+    "Title": [
+      "Edvard Eidum to Alma C. Wilson Card 1949.12"
+    ],
+    "Description": [
+      "KORT FRA EDVARD EIDUM POSTSTEMPLET I DESEMBER –1949 (DATOEN ER ULESELIG), TIL MRS.  ALMA WILSON, 108.  VEST 5.  ST., DELL RAPIDS, S.  DAKOTA, U.S.A.  (HAN HAR BRUKT JOHAN'S ADRESSE).  KORTET HAR BILDE AV NARVIK, OG TRE MOSEGRØNNE 15-ØRES FRIMERKER MED LØVE.\n\n\n<-SPLITDESC->\n\n\nPOSTCARD FROM EDVARD EIDUM POST STAMPED IN DECEMBER – 1949 (THE DATE IS ILLEGIBLE), TO MRS.  ALMA WILSON, 108.  VEST 5.  ST., DELL RAPIDS, S DAKOTA, U.S.A.  (HE HAS USED JOHN'S ADDRESS).  THE CARD HAS A PICTURE OF NARVIK ON IT, AND THREE MOSS GREEN 30 ØRE STAMPS WITH LION."
+    ],
+    "Creator": [
+      "Edvard Eidum",
+      "Siri Lawson, trans."
+    ],
+    "Date": [
+      "1949.12"
+    ],
+    "Language": [
+      "Norwegian",
+      "English trans."
+    ],
+    "Text": [
+      "Glædelig Jul og Godt Nyttår ønskes.\n\nHanna å Edv.\n\n\n<-SPLITTLETTER->\n\n\nWishing you a Merry Christmas and a Happy New Year.\n\nHanna and Edv."
+    ],
+    "LetterDate": [
+      "1949-12"
+    ],
+    "Location": [
+      "Norway"
+    ],
+    "Destination": [
+      "Dell Rapids"
+    ]
+  },
+  "tags": [
+    "1940s",
+    "Alma C. Wilson",
+    "Christmas",
+    "Edvard Eidum",
+    "Norway to US",
+    "postwar"
+  ],
+  "files": [
+    {
+      "original": "Edvard Eidum desember-1949.pdf",
+      "filename": "f48da11bed5933be1f8d1b3297b4b78c.pdf",
+      "mime_type": "application/pdf"
+    }
+  ],
+  "norwegian-tfidf": [
+    {
+      "term": "glædelig",
+      "score": 0.683083762061794
+    },
+    {
+      "term": "ønskes",
+      "score": 0.683083762061794
+    },
+    {
+      "term": "edv",
+      "score": 0.5898144640725569
+    },
+    {
+      "term": "nyttår",
+      "score": 0.5479287260257393
+    },
+    {
+      "term": "jul",
+      "score": 0.2834345499287323
+    },
+    {
+      "term": "hanna",
+      "score": 0.22627709140759392
+    }
+  ],
+  "english-tfidf": [
+    {
+      "term": "edv",
+      "score": 0.5925580102482355
+    },
+    {
+      "term": "wishing",
+      "score": 0.5506722722014179
+    },
+    {
+      "term": "merry",
+      "score": 0.4446741444147518
+    },
+    {
+      "term": "happy",
+      "score": 0.2551610494987675
+    },
+    {
+      "term": "hanna",
+      "score": 0.22372918786417584
+    },
+    {
+      "term": "christmas",
+      "score": 0.18863505967961758
+    }
+  ]
+}

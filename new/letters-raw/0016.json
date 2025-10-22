@@ -1,0 +1,168 @@
+{
+  "id": 16,
+  "added": "2010-12-23 22:05:17",
+  "modified": "2010-12-30 14:39:05",
+  "public": true,
+  "metadata": {
+    "Title": [
+      "Alma C. Wilson to Unknown Undated"
+    ],
+    "Description": [
+      "BREV FRA ALMA WILSON TIL ?  UDATERT, INGEN KONVOLUTT.\n\n\n<-SPLITDESC->\n\n\nLETTER FROM ALMA WILSON TO ?, UNDATED, NO ENVELOPE."
+    ],
+    "Creator": [
+      "Alma C. Wilson",
+      "Siri Lawson, trans."
+    ],
+    "Language": [
+      "Norwegian",
+      "English",
+      "English trans."
+    ],
+    "Text": [
+      "Wednesday\n\nDear folks. I got a letter now that Axel sente 4 and a half maaneder siden saa de faar se det. Mrs Jens Olsen har veret her ibesøg hun stoppet natten over. Hade veret paa Trunderlage i Baltic. Henry kom hjem om tirsdagen vi er alle bra her. Skriv naar di kan vi liker at høre fra dere mer ofte. skal nu vaske kler idag.\nAlma\n\n\n<-SPLITTLETTER->\n\n\nWednesday\n\nDear folks. I got a letter now that Axel sent 4 and a half months ago so that you can see it. Mrs Jens Olsen has been to visit she spent the night. Had been to Trønderlag in Baltic. Henry came home on Tuesday. We are all well here. Write when you can we like to hear from you more often. I'm now going to wash clothes today.\nAlma"
+    ],
+    "Location": [
+      "Dell Rapids"
+    ],
+    "Destination": [
+      ""
+    ]
+  },
+  "tags": [
+    "Alma C. Wilson",
+    "Trønderlag",
+    "laundry"
+  ],
+  "files": [
+    {
+      "original": "Alma Wilson undated.pdf",
+      "filename": "824f193fe0ca0b3b359d2e1c37dcdbad.pdf",
+      "mime_type": "application/pdf"
+    }
+  ],
+  "norwegian-tfidf": [
+    {
+      "term": "wednesday",
+      "score": 0.14063581880745268
+    },
+    {
+      "term": "folks",
+      "score": 0.14063581880745268
+    },
+    {
+      "term": "half",
+      "score": 0.14063581880745268
+    },
+    {
+      "term": "jens",
+      "score": 0.14063581880745268
+    },
+    {
+      "term": "ibesøg",
+      "score": 0.14063581880745268
+    },
+    {
+      "term": "trunderlage",
+      "score": 0.14063581880745268
+    },
+    {
+      "term": "baltic",
+      "score": 0.14063581880745268
+    },
+    {
+      "term": "tirsdagen",
+      "score": 0.14063581880745268
+    },
+    {
+      "term": "now",
+      "score": 0.12286281417771049
+    },
+    {
+      "term": "maaneder",
+      "score": 0.12286281417771049
+    },
+    {
+      "term": "olsen",
+      "score": 0.12286281417771049
+    },
+    {
+      "term": "stoppet",
+      "score": 0.12286281417771049
+    },
+    {
+      "term": "henry",
+      "score": 0.12286281417771049
+    },
+    {
+      "term": "kler",
+      "score": 0.12286281417771049
+    },
+    {
+      "term": "letter",
+      "score": 0.11246627294416783
+    }
+  ],
+  "english-tfidf": [
+    {
+      "term": "jens",
+      "score": 0.20375030409424916
+    },
+    {
+      "term": "trønderlag",
+      "score": 0.20375030409424916
+    },
+    {
+      "term": "baltic",
+      "score": 0.20375030409424916
+    },
+    {
+      "term": "wednesday",
+      "score": 0.17807818629573266
+    },
+    {
+      "term": "olsen",
+      "score": 0.17807818629573266
+    },
+    {
+      "term": "henry",
+      "score": 0.17807818629573266
+    },
+    {
+      "term": "wash",
+      "score": 0.15240606849721616
+    },
+    {
+      "term": "tuesday",
+      "score": 0.1441414925226158
+    },
+    {
+      "term": "spent",
+      "score": 0.13738884227098785
+    },
+    {
+      "term": "folks",
+      "score": 0.12673395069869967
+    },
+    {
+      "term": "mrs",
+      "score": 0.08926725026616338
+    },
+    {
+      "term": "half",
+      "score": 0.07903564372437973
+    },
+    {
+      "term": "months",
+      "score": 0.07903564372437973
+    },
+    {
+      "term": "night",
+      "score": 0.06531809600967994
+    },
+    {
+      "term": "clothes",
+      "score": 0.0627628044731262
+    }
+  ]
+}

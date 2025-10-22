@@ -1,0 +1,183 @@
+{
+  "id": 117,
+  "added": "2010-12-28 03:02:20",
+  "modified": "2010-12-30 03:53:44",
+  "public": true,
+  "metadata": {
+    "Title": [
+      "Klara Krogstad to John Holm 1946.2.24"
+    ],
+    "Description": [
+      "BREV FRA KLARA KROGSTAD DATERT 24.  FEBRUAR TIL MR & MRS J HOLM, 108 WEST 5 ST, DELL RAPIDS, SYD DAKOTA, U.S.A.  POSTSTEMPLET 25.2.46.  FRIMERKENE ER KLIPPET UT.\n\n\n<-SPLITDESC->\n\n\nLETTER FROM KLARA KROGSTAD DATED FEBRUARY 24 TO MR & MRS J HOLM, 108 WEST 5 ST., DELL RAPIDS, SYD DAKOTA, U.S.A.  POST STAMPED FEBRUARY 25-1946.  THE STAMPS HAVE BEEN CUT OUT."
+    ],
+    "Creator": [
+      "Klara Krogstad",
+      "Siri Lawson, trans."
+    ],
+    "Date": [
+      "1946.02.24"
+    ],
+    "Language": [
+      "Norwegian",
+      "English trans."
+    ],
+    "Text": [
+      "Sluppen den 24. februar\n\nKjære onkel Johan.\n\nHjertelig tak for Julehilsen jeg fik i gaar.  Ser av det at tante har været syk, men efter en slik sykdom saa gammel som hun er, er det fint at det har gaat saa fort.  Ja onkel nu er det meget rart siden vi hadde brev fra hverandre.  Jeg er saa gla for at vi ingen fly alarm faar mere saa du kan ikke tro det, mine nerver var paa bristepunktet naar sirenene gik og vi maatte gaa i kjælleren.  Vi har det bare bra  nu har jeg bare guttene igjen, mine døtre er gifte og har flyttet fra mig, jeg har en søn som er 19 aar i sommer, han har gaat mekanikerkurset saa nu er han kommet sig inn paa jernbanen.  Min yngste gut er 13 år i sommer  han gaar paa skolen enda, selv holder jeg og vasker der min mand arbeidet saa det gaar da bra bare vi faar være frisk.  Ma er frisk og kjæk, hun har sluttet og vaske paa skolen nu  er bare hjemme og steller for min bror Erling som er 38 aar den 3 mars.  Hennes ma altsaa min bestemor lever ennu  hun er 94 aar i sommer  hun bor hos sin datter i nærheten av mig, har eget hus dem.  Det er nu meget bedre i mat og litt klær er det å faa men de er saa daarlige saa jeg har ikke kjøpt no særlig av dem, i sær strømpestrik er en saga blot  vi bruker papirhyssing.  Vi faar være taalmodige, det blir vel litt efter hvert nu.  Jeg ser av bildene Alma sente mig du har det pent og trivelig.  Husker du onkel at jeg skulde faa komme til dig, det snakker jeg meget om, men min skjebne var vel ikke slik. \n\nDu maa hilse tante fra mig og mine og ha det rigtig bra.  Jeg har sent brev til Alma for en tid siden.  Jeg faar vel brev fra dig jeg ogsaa nu, men kanske du har sluttet og skrive.  Ha det bra, og vær hjertelig hilset fra din bror datter Klara.\n\n\n<-SPLITTLETTER->\n\n\nSluppen the 24th of February\n\nDear uncle Johan\n\nThank you so much for the Christmas greeting I got yesterday.  I see from that that auntie has been sick, but after an illness like that as old as she is, it’s good that it has gone so quickly.  Well uncle a lot of things have happened since we had letters from eachother.  You can’t imagine how glad I am that we don’t get air raid sirens anymore, my nerves were on the point of bursting when the sirens went and we had to go to the basement.  We are doing just fine  I only have the boys left now, my daughters are married and have moved away from me, I have a son who turns 19 years old this summer, he has taken the mechanics class so now he has gotten a job with the railroads.  My youngest boy turns 13 this summer  he’s still going to school, as for me I’m still cleaning where my husband used to work so we’ll be fine as long as we can stay healthy.  Ma (that’s the word she uses) is healthy and doing well, she has quit cleaning at the school now, and is just at home keeping house for my brother Erling who turns 38 years old on March 3.  Her ma that is my grandmother is still alive  she’ll turn 94 this summer  she lives with her daughter nearby me, they have their own house.  There is a lot more food now and some clothes are to be had but they are so bad that I haven’t bought much of them, especially elastic for stockings is a thing of the past  we use twine.  We’ll have to be patient, little by little now there’s bound to be more.  I see from the pictures Alma sent me that you have a nice and cosy place. Do you remember uncle that I was supposed to come visit you, I talk about that a lot, but my fate wanted it otherwise.\n\nGive our regards to auntie and keep well.  I’ve sent a letter to Alma a while back.  I guess I too will get a letter from you now, but maybe you’ve quit writing.  Keep well, and be heartily greeted from your brother’s daughter Klara."
+    ],
+    "LetterDate": [
+      "1946-02-24"
+    ],
+    "Location": [
+      "Sluppen"
+    ],
+    "Destination": [
+      "Dell Rapids"
+    ]
+  },
+  "tags": [
+    "1940s",
+    "Christmas",
+    "John Holm",
+    "Klara Krogstad",
+    "Norway to US",
+    "Sluppen",
+    "air raid sirens",
+    "clothes",
+    "food",
+    "photos",
+    "postwar",
+    "railroad",
+    "sickness"
+  ],
+  "files": [
+    {
+      "original": "Klara krogstad 24 februar-1946.pdf",
+      "filename": "a3810c21c71963c0f8b8c72824c97361.pdf",
+      "mime_type": "application/pdf"
+    }
+  ],
+  "norwegian-tfidf": [
+    {
+      "term": "ma",
+      "score": 0.0649805132566303
+    },
+    {
+      "term": "faar",
+      "score": 0.052480736793669554
+    },
+    {
+      "term": "sluttet",
+      "score": 0.052427952362005065
+    },
+    {
+      "term": "gaar",
+      "score": 0.0478353871847878
+    },
+    {
+      "term": "skolen",
+      "score": 0.04113698862797696
+    },
+    {
+      "term": "nerver",
+      "score": 0.04062812543326411
+    },
+    {
+      "term": "bristepunktet",
+      "score": 0.04062812543326411
+    },
+    {
+      "term": "sirenene",
+      "score": 0.04062812543326411
+    },
+    {
+      "term": "kjælleren",
+      "score": 0.04062812543326411
+    },
+    {
+      "term": "mekanikerkurset",
+      "score": 0.04062812543326411
+    },
+    {
+      "term": "strømpestrik",
+      "score": 0.04062812543326411
+    },
+    {
+      "term": "blot",
+      "score": 0.04062812543326411
+    },
+    {
+      "term": "papirhyssing",
+      "score": 0.04062812543326411
+    },
+    {
+      "term": "taalmodige",
+      "score": 0.04062812543326411
+    },
+    {
+      "term": "skjebne",
+      "score": 0.04062812543326411
+    }
+  ],
+  "english-tfidf": [
+    {
+      "term": "ma",
+      "score": 0.06244300038941276
+    },
+    {
+      "term": "sirens",
+      "score": 0.0571772197646314
+    },
+    {
+      "term": "turns",
+      "score": 0.05086142440224472
+    },
+    {
+      "term": "cleaning",
+      "score": 0.04290952770400659
+    },
+    {
+      "term": "bursting",
+      "score": 0.035722455912628105
+    },
+    {
+      "term": "twine",
+      "score": 0.035722455912628105
+    },
+    {
+      "term": "auntie",
+      "score": 0.03543726608188241
+    },
+    {
+      "term": "basement",
+      "score": 0.03122150019470638
+    },
+    {
+      "term": "mechanics",
+      "score": 0.03122150019470638
+    },
+    {
+      "term": "class",
+      "score": 0.03122150019470638
+    },
+    {
+      "term": "elastic",
+      "score": 0.03122150019470638
+    },
+    {
+      "term": "fate",
+      "score": 0.03122150019470638
+    },
+    {
+      "term": "24th",
+      "score": 0.0285886098823157
+    },
+    {
+      "term": "raid",
+      "score": 0.0285886098823157
+    },
+    {
+      "term": "94",
+      "score": 0.0285886098823157
+    }
+  ]
+}

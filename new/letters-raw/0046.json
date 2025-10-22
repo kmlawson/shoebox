@@ -1,0 +1,185 @@
+{
+  "id": 46,
+  "added": "2010-12-26 02:19:15",
+  "modified": "2010-12-26 02:19:15",
+  "public": true,
+  "metadata": {
+    "Title": [
+      "Axel Holm to John Holm 1946.12.11"
+    ],
+    "Description": [
+      "BREV FRA AXEL HOLM DATERT 11.  DESEMBER-1946 TIL JOHAN.  INGEN KONVOLUTT.\n\n\n<-SPLITDESC->\n\n\nLETTER FROM AXEL HOLM DATED DECEMBER 11-1946 TO JOHN.  NO ENVELOPE."
+    ],
+    "Creator": [
+      "Axel Holm",
+      "Siri Lawson, trans."
+    ],
+    "Date": [
+      "1946.12.11"
+    ],
+    "Language": [
+      "Norwegian",
+      "English trans."
+    ],
+    "Text": [
+      "Stjørdal den 11-12-1946\n\nKjære broder Johan.\n\nTak for brevet jeg fik igår, og som du hadde skrevet den 3 des.\n\nTak for bok merket du sente med, og det di fremdeles vil sende os.  Vis det passer dere tror jeg at Einar har bruk for litt av vertt, for dem har nu netopp begynt livet.  Foresten er det på det gamle  Eilif blir 37 år imorgen.  i dag skal jeg sykle til Hegre og besøke mor.  Jeg skulde hat mig en bil som har godt 10 mil i timen.  Jeg sender dig et Julehefte  det var et stykke der om Enok Berg som du kjente vil jeg tro.\n\nSå tak for alt, og atter igjen en velsignet Jul og Godt Nyttar.\n\nAxel\n\nProst Rode husker du vel.\n\nSender dig nogle Julekort så du på dine gamle dage for se et glimt av gamle Norge.\n\nAx.\n\nHvad årstal reste du til Amerika og vor gammel var du  vad hette din første hustru og vor var hun ifra  vor er hun ifra (fød) den du nu har, vad tid døde Olaf?  Anna?\n\nDet blei mye spørsmål.\n\nAx.\n\nJeg passe Helge idag  Astrid og Einar er i Trondheim, du må tro han roter ut.\n\nAx.\n\n\n<-SPLITTLETTER->\n\n\nStjørdal the 11th Dec.-1946\n\nDear brother Johan\n\nThank you for the letter I received yesterday, and which you had written on Dec. 3.\n\nThank you for the book mark you inclosed, and for what you will continue to send us.  If it suits you I think Einar is in need of all kinds of things, as they are just now starting out in life.  Everything is as usual  Eilif turns 37 years old tomorrow.  today I’m going to bike to Hegre to visit mother.  I ought to have a car that could go 10 miles an hour.  I’m sending you a Christmas magazine  there was a piece in it about Enok Berg whom you knew I would think.\n\nSo thank you for everything, and once again have a blessed Christmas and Happy New Year.\n\nAxel\n\nYou remember the priest Rode don’t you.\n\nI’m sending you some Christmas cards so that you in your old age can see a glimpse of old Norway.\n\nAx.\n\nWhat year did you go to America and how old were you  what was the name of your first wife and where was she from  where is she from (born) the one you have now, when did Olaf die?  Anna?\n\nThat was many questions.\n\nAx.\n\nI’m looking after Helge today  Astrid and Einar are in Trondheim, he makes a terrible mess.\n\nAx."
+    ],
+    "LetterDate": [
+      "1946-12-11"
+    ],
+    "Location": [
+      "Stjørdal"
+    ],
+    "Destination": [
+      "Dell Rapids"
+    ]
+  },
+  "tags": [
+    "1940s",
+    "Axel Holm",
+    "Berg",
+    "Christmas",
+    "Enok",
+    "John Holm",
+    "New Year",
+    "Norway to US",
+    "Stjørdal",
+    "Trondheim",
+    "bicycle",
+    "bookmark",
+    "car",
+    "gifts",
+    "postwar"
+  ],
+  "files": [
+    {
+      "original": "Axel Holm 11 desember-1946.pdf",
+      "filename": "6d40fd9065c4e88587803eeed4e00534.pdf",
+      "mime_type": "application/pdf"
+    }
+  ],
+  "norwegian-tfidf": [
+    {
+      "term": "ax",
+      "score": 0.14459949378535866
+    },
+    {
+      "term": "vad",
+      "score": 0.06417247419844217
+    },
+    {
+      "term": "11-12-1946",
+      "score": 0.060272493774622585
+    },
+    {
+      "term": "vertt",
+      "score": 0.060272493774622585
+    },
+    {
+      "term": "enok",
+      "score": 0.060272493774622585
+    },
+    {
+      "term": "nyttar",
+      "score": 0.060272493774622585
+    },
+    {
+      "term": "prost",
+      "score": 0.060272493774622585
+    },
+    {
+      "term": "rode",
+      "score": 0.060272493774622585
+    },
+    {
+      "term": "hette",
+      "score": 0.060272493774622585
+    },
+    {
+      "term": "fød",
+      "score": 0.060272493774622585
+    },
+    {
+      "term": "des",
+      "score": 0.05265549179044736
+    },
+    {
+      "term": "julehefte",
+      "score": 0.05265549179044736
+    },
+    {
+      "term": "berg",
+      "score": 0.05265549179044736
+    },
+    {
+      "term": "julekort",
+      "score": 0.05265549179044736
+    },
+    {
+      "term": "glimt",
+      "score": 0.05265549179044736
+    }
+  ],
+  "english-tfidf": [
+    {
+      "term": "ax",
+      "score": 0.1375826850586443
+    },
+    {
+      "term": "dec",
+      "score": 0.061173101105899796
+    },
+    {
+      "term": "inclosed",
+      "score": 0.05730477302650758
+    },
+    {
+      "term": "enok",
+      "score": 0.05730477302650758
+    },
+    {
+      "term": "rode",
+      "score": 0.05730477302650758
+    },
+    {
+      "term": "glimpse",
+      "score": 0.05730477302650758
+    },
+    {
+      "term": "11th",
+      "score": 0.05008448989567481
+    },
+    {
+      "term": "-1946",
+      "score": 0.05008448989567481
+    },
+    {
+      "term": "berg",
+      "score": 0.05008448989567481
+    },
+    {
+      "term": "37",
+      "score": 0.0458608950195481
+    },
+    {
+      "term": "priest",
+      "score": 0.0458608950195481
+    },
+    {
+      "term": "cards",
+      "score": 0.0458608950195481
+    },
+    {
+      "term": "einar",
+      "score": 0.043068145959574596
+    },
+    {
+      "term": "mark",
+      "score": 0.042864206764842046
+    },
+    {
+      "term": "questions",
+      "score": 0.042864206764842046
+    }
+  ]
+}

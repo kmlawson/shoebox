@@ -1,0 +1,144 @@
+{
+  "id": 236,
+  "added": "2010-12-31 22:38:05",
+  "modified": "2010-12-31 22:38:05",
+  "public": true,
+  "metadata": {
+    "Title": [
+      "Laura Karlson to Alma C. Wilson Card 1949.12.12"
+    ],
+    "Description": [
+      "JULEKORT FRA LAURA KARLSON, POSTSTEMPLET 12.  DESEMBER – 1949, TIL MRS.  ALMA WILSON, 102 WEST 5TE STREET, DELL RAPIDS, SYD DAKOTA, U.S.A.  KONVOLUTTEN HAR TO MOSEGRØNNE 15-ØRES FRIMERKER MED LØVE, ET GRØNT 10-ØRES FRIMERKE MED LØVE, OG ET LILLA 5-ØRES FRIMERKE MED POSTHORN.\n\n\n<-SPLITDESC->\n\n\nCHRISTMAS CARD FROM LAURA KARLSON, POST STAMPED ON DECEMBER 12 – 1949, TO MRS.  ALMA WILSON, 102 WEST 5TE STREET, DELL RAPIDS, SYD DAKOTA, U.S.A.  THE ENVELOPE HAS TWO MOSS GREEN 15 ØRE STAMPS WITH LION, A GREEN10 ØRE STAMP WITH LION, AND A PURPLE 5 ØRE STAMP WITH THE NORWEGIAN POSTAL HORN."
+    ],
+    "Creator": [
+      "Laura Karlson",
+      "Siri Lawson, trans."
+    ],
+    "Date": [
+      "1949.12.12"
+    ],
+    "Language": [
+      "Norwegian",
+      "English trans."
+    ],
+    "Text": [
+      "Kjere alle sammen.\n\nJeg vil ønske dere alle en God Jul og et Godt Nytaar.\n\nJeg har veret Syk en tid. Skriv en gang ijen.\n\nLaura og Mindor.\n\n\n<-SPLITTLETTER->\n\n\nDear all of you.\n\nI wish you all a Merry Christmas and a Happy New Year.\n\nI've been Sick for a while. Write sometime again.\n\nLaura and Mindor."
+    ],
+    "LetterDate": [
+      "1949-12-12"
+    ],
+    "Location": [
+      "Norway"
+    ],
+    "Destination": [
+      "Dell Rapids"
+    ]
+  },
+  "tags": [
+    "1940s",
+    "Alma C. Wilson",
+    "Christmas",
+    "Laura Karlson",
+    "Norway to US",
+    "postwar"
+  ],
+  "files": [
+    {
+      "original": "Laura Karlson-jul 12 des-1949.pdf",
+      "filename": "4f7a17589f82efcaf91fd69453182419.pdf",
+      "mime_type": "application/pdf"
+    }
+  ],
+  "norwegian-tfidf": [
+    {
+      "term": "nytaar",
+      "score": 0.2806274236992986
+    },
+    {
+      "term": "kjere",
+      "score": 0.19569022030140465
+    },
+    {
+      "term": "skriv",
+      "score": 0.17803967353404487
+    },
+    {
+      "term": "ønske",
+      "score": 0.17540444290920376
+    },
+    {
+      "term": "mindor",
+      "score": 0.16326522539788352
+    },
+    {
+      "term": "jul",
+      "score": 0.15460066359749036
+    },
+    {
+      "term": "veret",
+      "score": 0.15255767670184867
+    },
+    {
+      "term": "syk",
+      "score": 0.13768227453986667
+    },
+    {
+      "term": "sammen",
+      "score": 0.11239106285829965
+    },
+    {
+      "term": "tid",
+      "score": 0.08754621422196497
+    },
+    {
+      "term": "laura",
+      "score": 0.07296960966967594
+    }
+  ],
+  "english-tfidf": [
+    {
+      "term": "sometime",
+      "score": 0.30036669392804616
+    },
+    {
+      "term": "merry",
+      "score": 0.24254953331713736
+    },
+    {
+      "term": "mindor",
+      "score": 0.16476170513007188
+    },
+    {
+      "term": "happy",
+      "score": 0.13917875427205503
+    },
+    {
+      "term": "wish",
+      "score": 0.12062463096809908
+    },
+    {
+      "term": "sick",
+      "score": 0.11923667895620922
+    },
+    {
+      "term": "christmas",
+      "score": 0.10289185073433686
+    },
+    {
+      "term": "laura",
+      "score": 0.07197527356658118
+    },
+    {
+      "term": "write",
+      "score": 0.050227120015141694
+    },
+    {
+      "term": "ve",
+      "score": 0.03930490984768141
+    },
+    {
+      "term": "dear",
+      "score": 0.018904853256384958
+    }
+  ]
+}

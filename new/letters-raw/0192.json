@@ -1,0 +1,168 @@
+{
+  "id": 192,
+  "added": "2010-12-30 02:39:24",
+  "modified": "2010-12-30 14:37:17",
+  "public": true,
+  "metadata": {
+    "Title": [
+      "Information Found in a Bible Undated"
+    ],
+    "Text": [
+      "John Holm, født 30. juni-1868, Hegre, Norge — døpt og konfirmert i Hegre kirke, Stjørdalen, Norge\nFlyttet til Amerika i året 1889 (tror han emigrerte i mai mnd.)\n\nReiste til Norge i 1914\n\n \n\nKaroline Holm, født 1. mars-1866, Gudbrandsdalen, Norge\n\nGift 12. September-1899 i Northwood, Iowa\n\n \n\nJohn Holm, født 4. april-1900 — døde 25. februar-1903 — begravet 28. februar-1903.\n\n \n\nOlga Holm, født 24. april-1902 — døde 29. februar-1904 — begravet 4. mars-1904.\n\nKarl Holm, født 19. desember-1904 — døde 2. oktober-1910 — begravet 4. oktober-1910, 5 år, 2 mndr. og 15 dager.\n\nNorthwood, Iowa\n\nPå et løst papirark som lå inni bibelen står det:\n\n \n\nCarl Melvin Holm\n\nFødt 17. desember-1904\n\nDøde 2. oktober-1910\n\n5 år 9 mndr. 15 dager — begravet 4. oktober-1910 – det er ikke godt å si hva som er riktig.\n\n \n\n\n<-SPLITTLETTER->\n\n\n \n\nMr. John Holm, born June 30-1868, Hegre, Norway — babtized and confirmed in Hegre church, Stjørdalen, Norway\n\nMoved to America year 1889\n\nWent to Norway 1914\n\n \n\nMrs. Karoline Holm, born March 1-1866, Gudbrandsdalen, Norway\n\n \n\nNEXT PAGE:\n\nMarried Sept. 12-1899 in Northwood, Iowa\n\nNEXT PAGE:\n\n \n\nKarl Holm, born December 19-1904 — died October 2-1910 — buried October 4-1910, 5 years, 2 months and 15 days.\n\n \n\nJohn Holm, born April 4-1900 — died February 25-1903 — buried February 28-1903\n\n \n\nOlga Holm, born April 24-1902 — died February 29-1904 — buried March 4-1904\n\nNorthwood, Iowa\n\n \n\nA lose piece of paper inside the bible says:\n\nCarl Melvin Holm\n\nborn Dec. 17-1904\n\ndied Oct. 2-1910\n\n5 years 9 months 15 days — buried oct. 4-1910"
+    ],
+    "Description": [
+      ""
+    ],
+    "Location": [
+      ""
+    ],
+    "Destination": [
+      ""
+    ]
+  },
+  "tags": [
+    "Carl Melvin Holm",
+    "Gudbrandsdalen",
+    "Iowa",
+    "John Holm",
+    "Karl Holm",
+    "Karoline Holm",
+    "Olga Holm",
+    "Stjørdal",
+    "bible",
+    "biographical info",
+    "emigration",
+    "project background"
+  ],
+  "files": [
+    {
+      "original": "Bibel info.pdf",
+      "filename": "385c22018f2aa7c082017201cdccfa86.pdf",
+      "mime_type": "application/pdf"
+    }
+  ],
+  "norwegian-tfidf": [
+    {
+      "term": "oktober-1910",
+      "score": 0.22160795690871335
+    },
+    {
+      "term": "begravet",
+      "score": 0.17721958160899176
+    },
+    {
+      "term": "født",
+      "score": 0.16070203572329933
+    },
+    {
+      "term": "northwood",
+      "score": 0.11080397845435667
+    },
+    {
+      "term": "februar-1903",
+      "score": 0.11080397845435667
+    },
+    {
+      "term": "desember-1904",
+      "score": 0.11080397845435667
+    },
+    {
+      "term": "mndr",
+      "score": 0.0968010051097113
+    },
+    {
+      "term": "iowa",
+      "score": 0.08279803176506595
+    },
+    {
+      "term": "døde",
+      "score": 0.07256232239905935
+    },
+    {
+      "term": "hegre",
+      "score": 0.06641560315463507
+    },
+    {
+      "term": "holm",
+      "score": 0.0617508372627922
+    },
+    {
+      "term": "4",
+      "score": 0.059695504980128655
+    },
+    {
+      "term": "mars-1866",
+      "score": 0.05540198922717834
+    },
+    {
+      "term": "gudbrandsdalen",
+      "score": 0.05540198922717834
+    },
+    {
+      "term": "september-1899",
+      "score": 0.05540198922717834
+    }
+  ],
+  "english-tfidf": [
+    {
+      "term": "buried",
+      "score": 0.15724526457012633
+    },
+    {
+      "term": "born",
+      "score": 0.12528915188239884
+    },
+    {
+      "term": "northwood",
+      "score": 0.1111365295059541
+    },
+    {
+      "term": "2-1910",
+      "score": 0.1111365295059541
+    },
+    {
+      "term": "4-1910",
+      "score": 0.1111365295059541
+    },
+    {
+      "term": "february",
+      "score": 0.10369141420802701
+    },
+    {
+      "term": "iowa",
+      "score": 0.08894234185609329
+    },
+    {
+      "term": "oct",
+      "score": 0.06912760947201801
+    },
+    {
+      "term": "hegre",
+      "score": 0.06674815420623248
+    },
+    {
+      "term": "page",
+      "score": 0.06461965894041781
+    },
+    {
+      "term": "died",
+      "score": 0.06341141728567279
+    },
+    {
+      "term": "october",
+      "score": 0.06093639516680256
+    },
+    {
+      "term": "holm",
+      "score": 0.05805838959240746
+    },
+    {
+      "term": "30-1868",
+      "score": 0.05556826475297705
+    },
+    {
+      "term": "babtized",
+      "score": 0.05556826475297705
+    }
+  ]
+}

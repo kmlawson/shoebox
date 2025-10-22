@@ -1,0 +1,184 @@
+{
+  "id": 151,
+  "added": "2010-12-29 20:38:54",
+  "modified": "2010-12-30 03:48:46",
+  "public": true,
+  "metadata": {
+    "Title": [
+      "Ola Holm to John Holm 1947.2.4"
+    ],
+    "Description": [
+      "BREV FRA OLA HOLM, NONNEGT.4, TR.HEIM, DATERT 4.  FEBRUAR-1947, TIL MR JOHN HOLM, 108.  W. 5TH STR., DELL RAPIDS, SO.  DAK.  FRIMERKENE ER KLIPPET UT.\n\n\n<-SPLITDESC->\n\n\nLETTER FROM OLA HOLM, NONNEGT.4, TR.HEIM, DATED FEBRUARY 4-1947, TO MR.  JOHN HOLM, 108.  W. 5TH STR., DELL RAPIDS, SO.  DAK.  THE STAMPS HAVE BEEN REMOVED.\n"
+    ],
+    "Creator": [
+      "Ola Holm",
+      "Siri Lawson, trans."
+    ],
+    "Date": [
+      "1947.02.04"
+    ],
+    "Language": [
+      "Norwegian",
+      "English trans."
+    ],
+    "Text": [
+      "Tr.heim 4-2-47\n\nGode Broder.\n\nTusind tak for Pakke igjen  det var gode greier, bare det at denne Suit også er for trang til vinterbruk  for se til sommeren, da jeg ikke har så meget under, men her er kaldt om sommeren også, eller rettere sakt ingen sommer.  9 måneder vinter og 3 måneder regn her.  den forige skal jeg ha til Skrædder og se og lægge ut.  Det var sørgelig, så gott stof som det var.  Underklærne og Skoene var gode saker så du må ha tusin tak for alt, det er rent for galt at du skal spandere slig.  Jeg er ikke rigtig bra enda men er oppe og pusler lit  Men Kona ligger nu igjen.  Vi har hat så mye tørr kulde og sandstorm her i vinter så det er mye sykdom.  Som du vel vet så er kona til Axel gået hjem til hvilen og det var got.  foresten er det bra  ingen særlig nyheter.\n\nHåper du og dine er frisk og rask allesammen.  Jeg blir vist ikke stærk før våren da det blir sommer og Sol igjen.  Vinteren er for lang og mørk her  Jeg er ikke bra oplagt til og skrive idag, men ville sende dig disse ord, med tak for alt du sender  det kommer vel med kan du tro,  Skal hilse så meget fra kona og jenterne  alt vel med os.\n\nJeg skal snart skrive igjen.  Skal også skrive til Florence nu  trist at hun er syk.\n\nVor beste hilsen da til dere alle alle.\n\nDin Olav.\n\n \n\n<-SPLITTLETTER->\n\n\n\nTr.heim 4-2-47\n\nGood Brother\n\nA thousand thanks for another Package  they were good things, only this Suit too is too tight for winter use  will see this summer, when I don’t wear as much underneath, but it’s cold here in the summer too, or rather no summer.  9 months winter and 3 months rain here.  the last one I’ll take to a Tailor and have it made larger.  That’s too bad, as it was such good fabric.  The underwear and the Shoes were good things so a thousand thanks for everything, it’s really too much that you should spend so much on us.  I’m not quite well yet but am up fiddling around a little bit.  But the Wife is in bed again now.  We’ve had so much dry cold and sandstorms here this winter so there’s are lot of sickness.  As you probably know Axel’s wife has gone home to her rest and that was good.  as for the rest everything is fine  not much news.\n\nHope you and yours are all well and spunky.  I probably wont get strong until spring when it’s summer and Sunshine again.  The winter is too long and dark here.  I don’t really feel up to writing today, but wanted to send you these words, with my thanks for everything you’re sending  you can be sure it’s welcome.  The wife and girls send their best regards  all is well with us.\n\nI’ll soon write again.  Shall also write to Florence now  too bad she’s sick.\n\nOur best wishes to you all then\n\nYours Olav"
+    ],
+    "LetterDate": [
+      "1947-02-04"
+    ],
+    "Location": [
+      "Trondheim"
+    ],
+    "Destination": [
+      "Dell Rapids"
+    ]
+  },
+  "tags": [
+    "1940s",
+    "Florence Winters",
+    "John Holm",
+    "Norway to US",
+    "Ola Holm",
+    "Trondheim",
+    "gifts",
+    "postwar",
+    "sandstorm",
+    "shoes",
+    "sickness",
+    "suit",
+    "tailor",
+    "underwear"
+  ],
+  "files": [
+    {
+      "original": "Ola Holm 4 februar-1947.pdf",
+      "filename": "a55f9e4fddfa6e934757986d67e25ba2.pdf",
+      "mime_type": "application/pdf"
+    }
+  ],
+  "norwegian-tfidf": [
+    {
+      "term": "kona",
+      "score": 0.06649785803707978
+    },
+    {
+      "term": "måneder",
+      "score": 0.062124416511257836
+    },
+    {
+      "term": "4-2-47",
+      "score": 0.058348903547772925
+    },
+    {
+      "term": "vinterbruk",
+      "score": 0.058348903547772925
+    },
+    {
+      "term": "underklærne",
+      "score": 0.058348903547772925
+    },
+    {
+      "term": "spandere",
+      "score": 0.058348903547772925
+    },
+    {
+      "term": "gået",
+      "score": 0.058348903547772925
+    },
+    {
+      "term": "rettere",
+      "score": 0.05097499737160329
+    },
+    {
+      "term": "stof",
+      "score": 0.05097499737160329
+    },
+    {
+      "term": "pusler",
+      "score": 0.05097499737160329
+    },
+    {
+      "term": "sandstorm",
+      "score": 0.05097499737160329
+    },
+    {
+      "term": "lægge",
+      "score": 0.04666153877470793
+    },
+    {
+      "term": "tørr",
+      "score": 0.04666153877470793
+    },
+    {
+      "term": "stærk",
+      "score": 0.04666153877470793
+    },
+    {
+      "term": "mørk",
+      "score": 0.04666153877470793
+    }
+  ],
+  "english-tfidf": [
+    {
+      "term": "4-2-47",
+      "score": 0.050011438277679336
+    },
+    {
+      "term": "fiddling",
+      "score": 0.050011438277679336
+    },
+    {
+      "term": "spunky",
+      "score": 0.050011438277679336
+    },
+    {
+      "term": "winter",
+      "score": 0.04938630851466161
+    },
+    {
+      "term": "tailor",
+      "score": 0.043710100272588925
+    },
+    {
+      "term": "larger",
+      "score": 0.043710100272588925
+    },
+    {
+      "term": "sandstorms",
+      "score": 0.043710100272588925
+    },
+    {
+      "term": "sunshine",
+      "score": 0.043710100272588925
+    },
+    {
+      "term": "summer",
+      "score": 0.04256454073666894
+    },
+    {
+      "term": "rest",
+      "score": 0.0400985699007345
+    },
+    {
+      "term": "months",
+      "score": 0.03879931601015005
+    },
+    {
+      "term": "sickness",
+      "score": 0.037408762267498515
+    },
+    {
+      "term": "tight",
+      "score": 0.03538018452827842
+    },
+    {
+      "term": "thousand",
+      "score": 0.034369823598190956
+    },
+    {
+      "term": "underneath",
+      "score": 0.03372271583015156
+    }
+  ]
+}

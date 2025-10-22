@@ -1,0 +1,148 @@
+{
+  "id": 200,
+  "added": "2010-12-30 22:01:32",
+  "modified": "2010-12-31 03:40:06",
+  "public": true,
+  "metadata": {
+    "Creator": [
+      "Ola Holm",
+      "Siri Lawson, trans."
+    ],
+    "Language": [
+      "English",
+      "Norwegian trans."
+    ],
+    "Text": [
+      "Kjære deg\nJeg skal skrive snart takk for brev, og takk for kallender, fin. Hils Bert, og gjengen.\nfra meg og min kyllinghage.\n\nDin onkel Ole\n\n\n\n<-SPLITTLETTER->\n\n\nDear you. I'll write you soon thanks for letter, thanks also for calender, fine. Greet your Bert, and the bunch.\nFrom me and my chickengarden.\n\nYour uncle Ole.\n"
+    ],
+    "Title": [
+      "Ola Holm to Alma C. Wilson Undated"
+    ],
+    "Description": [
+      "POSTKORT FRA OLE HOLM TIL MRS (FRU) BERT WILSON (ALMA WILSON) MED BILDE AV HELL JERNBANESTATION.  UMULIG Å LESE POSTSTEMPELET, MEN DET MÅ VÆRE FORHOLDSVIS TIDLIG PÅ 1900-TALLET EN GANG.  OG DET MÅ VÆRE MENS BERT WILSON FREMDELES LEVDE, JEG VET IKKE NÅR ALMA BLE ENKE.  ADRESSEN DET ER SENDT TIL ER 102 W. 5 ST., DELL RAPIDS, SO.  DAK., U.S.A.  FRIMERKET ER REVET AV.  PÅ KORTET STÅR DET –NO. 1092.  ENEBERETTIGET 1909.  H.  WERNER'S KUNSTFORLAG, BERGEN–.  ELLERS STÅR DET –VERDENSPOSTFORENINGEN (UNION POSTALE UNIVERSELLE.)– OG –BREVKORT FRA NORGE.  (NORVEGE)–.  OLA HAR SKREVET DET PÅ ENGELSK.\n\n\n<-SPLITDESC->\n\n\nPOSTCARD FROM OLA HOLM TO MRS BERT WILSON, 102 W. 5 ST., DELL RAPIDS, SO.  DAK., U.S.A.  IT HAS A PICTURE OF HELL RAILWAY STATION, WHICH IS VERY CLOSE TO STJØRDAL.  TO THIS DATE THE POSTCARDS FROM HELL WITH A PICTURE OF THE RAILWAY STATION ARE VERY POPULAR AMONG TOURISTS.  THE STAMP HAS BEEN REMOVED AND IT'S IMPOSSIBLE TO READ THE DATE BUT IT MUST BE FAIRLY EARLY IN THE 1900'S.  I'M NOT SURE WHEN BERT DIED.\n"
+    ],
+    "Destination": [
+      "Dell Rapids"
+    ],
+    "Location": [
+      "Hell"
+    ]
+  },
+  "tags": [
+    "Alma C. Wilson",
+    "Hell",
+    "Norway to US",
+    "Ola Holm"
+  ],
+  "files": [
+    {
+      "original": "Ola Holm-Hell Jernbanestation.pdf",
+      "filename": "61d8f00b72b311e53ab68534b19130d9.pdf",
+      "mime_type": "application/pdf"
+    }
+  ],
+  "norwegian-tfidf": [
+    {
+      "term": "kallender",
+      "score": 0.4219074564223581
+    },
+    {
+      "term": "bert",
+      "score": 0.4219074564223581
+    },
+    {
+      "term": "gjengen",
+      "score": 0.4219074564223581
+    },
+    {
+      "term": "kyllinghage",
+      "score": 0.4219074564223581
+    },
+    {
+      "term": "fin",
+      "score": 0.1743016237401888
+    },
+    {
+      "term": "takk",
+      "score": 0.1448464848031771
+    },
+    {
+      "term": "ole",
+      "score": 0.14414454006511004
+    },
+    {
+      "term": "onkel",
+      "score": 0.08579608315566412
+    },
+    {
+      "term": "hils",
+      "score": 0.07160923399154724
+    },
+    {
+      "term": "skrive",
+      "score": 0.05894600478427389
+    },
+    {
+      "term": "snart",
+      "score": 0.056246672491099256
+    },
+    {
+      "term": "kjære",
+      "score": 0.03247706926643755
+    }
+  ],
+  "english-tfidf": [
+    {
+      "term": "calender",
+      "score": 0.39294701503890905
+    },
+    {
+      "term": "bert",
+      "score": 0.39294701503890905
+    },
+    {
+      "term": "chickengarden",
+      "score": 0.39294701503890905
+    },
+    {
+      "term": "bunch",
+      "score": 0.29392598924463115
+    },
+    {
+      "term": "thanks",
+      "score": 0.1563627090400677
+    },
+    {
+      "term": "ole",
+      "score": 0.1294556254593422
+    },
+    {
+      "term": "greet",
+      "score": 0.10935473549947179
+    },
+    {
+      "term": "uncle",
+      "score": 0.07313724257618004
+    },
+    {
+      "term": "fine",
+      "score": 0.06692214421977791
+    },
+    {
+      "term": "write",
+      "score": 0.039464165726182755
+    },
+    {
+      "term": "letter",
+      "score": 0.029547276808024495
+    },
+    {
+      "term": "ll",
+      "score": 0.02526883812366243
+    },
+    {
+      "term": "dear",
+      "score": 0.014853813272873892
+    }
+  ]
+}

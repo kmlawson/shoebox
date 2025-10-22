@@ -1,0 +1,181 @@
+{
+  "id": 174,
+  "added": "2010-12-30 01:21:04",
+  "modified": "2010-12-31 03:36:05",
+  "public": true,
+  "metadata": {
+    "Creator": [
+      "Klara Krogstad",
+      "Siri Lawson, trans."
+    ],
+    "Date": [
+      "1947.09.07"
+    ],
+    "Language": [
+      "Norwegian",
+      "English trans."
+    ],
+    "Text": [
+      "Søndag den 7. Sept.\n\nKjære onkel Jon.\n\nHjertelig tak for brevet og pengene jeg fik.  Min bror sier hjertelig tak, det kom godt med.  Han heter Olaf efter din bror som er i Amerika  han bor i Bergen for han er egentlig sjømand  er los men faar ikke lov av lægen og reise til sjøs mer.  Det er gikt som plager ham  han faar ikke sko paa sig og fingrene er som stokker saa hovne.  Jeg skjønner det er fælt for nu er jeg stiv i ryggen  vi arver det efter vor far  han hadde noget gikt, end du onkel Jon?  Jeg ser av brevet dit at du er sliten og er ikke bra, da blir det vel ingen tur med dig til Gamlelandet Norge heller da.  Iaar er det mange som er hjemme, nettop denne uke er det nogen i nabolaget som har faat Amerikabesøk  det maa være morsomt.  Min datter Gerd som er gift har faat Amerika fremmede av hennes mans familie.  Er din frue frisk onkel Jon, end saa bra at dere har Alma saa nære at hun ser om dere som er saa gamle.  Husker du naar du var her i 1914  jeg husker det godt.  Ja slik er det med os mennesker  det er vel skjæbnen som er lagt hva vi skal gå igjennem.  Sender brev til Alma?\n\nHils din frue.\n\nHilsen din brord. Klara\n\n\n<-SPLITTLETTER->\n\n\nSunday the 7th sept.\n\nDear uncle Jon.\n\nMany thanks for your letter and the money I received.  My brother says many thanks, it came in handy.  His name is Olaf for your brother who’s in America  he lives in Bergen because he’s actually a sailor  is a pilot but is not allowed by his doctor to go to sea anymore.  It’s arthritis that’s bothering him  he can’t get shoes on and his fingers are like poles they’re so swollen.  I understand it’s awful because now my back is stiff  we inherit it from our father  he had some arthritis, what about you uncle Jon?  I see from your letter that you’re tired and are not well, so I guess there will be no trip for you to the Old Country Norway either then.  This year there are many who are home, just this week someone in the neighborhood have visitors from America  that must be fun.  My daughter Gerd who’s married has some of her husband’s family visiting from America.  Is your wife well uncle Jon, how nice that you have Alma so close by that she looks in on you who are so old.  Do you remember when you were here in 1914  I remember it well.  Well that’s how it is for us humans  I guess fate determines what we’ll go through.  Am sending a letter to Alma?\n\nSay hello to your wife.\n\nRegards your brother’s daughter Klara."
+    ],
+    "Title": [
+      "Klara Krogstad to John Holm 1947.9.7"
+    ],
+    "Description": [
+      "BREV FRA KLARA KROGSTAD, NORDRE ALE 1, SLUPPEN, T.HEIM, DATERT 7.  SEPTEMBER, TIL HRR.  JOHN HOLM, 108 WEST, FIFT STREET, DELL RAPIDS, SOUTH DAKOTA, U.S.A.  SENDT I FLYPOST KONVOLUTT.  FRIMERKENE ER KLIPPET VEKK OG DET ER INGEN STEMPEL PÅ KONVOLUTTEN, MEN DET ER ANTAGELIG SKREVET I 1947, DA HUN NEVNER NOEN PENGER TIL SIN BROR OLAF, SOM OLAF SELV SKRIVER OG TAKKER JOHAN FOR I JANUAR, 1948.\n\n\n<-SPLITDESC->\n\n\nLETTER FROM KLARA KROGSTAD, NORDRE ALE 1, SLUPPEN, T.HEIM, DATED SEPTEMBER 7, TO HRR.  JOHN HOLM, 108 WEST.  FIFTH STREET, DELL RAPIDS, SOUTH DAKOTA, U.S.A.  IT WAS MAILED IN AN AIR MAIL ENVELOPE.  THE STAMPS HAVE BEEN REMOVED, AND THERE'S NO DATE ON THE ENVELOPE, BUT IT WAS MOST PROBABLY WRITTEN IN 1947, AS SHE MENTIONS SOME MONEY FOR HER BROTHER OLAF, WHICH OLAF HIMSELF WRITES TO JOHN ABOUT IN JANURAY OF 1948."
+    ],
+    "LetterDate": [
+      "1947-09-07"
+    ],
+    "Location": [
+      "Sluppen"
+    ],
+    "Destination": [
+      "Dell Rapids"
+    ]
+  },
+  "tags": [
+    "1940s",
+    "Bergen",
+    "John Holm",
+    "Klara Krogstad",
+    "Norway to US",
+    "arthritis",
+    "gifts",
+    "money",
+    "pilot",
+    "postwar",
+    "sailor"
+  ],
+  "files": [
+    {
+      "original": "Klara Krogstad 7 sept-1947.pdf",
+      "filename": "a2b703759339f5667a59a3f89dac826a.pdf",
+      "mime_type": "application/pdf"
+    }
+  ],
+  "norwegian-tfidf": [
+    {
+      "term": "jon",
+      "score": 0.09030456420708614
+    },
+    {
+      "term": "gikt",
+      "score": 0.07614510235592989
+    },
+    {
+      "term": "sjømand",
+      "score": 0.05654429828340881
+    },
+    {
+      "term": "los",
+      "score": 0.05654429828340881
+    },
+    {
+      "term": "sjøs",
+      "score": 0.05654429828340881
+    },
+    {
+      "term": "fingrene",
+      "score": 0.05654429828340881
+    },
+    {
+      "term": "stokker",
+      "score": 0.05654429828340881
+    },
+    {
+      "term": "hovne",
+      "score": 0.05654429828340881
+    },
+    {
+      "term": "stiv",
+      "score": 0.05654429828340881
+    },
+    {
+      "term": "arver",
+      "score": 0.05654429828340881
+    },
+    {
+      "term": "amerikabesøk",
+      "score": 0.05654429828340881
+    },
+    {
+      "term": "skjæbnen",
+      "score": 0.05654429828340881
+    },
+    {
+      "term": "brord",
+      "score": 0.05654429828340881
+    },
+    {
+      "term": "plager",
+      "score": 0.04939845106114133
+    },
+    {
+      "term": "husker",
+      "score": 0.04756171346685999
+    }
+  ],
+  "english-tfidf": [
+    {
+      "term": "jon",
+      "score": 0.08959460081455624
+    },
+    {
+      "term": "pilot",
+      "score": 0.05446790307470027
+    },
+    {
+      "term": "fingers",
+      "score": 0.05446790307470027
+    },
+    {
+      "term": "poles",
+      "score": 0.05446790307470027
+    },
+    {
+      "term": "swollen",
+      "score": 0.05446790307470027
+    },
+    {
+      "term": "stiff",
+      "score": 0.05446790307470027
+    },
+    {
+      "term": "determines",
+      "score": 0.05446790307470027
+    },
+    {
+      "term": "arthritis",
+      "score": 0.052832571613633875
+    },
+    {
+      "term": "inherit",
+      "score": 0.04760505970281963
+    },
+    {
+      "term": "neighborhood",
+      "score": 0.04760505970281963
+    },
+    {
+      "term": "fate",
+      "score": 0.04760505970281963
+    },
+    {
+      "term": "america",
+      "score": 0.0408155591732565
+    },
+    {
+      "term": "sailor",
+      "score": 0.040742216330938975
+    },
+    {
+      "term": "humans",
+      "score": 0.040742216330938975
+    },
+    {
+      "term": "handy",
+      "score": 0.038532874238719074
+    }
+  ]
+}

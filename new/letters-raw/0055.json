@@ -1,0 +1,180 @@
+{
+  "id": 55,
+  "added": "2010-12-26 16:26:51",
+  "modified": "2010-12-30 04:02:17",
+  "public": true,
+  "metadata": {
+    "Title": [
+      "Olav Holm to John Holm 1915.9.17"
+    ],
+    "Description": [
+      "UNDERRETNING OM OLA MARKUSSEN HEMRE'S DØD, DATERT 17.  (?  INGEN MND.)-1915 FRA OLAV HOLM TIL JOHN HOLM.  SKREVET PÅ PAPIR MED SVART SØRGEKANT.  INGEN KONVOLUTT.  IFØLGE OPPLYSNINGENE HER VAR HAN 79 ÅR OG 30 DAGER GAMMEL, SÅ DETTE MÅ HA VÆRT SKREVET I SEPTEMBER, FOR HAN VAR FØDT 19.  AUGUST-1836 IFØLGE STJØRDALS-BOKEN.  BOKEN SIER OGSÅ AT HAN DØDE PÅ TRONDHEIM HOSPITALSTIFTELSE.  FLERE DOKUMENTER FRA DENNE TIDEN SIER HEGRE ISTEDET FOR HEGRA.\n\n\n<-SPLITDESC->\n\n\nNOTIFICATION OF THE DEATH OF OLA MARKUSSEN HEMRE, DATED 17TH (NO MONTH) – 1915 FROM OLAV HOLM TO JOHN HOLM.  WRITTEN ON PAPER WITH A BLACK BORDER AROUND IT.  NO ENVELOPE.  ACCORDING TO THE INFORMATION HERE HE WAS 79 YEARS AND 30 DAYS OLD, SO THIS MUST HAVE BEEN WRITTEN IN SEPTEMBER.  MY STJØRDAL BOOK SAYS HE WAS BORN ON AUG. 19-1836.  THE BOOK ALSO SAYS THAT HE DIED AT –TRONDHEIM HOSPITALSTIFTELSE– (TRONDHEIM HOSPITAL FOUNDATION).  SEVERAL DOCUMENTS FROM THIS TIME REFERS TO HEGRA AS HEGRE.\n"
+    ],
+    "Creator": [
+      "Olav Holm",
+      "Siri Lawson, trans."
+    ],
+    "Date": [
+      "1915.09.17"
+    ],
+    "Language": [
+      "Norwegian",
+      "English trans."
+    ],
+    "Text": [
+      "Kjære broder\n\nHar den triste nyhed og meddele at vor Kjære Fader afgik ved døden iaften kl.6.30 i en alder af 79 aar 30 dage.  Han sovned ind stille og rolig, og var vist glad ved og faa dø. Konrad han var her igaar, Gjertine og Laura ogsaa.  Han blir begravet her i byen da han var utskrevet fra Hegre og hørte nu stiftelsen til.  Hvilken dag begravelsen foregaar er enda ikke bestemt.  Ja nu er vi Foreldreløs, og lykkelig er dem som har vandret bort.  Jeg tænker og indbyde disse som deltager i begravelsen til mig.  Gjertines Fader døde ogsaa dagen før Fader saa jeg har to begravelser denne uge hans begravelse forekommer Torsdag.  Jeg skulde hilse saa meget fra Konrad alt vel der.  Hos mig er alt paa det gamle jeg har det udmerket i forbindelse arbeide, og smaapigerne voxer hurtig, og Madammen er vel tilfreds, søster Hanna har faaet sig en Søn igjen, saa det fødes, og dør uafladelig.  Haaber du har det bra i alle dele (og alle dere?)  Tusend tak for brev, Aviser, og tænderen.  Jeg betalte 1. Krone i Told, paa grund af Fyrstik revennen(?) (revenuen?), men den var morsom og faa saa tak skal du ha.  I anledning denne Lampe du skriver om saa er det jig hvad jig trænger, men her er dem saa dyr, saa jig har ikke havt raad til og kjøpe nogen hvad Tolden angaar saa blir vist ikke det saa meget hvis den sendes som “Sample” og i  “parcel post” Saa tilslut en hjertelig hilsen fra os alle, skal skrive efter begravelsen igjen.  Lev inderlig vel\n\nBroderligst Olav\n\nRosenborgsgt. 14\n\n \n\n \n\n<-SPLITTLETTER->\n\n\n\nDear brother\n\nHave to inform you of the sad news that our Dear Father died this evening at 6:30 at the age of 79 years and 30 days.  He died peacefully and appeared to be pleased to die Konrad was here yesterday, and so were Gjertine and Laura.  He will be buried here in town as he was no longer registered in Hegre and now belonged to the foundation.  The day of the funeral has not been decided on yet.  Well, now we are orphans, and happy are those who have crossed over.  I plan to invite those who attend the funeral to my place.  Gjertine’s Father also died the day before Father so I have two funerals this week his funeral takes place on Thursday.  Konrad sends his regards all is well there.  With me everything is as usual I’m doing excellently as far as work, and the little girls are growing fast, and the Madam is content, sister Hanna has had another Son, so there are births and deaths continuously.  Hope you are all well.  Thank you very much for your letter, Newspapers and the lighter.  I paid 1. Krone in duty, because of the Match (I can’t understand the next word, looks like “revenue”), but it was fun to get so thank you.  As for this Lamp you’re writing about it is what I need, but they are so expensive here that I haven’t  been able to afford one as for the Duty it shouldn’t be that much if it’s sent as “Sample” and in “parcel post” I’ll end this with the warmest regards from all of us, will write more again after the funeral.  Keep well\n\nMost brotherly Olav\n\nRosenborgsgt. 14"
+    ],
+    "LetterDate": [
+      "1915-09-17"
+    ],
+    "Location": [
+      "Trondheim"
+    ],
+    "Destination": [
+      "USA"
+    ]
+  },
+  "tags": [
+    "Hegra",
+    "John Holm",
+    "Norway to US",
+    "Olav Holm",
+    "death",
+    "funeral",
+    "gifts",
+    "lighter",
+    "newspapers",
+    "request"
+  ],
+  "files": [
+    {
+      "original": "Ola M Hs død 17 sept-1915.pdf",
+      "filename": "8a433eb3a716a032608cbb3bbcce5e53.pdf",
+      "mime_type": "application/pdf"
+    }
+  ],
+  "norwegian-tfidf": [
+    {
+      "term": "jig",
+      "score": 0.1140868988793026
+    },
+    {
+      "term": "fader",
+      "score": 0.08425920915322242
+    },
+    {
+      "term": "begravelsen",
+      "score": 0.08425920915322242
+    },
+    {
+      "term": "afgik",
+      "score": 0.04353013439278297
+    },
+    {
+      "term": "iaften",
+      "score": 0.04353013439278297
+    },
+    {
+      "term": "sovned",
+      "score": 0.04353013439278297
+    },
+    {
+      "term": "utskrevet",
+      "score": 0.04353013439278297
+    },
+    {
+      "term": "stiftelsen",
+      "score": 0.04353013439278297
+    },
+    {
+      "term": "foregaar",
+      "score": 0.04353013439278297
+    },
+    {
+      "term": "foreldreløs",
+      "score": 0.04353013439278297
+    },
+    {
+      "term": "indbyde",
+      "score": 0.04353013439278297
+    },
+    {
+      "term": "deltager",
+      "score": 0.04353013439278297
+    },
+    {
+      "term": "gjertines",
+      "score": 0.04353013439278297
+    },
+    {
+      "term": "begravelser",
+      "score": 0.04353013439278297
+    },
+    {
+      "term": "forekommer",
+      "score": 0.04353013439278297
+    }
+  ],
+  "english-tfidf": [
+    {
+      "term": "funeral",
+      "score": 0.09095564961016486
+    },
+    {
+      "term": "duty",
+      "score": 0.05925580102482356
+    },
+    {
+      "term": "peacefully",
+      "score": 0.045843818421206065
+    },
+    {
+      "term": "appeared",
+      "score": 0.045843818421206065
+    },
+    {
+      "term": "belonged",
+      "score": 0.045843818421206065
+    },
+    {
+      "term": "foundation",
+      "score": 0.045843818421206065
+    },
+    {
+      "term": "orphans",
+      "score": 0.045843818421206065
+    },
+    {
+      "term": "crossed",
+      "score": 0.045843818421206065
+    },
+    {
+      "term": "funerals",
+      "score": 0.045843818421206065
+    },
+    {
+      "term": "thursday",
+      "score": 0.045843818421206065
+    },
+    {
+      "term": "excellently",
+      "score": 0.045843818421206065
+    },
+    {
+      "term": "madam",
+      "score": 0.045843818421206065
+    },
+    {
+      "term": "births",
+      "score": 0.045843818421206065
+    },
+    {
+      "term": "deaths",
+      "score": 0.045843818421206065
+    },
+    {
+      "term": "continuously",
+      "score": 0.045843818421206065
+    }
+  ]
+}

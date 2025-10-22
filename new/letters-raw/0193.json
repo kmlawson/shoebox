@@ -1,0 +1,120 @@
+{
+  "id": 193,
+  "added": "2010-12-30 21:35:50",
+  "modified": "2010-12-30 21:35:50",
+  "public": true,
+  "metadata": {
+    "Title": [
+      "Conrad Lauritz Holm Death Obituary 1943"
+    ],
+    "Date": [
+      "1943"
+    ],
+    "Text": [
+      "Original in English\n\n\n<-SPLITTLETTER->\n\n\nDeath Announcement\nMerchan Conrad L. Holm, Hegra, has died, at the age of 62.\nHe was born in Hegra and came into business life at an early age. He started at\nLundgren’s store at Hell in 1900 (village close to Hegra) and later he was in the large\nfirm A-S Lindgård in Hegra and then for many years with B. Schwer and Hegra\nSamvirkelag (a co-op grocery store). For several years he ran his own store in Sona and\nin Hegra. He was a well qualified counter assistant and gained many friends. He was\nalso a writer and has published a collection of poems and a book of stories. He was also\na keen mission friend and temperance man and for a while he was a member of\nInntrøndelag (Inner Trøndelag) Regional Council of D.N.T. (no idea what this stands\nfor), and the chairman of Hegra temperance association for more than 20 years."
+    ],
+    "Description": [
+      "Description only in English\n\n<-SPLITDESC-> \n\nNEWSPAPER CLIPPING ANNOUNCING THE DEATH OF CONRAD LAURITZ\nHOLM (HE DIED JANUARY 6-1943)."
+    ],
+    "Location": [
+      "Norway"
+    ],
+    "Destination": [
+      ""
+    ]
+  },
+  "tags": [
+    "1940s",
+    "Conrad Lauritz Holm",
+    "D.N.T.",
+    "Hegra",
+    "Hegra Samvirkelag",
+    "Hell",
+    "Norway to US",
+    "store",
+    "wartime"
+  ],
+  "files": [
+    {
+      "original": "Conrads death ann.pdf",
+      "filename": "c861e74ff84e921be8651cc54ac9e375.pdf",
+      "mime_type": "application/pdf"
+    }
+  ],
+  "norwegian-tfidf": [
+    {
+      "term": "original",
+      "score": 1.0958574520514786
+    },
+    {
+      "term": "english",
+      "score": 1.0607372801655364
+    },
+    {
+      "term": "in",
+      "score": 0.9732825253430395
+    }
+  ],
+  "english-tfidf": [
+    {
+      "term": "hegra",
+      "score": 0.14827712556776063
+    },
+    {
+      "term": "temperance",
+      "score": 0.13753145526361818
+    },
+    {
+      "term": "store",
+      "score": 0.09790824197432109
+    },
+    {
+      "term": "merchan",
+      "score": 0.06876572763180909
+    },
+    {
+      "term": "lundgren",
+      "score": 0.06876572763180909
+    },
+    {
+      "term": "1900",
+      "score": 0.06876572763180909
+    },
+    {
+      "term": "firm",
+      "score": 0.06876572763180909
+    },
+    {
+      "term": "a-s",
+      "score": 0.06876572763180909
+    },
+    {
+      "term": "schwer",
+      "score": 0.06876572763180909
+    },
+    {
+      "term": "samvirkelag",
+      "score": 0.06876572763180909
+    },
+    {
+      "term": "co-op",
+      "score": 0.06876572763180909
+    },
+    {
+      "term": "qualified",
+      "score": 0.06876572763180909
+    },
+    {
+      "term": "gained",
+      "score": 0.06876572763180909
+    },
+    {
+      "term": "keen",
+      "score": 0.06876572763180909
+    },
+    {
+      "term": "member",
+      "score": 0.06876572763180909
+    }
+  ]
+}

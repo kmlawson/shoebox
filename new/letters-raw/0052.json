@@ -1,0 +1,176 @@
+{
+  "id": 52,
+  "added": "2010-12-26 16:00:26",
+  "modified": "2010-12-30 04:03:29",
+  "public": true,
+  "metadata": {
+    "Title": [
+      "Emigration Certificate 1914.7.31"
+    ],
+    "Description": [
+      "UTFLYTTINGSATTEST SIGNERT AV SOGNEPREST N.  HORNEMAN, ØVRE STJØRDALEN, 31.  JULI-1914.\n\n\n<-SPLITDESC->\n\n\nTHIS IS SOME SORT OF CERTIFICATE THAT JOHN FOR SOME REASON HAD TO GET IN ORDER TO LET THE AUTHORITIES KNOW THAT HE WAS LEAVING NORWAY AGAIN AFTER HIS VISIT IN 1914.  NORMALLY THESE WOULD BE USED WHEN PEOPLE MOVED FROM ONE PLACE TO ANOTHER OR ONE COUNTRY TO ANOTHER.  I don't know how to translate the word –Utflytningsattest– correctly but –utflytning– means the noun –move– and –attest– means –certificate– or –attestation–."
+    ],
+    "Date": [
+      "1914.07.31"
+    ],
+    "Language": [
+      "Norwegian",
+      "English trans."
+    ],
+    "Text": [
+      "Udflytningsattest\n\nIfølge kirkebogen for Hegre Sogn er Johan Magnus Olsen Holm født av Forældre husmand Ole Markussen Holm og Hustru Karen Jakobsdatter i Hegre den 30te tredevte juni-1868 –a.h. sekstiotte, døpt den 20de september samme Aar og konfirmeret i Hegre den 20de tyvende april 1884 – a.h.ottetifire har kommuniceret og er saavidt vides ikke her bunden ved offentligt Ægteskabsløfte.  Han flyttet til Amerika i1889, hvor han er gift.  Har nu været hjemme på et kort besøk og agter snart at vende tilbake til Amerika.\n\nHvilket herved paa Embeds Vegne attesteres.  Øvre Stjørdalen den 31te juli 1914.\n\nN. Horneman, sogneprest.\n\nLovbestemt betaling Kr. 1.00 bet. (signert) N. Horneman.\n\nBlanket No. 4\n\nE. Sem, Fr. Hald–B,ED.\n\n \n\n \n\n<-SPLITTLETTER->\n\n\n\nAccording to church records for Hegre Parish Johan Magnus Olsen Holm was born of Parents cotter Ole Markussen Holm and Wife Karen Jakobsdatter in Hegre on the 30th thirtieth of June-1868 – e.h. sixtyeight, baptized on the 20th of September same Year and confirmed in Hegre on the 20th of April 1884 – e.h. eightyfour has communicated and is as far as is known not bound here by official Promise of marriage.  He moved to America in 1889, where he is married.  Has now been home for a short visit and intends to return to America shortly.  Which is hereby attested by power of my profession, Øvre Stjørdalen the 31st of July 1914.  N. Horneman, vicar.\n\nStatutory fee Kr. 1.00 paid (signed) N. Horneman.\n\nForm No. 4\n\nE.Sem, Fr. Hald–B,ED. (I don’t know what this means)"
+    ],
+    "LetterDate": [
+      "1914-07-31"
+    ],
+    "Location": [
+      "Norway\n"
+    ],
+    "Destination": [
+      ""
+    ]
+  },
+  "tags": [
+    "1910s",
+    "Hegra",
+    "Johan Magnus Olsen Holm",
+    "John Holm",
+    "Karen Jakobsdatter",
+    "Ole Markussen Holm",
+    "Stjørdal",
+    "emigration",
+    "government document",
+    "prewar"
+  ],
+  "files": [
+    {
+      "original": "Utflyttingsattest J Holm-1914.pdf",
+      "filename": "eb6305a0e3e717d137b795a1596df71a.pdf",
+      "mime_type": "application/pdf"
+    }
+  ],
+  "norwegian-tfidf": [
+    {
+      "term": "horneman",
+      "score": 0.12465447576115125
+    },
+    {
+      "term": "hegre",
+      "score": 0.11207633032344666
+    },
+    {
+      "term": "20de",
+      "score": 0.09968601465505786
+    },
+    {
+      "term": "h",
+      "score": 0.08807634138764897
+    },
+    {
+      "term": "n",
+      "score": 0.07471755354896445
+    },
+    {
+      "term": "udflytningsattest",
+      "score": 0.06232723788057563
+    },
+    {
+      "term": "kirkebogen",
+      "score": 0.06232723788057563
+    },
+    {
+      "term": "husmand",
+      "score": 0.06232723788057563
+    },
+    {
+      "term": "markussen",
+      "score": 0.06232723788057563
+    },
+    {
+      "term": "tredevte",
+      "score": 0.06232723788057563
+    },
+    {
+      "term": "sekstiotte",
+      "score": 0.06232723788057563
+    },
+    {
+      "term": "tyvende",
+      "score": 0.06232723788057563
+    },
+    {
+      "term": "ottetifire",
+      "score": 0.06232723788057563
+    },
+    {
+      "term": "kommuniceret",
+      "score": 0.06232723788057563
+    },
+    {
+      "term": "saavidt",
+      "score": 0.06232723788057563
+    }
+  ],
+  "english-tfidf": [
+    {
+      "term": "horneman",
+      "score": 0.12944136965987593
+    },
+    {
+      "term": "hegre",
+      "score": 0.11661295176030026
+    },
+    {
+      "term": "h",
+      "score": 0.09157224230848533
+    },
+    {
+      "term": "20th",
+      "score": 0.08728232332509817
+    },
+    {
+      "term": "n",
+      "score": 0.08365524850563326
+    },
+    {
+      "term": "e",
+      "score": 0.07917041197140864
+    },
+    {
+      "term": "records",
+      "score": 0.06472068482993797
+    },
+    {
+      "term": "magnus",
+      "score": 0.06472068482993797
+    },
+    {
+      "term": "cotter",
+      "score": 0.06472068482993797
+    },
+    {
+      "term": "thirtieth",
+      "score": 0.06472068482993797
+    },
+    {
+      "term": "june-1868",
+      "score": 0.06472068482993797
+    },
+    {
+      "term": "sixtyeight",
+      "score": 0.06472068482993797
+    },
+    {
+      "term": "baptized",
+      "score": 0.06472068482993797
+    },
+    {
+      "term": "eightyfour",
+      "score": 0.06472068482993797
+    },
+    {
+      "term": "communicated",
+      "score": 0.06472068482993797
+    }
+  ]
+}

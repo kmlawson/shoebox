@@ -1,0 +1,98 @@
+{
+  "id": 107,
+  "added": "2010-12-27 22:47:51",
+  "modified": "2010-12-30 03:55:07",
+  "public": true,
+  "metadata": {
+    "Title": [
+      "Siri Lawson 2nd Cover Letter 2000.11.5"
+    ],
+    "Description": [
+      "Cover letter accompanying the last batch of transcriptions and translations done by Siri Lawson."
+    ],
+    "Creator": [
+      "Siri Lawson"
+    ],
+    "Date": [
+      "2000.11.05"
+    ],
+    "Text": [
+      "\n\n<-SPLITTLETTER->\n\nBartlesville, OK November 5 2000\n\nDear cousins, and future readers of these letters.\n\nHere's the last batch of letters. Again, I've tried to stay as true to the originals as possible as far as style and use of \"language\". Letters written by the generation after John are fairly easy to understand, but the ones written by his generation are something else! I'd really wish I could copy the spelling in some of these letters, but that would be next to impossible to do. As you can see, Laura continues to put her commas, periods and capital letters all over the place. Axel gets carried away sometimes, and his sentences tend to keep running on and on, so at times it has taken some in depth studying of them on my part to figure out exactly what he means. Edvard capitalises all his D's, among others, and I've decided to capitalise the corresponding word in my translations. Also, he never (or very rarely) uses paragraphs in his letters, presumably to save on paper, and I've kept the translations the same.\n\nAgain, I've inserted an extra space in sentences where there are no periods, just to make it a little easier to see that a new sentence is starting.\n\nYou'll notice that on most of the letters I've copied the way the addresses were actually written on the envelopes, and also the way the dates were written on the letters themselves. It may seem unnecessary to include the address on each and every letter, as it stays the same for years, but I did that in case the letters should get separated at one point; that way the information will always be on the individual letter, even if they all get scattered later on. I've repeated the information on the stamps for the same reason.\n\nI wanted to comment on one of the very earliest letters, written by Mrs. A.H. Voler on April 4, 1916 (in the first folder I sent). I mentioned there that she spells Jesus with a Y, but I've since noticed that many people wrote their J to look more like a Y at that time, so in the Norwegian version of that letter all the words that I have written up with a Y should most probably start with a J. No big deal, but still...\n\nI was rather touched by a line in one of Axel's last letters. He says that pretty soon the communication across the ocean will be a thing of the past. Well, here I am, 50 years later, translating all these letters! Communication has been reestablished between the Norwegian side and the American side of the two families. Axel would have been pleased!\n\nEnjoy!\n\nBest wishes\n\nÅse Siri (Holm) Lawson\nThe granddaughter of John Holm's (and Axel's) brother Conrad Lauritz."
+    ],
+    "LetterDate": [
+      "2000-11-05"
+    ],
+    "Location": [
+      ""
+    ],
+    "Destination": [
+      ""
+    ]
+  },
+  "tags": [
+    "project background"
+  ],
+  "files": [],
+  "english-tfidf": [
+    {
+      "term": "letters",
+      "score": 0.08433751541769016
+    },
+    {
+      "term": "y",
+      "score": 0.06289494174109453
+    },
+    {
+      "term": "periods",
+      "score": 0.04579153361890269
+    },
+    {
+      "term": "sentences",
+      "score": 0.04579153361890269
+    },
+    {
+      "term": "translations",
+      "score": 0.04579153361890269
+    },
+    {
+      "term": "communication",
+      "score": 0.04579153361890269
+    },
+    {
+      "term": "j",
+      "score": 0.041929961160729695
+    },
+    {
+      "term": "generation",
+      "score": 0.037064955220101205
+    },
+    {
+      "term": "information",
+      "score": 0.03386045772847061
+    },
+    {
+      "term": "written",
+      "score": 0.03162311588206538
+    },
+    {
+      "term": "side",
+      "score": 0.028727157721492636
+    },
+    {
+      "term": "bartlesville",
+      "score": 0.02619646766926061
+    },
+    {
+      "term": "batch",
+      "score": 0.02619646766926061
+    },
+    {
+      "term": "tend",
+      "score": 0.02619646766926061
+    },
+    {
+      "term": "depth",
+      "score": 0.02619646766926061
+    }
+  ]
+}

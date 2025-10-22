@@ -1,0 +1,175 @@
+{
+  "id": 69,
+  "added": "2010-12-26 21:45:46",
+  "modified": "2010-12-30 04:00:41",
+  "public": true,
+  "metadata": {
+    "Title": [
+      "Laura Karlson to Alma Vilson 1933.12.3"
+    ],
+    "Description": [
+      "KORT FRA LAURA KARLSON DATERT 3.  DESEMBER-1933, TIL FRU ALMA VILSON, VEST. 5 ST NO 102, DELL RAPIDS, SO.  DAK., U.S.A.  BILDE AV HEGGEDAL PÅ KORTET, MED KRYSS PÅ TAKET AV LAURA'S HUS.  ET BURGUNDERRØDT 5-ØRES FRIMERKE MED POSTHORNET, OG ET GRÅTT 15-ØRES FRIMERKE MED BJØRNSTJERNE BJØRNSON.\n\n\n<-SPLITDESC->\n\n\nPOSTCARD FROM LAURA KARLSON DATED DECEMBER 3-1933 TO FRU (MRS) ALMA VILSON, VEST 5 ST.  NO 102, DELL RAPIDS, SO.  DAK., U.S.A.  PICTURE OF HEGGEDAL ON THE CARD WITH AN X OVER LAURA'S HOUSE.  A BURGUNDY 5-ØRE STAMP WITH THE POST HORN AND A GREY 15 ØRE STAMP WITH BJØRNSTJERNE BJØRNSON."
+    ],
+    "Creator": [
+      "Laura Karlson",
+      "Siri Lawson, trans."
+    ],
+    "Date": [
+      "1933.12.03"
+    ],
+    "Language": [
+      "Norwegian",
+      "English trans."
+    ],
+    "Text": [
+      "Heggedal 3/12-1933\n\nKjære Alma, tak for dit brev, jeg skal snart skriv  Jeg haaber at dere lever bare bra  det jør og så vi  her har vi et pent veir.  hils alle mine\n\nTusen kjere hilsen fra os alle.\n\nPå framsiden av kortet står det:  Jeg vil ønske dere en Gledelig Jul og et godt Nytaar, hils alle dine barn fra os  Mindor  Laura  Arvid\n\nOver huset med kryss på står det:  de huset med kryset bor vi\n\n\n<-SPLITTLETTER->\n\n\nHeggedal 3/12-1933\n\nDear Alma, thank you for your letter, I’ll write soon  I hope you’re all fine  so are we  we’re having nice weather here.  say hello to all of mine\n\nA thousand dear wishes from us all\n\nOn the picture side of the card it says:  I want to wish you a Merry Christmas and a happy New Year, greet all you children from us  Mindor  Laura  Arvid\n\nAbove the house with the x it says:  the house with the x on it is where we live"
+    ],
+    "LetterDate": [
+      "1933-12-03"
+    ],
+    "Location": [
+      "Heggedal"
+    ],
+    "Destination": [
+      "Dell Rapids"
+    ]
+  },
+  "tags": [
+    "Alma C. Wilson",
+    "Christmas",
+    "Heggedal",
+    "Laura Karlson",
+    "Norway to US"
+  ],
+  "files": [
+    {
+      "original": "Laura Karlson-kort 3 des-1933.pdf",
+      "filename": "c5dd9ebd1866d01913b7d8d3187d4bd8.pdf",
+      "mime_type": "application/pdf"
+    }
+  ],
+  "norwegian-tfidf": [
+    {
+      "term": "12-1933",
+      "score": 0.1482377549592069
+    },
+    {
+      "term": "framsiden",
+      "score": 0.1482377549592069
+    },
+    {
+      "term": "kryset",
+      "score": 0.1482377549592069
+    },
+    {
+      "term": "kryss",
+      "score": 0.12950404737650567
+    },
+    {
+      "term": "huset",
+      "score": 0.12468881638609242
+    },
+    {
+      "term": "gledelig",
+      "score": 0.11854553094114989
+    },
+    {
+      "term": "arvid",
+      "score": 0.11854553094114989
+    },
+    {
+      "term": "jør",
+      "score": 0.11077033979380443
+    },
+    {
+      "term": "heggedal",
+      "score": 0.09981182335844865
+    },
+    {
+      "term": "kortet",
+      "score": 0.09981182335844865
+    },
+    {
+      "term": "nytaar",
+      "score": 0.08342977461330499
+    },
+    {
+      "term": "pent",
+      "score": 0.07166442133606593
+    },
+    {
+      "term": "veir",
+      "score": 0.07166442133606593
+    },
+    {
+      "term": "haaber",
+      "score": 0.06469606703060377
+    },
+    {
+      "term": "kjere",
+      "score": 0.058178173603120296
+    }
+  ],
+  "english-tfidf": [
+    {
+      "term": "x",
+      "score": 0.2530584752623569
+    },
+    {
+      "term": "12-1933",
+      "score": 0.14476995290907177
+    },
+    {
+      "term": "arvid",
+      "score": 0.10828852235328516
+    },
+    {
+      "term": "heggedal",
+      "score": 0.0976183879293861
+    },
+    {
+      "term": "house",
+      "score": 0.08157971010333155
+    },
+    {
+      "term": "side",
+      "score": 0.0793776726514928
+    },
+    {
+      "term": "above",
+      "score": 0.0793776726514928
+    },
+    {
+      "term": "card",
+      "score": 0.07350547393269781
+    },
+    {
+      "term": "merry",
+      "score": 0.07021170701285555
+    },
+    {
+      "term": "mine",
+      "score": 0.061136957373599504
+    },
+    {
+      "term": "picture",
+      "score": 0.05526475865480451
+    },
+    {
+      "term": "thousand",
+      "score": 0.049745797313171115
+    },
+    {
+      "term": "mindor",
+      "score": 0.047694177800810277
+    },
+    {
+      "term": "weather",
+      "score": 0.045791002496083276
+    },
+    {
+      "term": "happy",
+      "score": 0.04028858676296329
+    }
+  ]
+}

@@ -1,0 +1,178 @@
+{
+  "id": 19,
+  "added": "2010-12-23 22:18:06",
+  "modified": "2010-12-30 04:07:49",
+  "public": true,
+  "metadata": {
+    "Title": [
+      "Alma C. Wilson to Stjørdalen Sparebank 1948.3.16"
+    ],
+    "Description": [
+      "BLÅPAPIR-KOPI AV ET BREV SKREVET AV ALMA WILSON, PÅ VEGNE AV SIN MOR, TIL STJØRDALEN SPAREBANK, DATERT 16.  MARS – 1948.\n\n\n<-SPLITDESC->\n\n\nCARBON COPY OF A LETTER WRITTEN BY ALMA WILSON, ON BEHALF OF HER MOTHER, TO STJØRDALEN SPAREBANK (SAVINGS BANK), DATED MARCH 16 - 1948."
+    ],
+    "Creator": [
+      "Alma C. Wilson",
+      "Siri Lawson, trans."
+    ],
+    "Date": [
+      "1948.03.16"
+    ],
+    "Language": [
+      "Norwegian",
+      "English trans."
+    ],
+    "Text": [
+      "Dell rapids S.D.  March 16-48\n\nStjørdalen Sparebank\n\nÆrede Herrer  Jeg hermed skriver dere for at faa vide hvor mange penger, det nu er i min mand John Holm sit navn der.\n\nog hvad papir trenges for at trekke dem ud af banken der\n\nSvar med luft post er di snild\n\nGi ikke dise penger til nogen før du skriver og faar svar herfra  sig hvor meget det er i Amerikanske daler, samt i norske kroner\n\nErbødigst\n\nMrs. John Holm,\n\n102 West 5 Street\n\nDell Rapids,\n\nSouth Dakota\n\n\n<-SPLITTLETTER->\n\n\nDell Rapids S.D. March 16-48\n\nStjørdalen Sparebank\n\nHonorable Gentlemen  I’m hereby writing you in order to find out how much money, there now is in my husband John Holm’s name there.\n\nand what paper is needed to withdraw them from the bank there\n\nReply by air mail please\n\nDo not give this money to anybody until you write and get a reply from here\n\ntell me how much it is in American dollars, as well as in Norwegian kroner\n\nSincerely\n\nMrs. John Holm,\n\n102 West 5 Street\n\nDell Rapids\n\nSouth Dakota"
+    ],
+    "LetterDate": [
+      "1948-03-16"
+    ],
+    "Location": [
+      "Dell Rapids"
+    ],
+    "Destination": [
+      "Stjørdal"
+    ]
+  },
+  "tags": [
+    "Alma C. Wilson",
+    "Dell Rapids",
+    "John Holm",
+    "Stjørdalens Sparebank",
+    "US to Norway",
+    "bank",
+    "finances",
+    "inheritance"
+  ],
+  "files": [
+    {
+      "original": "Alma-Stjørdalen Sp bank 16-3-48.pdf",
+      "filename": "33f61f0ebcd92533b56ef48fd3ab84c7.pdf",
+      "mime_type": "application/pdf"
+    }
+  ],
+  "norwegian-tfidf": [
+    {
+      "term": "trenges",
+      "score": 0.09794280238376168
+    },
+    {
+      "term": "trekke",
+      "score": 0.09794280238376168
+    },
+    {
+      "term": "rapids",
+      "score": 0.08715266056311544
+    },
+    {
+      "term": "svar",
+      "score": 0.08715266056311544
+    },
+    {
+      "term": "march",
+      "score": 0.08556517415947695
+    },
+    {
+      "term": "dell",
+      "score": 0.08549123143329783
+    },
+    {
+      "term": "16-48",
+      "score": 0.0783247258004026
+    },
+    {
+      "term": "ærede",
+      "score": 0.0783247258004026
+    },
+    {
+      "term": "daler",
+      "score": 0.0783247258004026
+    },
+    {
+      "term": "erbødigst",
+      "score": 0.0783247258004026
+    },
+    {
+      "term": "102",
+      "score": 0.0783247258004026
+    },
+    {
+      "term": "street",
+      "score": 0.0783247258004026
+    },
+    {
+      "term": "herrer",
+      "score": 0.07318754593519221
+    },
+    {
+      "term": "south",
+      "score": 0.07318754593519221
+    },
+    {
+      "term": "hermed",
+      "score": 0.06920283966172419
+    }
+  ],
+  "english-tfidf": [
+    {
+      "term": "rapids",
+      "score": 0.09634257932632564
+    },
+    {
+      "term": "dell",
+      "score": 0.09451826498770241
+    },
+    {
+      "term": "reply",
+      "score": 0.08648711155060383
+    },
+    {
+      "term": "16-48",
+      "score": 0.08632639062503171
+    },
+    {
+      "term": "honorable",
+      "score": 0.08632639062503171
+    },
+    {
+      "term": "102",
+      "score": 0.08632639062503171
+    },
+    {
+      "term": "anybody",
+      "score": 0.0806855656749968
+    },
+    {
+      "term": "gentlemen",
+      "score": 0.07631020192373777
+    },
+    {
+      "term": "sincerely",
+      "score": 0.07631020192373777
+    },
+    {
+      "term": "hereby",
+      "score": 0.07273526943758181
+    },
+    {
+      "term": "withdraw",
+      "score": 0.07273526943758181
+    },
+    {
+      "term": "street",
+      "score": 0.07273526943758181
+    },
+    {
+      "term": "sparebank",
+      "score": 0.06709444448754688
+    },
+    {
+      "term": "order",
+      "score": 0.06271908073628787
+    },
+    {
+      "term": "west",
+      "score": 0.06271908073628787
+    }
+  ]
+}

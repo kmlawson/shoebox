@@ -1,0 +1,179 @@
+{
+  "id": 215,
+  "added": "2010-12-31 02:58:20",
+  "modified": "2010-12-31 02:58:20",
+  "public": true,
+  "metadata": {
+    "Title": [
+      "Stjørdalens Sparebank to Karoline Holm 1948.3.23"
+    ],
+    "Description": [
+      "BREV FRA STJØRDALENS SPAREBANK DATERT 23.  MARS – 1948, TIL MRS.  (FRU) JOHN HOLM, 102 WEST 5 STREET, DELL RAPIDS, SOUTH DAKOTA, U.S.A.  FRIMERKET ER KLIPPET UT.\n\n\n<-SPLITDESC->\n\n\nLETTER FROM STJØRDALEN SPAREBANK (SAVINGS BANK) DATED MARCH 23 – 1948, TO MRS.  JOHN HOLM, 102 WEST 5 STREET, DELL RAPIDS, SOUTH DAKOTA, U.S.A.  THE STAMP HAS BEEN REMOVED."
+    ],
+    "Creator": [
+      "Stjørdalens Sparebank",
+      "Siri Lawson, trans."
+    ],
+    "Date": [
+      "1948.03.23"
+    ],
+    "Language": [
+      "Norwegian",
+      "English trans."
+    ],
+    "Text": [
+      "Stjørdalens Sparebank\n\n—oprettet 1847—\n\n   Telefon nr. 20\n\nTelegramadr. SPAREBANKEN\n\nStjørdalen den 23. Mars 1948\n\nMrs. John Holm\n\n102 west 5 street\n\nDell Rapids, South Dakota.\n\nVi har mottatt Deres skrivelse av 16. ds., hvori De forespør om Deres manns konto hos oss, og vi skal få meddele at der pr. idag innestår kr. 5.160,05 eller ca. $ 1.030,-.\n\nKontoen kan ikke disponeres uten samtykke fra Norges Bank, da den lyder på Deres manns navn og adresse og således kommer inn under bestemmelsen om innskudd tilhørende valutautlending.\n\nDe må sende en søknad til Norges Bank, Oslo, om adgang til å ta ut pengene.  De må medsende bekreftet avskrift av testamente eller skifteoppgjør, da det utvilsomt blir forlangt.\n\nÆrbødigst\n\nSTJØRDALENS SPAREBANK (stempel)\n\nO. Sivertsen? (underskrift)\n????         ser ut som en underskrift til, men jeg kan ikke tyde hva det stå\n\n \n\n<-SPLITTLETTER->\n\n\n\nStjørdalens Sparebank\n\n—   established 1847—\n\nTelephone nr. 20\n\nTelegram addr. SPAREBANKEN\n\nStjørdalen the 23rd of March 1948\n\nMrs. John Holm\n\n102 west 5 street\n\nDell Rapids, South Dakota.\n\nWe have received your letter of the 16th of this month in which you inquire about your husband’s account with us, and we can inform you that as of today there is kr. 5.160,05 or about $ 1.030,- on deposit.  The account cannot be at your disposal without the consent of Norges Bank, as it is in your husband’s name and address and is therefore covered by the regulation for deposits belonging to an exchange foreigner.\n\nYou must send an application to Norges Bank, Oslo, for permission to withdraw the money.  You must enclose a certified transcript of a will or estate settlement, as no doubt that will be required.\n\nYours faithfully\n\nSTJØRDALENS SPAREBANK (stamp)\n\nO. Sivertsen(?)  (signature)\n\n???  looks like another signature but I can’t desipher it."
+    ],
+    "LetterDate": [
+      "1948-03-23"
+    ],
+    "Location": [
+      "Stjørdal"
+    ],
+    "Destination": [
+      "Dell Rapids"
+    ]
+  },
+  "tags": [
+    "1940s",
+    "Karoline Holm",
+    "Norway to US",
+    "Stjørdal",
+    "Stjørdalens Sparebank",
+    "bank",
+    "inheritance",
+    "postwar",
+    "will"
+  ],
+  "files": [
+    {
+      "original": "Stjørdalens Sp bank 23-3-48.pdf",
+      "filename": "ff87cafcecf8ef9e00f7f3735b98c946.pdf",
+      "mime_type": "application/pdf"
+    }
+  ],
+  "norwegian-tfidf": [
+    {
+      "term": "manns",
+      "score": 0.11015286788346458
+    },
+    {
+      "term": "underskrift",
+      "score": 0.11015286788346458
+    },
+    {
+      "term": "stjørdalens",
+      "score": 0.08489741297155402
+    },
+    {
+      "term": "norges",
+      "score": 0.07557637600355024
+    },
+    {
+      "term": "sparebank",
+      "score": 0.0731542951838301
+    },
+    {
+      "term": "bank",
+      "score": 0.07096325656763873
+    },
+    {
+      "term": "forespør",
+      "score": 0.06304364291368568
+    },
+    {
+      "term": "kontoen",
+      "score": 0.06304364291368568
+    },
+    {
+      "term": "disponeres",
+      "score": 0.06304364291368568
+    },
+    {
+      "term": "samtykke",
+      "score": 0.06304364291368568
+    },
+    {
+      "term": "bestemmelsen",
+      "score": 0.06304364291368568
+    },
+    {
+      "term": "tilhørende",
+      "score": 0.06304364291368568
+    },
+    {
+      "term": "valutautlending",
+      "score": 0.06304364291368568
+    },
+    {
+      "term": "søknad",
+      "score": 0.06304364291368568
+    },
+    {
+      "term": "adgang",
+      "score": 0.06304364291368568
+    }
+  ],
+  "english-tfidf": [
+    {
+      "term": "signature",
+      "score": 0.10121025107762338
+    },
+    {
+      "term": "account",
+      "score": 0.09459687010172038
+    },
+    {
+      "term": "stjørdalens",
+      "score": 0.08946713328989946
+    },
+    {
+      "term": "norges",
+      "score": 0.08946713328989946
+    },
+    {
+      "term": "sparebank",
+      "score": 0.07866245215781359
+    },
+    {
+      "term": "inquire",
+      "score": 0.06323285299476698
+    },
+    {
+      "term": "disposal",
+      "score": 0.06323285299476698
+    },
+    {
+      "term": "consent",
+      "score": 0.06323285299476698
+    },
+    {
+      "term": "regulation",
+      "score": 0.06323285299476698
+    },
+    {
+      "term": "application",
+      "score": 0.06323285299476698
+    },
+    {
+      "term": "faithfully",
+      "score": 0.06323285299476698
+    },
+    {
+      "term": "desipher",
+      "score": 0.06323285299476698
+    },
+    {
+      "term": "1847",
+      "score": 0.05526564402281359
+    },
+    {
+      "term": "telephone",
+      "score": 0.05526564402281359
+    },
+    {
+      "term": "nr",
+      "score": 0.05526564402281359
+    }
+  ]
+}

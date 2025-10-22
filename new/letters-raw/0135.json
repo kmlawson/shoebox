@@ -1,0 +1,178 @@
+{
+  "id": 135,
+  "added": "2010-12-28 19:39:39",
+  "modified": "2010-12-30 03:49:27",
+  "public": true,
+  "metadata": {
+    "Title": [
+      "Gusta Eidum to John Holm 1946.9.5"
+    ],
+    "Description": [
+      "BREV FRA GUSTA EIDUM DATERT 5.  SEPTEMBER-1946, TIL HR.  JOHN HOLM, 108 WEST 5 ST., DELL RAPIDS, S.  DAK., U.S.A.  FRIMERKENE ER KLIPPET VEKK.  SENDT MED LUFTPOST.  BREV FRA GUSTA EIDUM (HANNA AND EDVARD EIDUM'S DAUGHTER) DATED SEPTEMBER 5-1946, TO HR.\n\n\n<-SPLITDESC->\n\n\n(MR.) JOHN HOLM, 108 WEST 5 ST., DELL RAPIDS, S.  DAK., U.S.A.  THE STAMPS HAVE BEEN REMOVED.  SENT AIR MAIL."
+    ],
+    "Creator": [
+      "Gusta Eidum",
+      "Siri Lawson, trans."
+    ],
+    "Date": [
+      "1946.09.05"
+    ],
+    "Language": [
+      "Norwegian",
+      "English trans."
+    ],
+    "Text": [
+      "Narvik 5-9-46\n\nKjære snille onkel!\n\nTakk for brevet far fik dag.  Jeg skulle ha skrevet lenge før, men tiden blir bestandig forkort.  Tenker så ofte på dig  skulle ønske jeg engang fik besøke dig, men det er nok i det uvisse.  Men lyst har jeg.  Kjære onkel  nu vil vi at du skal si os hvad det er som er svært ondt for dere å få tak i, kanske vi kunne få den glede å senne dere en pakke også.  Klær er det værste og få tak i her, det er så vanskelig med alt i tøi.  Mat har vi nok, men mindre med klær.  Si os onkel hvad det er lite av der, kanske vi kunne senne dere en liten påskjønnelse får alt det som vi har fått av dere.  Hils Alma fra mig og si jeg skal snart skrive til henne.  Jeg strever hele dagen, må stelle hjemme for mor og far, så hjelper jeg min svigerinne med sønn, det går i ett hele dagen.  Jeg har idag hvært ute og sett om jeg fant en liten ting fra Norge og senne dere, og det skal snart komme.  Mor og far hilser.  Mor har det ganske bra efter det at hun brak begge bena sine.  Jeg senner et foto av mig slik som jeg ser ut idag.  De andre billederne er en skitur vi var på fjellet.  Det er min søster Karen og hennes mand, og min Svigerinne som er gift med min bror Sverre.  Kjære onkel nu må du senne mig et brev når du får tid.  Lev vel kjære onkel.\n\n \n\nBeste hilsen\n\nGusta\n\n \n\n \n\n<-SPLITTLETTER->\n\n\n\nNarvik 5-9-46\n\nDear kind uncle!\n\nThank you for the letter father got today.  I ought to have written a long time ago, but time is always too short.  I think about you so often  I’d wish I could visit you some time, but that’s very unsure.  But I’d love to.  Dear uncle now we want you to tell us what it is that you have a hard time getting a hold of, maybe we could have the pleasure of sending you a package too.  Clothes are the hardest to find here, anything made out of fabric is a problem.  We have enough food, but very little clothes.  Tell us uncle what there is little of there, perhaps we could send you a little reward for everything we’ve received from you.  Greet Alma from me and tell her I’ll write to her soon.  I’m toiling all day, must keep house for mother and father, and then I help my sister in law and her son, it’s all go all day.  Today I’ve been out to see if I could find a little something from Norway to send you, and it’ll be coming soon.  Mother and father say hello.  Mother is doing fairly well after having broken both her legs.  I’m sending a photo of myself as I look today.  The other pictures are a ski trip we took in the mountain.  It’s my sister Karen and her husband, and my Sister in law who’s married to my brother Sverre.  Dear uncle send me a letter when you have the time.  Keep well dear uncle.\n\nBest wishes\n\nGusta"
+    ],
+    "LetterDate": [
+      "1946-09-05"
+    ],
+    "Location": [
+      "Narvik"
+    ],
+    "Destination": [
+      "Dell Rapids"
+    ]
+  },
+  "tags": [
+    "1940s",
+    "Gusta Eidum",
+    "John Holm",
+    "Narvik",
+    "Norway to US",
+    "clothes",
+    "gifts",
+    "postwar"
+  ],
+  "files": [
+    {
+      "original": "Gusta Eidum 5 septembr-1946.pdf",
+      "filename": "42733562bd96a11db230070ffcc47dbc.pdf",
+      "mime_type": "application/pdf"
+    }
+  ],
+  "norwegian-tfidf": [
+    {
+      "term": "senne",
+      "score": 0.09206748000508998
+    },
+    {
+      "term": "svigerinne",
+      "score": 0.06805551508529503
+    },
+    {
+      "term": "onkel",
+      "score": 0.05362255197229007
+    },
+    {
+      "term": "forkort",
+      "score": 0.05273843205279476
+    },
+    {
+      "term": "uvisse",
+      "score": 0.05273843205279476
+    },
+    {
+      "term": "påskjønnelse",
+      "score": 0.05273843205279476
+    },
+    {
+      "term": "5-9-46",
+      "score": 0.04607355531664144
+    },
+    {
+      "term": "værste",
+      "score": 0.04607355531664144
+    },
+    {
+      "term": "skitur",
+      "score": 0.04607355531664144
+    },
+    {
+      "term": "hvært",
+      "score": 0.042174852354062944
+    },
+    {
+      "term": "brak",
+      "score": 0.042174852354062944
+    },
+    {
+      "term": "kanske",
+      "score": 0.04209538591319858
+    },
+    {
+      "term": "klær",
+      "score": 0.04139600814068175
+    },
+    {
+      "term": "fant",
+      "score": 0.03940867858048812
+    },
+    {
+      "term": "billederne",
+      "score": 0.03940867858048812
+    }
+  ],
+  "english-tfidf": [
+    {
+      "term": "unsure",
+      "score": 0.04911837687986363
+    },
+    {
+      "term": "uncle",
+      "score": 0.045710776610112525
+    },
+    {
+      "term": "5-9-46",
+      "score": 0.042929562767721266
+    },
+    {
+      "term": "toiling",
+      "score": 0.042929562767721266
+    },
+    {
+      "term": "hardest",
+      "score": 0.039309338588184084
+    },
+    {
+      "term": "problem",
+      "score": 0.039309338588184084
+    },
+    {
+      "term": "sister",
+      "score": 0.03355615094184022
+    },
+    {
+      "term": "find",
+      "score": 0.03281601007884072
+    },
+    {
+      "term": "reward",
+      "score": 0.03174417912044119
+    },
+    {
+      "term": "clothes",
+      "score": 0.03026063787097156
+    },
+    {
+      "term": "law",
+      "score": 0.02986815739385057
+    },
+    {
+      "term": "sending",
+      "score": 0.029108164279229215
+    },
+    {
+      "term": "ski",
+      "score": 0.028559581406702512
+    },
+    {
+      "term": "tell",
+      "score": 0.02804225663280052
+    },
+    {
+      "term": "broken",
+      "score": 0.02770859765844961
+    }
+  ]
+}

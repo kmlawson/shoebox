@@ -1,0 +1,183 @@
+{
+  "id": 14,
+  "added": "2010-12-23 21:56:13",
+  "modified": "2010-12-30 04:08:15",
+  "public": true,
+  "metadata": {
+    "Title": [
+      "Alma C. Wilson to Axel and Laura Holm 1948.1.20"
+    ],
+    "Description": [
+      "BREV FRA ALMA WILSON DATERT  20.  JANUAR – 1948, TIL AXEL OG LAURA HOLM.  DET ER MULIG DETTE ER EN KOPI HUN LAGET TIL SEG SELV FØR HUN SENDTE DET TIL AXEL, MEN DET KAN OGSÅ TENKES HUN ALDRI SENDTE DETTE BREVET.  INGEN KONVOLUTT.  PÅ BAKSIDEN AV DET ENE ARKET STÅR DET (PÅ ENGELSK):  –SENDTE BREV 21 JANUAR,  SKREV TIL EDVARD EIDUM 20.–  \n\n\n<-SPLITDESC->\n\n\nLETTER FROM ALMA WILSON JANUARY 20 – 1948, TO AXEL AND LAURA HOLM.  IT'S POSSIBLE THAT THIS IS A COPY SHE MADE FOR HERSELF BEFORE SHE SENT IT TO AXEL, BUT IT'S ALSO POSSIBLE THAT SHE NEVER SENT THIS LETTER.  NO ENVELOPE.  ON THE BACK OF ONE OF THE SHEETS OF PAPER SHE HAS WRITTEN:  –SENT LETTER 21 JANUAR, WROTE EDVARD EIDUM 20–."
+    ],
+    "Creator": [
+      "Alma C. Wilson",
+      "Siri Lawson, trans."
+    ],
+    "Date": [
+      "1948.01.20"
+    ],
+    "Language": [
+      "Norwegian",
+      "English trans."
+    ],
+    "Text": [
+      "Dell Rapids, S.D.  Jan 20-48\n\nKjere onkel Axel og Laura.\n\nJeg har ventet paa svar paa mit brev  Jeg skrev til dig da John blev saa daarlig.  men intet ennu  Jeg skrev 2 hvor  for svarer du ikke og send mig døds opskriften han sente dig  Han døde kloke 9 om aftenen den 13 Januar  var paa hospitalet 8 dage.  Jeg var alene oppe 4 netter og mange dager  var begraven klokken 2 den 19 Januar paa lig huset var begravelsen fra, er begraven ved min man og sviger mor  Luthersk prest gav eler leste begravelsen  Han vilde ikke prest se men dagen før han døde sa han aa Ja, presten kan kome om han vil  Du har aldrig idet liv set nogen som har veret saa plaget og pint af sygdom som han var.  han sa mane gange Jeg tenkte aldrig nogen kunde leve og vere saa syg som Jeg nu er  Hade blødning om tarmen, naveln nesen og mund mange dage før han fik slipe  Han skulde gjort noget for sin sygdom med doktor lenge siden men nei spare og spare maate dem  sat i mørket om kveldene.  Ja han fortalte mig mangt dise dage.\n\nJa det er mang slags en kan vere forundret paa.  nok sagt  du kan la Laura og Ole vide om at han er død og sig Ole at den pakken kom den 14  han døde den 13 – ingen told men 15 cent porto  Haaber di ale lever vel og har det bra.  Jeg pakket og sente 4 pakker efter den 7 Januar  haaber dem ale komer frem  Jeg ber Gud at du og Ole slipper en saadan pinslig ende  2 af Florence brødre var her i begravelsen  bor langt vek\n\nHilsen fra mor og Alma\n\n\n<-SPLITTLETTER->\n\n\nDell Rapids, S.D.  Jan 20-48\n\nDear uncle Axel and Laura\n\nI’ve been waiting for a reply to my letter.  I wrote to you when John got so sick.  but nothing yet  I wrote 2  why don’t you answer and send me the death recipe he sent you (she most probably means the text for the obituary, but the Norwegian word she uses actually means “recipe”)  He died at 9 in the evening on January 13  was in the hospital for 8 days.  I was up alone for 4 nights and many days  was buried at 2 on January 19  the funeral was from the mortuary, is buried by my husband and mother in law  a Lutheran priest gave or read the funeral  He didn’t want to see a priest but the day before he died he said oh Ok, the priest can come if he wants to  You’ve never in your life seen anyone suffering and tormented so from illness as he was.  he said many times I never thought anyone could live and be as sick as I am now  He bled around the intestine, navel nose and mouth for many days before he was let go  He should have done something for his illness with a doctor a long time ago but no they had to save and save  sat in the dark in the evenings.  Yes he told me many a thing in his last days.  Yes there’s many a thing that can make you wonder.  enough said  you can let Laura and Ole know that he’s dead and tell Ole that that package arrived on the 14th  he died on the 13th – no customs but 15 cents postage to pay  Hope you are all well.  I wrapped up and sent 4 packages after January 7  hope they all get there  I ask God that you and Ole will be spared such a painful end  2 of Florence brothers were here at the funeral  live far away\n\nRegards from mother and Alma"
+    ],
+    "LetterDate": [
+      "1948-01-20"
+    ],
+    "Location": [
+      "Dell Rapids"
+    ],
+    "Destination": [
+      "Norway"
+    ]
+  },
+  "tags": [
+    "1940s",
+    "Alma C. Wilson",
+    "Axel Holm",
+    "Dell Rapids",
+    "God",
+    "John Holm",
+    "Laura Holm",
+    "US to Norway",
+    "death",
+    "funeral",
+    "gifts",
+    "postwar",
+    "priest"
+  ],
+  "files": [
+    {
+      "original": "Alma Wilson 20 januar-1948.pdf",
+      "filename": "5c126e33346d60f7e3e953b7b8d7cb31.pdf",
+      "mime_type": "application/pdf"
+    }
+  ],
+  "norwegian-tfidf": [
+    {
+      "term": "begraven",
+      "score": 0.07411887747960345
+    },
+    {
+      "term": "sygdom",
+      "score": 0.07411887747960345
+    },
+    {
+      "term": "januar",
+      "score": 0.07173419157639206
+    },
+    {
+      "term": "begravelsen",
+      "score": 0.07173419157639206
+    },
+    {
+      "term": "prest",
+      "score": 0.06475202368825284
+    },
+    {
+      "term": "ale",
+      "score": 0.047822794384261375
+    },
+    {
+      "term": "spare",
+      "score": 0.04442665346154643
+    },
+    {
+      "term": "ole",
+      "score": 0.037984034206346565
+    },
+    {
+      "term": "20-48",
+      "score": 0.03705943873980173
+    },
+    {
+      "term": "opskriften",
+      "score": 0.03705943873980173
+    },
+    {
+      "term": "kloke",
+      "score": 0.03705943873980173
+    },
+    {
+      "term": "netter",
+      "score": 0.03705943873980173
+    },
+    {
+      "term": "luthersk",
+      "score": 0.03705943873980173
+    },
+    {
+      "term": "presten",
+      "score": 0.03705943873980173
+    },
+    {
+      "term": "pint",
+      "score": 0.03705943873980173
+    }
+  ],
+  "english-tfidf": [
+    {
+      "term": "priest",
+      "score": 0.08805291843753235
+    },
+    {
+      "term": "january",
+      "score": 0.07418997482633344
+    },
+    {
+      "term": "recipe",
+      "score": 0.0733501094739297
+    },
+    {
+      "term": "funeral",
+      "score": 0.05457338976609892
+    },
+    {
+      "term": "buried",
+      "score": 0.05189093730814169
+    },
+    {
+      "term": "save",
+      "score": 0.05189093730814169
+    },
+    {
+      "term": "illness",
+      "score": 0.045624222251531885
+    },
+    {
+      "term": "anyone",
+      "score": 0.04021802081008969
+    },
+    {
+      "term": "20-48",
+      "score": 0.03667505473696485
+    },
+    {
+      "term": "lutheran",
+      "score": 0.03667505473696485
+    },
+    {
+      "term": "bled",
+      "score": 0.03667505473696485
+    },
+    {
+      "term": "navel",
+      "score": 0.03667505473696485
+    },
+    {
+      "term": "cents",
+      "score": 0.03667505473696485
+    },
+    {
+      "term": "ole",
+      "score": 0.03624757512861582
+    },
+    {
+      "term": "intestine",
+      "score": 0.032054073533231885
+    }
+  ]
+}

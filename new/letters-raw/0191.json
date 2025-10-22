@@ -1,0 +1,173 @@
+{
+  "id": 191,
+  "added": "2010-12-30 02:36:16",
+  "modified": "2010-12-30 05:17:28",
+  "public": true,
+  "metadata": {
+    "Title": [
+      "Axel Holm to Alma C. Wilson"
+    ],
+    "Description": [
+      "NOEN LINJER FRA AXEL HOLM, UDATERT.  TIL ALMA.\n\n\n<-SPLITDESC->\n\n\nNOTE FROM AXEL HOLM, UNDATED.  TO ALMA\n\nAfter the death of John Holm in 1948."
+    ],
+    "Creator": [
+      "Axel Holm",
+      "Siri Lawson, trans."
+    ],
+    "Date": [
+      "1948 (?)"
+    ],
+    "Language": [
+      "Norwegian",
+      "English trans."
+    ],
+    "Text": [
+      "Alma.\n\nJa så er broder Johan hjemme hos Herren  han har nokk nu treft min Helga.  Sender dere nogle aviser.  der finner di et minde ord om ham.  lev vel alle.  og ver hilset fra oss alle\n\nAxel\n\n\n<-SPLITTLETTER->\n\n\nAlma.\n\nWell now brother Johan is at home with the Lord  he has probably met my Helga now.  Am sending you some newspapers.  there you’ll find a few words in his memory.  live well all of you.  and be greeted from us all\n\nAxel"
+    ],
+    "LetterDate": [
+      "1948"
+    ]
+  },
+  "tags": [
+    "Alma C. Wilson",
+    "Axel Holm",
+    "God",
+    "John Holm",
+    "Norway to US",
+    "death",
+    "newspapers",
+    "obituary",
+    "postwar"
+  ],
+  "files": [
+    {
+      "original": "Axel Holm udat-etter Js død.pdf",
+      "filename": "e50e6efc8e5007aabf717147a39372a1.pdf",
+      "mime_type": "application/pdf"
+    }
+  ],
+  "norwegian-tfidf": [
+    {
+      "term": "treft",
+      "score": 0.2281737977586052
+    },
+    {
+      "term": "minde",
+      "score": 0.1758589268696476
+    },
+    {
+      "term": "nokk",
+      "score": 0.16851841830644484
+    },
+    {
+      "term": "finner",
+      "score": 0.15655106457878265
+    },
+    {
+      "term": "aviser",
+      "score": 0.14699531717582306
+    },
+    {
+      "term": "nogle",
+      "score": 0.11398830857773043
+    },
+    {
+      "term": "hilset",
+      "score": 0.11398830857773043
+    },
+    {
+      "term": "herren",
+      "score": 0.10423619368982505
+    },
+    {
+      "term": "ver",
+      "score": 0.0992190262775476
+    },
+    {
+      "term": "helga",
+      "score": 0.09187851771434481
+    },
+    {
+      "term": "sender",
+      "score": 0.07886454938102666
+    },
+    {
+      "term": "lev",
+      "score": 0.07395101432220615
+    },
+    {
+      "term": "johan",
+      "score": 0.07211928666373968
+    },
+    {
+      "term": "ord",
+      "score": 0.06782637728305883
+    },
+    {
+      "term": "broder",
+      "score": 0.06542490806273066
+    }
+  ],
+  "english-tfidf": [
+    {
+      "term": "memory",
+      "score": 0.1885219725472954
+    },
+    {
+      "term": "met",
+      "score": 0.17888755505809179
+    },
+    {
+      "term": "newspapers",
+      "score": 0.17054184301905911
+    },
+    {
+      "term": "greeted",
+      "score": 0.1426488991047829
+    },
+    {
+      "term": "lord",
+      "score": 0.13125380180516072
+    },
+    {
+      "term": "helga",
+      "score": 0.11985870450553857
+    },
+    {
+      "term": "find",
+      "score": 0.11485603527594253
+    },
+    {
+      "term": "sending",
+      "score": 0.10187857497730225
+    },
+    {
+      "term": "johan",
+      "score": 0.09687590574770623
+    },
+    {
+      "term": "words",
+      "score": 0.08588273909372722
+    },
+    {
+      "term": "axel",
+      "score": 0.07398563106302604
+    },
+    {
+      "term": "live",
+      "score": 0.06690258823133834
+    },
+    {
+      "term": "brother",
+      "score": 0.04619276723418568
+    },
+    {
+      "term": "home",
+      "score": 0.03587528283672014
+    },
+    {
+      "term": "alma",
+      "score": 0.02901910050819361
+    }
+  ]
+}

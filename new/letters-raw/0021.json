@@ -1,0 +1,122 @@
+{
+  "id": 21,
+  "added": "2010-12-23 22:25:34",
+  "modified": "2010-12-30 14:53:20",
+  "public": true,
+  "metadata": {
+    "Creator": [
+      "Alma C. Wilson"
+    ],
+    "Language": [
+      "Norwegian"
+    ],
+    "Text": [
+      "DETTE SER UT SOM EN SANG, LIGNER PÅ ALMAS HÅNDSKRIFT.\n\namanda sad med en crans i haaren,\nsom engel mild og som sol om vaaren,\nnaar Herman hende sin trohed svor,\nmen falskhed ud i Hans Hjerta bor.\n\namanda ganger sig ned til parken\nat pluke lilierne up av marken\nat binde Kransen det bant hun om\nmen ingen Herman til Hende Kom.\n\namanda ganger sig ned til porten\nder fik Hun se vad hun ikke trode\nder fik Hun først sine øgon up\nat Herman gaar med en anden bort\n\no Herman Herman ven om tilbage,\ntil din amanda som du forsake\nti Heren gud Han nok lønner den\nsom over giver en trogen ven.\n\namanda jeg dig ei mere elsker\nti ellen haver mit–¦–¦\n\ndet var visst alt hun kunne..\n\n\n<-SPLITTLETTER->\n\n\nTHIS IS A NORWEGIAN SONG. IT LOOKS LIKE ALMA'S HANDWRITING."
+    ],
+    "Title": [
+      "Untitled Song Undated"
+    ],
+    "Description": [
+      "DETTE SER UT SOM EN SANG, LIGNER PÅ ALMAS HÅNDSKRIFT.\n\n\n<-SPLITDESC->\n\n\nTHIS IS A NORWEGIAN SONG.  IT LOOKS LIKE ALMA'S HANDWRITING.  This song is about the pretty girl Amanda who wears flowers in her hair, waiting in the park for Herman who never turns up.  Then she sees him with another.  He's just about to tell her he no longer loves her, he loves Ellen, when Alma seems to run out of memory on this song."
+    ]
+  },
+  "tags": [
+    "Alma C. Wilson",
+    "song"
+  ],
+  "files": [
+    {
+      "original": "Amanda and Herman-song.pdf",
+      "filename": "cbd907cdc25f7851a6cce7ac6a8c142f.pdf",
+      "mime_type": "application/pdf"
+    }
+  ],
+  "norwegian-tfidf": [
+    {
+      "term": "amanda",
+      "score": 0.40329389216843053
+    },
+    {
+      "term": "herman",
+      "score": 0.40329389216843053
+    },
+    {
+      "term": "up",
+      "score": 0.1613175568673722
+    },
+    {
+      "term": "ti",
+      "score": 0.14093087508619734
+    },
+    {
+      "term": "ven",
+      "score": 0.12054419330502247
+    },
+    {
+      "term": "crans",
+      "score": 0.0806587784336861
+    },
+    {
+      "term": "haaren",
+      "score": 0.0806587784336861
+    },
+    {
+      "term": "trohed",
+      "score": 0.0806587784336861
+    },
+    {
+      "term": "svor",
+      "score": 0.0806587784336861
+    },
+    {
+      "term": "falskhed",
+      "score": 0.0806587784336861
+    },
+    {
+      "term": "hjerta",
+      "score": 0.0806587784336861
+    },
+    {
+      "term": "parken",
+      "score": 0.0806587784336861
+    },
+    {
+      "term": "pluke",
+      "score": 0.0806587784336861
+    },
+    {
+      "term": "lilierne",
+      "score": 0.0806587784336861
+    },
+    {
+      "term": "binde",
+      "score": 0.0806587784336861
+    }
+  ],
+  "english-tfidf": [
+    {
+      "term": "handwriting",
+      "score": 0.6182497902194453
+    },
+    {
+      "term": "song",
+      "score": 0.5027252601261211
+    },
+    {
+      "term": "looks",
+      "score": 0.24303449045169612
+    },
+    {
+      "term": "norwegian",
+      "score": 0.17643449234240174
+    },
+    {
+      "term": "alma",
+      "score": 0.07738426802184963
+    },
+    {
+      "term": "s",
+      "score": 0.020226809500711256
+    }
+  ]
+}

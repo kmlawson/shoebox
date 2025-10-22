@@ -1,0 +1,190 @@
+{
+  "id": 180,
+  "added": "2010-12-30 01:56:34",
+  "modified": "2010-12-30 03:39:06",
+  "public": true,
+  "metadata": {
+    "Title": [
+      "Klara Krogstad to John Holm 1947.10.12"
+    ],
+    "Description": [
+      "BREV FRA KLARA OVEDIE KROGSTAD, SLUPPEN, STRINDA, T.HEIM, DATERT 12 OKTOBER, UTYDELIG POSTSTEMPEL MEN DET SER UT SOM 1947.  TIL JOHN HOLM, 108.  WEST FIFTH STREET, DELL RAPIDS, SOUTH DAKOTA, U.S.A.  FRIMERKENE ER KLIPPET VEKK.\n\n\n<-SPLITDESC->\n\n\nLETTER FROM KLARA OVEDIE KROGSTAD, SLUPPEN, STRINDA, T.HEIM, DATED OCTOBER 12.  THE YEAR ON THE POSTSTAMP IS UNCLEAR BUT IT LOOKS LIKE 1947.  TO JOHN HOLM, 108.  WEST FIFTH STREET, DELL RAPIDS, SOUTH DAKOTA, U.S.A.  THE STAMPS HAVE BEEN REMOVED."
+    ],
+    "Creator": [
+      "Klara Krogstad",
+      "Siri Lawson, trans."
+    ],
+    "Date": [
+      "1947.10.12"
+    ],
+    "Language": [
+      "Norwegian",
+      "English trans."
+    ],
+    "Text": [
+      "Sluppen den 12 okt.\n\nKjære onkel John.\n\nNu endelig skal du faa nogen ord fra mig, du skal ha takk for brev.  Den dagen var jeg paa Stjørdalen  fik sitte paa en bil.  Jeg var og besøkte onkel Aksel, jeg fik litt potet med mig hjem for han holdt paa og tok op potet.  Han har været snill med mig for han har forstand og tanke for den som er alene og maa stræve frem sine barn.  han er en god farbror slik som du er.  Tante Laura var der og vasket sine klær  fik bruke brensel og saape av hans.  Nu har min mor været og fotografert sig saa nu skal jeg sende det til Almas gebursdag den 15de november.  Nu holder jeg på saa smaat og ordner mig paa konfirmasjon den 7 december.  Det er meget som skal til og dyrt er det ogsaa alt man skal ha.  Har du nogen raad for og faa sent mig aprikoser eller svisker  Jeg vet ikke hva jeg skal ha til dessert til middag, vi blir en 30 stk. stor slægt paa begge sider, nu naar det er min siste søn som skal konfirmeres stræver jeg saa meget for os, at jeg synes det er morsomt og ha litt fremmede ogsaa.  Nu har mine gutter været hos min datter.  Middag er færdig.  Hils Alma og ha det bra alle.\n\n(Noen av ordene i den siste linjen er bare gjetting, det var en bit av arket som var klippet ut, antagelig når frimerket ble klippet ut av konvolutten).\n\nDeres Klara.\n\n\n<-SPLITTLETTER->\n\n\nSluppen the 12th of Oct.\n\nDear uncle John.\n\nNow you’ll finally get a few words from me, thank you for your letter.  That day I was in Stjørdalen  got a ride in a car.  I went to see uncle Aksel, I got some potatoes to take home with me as he was taking up potatoes.  He’s been kind to me because he has good sense and thought for someone who’s alone and has to struggle to bring up the children.  he’s a good uncle like you are.  Aunt Laura was there washing her clothes  got to use firewood and soap out of his.  My mother has been to the photographer’s so now I’ll send it to Alma’s birthday November 15.  I’ve started to prepare for a confirmation on December 7.  A lot is needed and it’s expensive too everything one needs.  Is there any way you could send me some apricots or prunes  I don’t know what to have for dessert for dinner, there will be about 30 of us  large family on both sides, now that it’s my last son who’s getting confirmed I work so hard for us, that I think it’s fun to have some strangers (visitors) too.  Now my boys have been to see my daughter.  Dinner is ready.  Say hello to Alma and keep well all of you.\n\n(Some words in the last sentence I’ve only guessed as there’s a piece missing out of the paper, probably accidentally cut out when the stamps were cut out of the envelope).\n\nYours Klara"
+    ],
+    "LetterDate": [
+      "1947-10-12"
+    ],
+    "Location": [
+      "Sluppen"
+    ],
+    "Destination": [
+      "Dell Rapids"
+    ]
+  },
+  "tags": [
+    "1940s",
+    "Alma C. Wilson",
+    "Axel Holm",
+    "John Holm",
+    "Klara Krogstad",
+    "Norway to US",
+    "Sluppen",
+    "Stjørdal",
+    "apricots",
+    "car",
+    "clothes",
+    "confirmation",
+    "firewood",
+    "laundry",
+    "photographer",
+    "postwar",
+    "potatoes",
+    "prices",
+    "prunes",
+    "soap"
+  ],
+  "files": [
+    {
+      "original": "Klara Krogstad 12 oktober-1947.pdf",
+      "filename": "0bf41ecf48d29060e3411693baa9580a.pdf",
+      "mime_type": "application/pdf"
+    }
+  ],
+  "norwegian-tfidf": [
+    {
+      "term": "potet",
+      "score": 0.10754503791158146
+    },
+    {
+      "term": "klippet",
+      "score": 0.09395391672413156
+    },
+    {
+      "term": "middag",
+      "score": 0.07598743178542264
+    },
+    {
+      "term": "været",
+      "score": 0.06909713875180898
+    },
+    {
+      "term": "stræve",
+      "score": 0.05377251895579073
+    },
+    {
+      "term": "saape",
+      "score": 0.05377251895579073
+    },
+    {
+      "term": "15de",
+      "score": 0.05377251895579073
+    },
+    {
+      "term": "gjetting",
+      "score": 0.05377251895579073
+    },
+    {
+      "term": "frimerket",
+      "score": 0.05377251895579073
+    },
+    {
+      "term": "farbror",
+      "score": 0.04697695836206578
+    },
+    {
+      "term": "smaat",
+      "score": 0.04697695836206578
+    },
+    {
+      "term": "aprikoser",
+      "score": 0.04697695836206578
+    },
+    {
+      "term": "svisker",
+      "score": 0.04697695836206578
+    },
+    {
+      "term": "dessert",
+      "score": 0.04697695836206578
+    },
+    {
+      "term": "sider",
+      "score": 0.04697695836206578
+    }
+  ],
+  "english-tfidf": [
+    {
+      "term": "dinner",
+      "score": 0.06644304211388137
+    },
+    {
+      "term": "cut",
+      "score": 0.06211015762234332
+    },
+    {
+      "term": "potatoes",
+      "score": 0.057015705885110485
+    },
+    {
+      "term": "prepare",
+      "score": 0.053410273888783756
+    },
+    {
+      "term": "accidentally",
+      "score": 0.053410273888783756
+    },
+    {
+      "term": "ride",
+      "score": 0.046680689611502735
+    },
+    {
+      "term": "apricots",
+      "score": 0.046680689611502735
+    },
+    {
+      "term": "guessed",
+      "score": 0.046680689611502735
+    },
+    {
+      "term": "washing",
+      "score": 0.04274413516385065
+    },
+    {
+      "term": "photographer",
+      "score": 0.04274413516385065
+    },
+    {
+      "term": "prunes",
+      "score": 0.04274413516385065
+    },
+    {
+      "term": "sides",
+      "score": 0.04274413516385065
+    },
+    {
+      "term": "firewood",
+      "score": 0.03995110533422171
+    },
+    {
+      "term": "dessert",
+      "score": 0.03995110533422171
+    },
+    {
+      "term": "sentence",
+      "score": 0.03778466308845268
+    }
+  ]
+}

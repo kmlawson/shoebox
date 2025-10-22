@@ -1,0 +1,187 @@
+{
+  "id": 143,
+  "added": "2010-12-28 22:31:18",
+  "modified": "2010-12-28 22:31:18",
+  "public": true,
+  "metadata": {
+    "Title": [
+      "Ola Holm to John Holm 1946.11.29"
+    ],
+    "Description": [
+      "BREV FRA OLA HOLM DATERT 29.  NOVEMBER-1946, TIL MR.  JOHN HOLM, 108 W. 5TH STREET, DELL RAPIDS, SO.  DAK., U.S.A.  FRIMERKENE ER KLIPPET VEKK.  DET ER OPPLAGT AT HAN SKREV DETTE BREVET MENS HAN LÅ TIL SENGS, NOE AV DET ER NESTEN UMULIG Å TYDE.\n\n\n<-SPLITDESC->\n\n\nLETTER FROM OLA HOLM DATED NOVEMBER 29-1946, TO MR.  JOHN HOLM, 108 W. 5TH STREET, DELL RAPIDS, SO.  DAK., U.S.A.  THE STAMPS HAVE BEEN REMOVED.  HE OBVIOUSLY WROTE THIS LETTER WHILE IN BED, VERY DIFFICULT TO DECIPHER HIS WRITING.\n"
+    ],
+    "Creator": [
+      "Ola Holm",
+      "Siri Lawson, trans."
+    ],
+    "Date": [
+      "1946.11.29"
+    ],
+    "Language": [
+      "Norwegian",
+      "English trans."
+    ],
+    "Text": [
+      "Tr.heim 29-11-46\n\nGode Broder\n\nTak for Pakker og brev  Jeg ligger syk, har ligget i 2 uker  har Bronkit fortættning  har så vanskelig for og puste (åndenød)  Forfærdelig hoste, hodepine og feber.\n\nFørste pakken med kjolen  Ja kjolen var altfor liten  Kona er stor nu men mange vil gjerne ha den  Strømpene var fine og den andre sjorten? var altfor stor  vestene for små, men for ha en råd.  Suit pakken (dresspakken) har jeg ikke orket åbnet enda  håper den er bra.  Huf hvor syk jeg er  Du må ha hjertelig tak for alt  Jeg skal skriv strax jeg blir bedre.  Du skal få Blåbær strax jeg kommer op.  Du må ikke ha? fra dig den store? Suiten? (disse to ordene var nesten umulig å lese)  Halvor adrs fik jeg men enda ikke skrevet,  Hjertelig kjære Broder  gud velsigne dig.  Hils alle alle?\n\nDin Olav\n\n \n\n<-SPLITTLETTER->\n\n\n\nTr.heim 29-11-46\n\nGood Brother\n\nThank you for the packages and letter  I’m sick in bed, have been in bed for 2 weeks  have Bronchitis congestion  have such difficulty breathing (respiratory trouble)  Terrible cough, headache and fever.\n\nThe first package with the dress  Well the dress was way too small  The wife is big now but there are many who would like to have it  The stockings (socks?  Same word is sometimes used for both in Norwegian) were nice and the other shirt? (difficult to read) was way too big  the vests too small, but will manage somehow.  The Suit package I haven’t had the energy to open yet  hope it’s ok.  Oh dear me how sick I am  Thank you so much for everything.  I’ll write as soon as I get better.  You’ll get Blueberries as soon as I can get up.  You mustn’t give away? (next to impossible to read) the big? Suit?  I got Halvor’s addrs. but haven’t written yet,  Thank you dear Brother  god bless you.  Greet everyone\n\nYour Olav"
+    ],
+    "LetterDate": [
+      "1946-11-29"
+    ],
+    "Location": [
+      "Trondheim"
+    ],
+    "Destination": [
+      "Dell Rapids"
+    ]
+  },
+  "tags": [
+    "1940s",
+    "John Holm",
+    "Norway to US",
+    "Ola Holm",
+    "Trondheim",
+    "blueberries",
+    "bronchitis",
+    "cough",
+    "fever",
+    "gifts",
+    "headache",
+    "postwar",
+    "shirt",
+    "sickness",
+    "stockings",
+    "suit",
+    "vest"
+  ],
+  "files": [
+    {
+      "original": "Ola Holm 29 november-1946.pdf",
+      "filename": "403ac3a698f3287d9ce2278c0d4ea555.pdf",
+      "mime_type": "application/pdf"
+    }
+  ],
+  "norwegian-tfidf": [
+    {
+      "term": "kjolen",
+      "score": 0.1047394330015285
+    },
+    {
+      "term": "altfor",
+      "score": 0.09203663221110323
+    },
+    {
+      "term": "strax",
+      "score": 0.08107811577574742
+    },
+    {
+      "term": "29-11-46",
+      "score": 0.07411887747960345
+    },
+    {
+      "term": "fortættning",
+      "score": 0.07411887747960345
+    },
+    {
+      "term": "åndenød",
+      "score": 0.07411887747960345
+    },
+    {
+      "term": "forfærdelig",
+      "score": 0.07411887747960345
+    },
+    {
+      "term": "hoste",
+      "score": 0.07411887747960345
+    },
+    {
+      "term": "vestene",
+      "score": 0.07411887747960345
+    },
+    {
+      "term": "dresspakken",
+      "score": 0.07411887747960345
+    },
+    {
+      "term": "orket",
+      "score": 0.07411887747960345
+    },
+    {
+      "term": "åbnet",
+      "score": 0.07411887747960345
+    },
+    {
+      "term": "huf",
+      "score": 0.07411887747960345
+    },
+    {
+      "term": "suiten",
+      "score": 0.07411887747960345
+    },
+    {
+      "term": "bronkit",
+      "score": 0.06475202368825284
+    }
+  ],
+  "english-tfidf": [
+    {
+      "term": "dress",
+      "score": 0.06980977758364558
+    },
+    {
+      "term": "29-11-46",
+      "score": 0.06708851476274058
+    },
+    {
+      "term": "congestion",
+      "score": 0.06708851476274058
+    },
+    {
+      "term": "respiratory",
+      "score": 0.06708851476274058
+    },
+    {
+      "term": "vests",
+      "score": 0.06708851476274058
+    },
+    {
+      "term": "energy",
+      "score": 0.06708851476274058
+    },
+    {
+      "term": "suit",
+      "score": 0.06655291434890112
+    },
+    {
+      "term": "difficulty",
+      "score": 0.05863550036566807
+    },
+    {
+      "term": "cough",
+      "score": 0.05863550036566807
+    },
+    {
+      "term": "headache",
+      "score": 0.05863550036566807
+    },
+    {
+      "term": "bed",
+      "score": 0.05566786306528113
+    },
+    {
+      "term": "breathing",
+      "score": 0.053690803925324604
+    },
+    {
+      "term": "somehow",
+      "score": 0.05018248596859557
+    },
+    {
+      "term": "open",
+      "score": 0.05018248596859557
+    },
+    {
+      "term": "blueberries",
+      "score": 0.05018248596859557
+    }
+  ]
+}

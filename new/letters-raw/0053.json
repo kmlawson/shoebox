@@ -1,0 +1,177 @@
+{
+  "id": 53,
+  "added": "2010-12-26 16:04:44",
+  "modified": "2010-12-26 16:04:44",
+  "public": true,
+  "metadata": {
+    "Title": [
+      "Ola Holm to John Holm 1914.10.17"
+    ],
+    "Description": [
+      "UNDERRETNING OM MARKUS' DØD DATERT 17.  OKTOBER-1914.  FRA OLA HOLM TIL JOHN HOLM.  SKREVET PÅ PAPIR MED SVART SØRGEKANT, INGEN KONVOLUTT.\n\n\n<-SPLITDESC->\n\n\nNOTIFICATION OF THE DEATH OF MARKUS DATED OCT. 17-1914 FROM OLAV HOLM TO JOHN HOLM.  WRITTEN ON PAPER WITH A BLACK BORDER AROUND IT, NO ENVELOPE."
+    ],
+    "Creator": [
+      "Ola Holm",
+      "Siri Lawson, trans."
+    ],
+    "Date": [
+      "1914.10.17"
+    ],
+    "Language": [
+      "Norwegian",
+      "English trans."
+    ],
+    "Text": [
+      "Kjære broder\n\nMange tak for brevet.  Har idag den triste nyhed og meddele at Broder Markus omkom ved et ulykkestilfælde under arbeide, nemlig overkjørt af et Tog.  Du vil se hvordan i de utklip af avisen jeg sender.  Du kan tænke hvilken sorg i hjemmet jeg sad oppe hos dem natten derpaa.  Jertine er næsten af sig selv.  Jeg var derude kvelden før det hændte vi taltes ved om forskillige ting og dette var sidste gang.  Stakkels Markus, at han skulde faa en slig grufuld død.  Han var omtrent midt paa sporet da Toget ramte ham, han fik Trillebåren over men selv blev han rammet i skulderen og revet med under det lange Godstog og slæpt med (det står “men”, men han mener sikkert “med”) en 25 a 30 meter helt knust Begge Ben afskaaret og den en arm delt fra legemet. Baghovedet og underlivet isønderknust tænk noget saa frygteligt.  Han viste vistnok ikke hvad som hændte sig da alt var gjort paa et Sekund.  Ja hvor snart maatte ikke han gaa ind i evigheten.  Familien for vistnok bra understøttelse saa det vil vist ikke bli nogen mangel, men tænk hvor ondt og huske paa, det var i sidste øieblik du fik anledning til og se ham ogsaa.  Jeg har intet arbeide, og jeg ved ikke hvordan dette blir da priserne blir høiere, og værre om arbeide.  Ja det er en slem tid.  Er glad for at du har det bra.  Alle er bare bra her hjemme.  Far er vel og trives godt.  Haaber og høre snart.  Begravelsen blir vist den 22de  Ja lev vel da og hils alle.  Skriv snart\n\nOlav\n\nGlem ikke denne Revolver\n\n \n\nT.hjem 17-10-14\n\n\n<-SPLITTLETTER->\n\n\nDear Brother\n\nMany thanks for your letter.  Today I have to inform you of the sad news that our Brother Markus was killed in an accident while working, run over by a Train.  You will see how in the newspaper clippings I send.  You can imagine what grief in the home I stayed up with them that night.  Jertine is almost beside herself.  I was out there the night before it happened we talked about various things for the last time as it turned out.  Poor Markus, what a horrible death he got.  He was almost right on the track when the Train hit him, he got  the Wheelbarrow across but he himself was struck in the shoulder and pulled along underneath the long Freight train and dragged about 25 to 30 meters completely crushed Both Legs cut off and one arm severed from his body.  The back of his head and his abdomen torn apart imagine how horrible.  He apparently did not know what happened to him as it was all over in a Second.  How soon he had to enter into eternity.  His family will apparently receive good financial support so it doesn’t look like they’ll be in need, but imagine how painful to remember.  It was at the last minute you had the opportunity to see him too (probably means John’s visit in 1914). I have no work, and I don’t know how this will go as the prices are going up, and harder to get work.  Yes, these are bad times.  I’m glad that you’re fine.  Everybody here at home is fine.  Father is well and likes it where he is.  Hope to hear soon.  The funeral is apparently on the 22nd. So live well then and say hello to everyone.  Write soon\n\nOlav\n\nDon’t forget that Revolver"
+    ],
+    "LetterDate": [
+      "1914-10-17"
+    ],
+    "Location": [
+      "Trondheim"
+    ],
+    "Destination": [
+      "USA"
+    ]
+  },
+  "tags": [
+    "Markus Holm",
+    "Norway to US",
+    "accident",
+    "death",
+    "firearm",
+    "newspaper",
+    "train"
+  ],
+  "files": [
+    {
+      "original": "Markus til John 17 okt-1914.pdf",
+      "filename": "e04738f6998f73eefa79378bc10faab6.pdf",
+      "mime_type": "application/pdf"
+    }
+  ],
+  "norwegian-tfidf": [
+    {
+      "term": "hændte",
+      "score": 0.07666639604689135
+    },
+    {
+      "term": "sidste",
+      "score": 0.07666639604689135
+    },
+    {
+      "term": "vistnok",
+      "score": 0.062005744336904874
+    },
+    {
+      "term": "af",
+      "score": 0.05973755183847994
+    },
+    {
+      "term": "tænk",
+      "score": 0.0467175612164659
+    },
+    {
+      "term": "utklip",
+      "score": 0.04387837546792524
+    },
+    {
+      "term": "derpaa",
+      "score": 0.04387837546792524
+    },
+    {
+      "term": "taltes",
+      "score": 0.04387837546792524
+    },
+    {
+      "term": "forskillige",
+      "score": 0.04387837546792524
+    },
+    {
+      "term": "grufuld",
+      "score": 0.04387837546792524
+    },
+    {
+      "term": "sporet",
+      "score": 0.04387837546792524
+    },
+    {
+      "term": "ramte",
+      "score": 0.04387837546792524
+    },
+    {
+      "term": "trillebåren",
+      "score": 0.04387837546792524
+    },
+    {
+      "term": "rammet",
+      "score": 0.04387837546792524
+    },
+    {
+      "term": "revet",
+      "score": 0.04387837546792524
+    }
+  ],
+  "english-tfidf": [
+    {
+      "term": "train",
+      "score": 0.07930594506324004
+    },
+    {
+      "term": "apparently",
+      "score": 0.07930594506324004
+    },
+    {
+      "term": "happened",
+      "score": 0.06131402878209376
+    },
+    {
+      "term": "horrible",
+      "score": 0.05461212616873566
+    },
+    {
+      "term": "imagine",
+      "score": 0.04620674506161177
+    },
+    {
+      "term": "beside",
+      "score": 0.0454649438887994
+    },
+    {
+      "term": "track",
+      "score": 0.0454649438887994
+    },
+    {
+      "term": "pulled",
+      "score": 0.0454649438887994
+    },
+    {
+      "term": "dragged",
+      "score": 0.0454649438887994
+    },
+    {
+      "term": "enter",
+      "score": 0.0454649438887994
+    },
+    {
+      "term": "minute",
+      "score": 0.0454649438887994
+    },
+    {
+      "term": "22nd",
+      "score": 0.0454649438887994
+    },
+    {
+      "term": "revolver",
+      "score": 0.0454649438887994
+    },
+    {
+      "term": "markus",
+      "score": 0.04060720285655048
+    },
+    {
+      "term": "clippings",
+      "score": 0.03973645479326266
+    }
+  ]
+}

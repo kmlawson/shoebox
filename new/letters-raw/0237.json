@@ -1,0 +1,96 @@
+{
+  "id": 237,
+  "added": "2010-12-31 22:41:48",
+  "modified": "2010-12-31 22:41:48",
+  "public": true,
+  "metadata": {
+    "Title": [
+      "Edvard Eidum to Alma C. Wilson Card 1948.11.23"
+    ],
+    "Description": [
+      "POSTKORT MED JULEHILSEN FRA EDVARD EIDUM, POSTSTEMPLET 23.  NOVEMBER – 1948, TIL MRS.  ALMA C.  WILSON, 102.  WEST. 5.  STREET., DELL RAPIDS, SYD DAKOTA, U.S.A.  KORTET HAR ET BILDE AV NARVIK, OG ET GRÅTT 30-ØRES FRIMERKE MED TEKSTEN –UTVANDRING 1825  CLENG PEERSON–, OG SLUPPEN –RESTAURATIONEN– I BAKGRUNNEN (DET FØRSTE NORSKE EMIGRANTSKIP TIL AMERIKA).  CLENG PEERSON LEVDE FRA 1782 TIL 1865.  DETTE FRIMERKET ER ETT AV EN SERIE PÅ 11 SOM KOM UT 15.  APRIL -1947 I FORBINDELSE MED POSTVERKETS 300-ÅRSJUBILEUM (1647-1947).  BLANDT BREVENE FRA JOHAN HOLM'S FAMILIE I NORGE ER TILSAMMEN 10 AV JUBILEUMS-FRIMERKENE REPRESENTERT, MENS ETT (55 ØRE) MANGLER.\n\n\n<-SPLITDESC->\n\n\nPOST CARD FROM EDVARD EIDUM POST STAMPED NOVEMBER 23 – 1948, TO MRS.  ALMA C.  WILSON, 102.  WEST. 5.  STREET., DELL RAPIDS, SYD DAKOTA, U.S.A.  THIS CARD HAS A PICTURE OF NARVIK ON IT, AND A GRAY 30 ØRE STAMP WITH THE TEXT –EMIGRATION 1825 CLENG PEERSON– AND THE SLOOP –RESTAURATION– IN THE BACKGROUND (THE FIRST NORWEGIAN EMIGRANT SHIP TO AMERICA).  CLENG PEERSON LIVED FROM 1782 UNTIL 1865, AND BROUGHT THE VERY FIRST NORWEGIAN EMIGRANTS TO AMERICA IN 1825 (52 PEOPLE).  THIS IS ONE OF 11 STAMPS THAT CAME OUT APRIL 15-1947 TO COMMEMORATE 300 YEARS OF POSTAL SERVICES.  ALL OF THEM EXCEPT ONE ARE REPRESENTED AMONG THE LETTERS FROM JOHN'S FAMILY IN NORWAY.  (THE 55 ØRE ONE IS MISSING)."
+    ],
+    "Creator": [
+      "Edvard Eidum",
+      "Siri Lawson, trans."
+    ],
+    "Date": [
+      "1948.11.23"
+    ],
+    "Language": [
+      "Norwegian",
+      "English trans."
+    ],
+    "Text": [
+      "Glædelig Julefest ønskes.\n\nhilsen\n\nEidums.\n\n\n<-SPLITTLETTER->\n\n\nWishing you a joyous Christmas.\n\nregards\n\nThe Eidums."
+    ],
+    "LetterDate": [
+      "1948-11-23"
+    ],
+    "Location": [
+      "Narvik"
+    ],
+    "Destination": [
+      "Dell Rapids"
+    ]
+  },
+  "tags": [
+    "1940s",
+    "Alma C. Wilson",
+    "Christmas",
+    "Edvard Eidum",
+    "Norway to US",
+    "postwar"
+  ],
+  "files": [
+    {
+      "original": "Edvard Eidum-kort 23 nov-48.pdf",
+      "filename": "ea0757c3009c622742c97d095ce1aa8f.pdf",
+      "mime_type": "application/pdf"
+    }
+  ],
+  "norwegian-tfidf": [
+    {
+      "term": "eidums",
+      "score": 0.8772369289645092
+    },
+    {
+      "term": "glædelig",
+      "score": 0.8197005144741528
+    },
+    {
+      "term": "ønskes",
+      "score": 0.8197005144741528
+    },
+    {
+      "term": "julefest",
+      "score": 0.7077773568870684
+    },
+    {
+      "term": "hilsen",
+      "score": 0.10439046064614957
+    }
+  ],
+  "english-tfidf": [
+    {
+      "term": "joyous",
+      "score": 1.1002516421089454
+    },
+    {
+      "term": "eidums",
+      "score": 0.7783640596221253
+    },
+    {
+      "term": "wishing",
+      "score": 0.6608067266417015
+    },
+    {
+      "term": "christmas",
+      "score": 0.22636207161554112
+    },
+    {
+      "term": "regards",
+      "score": 0.21890779265609478
+    }
+  ]
+}

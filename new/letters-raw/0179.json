@@ -1,0 +1,181 @@
+{
+  "id": 179,
+  "added": "2010-12-30 01:53:27",
+  "modified": "2010-12-30 03:41:45",
+  "public": true,
+  "metadata": {
+    "Title": [
+      "Laura Karlson to John Holm 1947.10.4"
+    ],
+    "Description": [
+      "BREV FRA LAURA KARLSON DATERT 4.  OKTOBER-1947, TIL HRR.  JOHAN HOLM, 108 WEST 5TH.  STREET, DELL RAPIDS, SYD DAKOTA, U.S.A.  FRIMERKENE ER KLIPPET VEKK.\n\n\n<-SPLITDESC->\n\n\nLETTER FROM LAURA KARLSON, DATED OCTOBER 4 – 1947, TO HRR.  (MR.) JOHAN HOLM, 108 WEST 5TH.  STREET, DELL RAPIDS, SYD DAKOTA, U.S.A.  THE STAMPS HAVE BEEN REMOVED."
+    ],
+    "Creator": [
+      "Laura Karlson",
+      "Siri Lawson, trans."
+    ],
+    "Date": [
+      "1947.10.04"
+    ],
+    "Language": [
+      "Norwegian",
+      "English trans."
+    ],
+    "Text": [
+      "Stjørdal 4/10-1947\n\nKjere Broder og alle sammen\n\nJeg vil, jøre alvor, og skrive til dere.  Tiden blir saa for kort. saa en for aldrig jort saa meget som en tenker, jeg holder paa med forsjellig, jemme arbeide for og tjene mig nogen kroner.  Og Mindor har vert, borte og Plukket Poteter nu saa hann har kjent litt.  Som du vell vet, saa har jeg veret i Narvik, jeg havde det saa Koselig.  Det var underlig, og treffe ijen Søster Hanna, hun ser saa lite, er nesten Blind, vi har ikke set hverandre, siden i vor Mors Begravelse, en skulde ikke tro en har veret i Samme Landet.  hunn har det bra paa alle maater.  Mange kjekke barn som, besøger hende ver dag nesten, alle barna har pene jem, og har arbeide og er friske, saa gaar det bra, saa nu har jeg da veret der, men det er nesten saa, jeg syntes det var galt, og ødelegge saa mange penger, selv og jeg har faatt dem, for jeg havde saa god bruk for dem til i Vinter, men en for ikke sørge saa langt frem i tiden, det blir vel en raad da også.  Jeg haaber at dere har det bra alle sammen.  hil Alma at jeg skal skrive snart,  Jeg haaper du blir saa frisk at du tar dig en tur hit, ja hvem vet det hender saa meget rart.\n\nLev inderlig vell alle sammen.  Tusen kjere hilsen fra Laura og Mindor  Stjørdal.\n\n \n\n\n<-SPLITTLETTER->\n\n\nStjørdal 4/10-1947\n\nDear Brother and all\n\nI’ll, finally, write to you.  Time gets too short, so one never gets as much done as one plans, I do various work at home to earn some extra kroner.  And Mindor has been, out Picking Potatoes now so he has earned a little (the farmers would hire people short term just to harvest his potatoes.  We used to call it our potato vacation as we would get time off school in the fall around potato harvesting time to go to the various farms and help).  As you probably know, I’ve been to Narvik, I had such a Nice time.  It was strange, to see Sister Hanna again, she can’t see very well, is almost Blind, we haven’t seen eachother, since in our Mother’s Funeral, you wouldn’t think we’ve been in the Same Country.  she’s doing well in every way.  Many nice children who, visit her every day almost, all the children have nice homes, and have work and are well, so it’s going well, so now I’ve been there, but it’s almost as if, I felt it was wrong, to ruin so much money, even though it had been given to me, because I could have used it for this Winter, but not to worry that far in advance, we’ll manage somehow then too.  I hope that you’re all doing well.  greet Alma and tell her I’ll write soon, I hope you’ll get well enough to take a trip over here, yes who knows so many strange things happen.\n\nKeep very well all of you.  A thousand dear greetings from Laura and Mindor  Stjørdal"
+    ],
+    "LetterDate": [
+      "1947-10-04"
+    ],
+    "Location": [
+      "Stjørdal"
+    ],
+    "Destination": [
+      "Dell Rapids"
+    ]
+  },
+  "tags": [
+    "1940s",
+    "Alma C. Wilson",
+    "Hanna Eidum",
+    "John Holm",
+    "Laura Karlson",
+    "Narvik",
+    "Norway to US",
+    "Stjørdal",
+    "funeral",
+    "postwar",
+    "potatoes"
+  ],
+  "files": [
+    {
+      "original": "Laura Karlson 4 oktober-1947.pdf",
+      "filename": "4543cf8522bfe9c2e308756473b14b5d.pdf",
+      "mime_type": "application/pdf"
+    }
+  ],
+  "norwegian-tfidf": [
+    {
+      "term": "10-1947",
+      "score": 0.05961735797272451
+    },
+    {
+      "term": "hil",
+      "score": 0.05961735797272451
+    },
+    {
+      "term": "havde",
+      "score": 0.057643121509444326
+    },
+    {
+      "term": "veret",
+      "score": 0.05472177533870658
+    },
+    {
+      "term": "jort",
+      "score": 0.05208314948837727
+    },
+    {
+      "term": "maater",
+      "score": 0.05208314948837727
+    },
+    {
+      "term": "besøger",
+      "score": 0.05208314948837727
+    },
+    {
+      "term": "ødelegge",
+      "score": 0.05208314948837727
+    },
+    {
+      "term": "underlig",
+      "score": 0.047675920052418976
+    },
+    {
+      "term": "treffe",
+      "score": 0.047675920052418976
+    },
+    {
+      "term": "hunn",
+      "score": 0.047675920052418976
+    },
+    {
+      "term": "kjere",
+      "score": 0.046795487463379366
+    },
+    {
+      "term": "alvor",
+      "score": 0.04454894100403004
+    },
+    {
+      "term": "tjene",
+      "score": 0.04454894100403004
+    },
+    {
+      "term": "plukket",
+      "score": 0.04454894100403004
+    }
+  ],
+  "english-tfidf": [
+    {
+      "term": "potato",
+      "score": 0.08585912553544253
+    },
+    {
+      "term": "short",
+      "score": 0.053863420727798685
+    },
+    {
+      "term": "potatoes",
+      "score": 0.05243408666219982
+    },
+    {
+      "term": "10-1947",
+      "score": 0.04911837687986363
+    },
+    {
+      "term": "ruin",
+      "score": 0.04911837687986363
+    },
+    {
+      "term": "almost",
+      "score": 0.0478844502814398
+    },
+    {
+      "term": "hire",
+      "score": 0.042929562767721266
+    },
+    {
+      "term": "various",
+      "score": 0.04224578561813531
+    },
+    {
+      "term": "strange",
+      "score": 0.03938252400964996
+    },
+    {
+      "term": "farmers",
+      "score": 0.039309338588184084
+    },
+    {
+      "term": "worry",
+      "score": 0.039309338588184084
+    },
+    {
+      "term": "plans",
+      "score": 0.03674074865557889
+    },
+    {
+      "term": "harvesting",
+      "score": 0.03674074865557889
+    },
+    {
+      "term": "farms",
+      "score": 0.03674074865557889
+    },
+    {
+      "term": "somehow",
+      "score": 0.03674074865557889
+    }
+  ]
+}

@@ -1,0 +1,109 @@
+{
+  "id": 105,
+  "added": "2010-12-27 22:41:48",
+  "modified": "2010-12-30 14:45:00",
+  "public": true,
+  "metadata": {
+    "Description": [
+      "Email in answer to questions by Siri Lawson regarding stamps and wartime censorship from John Torstad at the college in Lillehammer.\r\n\r\nNOTE: This item only temporarily available and will eventually be removed. The information provided by John Torstad will be incorporated into a separate page on the project background."
+    ],
+    "Creator": [
+      "John Torstad"
+    ],
+    "Date": [
+      "2000"
+    ],
+    "Language": [
+      "Norwegian"
+    ],
+    "Text": [
+      "Hei Siri\r\n\r\nJeg fikk for 2 dager siden tilsendt fotokopiene.\r\n\r\nJeg gir deg et raskt svar her så følger jeg opp noe senere.\r\n\r\n1.\r\nSamtlige brev sendt fra Norge til USA i perioden 1917-1919 med sensur er\r\nsensurert i Storbritannia.\r\nJeg skal sende deg en artikkel på engelsk som sier noe mer om britisk\r\nsensur av post til/fra nøytrale land under WWI.\r\n\r\n2.\r\nBrevet fra Trondheim 9.7.45 med stum sirkel og sensurremse venstre side\r\nBrevet er kontrollert av den norske postkontrollen i Trondheim og påsatt en\r\npasseringsstempel - stum sirkel (altsaa ikke det lille stempelet som ble\r\nbrukt av postkontrollkontoret i Oslo,som jeg har omtalt i en artikkel på\r\nnettet)\r\nSensurremsen i venstre side er amerikansk og brevet er sensurert av\r\nsensurmyndighetene i New York.  NY-sensuren brukte nr. fra bl.a. 5001 til\r\n10.000\r\nSensuren ble opphevet i USA 15.aug. 45\r\n\r\n3.\r\nDe øvrige tre brevene med kontrollør-remser er alle påsatt av den norske\r\nkontrollen i Trondheim. ( 886, 830 og 838)\r\nPostoblatten er påsatt av avsender.  Disse kunne kjøpes på postkontorene\r\nfor å –forsegle– konvoluttene når limet på klaffen var dårlig.\r\nGår ut fra at den er i blå farge.  De finnes også i rød farge, men disse\r\nble brukt av posten selv på verdibrev.\r\n\r\n4.\r\nBrevet datert 28.2.41 med avrevet frimerke er sensurert i Berlin.  Det\r\ntyske sensurkontoret i Berlin sensurerte mye amerikapost - spesielt post\r\nsom ikke ble sendt med fly.  Dette brevet har nok godt med båt fra Italia .\r\nLiten b under ørna står for Berlin.  Hver by i Tyskland som hadde\r\nsensurering av post, hadde sin egen kjenningsbokstav.  Jeg skal sende deg\r\nen oversikt senere.\r\n\r\n5.\r\nBrevene fra Marokko.\r\nBegge brevene er med fransk sensur gjort i Marokka - nærmere bestemt i\r\nRabat.  bokstavene YB er kjennetegnet for sensurkontoret i Rabat.\r\nDet ene brevet er i tillegg sensurert av britiske myndigheter på Bermuda.\r\nBrevet har gått til Lisboa og derfra med Clipper-flyruten til USA via\r\nBermuda, der all post ble sensurert.  10-tallet på baksiden av begge\r\nkonvoluttene er sannsynligvis fra den franske sensuren.\r\nDet andre brevet har unngått sensuren på Bermuda - det er kjent flere\r\ntilfeller av clipper-flyvninger der post ikke ble sensurert av de britiske\r\nmyndigheter.\r\n\r\n6.\r\nBrevet fra Navik 2.2.49\r\nfimerket har teksten VI VIL VINNE.  Motivet er fra et fotografi tatt i 1941\r\nfra Ringeriksveien i Nes i Hole kommune.  Bildet er et kjent norsk\r\n–motstandsbilde–.\r\n\r\n7.\r\nFrimerkeserien som du liker så godt ble utgitt 15.april 1947 ifm\r\nPostjubileumet og består av 11 merker i valørene 5 til 80 øre.\r\nDu har ti av disse og mangler 55 øren.  Merkene har et opplag på 2,5\r\nmillioner (60 øren) til 71 millioner (25 øren) og er forholdsvis\r\nalminelige.\r\nKatalogpris fra kr ,-  til kr 8,- brukte - noe mer ubrukte og på brev.\r\n\r\nJohn Torstad\r\nProsjektleder\r\nHøgskolen i Lillehammer\r\nSenter for livslang læring\r\n\r\n[Telephone number and email signature not included]"
+    ],
+    "LetterDate": [
+      "2000"
+    ],
+    "Location": [
+      "Lillehammer"
+    ],
+    "Destination": [
+      ""
+    ],
+    "Title": [
+      "Information on Stamps and Wartime Censorship 2000"
+    ],
+    "From": [
+      "John Torstad"
+    ],
+    "To": [
+      "Siri Lawson"
+    ]
+  },
+  "tags": [
+    "censorship",
+    "project background",
+    "stamps"
+  ],
+  "files": [],
+  "norwegian-tfidf": [
+    {
+      "term": "sensurert",
+      "score": 0.11753136286051404
+    },
+    {
+      "term": "-",
+      "score": 0.06941866830971112
+    },
+    {
+      "term": "post",
+      "score": 0.06080991771090748
+    },
+    {
+      "term": "sensur",
+      "score": 0.05876568143025702
+    },
+    {
+      "term": "påsatt",
+      "score": 0.05876568143025702
+    },
+    {
+      "term": "sensuren",
+      "score": 0.05876568143025702
+    },
+    {
+      "term": "berlin",
+      "score": 0.05876568143025702
+    },
+    {
+      "term": "bermuda",
+      "score": 0.05876568143025702
+    },
+    {
+      "term": "øren",
+      "score": 0.05876568143025702
+    },
+    {
+      "term": "usa",
+      "score": 0.04699483548024156
+    },
+    {
+      "term": "brevet",
+      "score": 0.04363915334289311
+    },
+    {
+      "term": "artikkel",
+      "score": 0.039177120953504674
+    },
+    {
+      "term": "45",
+      "score": 0.039177120953504674
+    },
+    {
+      "term": "stum",
+      "score": 0.039177120953504674
+    },
+    {
+      "term": "sirkel",
+      "score": 0.039177120953504674
+    }
+  ]
+}

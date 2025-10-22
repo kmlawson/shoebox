@@ -1,0 +1,182 @@
+{
+  "id": 153,
+  "added": "2010-12-29 20:45:17",
+  "modified": "2010-12-30 03:47:29",
+  "public": true,
+  "metadata": {
+    "Title": [
+      "Gusta Eidum to John Holm 1947.3.9"
+    ],
+    "Description": [
+      "BREV FRA GUSTA EIDUM DATERT 9.  MARS – 1947, TIL HR.  JOHN HOLM, 108 WEST 5 ST., DELL RAPIDS, S.  D.  FRIMERKENE ER KLIPPET UT.\n\n\n<-SPLITDESC->\n\n\nLETTER FROM GUSTA EIDUM DATED MARCH 9 – 1947, TO JOHN HOLM, 108 WEST 5 ST., DELL RAPIDS, S.D.  THE STAMPS HAVE BEEN REMOVED."
+    ],
+    "Creator": [
+      "Gusta Eidum",
+      "Siri Lawson, trans."
+    ],
+    "Date": [
+      "1947.03.09"
+    ],
+    "Language": [
+      "Norwegian",
+      "English trans."
+    ],
+    "Text": [
+      "Narvik 9-3-47\n\nKjære onkel!\n\nTusin takk for alle brev og bøker sprettekniv, og alt som jeg har fått.  Skoene har vi fått og alt er jeg meget meget glad for. Hjertelig takk for alt onkel.  Det er så morsomt å få pakker fra Amerika.  Jeg skal også senne dere et lite minne fra Norge snart.  Vi har det bra.  Mor har meget vondt i benene sine, men håper hun vil bli bedre.  Jeg er nu den som steller hjemme, alle andre har giftet sig, og fåt hjem selv, og det kunne jeg også ha gjort, men hittil har jeg ofret alt mitt eget, for å stelle hjemme.  Idag har vi ski-renn, hundre av menesker går på ski nu.  En herlig sport.\n\nVi fikk igår brev og bilde av dig onkel, der du står med den vattentank på hode, må si du er sterk onkel.  Vi måtte le når vi så det.  Ja dette blir bare en liten hilsen.  Skal hilse fra Karen at hun har fått alt som du har sent.  Hun har også skrevet til dig.  Skal hilse fra mor og far og alle mine søsken.  Skulle hvært morsomt og fått besøkt dere, skulle hvært min største lyst.  Jeg har så lyst til å ta mig en tur til dere.\n\nHa det gott onkel og tusin takk for sko, sprettekniv og bok-merken og bilde og alt alt som jeg har fått.  Hjertelig takk onkel.\n\nBeste hilsen\n\nGusta.\n\n\n<-SPLITTLETTER->\n\n\nNarvik 9-3-47\n\nDear uncle!\n\nThank you so much for all your letters and the books  spring knife, and everything I’ve received.  We’ve received the shoes and I’m very very pleased with everything.  Thank you so much for everything uncle.  It’s so much fun to get packages from America.  I will also send you a little souvenir from Norway soon.  We’re doing fine.  Mother’s feet are really bothering her, but hope she’ll get better.  I’m the one who helps in the house now, all the others have gotten married, and have gotten their own homes, and I could have done that too, but sofar I’ve sacrificed all of my own things, so that I can be at home.  Today we’re having a ski tournament, hundreds of people skiing now.  A wonderful sport.\n\nYesterday we received a letter and a picture of you uncle, where you’re standing with that water tank on your head, must say you’re strong uncle.  We had to laugh when we saw it.  Well, this is just a little greeting.  Karen says to tell you that she has received everything you’ve sent.  She has also written to you.  Mother and father and all my siblings send their regards.  It would be fun to be able to visit you, that would be my biggest wish.  I would really like to come and see you.\n\nKeep well uncle and a thousand thanks for shoes, spring knife and the book mark and picture and everything everything I have received.  Many thanks uncle.\n\nBest wishes\n\nGusta."
+    ],
+    "LetterDate": [
+      "1947-03-09"
+    ],
+    "Location": [
+      "Narvik"
+    ],
+    "Destination": [
+      "Dell Rapids"
+    ]
+  },
+  "tags": [
+    "1940s",
+    "Gusta Eidum",
+    "John Holm",
+    "Narvik",
+    "Norway to US",
+    "books",
+    "foot pain",
+    "gifts",
+    "knife",
+    "postwar",
+    "shoes",
+    "skiing"
+  ],
+  "files": [
+    {
+      "original": "Gusta Eidum 9 mars-1947.pdf",
+      "filename": "e6dcc23b51ad9a3da3af294ff4d8561e.pdf",
+      "mime_type": "application/pdf"
+    }
+  ],
+  "norwegian-tfidf": [
+    {
+      "term": "sprettekniv",
+      "score": 0.11923471594544902
+    },
+    {
+      "term": "hvært",
+      "score": 0.09535184010483795
+    },
+    {
+      "term": "fått",
+      "score": 0.07741053929044758
+    },
+    {
+      "term": "bilde",
+      "score": 0.07693232140076829
+    },
+    {
+      "term": "onkel",
+      "score": 0.07274015745806306
+    },
+    {
+      "term": "tusin",
+      "score": 0.060364059399748794
+    },
+    {
+      "term": "ski-renn",
+      "score": 0.05961735797272451
+    },
+    {
+      "term": "vattentank",
+      "score": 0.05961735797272451
+    },
+    {
+      "term": "bok-merken",
+      "score": 0.05961735797272451
+    },
+    {
+      "term": "9-3-47",
+      "score": 0.05208314948837727
+    },
+    {
+      "term": "hundre",
+      "score": 0.05208314948837727
+    },
+    {
+      "term": "le",
+      "score": 0.05208314948837727
+    },
+    {
+      "term": "bøker",
+      "score": 0.047675920052418976
+    },
+    {
+      "term": "vondt",
+      "score": 0.047675920052418976
+    },
+    {
+      "term": "hode",
+      "score": 0.047675920052418976
+    }
+  ],
+  "english-tfidf": [
+    {
+      "term": "knife",
+      "score": 0.06451302158811603
+    },
+    {
+      "term": "uncle",
+      "score": 0.053421985881731505
+    },
+    {
+      "term": "tournament",
+      "score": 0.04783702791778024
+    },
+    {
+      "term": "hundreds",
+      "score": 0.04783702791778024
+    },
+    {
+      "term": "9-3-47",
+      "score": 0.041809661130302454
+    },
+    {
+      "term": "souvenir",
+      "score": 0.041809661130302454
+    },
+    {
+      "term": "helps",
+      "score": 0.041809661130302454
+    },
+    {
+      "term": "sacrificed",
+      "score": 0.041809661130302454
+    },
+    {
+      "term": "tank",
+      "score": 0.041809661130302454
+    },
+    {
+      "term": "sport",
+      "score": 0.038283877581535807
+    },
+    {
+      "term": "laugh",
+      "score": 0.038283877581535807
+    },
+    {
+      "term": "everything",
+      "score": 0.03680700860598187
+    },
+    {
+      "term": "spring",
+      "score": 0.03652279702404472
+    },
+    {
+      "term": "picture",
+      "score": 0.03652279702404472
+    },
+    {
+      "term": "mark",
+      "score": 0.035782294342824664
+    }
+  ]
+}

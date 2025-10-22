@@ -1,0 +1,168 @@
+{
+  "id": 25,
+  "added": "2010-12-23 22:52:33",
+  "modified": "2010-12-23 22:52:33",
+  "public": true,
+  "metadata": {
+    "Title": [
+      "Ulykke Paa Jernbanelinjen Clipping Markus Accident 1914.10"
+    ],
+    "Description": [
+      "AVISARTIKKEL OM MARKUS' ULYKKE I OKTOBER 1914.\n\n\n<-SPLITDESC->\n\n\nNEWSPAPER CLIPPING ABOUT MARKUS' ACCIDENT IN OCTOBER 1914."
+    ],
+    "Creator": [
+      "Siri Lawson, trans."
+    ],
+    "Date": [
+      "1914.10"
+    ],
+    "Language": [
+      "Norwegian",
+      "English trans."
+    ],
+    "Text": [
+      "ULYKKE PAA JERNBANELINJEN.\n\nEn arbeider overkjørt av toget og partert istykker.\n\nPaa jernbanelinjen utenfor Arildsløkken hændte igaar en sørgelig ulykke, idet jernbanearbeider Markus Holm blev overkjørt av toget og knust til døde.\n\nDen forulykkede var beskjæftiget med at trille grus over linjen til utfylding mot elven.  Da godstoget ved halv 5-tiden kom, kjørte han netop med en trillebør over linjen.  Kameraterne som saa faren ropte til ham, uten at han dog tok hensyn til det.  Han kunde nok ogsaa ha kommet sig unna, men uheldigvis snublet han, idet han fikk reddet trillebøren over linjen og lokomotivet gik over ham.  Han blev bokstavelig talt skaaret istykker av hjulet, begge ben og en arm var skaaret av, og hodet og underlivet frygtelig tilredt.\n\nLiket blev kjørt til Skandsen station og derfra til sykehusets likstue.  Den omkomne var i 40 aars alderen og efterlater sig kone og 7 barn, hvorav de 6 er ukonfirmerte.  Familien bor i den gamle lasaretbygning i Ilsviken.\n\n\n<-SPLITTLETTER->\n\n\nACCIDENT AT THE RAILROAD TRACKS.\n\nA worker run over by the train and cut into pieces.\n\nOn the railroad tracks outside Arildsløkken a sad accident happened yesterday, when railroad worker Markus Holm was run over by the train and crushed to death.\n\nThe victim was working on transporting gravel across the lines for filling in towards the river.  When the freight train approached around 4:30 he was in the process of pushing the wheelbarrow across the line.  His friends who saw the danger called out to him, without him taking notice of that.  He could probably have escaped but unfortunately he stumbled while he managed to get the wheelbarrow across the line and the locomotive went over him.  He was literally cut into pieces by the wheel, both legs and an arm were severed, and his head and abdomen horribly mutilated.\n\nThe body was taken to Skandsen station and from there to the hospital mortuary.  The deceased was in his 40’s and leaves behind a wife and 7 children 6 of whom are unconfirmed.  The family lives in the old lasareth building in Ilsviken (Ilen Bay)."
+    ],
+    "LetterDate": [
+      "1914-10"
+    ]
+  },
+  "tags": [
+    "1910s",
+    "Markus Holm",
+    "Newspaper clipping",
+    "accident",
+    "death"
+  ],
+  "files": [
+    {
+      "original": "Avisutklipp nr 2-1914-Markus.pdf",
+      "filename": "1f4f2e8b605510a2718c1f20a29b5c42.pdf",
+      "mime_type": "application/pdf"
+    }
+  ],
+  "norwegian-tfidf": [
+    {
+      "term": "linjen",
+      "score": 0.15796647537134206
+    },
+    {
+      "term": "jernbanelinjen",
+      "score": 0.12054498754924517
+    },
+    {
+      "term": "skaaret",
+      "score": 0.12054498754924517
+    },
+    {
+      "term": "istykker",
+      "score": 0.09639966252357245
+    },
+    {
+      "term": "idet",
+      "score": 0.09639966252357245
+    },
+    {
+      "term": "ulykke",
+      "score": 0.09007697961254427
+    },
+    {
+      "term": "overkjørt",
+      "score": 0.09007697961254427
+    },
+    {
+      "term": "toget",
+      "score": 0.07484297564419383
+    },
+    {
+      "term": "partert",
+      "score": 0.060272493774622585
+    },
+    {
+      "term": "jernbanearbeider",
+      "score": 0.060272493774622585
+    },
+    {
+      "term": "forulykkede",
+      "score": 0.060272493774622585
+    },
+    {
+      "term": "trille",
+      "score": 0.060272493774622585
+    },
+    {
+      "term": "grus",
+      "score": 0.060272493774622585
+    },
+    {
+      "term": "utfylding",
+      "score": 0.060272493774622585
+    },
+    {
+      "term": "elven",
+      "score": 0.060272493774622585
+    }
+  ],
+  "english-tfidf": [
+    {
+      "term": "tracks",
+      "score": 0.11460954605301515
+    },
+    {
+      "term": "train",
+      "score": 0.0999585349234588
+    },
+    {
+      "term": "railroad",
+      "score": 0.0942609862736477
+    },
+    {
+      "term": "worker",
+      "score": 0.0917217900390962
+    },
+    {
+      "term": "pieces",
+      "score": 0.0917217900390962
+    },
+    {
+      "term": "wheelbarrow",
+      "score": 0.0917217900390962
+    },
+    {
+      "term": "line",
+      "score": 0.08572841352968409
+    },
+    {
+      "term": "accident",
+      "score": 0.07406975128102944
+    },
+    {
+      "term": "across",
+      "score": 0.07260013688114941
+    },
+    {
+      "term": "run",
+      "score": 0.06663902328230586
+    },
+    {
+      "term": "cut",
+      "score": 0.06663902328230586
+    },
+    {
+      "term": "victim",
+      "score": 0.05730477302650758
+    },
+    {
+      "term": "filling",
+      "score": 0.05730477302650758
+    },
+    {
+      "term": "approached",
+      "score": 0.05730477302650758
+    },
+    {
+      "term": "process",
+      "score": 0.05730477302650758
+    }
+  ]
+}

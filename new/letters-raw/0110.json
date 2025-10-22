@@ -1,0 +1,182 @@
+{
+  "id": 110,
+  "added": "2010-12-28 01:21:56",
+  "modified": "2010-12-30 03:54:50",
+  "public": true,
+  "metadata": {
+    "Title": [
+      "Olava Holm to Alma C. Wilson 1946.2.3"
+    ],
+    "Description": [
+      "BREV FRA OLAVA HOLM DATERT HEGRA 3.  FEBRUAR-1946 TIL ALMA WILSON, 102 WEST 5  ST., DELL RAPIDS, S.  DAKOTA.  TO GRØNNAKTIGE 15-ØRES FRIMERKER MED LØVE.  –POSTOBLAT-MERKE– PÅ BAKSIDEN AV KONVOLUTTEN.\n\n\n<-SPLITDESC->\n\n\nLETTER FROM OLAVA HOLM (CONRAD'S WIFE) DATED HEGRA FEBRUARY 3-1946, TO ALMA WILSON, 102 WEST 5 ST., DELL RAPIDS, S.  DAKOTA.  TWO GREENISH 15-ØRE STAMPS WITH LION.  –POSTOBLAT– STICKER ON THE BACK OF THE ENVELOPE."
+    ],
+    "Creator": [
+      "Olava Holm",
+      "Siri Lawson, trans."
+    ],
+    "Date": [
+      "1946.02.03"
+    ],
+    "Language": [
+      "Norwegian",
+      "English trans."
+    ],
+    "Text": [
+      "Hegra 3/2-46\n\nKjære Alma Vilson!\n\nJertelig tusin tak for dit kjærkomne brev, og fotografier.  Det var morsomt og faa høre i fra Ammerika.  Her i Hegra er det fredelig nu.  Det er mere madt nu, bare den som har penger nu, saa faar vi i madt, men de er saa frigtelig dyrt aldt sament.  Af klær er der ingen ting og faa fat paa, uvist er det om de blir noget ogsaa, ja det ser mørgt ut.  Jeg har 9 barn, jift er dem alle sammen  dem har det rigtig bra alle sammen.  Jeg Ventet Odd til Jul men han kom ikke heim.  Han er nu paa reise til Sidishave met forsiniger til Valfangerne en reise som tar 3 maaneder  Odd siger at han kommer heim til jul.  Det er over 8 aar siden vi saag Oddeman.  Odd er en rigtig snil gut  Det er rigtig et nydelig brudepar du sente mig, brudgommen er saa lik min søn Jarl  akurat som jeg ser ham.  Vordan staar det til met onkel Johan og hans frue.  Du maa hilse dem titusen ganger.  Jeg er alene her jemme og de er trist, det er meget trist efter Conrad, det er et stort savn efter ham, det var 3 aar 6 januar siden han døde.  han døde af Tuberkolose  naar man faar den sykdommen er det ingen redning.  Har du aldrig haft lyst til og ta dig en tur til Noarge Alma?  Du er vel føt i Ammerika du Alma?  kan du snakke nork?  kan du snakke nork?  (hun sier det samme to ganger)  er du datter til Johan?  (hun var datter til Johans bror Olaf.  Johan giftet seg med Olafs enke, Almas mor).\n\nDu skriver saa pent du  jeg skriver saa stygt, jeg må slutte nu, hils alle dine. Mange hilsninger til Johan og frue.\n\nHa det rigtig bra og du er\n\nJærtelig hilset fra Olava Holm\n\n\n<-SPLITTLETTER->\n\n\nHegra 3/2-46\n\nDear Alma Vilson\n\nMany thanks for your welcome letter, and photographs.  It was fun to hear from Ammerica.  Here in Hegra it’s peaceful now.  There is more food now, if you only have money, you can get a hold of food, but everything is so terribly expensive.  As far as clothes there’s nothing to be had, it’s also uncertain whether there will be any, yes things look bleak.  I have 9 children, they’re all married  they’re all doing well.  I expected Odd for Christmas but he didn’t come home.  He’s now on his way to the Antarctic Ocean with supplies to the Whalers a trip which takes 3 months  Odd says that he’ll be home for Christmas.  (He was able to come home that spring).  It’s been over 8 years since we saw our Odd.  Odd is a really kind boy  It’s a very beautiful couple you sent me, the groom looks so much like my son Jarl  just like seeing him.  How is uncle Johan and his wife.  You must greet them ten thousand times.  I’m on my own here at home and that’s sad, it’s very sad after Conrad,  he’s terribly missed, it was 3 years on January 6 since he died.  he died of Tubercolosis  when you get that disease you can’t be saved.  Have you never wanted to take a trip to Norway Alma?  I suppose you’re born in Ammerica Alma?  can you speak Norwegian?  can you speak Norwegian?  (written twice) are you Johan’s daughter?  (she was the daughter of Johan’s brother Olaf.  Johan married Olaf’s widow, who was Alma’s mother).\n\nYour handwriting is so pretty  mine is so ugly, I must end this now, greet all of yours.  Many greetings to Johan and his wife.\n\nKeep well and you are\n\nwarmly greeted from Olava Holm"
+    ],
+    "LetterDate": [
+      "1946-02-03"
+    ],
+    "Location": [
+      "Hegra"
+    ],
+    "Destination": [
+      "Dell Rapids"
+    ]
+  },
+  "tags": [
+    "1940s",
+    "Alma C. Wilson",
+    "Hegra",
+    "Norway to US",
+    "Odd Conrad Holm",
+    "Olava Holm",
+    "clothes",
+    "food",
+    "photos",
+    "postwar",
+    "prices",
+    "tuberculosis"
+  ],
+  "files": [
+    {
+      "original": "Olava Holm 3 februar-1946.pdf",
+      "filename": "749b87c8e9523de8b06bae42455a4e90.pdf",
+      "mime_type": "application/pdf"
+    }
+  ],
+  "norwegian-tfidf": [
+    {
+      "term": "ammerika",
+      "score": 0.0731306257798754
+    },
+    {
+      "term": "madt",
+      "score": 0.0731306257798754
+    },
+    {
+      "term": "nork",
+      "score": 0.0731306257798754
+    },
+    {
+      "term": "rigtig",
+      "score": 0.0691846713491864
+    },
+    {
+      "term": "met",
+      "score": 0.05848246193096728
+    },
+    {
+      "term": "odd",
+      "score": 0.051888503511889804
+    },
+    {
+      "term": "snakke",
+      "score": 0.04718515712580456
+    },
+    {
+      "term": "johan",
+      "score": 0.040386800531694224
+    },
+    {
+      "term": "jertelig",
+      "score": 0.0365653128899377
+    },
+    {
+      "term": "frigtelig",
+      "score": 0.0365653128899377
+    },
+    {
+      "term": "uvist",
+      "score": 0.0365653128899377
+    },
+    {
+      "term": "mørgt",
+      "score": 0.0365653128899377
+    },
+    {
+      "term": "sidishave",
+      "score": 0.0365653128899377
+    },
+    {
+      "term": "forsiniger",
+      "score": 0.0365653128899377
+    },
+    {
+      "term": "valfangerne",
+      "score": 0.0365653128899377
+    }
+  ],
+  "english-tfidf": [
+    {
+      "term": "ammerica",
+      "score": 0.07238497645453588
+    },
+    {
+      "term": "odd",
+      "score": 0.062256947226725715
+    },
+    {
+      "term": "johan",
+      "score": 0.050987318814582225
+    },
+    {
+      "term": "speak",
+      "score": 0.04208780417829844
+    },
+    {
+      "term": "uncertain",
+      "score": 0.03619248822726794
+    },
+    {
+      "term": "groom",
+      "score": 0.03619248822726794
+    },
+    {
+      "term": "ten",
+      "score": 0.03619248822726794
+    },
+    {
+      "term": "missed",
+      "score": 0.03619248822726794
+    },
+    {
+      "term": "tubercolosis",
+      "score": 0.03619248822726794
+    },
+    {
+      "term": "ugly",
+      "score": 0.03619248822726794
+    },
+    {
+      "term": "olaf",
+      "score": 0.034353769113796874
+    },
+    {
+      "term": "terribly",
+      "score": 0.03232547069501716
+    },
+    {
+      "term": "2-46",
+      "score": 0.031632309407794615
+    },
+    {
+      "term": "antarctic",
+      "score": 0.031632309407794615
+    },
+    {
+      "term": "supplies",
+      "score": 0.031632309407794615
+    }
+  ]
+}

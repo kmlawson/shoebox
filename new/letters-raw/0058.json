@@ -1,0 +1,178 @@
+{
+  "id": 58,
+  "added": "2010-12-26 17:34:08",
+  "modified": "2010-12-26 17:34:08",
+  "public": true,
+  "metadata": {
+    "Title": [
+      "Ola Holm to John Holm 1917.12.26"
+    ],
+    "Description": [
+      "BREV FRA OLA HOLM DATERT TRONDHJEM 26.  DESEMBER-1917 TIL MR JOHN HOLM, (THE FAIR STORE), DELL RAPIDS, SO.  DAK.  PÅ KONVOLUTTEN ER DET KLISTRET PÅ ET MERKE HVOR DET STÅR –OPENED BY CENSOR 4596– – ALTSÅ ÅPNET AV SENSUREN.  TO BURGUNDERRØDE 10-ØRES FRIMERKER, MED 10-TALLET INNI ET –HORN– MED KRONE OVER, SOM IGJEN ER INNI EN OVAL MED NORGE SKREVET ØVERST OG POSTFRIM. 10 ØRE NEDERST.  BREVET ER SKREVET PÅ PAPIR FRA O.  HOLM, INGENIØR, MACHIN-COMMISSION, AUTOMOBIL- &  MOTORBAAT-INSTRUKTØR.\n\n\n<-SPLITDESC->\n\n\nLETTER FROM OLA HOLM DATED TRONDHJEM DECEMBER 26-1917 TO MR JOHN HOLM, (THE FAIR STORE), DELL RAPIDS, SO.  DAK.  THE ENVELOPE HAS A –STICKER– THAT SAYS –OPENED BY CENSOR 4596–.  TWO BURGUNDY COLORED 10-ØRE STAMPS, WITH THE NUMBER 10 INSIDE AN INSTRUMENT (which I don't know what to call in English) WITH A CROWN ABOVE IT, WHICH IN TURN IS INSIDE AN OVAL WITH THE WORD NORGE (NORWAY) ON TOP AND POSTAL STAMP 10 ØRE AT THE BOTTOM.  THE LETTER IS WRITTEN ON PAPER FROM , O.  HOLM, INGENIØR, MACHIN-COMMISSION, AUTOMOBIL- &  MOTORBAAT-INSTRUKTØR, WHICH MEANS SOMETHING LIKE: O.  HOLM, ENGINEER, MACHINE COMISSION, CAR AND MOTOR BOAT INSTRUCTOR.  THE FIRST FEW LINES ARE WRITTEN IN NORWEGIAN, THE REST IN ENGLISH. \n"
+    ],
+    "Creator": [
+      "Ola Holm",
+      "Siri Lawson, trans."
+    ],
+    "Date": [
+      "1917.12.26"
+    ],
+    "Language": [
+      "Norwegian",
+      "English trans."
+    ],
+    "Text": [
+      "Trondhjem den Dec. 26-1917\n\nKjære Broder\n\nKun nogle ord som en Julehilsen, formodentlig faar du ikke dette brev heller  Jeg tænkte at det er bedre og skrive Engelsk for da kan det lettere passere censuren.\n\nWe are all well at present, having fine weather & Moonlight Xmas.  I am still working at “The Harbour arrangements” and making good Money, but toke about Money now the question is Food, of course we been having some yet, but I suppose its going to be smaller rations yet, so you understand that I wouldn’t object if you could send me a “bag” of “Flour” haha.  I hope you are all well, are you still at the same business?  Jertine had goten letter from you.  Our brothers & Sisters here are very well.  Don’t forget to greet Sis. Anna from me, also Oians (Oiens? Øians?) too.  I suppose no use write any more hard telling if you ever get it.  I am certainly anxious to hear from you soon  Will close with best wishes for a happy New Year to you from The girls Wife & Myself\n\nO Holm\n\nRosenborgsgt 14\n\nTrondhjem\n\n\n<-SPLITTLETTER->\n\n\nTrondhjem Dec. 26-1917\n\nDear Brother\n\nJust a few lines as a Christmas greeting, you probably wont receive this letter either.  I thought it would be better to write in English because then it will get through the censor more easily.  (The rest is written in English):\n\nWe are all well at present, having fine weather & Moonlight Xmas.  I am still working at “The Harbour arrangements” and making good Money, but toke about Money now the question is Food, of course we been having some yet, but I suppose its going to be smaller rations yet, so you understand that I wouldn’t object if you could send me a “bag” of “Flour” haha.  I hope you are all well, are you still at the same business?  Jertine had goten letter from you.  Our brothers & Sisters here are very well.  Don’t forget to greet Sis. Anna from me, also Oians (Oiens? Øians?) too.  I suppose no use write any more hard telling if you ever get it.  I am certainly anxious to hear from you soon  Will close with best wishes for a happy New Year to you from The girls Wife & Myself\n\nO Holm\n\nRosenborgsgt 14\n\nTrondhjem"
+    ],
+    "LetterDate": [
+      "1917-12-26"
+    ],
+    "Location": [
+      "Trondheim"
+    ],
+    "Destination": [
+      "Dell Rapids"
+    ]
+  },
+  "tags": [
+    "Christmas",
+    "John Holm",
+    "Norway to US",
+    "Ola Holm",
+    "Trondheim",
+    "flour",
+    "food",
+    "request"
+  ],
+  "files": [
+    {
+      "original": "Ola Holm 26 desember-1917.pdf",
+      "filename": "9d06b7eb6aeb311b1bd79ac4846ce313.pdf",
+      "mime_type": "application/pdf"
+    }
+  ],
+  "norwegian-tfidf": [
+    {
+      "term": "from",
+      "score": 0.11854553094114989
+    },
+    {
+      "term": "well",
+      "score": 0.11117831621940517
+    },
+    {
+      "term": "are",
+      "score": 0.1047394330015285
+    },
+    {
+      "term": "having",
+      "score": 0.07411887747960345
+    },
+    {
+      "term": "am",
+      "score": 0.07411887747960345
+    },
+    {
+      "term": "money",
+      "score": 0.07411887747960345
+    },
+    {
+      "term": "of",
+      "score": 0.07411887747960345
+    },
+    {
+      "term": "yet",
+      "score": 0.07411887747960345
+    },
+    {
+      "term": "suppose",
+      "score": 0.07411887747960345
+    },
+    {
+      "term": "if",
+      "score": 0.06475202368825284
+    },
+    {
+      "term": "we",
+      "score": 0.059272765470574945
+    },
+    {
+      "term": "still",
+      "score": 0.059272765470574945
+    },
+    {
+      "term": "but",
+      "score": 0.059272765470574945
+    },
+    {
+      "term": "me",
+      "score": 0.05236971650076425
+    },
+    {
+      "term": "t",
+      "score": 0.041714887306652494
+    }
+  ],
+  "english-tfidf": [
+    {
+      "term": "suppose",
+      "score": 0.06650495260577421
+    },
+    {
+      "term": "26-1917",
+      "score": 0.06549116917315151
+    },
+    {
+      "term": "harbour",
+      "score": 0.06549116917315151
+    },
+    {
+      "term": "toke",
+      "score": 0.06549116917315151
+    },
+    {
+      "term": "rations",
+      "score": 0.06549116917315151
+    },
+    {
+      "term": "object",
+      "score": 0.06549116917315151
+    },
+    {
+      "term": "haha",
+      "score": 0.06549116917315151
+    },
+    {
+      "term": "goten",
+      "score": 0.06549116917315151
+    },
+    {
+      "term": "oians",
+      "score": 0.06549116917315151
+    },
+    {
+      "term": "oiens",
+      "score": 0.06549116917315151
+    },
+    {
+      "term": "trondhjem",
+      "score": 0.062163963158299106
+    },
+    {
+      "term": "censor",
+      "score": 0.05723941702362836
+    },
+    {
+      "term": "moonlight",
+      "score": 0.05723941702362836
+    },
+    {
+      "term": "xmas",
+      "score": 0.05723941702362836
+    },
+    {
+      "term": "arrangements",
+      "score": 0.05723941702362836
+    }
+  ]
+}

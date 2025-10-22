@@ -1,0 +1,178 @@
+{
+  "id": 224,
+  "added": "2010-12-31 21:39:16",
+  "modified": "2010-12-31 21:39:16",
+  "public": true,
+  "metadata": {
+    "Title": [
+      "Axel Holm to Alma C. Wilson 1948.4.20"
+    ],
+    "Description": [
+      "BREV FRA AXEL HOLM DATERT 20.  APRIL – 1948, TIL ALMA WILSON, 102 WEST 5TH STREET, DELL RAPIDS, SOUTH DAKOTA, U.S.A.  FRIMERKENE ER FJERNET.\n\n\n<-SPLITDESC->\n\n\nLETTER FROM AXEL HOLM DATED APRIL 20 – 1948, TO ALMA WILSON, 102 WEST 5TH STREET, DELL RAPIDS, SOUTH DAKOTA, U.S.A.  THE STAMPS HAVE BEEN REMOVED."
+    ],
+    "Creator": [
+      "Axel Holm",
+      "Siri Lawson, trans."
+    ],
+    "Date": [
+      "1948.04.20"
+    ],
+    "Language": [
+      "Norwegian",
+      "English trans."
+    ],
+    "Text": [
+      "Stjørdal 20-4-1948\n\nKjære Alma og dere alle.\n\nTusin takk for brev og dødsatest jeg fik.  Men du banken ville ha en Erklæring fra dere på, at dette som er gave ikke går inn i boet, efter Johan.  Godt var det om din mor opplyste om hun satt i usjiftet bo, her har vi nå sådant.  Jeg tror det ville bli mere bråk om vi kjikk om konsulatet.  Men kan di ikke gi oss en sådan erklæring, på dette at di fra skriver dere retten til pengene som er en gave fra eder så må vi henvende oss der, og da går det alt til boe så vi blir arveberretteg med dere  Kan ikke tenke mei anden veie.  I norske penger med rente er det kr. 5160,05.  Venter et godt resultat.\n\nDeres Axel.\n\n\n<-SPLITTLETTER->\n\n\nStjørdal 20-4-1948\n\nDear Alma and you all.\n\nThanks a lot for your letter and the death certificate I got.  But you see the bank wanted a Statement from you, that this which is a gift does not belong to Johan’s estate.  It would be good if your mother states whether she retains undivided possession of the estate, like we do things here.  I think there would be more noise if we went through the consulate.  But if you can’t give us such a statement, that you waive the right to the money which is a gift from you we have to turn to them, and then it will all go to the estate so that we’ll be entitled to inheritance along with you. I can’t think of another way.  In Norwegian money with interest it’s kr. 5160,05.   (Norwegians add the comma, instead of a period, so this would be five thousand one hundred and sixty kroner and 05 øre;  100 øre to 1 kr.). Expecting a good result.\n\nYours Axel\n\nI’m not sure, but I don’t think they would be entitled to anything in John’s estate unless his wife and children were also gone, so I think what Axel means here is that he and his siblings will be entitled to inheritance of John’s estate according to the rules and regulations, rather than meaning they’re entitled to anything at all from the estate while Karoline and Alma are still alive."
+    ],
+    "LetterDate": [
+      "1948-04-20"
+    ],
+    "Location": [
+      "Stjørdal"
+    ],
+    "Destination": [
+      "Dell Rapids"
+    ]
+  },
+  "tags": [
+    "1940s",
+    "Axel Holm",
+    "John Holm",
+    "Norway to US",
+    "Stjørdal",
+    "death certificate",
+    "inheritance",
+    "postwar"
+  ],
+  "files": [
+    {
+      "original": "Axel Holm 20 april-1948.pdf",
+      "filename": "0fcde936505b3a5a28bc05ac6ad1cde0.pdf",
+      "mime_type": "application/pdf"
+    }
+  ],
+  "norwegian-tfidf": [
+    {
+      "term": "erklæring",
+      "score": 0.18790783344826312
+    },
+    {
+      "term": "20-4-1948",
+      "score": 0.10754503791158146
+    },
+    {
+      "term": "dødsatest",
+      "score": 0.10754503791158146
+    },
+    {
+      "term": "opplyste",
+      "score": 0.10754503791158146
+    },
+    {
+      "term": "usjiftet",
+      "score": 0.10754503791158146
+    },
+    {
+      "term": "sådant",
+      "score": 0.10754503791158146
+    },
+    {
+      "term": "kjikk",
+      "score": 0.10754503791158146
+    },
+    {
+      "term": "konsulatet",
+      "score": 0.10754503791158146
+    },
+    {
+      "term": "arveberretteg",
+      "score": 0.10754503791158146
+    },
+    {
+      "term": "5160",
+      "score": 0.10754503791158146
+    },
+    {
+      "term": "resultat",
+      "score": 0.10754503791158146
+    },
+    {
+      "term": "gave",
+      "score": 0.09761037882104565
+    },
+    {
+      "term": "bråk",
+      "score": 0.09395391672413156
+    },
+    {
+      "term": "henvende",
+      "score": 0.09395391672413156
+    },
+    {
+      "term": "boe",
+      "score": 0.09395391672413156
+    }
+  ],
+  "english-tfidf": [
+    {
+      "term": "estate",
+      "score": 0.21767437111159674
+    },
+    {
+      "term": "entitled",
+      "score": 0.19624942979529722
+    },
+    {
+      "term": "inheritance",
+      "score": 0.07942490404307401
+    },
+    {
+      "term": "05",
+      "score": 0.07942490404307401
+    },
+    {
+      "term": "statement",
+      "score": 0.0757040559452382
+    },
+    {
+      "term": "øre",
+      "score": 0.07255812370386558
+    },
+    {
+      "term": "20-4-1948",
+      "score": 0.0561352878627013
+    },
+    {
+      "term": "retains",
+      "score": 0.0561352878627013
+    },
+    {
+      "term": "undivided",
+      "score": 0.0561352878627013
+    },
+    {
+      "term": "possession",
+      "score": 0.0561352878627013
+    },
+    {
+      "term": "5160",
+      "score": 0.0561352878627013
+    },
+    {
+      "term": "comma",
+      "score": 0.0561352878627013
+    },
+    {
+      "term": "sixty",
+      "score": 0.0561352878627013
+    },
+    {
+      "term": "regulations",
+      "score": 0.0561352878627013
+    },
+    {
+      "term": "noise",
+      "score": 0.049062357448824305
+    }
+  ]
+}

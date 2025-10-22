@@ -1,0 +1,136 @@
+{
+  "id": 197,
+  "added": "2010-12-30 21:51:16",
+  "modified": "2010-12-30 21:51:16",
+  "public": true,
+  "metadata": {
+    "Title": [
+      "Miranda to Alma C. Wilson and Grace Wilson 1946"
+    ],
+    "Description": [
+      "LETTER FROM A FRIEND (MIRANDA?\n\n\n<-SPLITDESC->\n\n\nMIRACLE?) TO ALMA AND GRACE, DATED MAY 15, NO YEAR, BUT THE –HANK– REFERRED TO IN THIS LETTER IS ALMA'S SON HENRY (HANK WAS HIS NICKNAME) WHO GRADUATED IN 1946, SO IT'S SAFE TO DATE IT THAT YEAR. – NO ENVELOPE."
+    ],
+    "Date": [
+      "1946"
+    ],
+    "Language": [
+      "English"
+    ],
+    "Text": [
+      "Original is in English\n\n<-SPLITTLETTER->\n\n823 – 16th Wilmette Ill.  May 15\n\nDear old Pal’s Alma & Grace\n\nI am thouroughly ashamed of myself, but oh boy are we ever going round in circles in this house hold – but they are getting along fine towards getting ready  they have the birth Certificates the pictures for pass ports and the pass ports are ordered  now they are taking the preperation shots and selling the furnature  it will take a month or 6 wks yet – then I am going to go see all the folks and then home to get the little home fixed up to be a realy comfy home for me  Dick was in Hong Kong last time he wrote  was going on to Shanghi then on to ports he has not been in before  he is surly getting around, and Jack wrote me  he was at wold?-Chamberlin at Minneapolis  run on to 2 of the fellows he was in service with  they had re-enlisted and of course wanted him to  he said now mom don’t be surprised if I do.  I told him I would be praying for him and what ever he does decide to do I am sure would be right, altho he is making good with the Soo? Lines Rail Road one can never tell when they will call a strike and throw him out of work and he thinks he can’t afford that  Well any way Im sure of one thing  he will have to make up his mind before June 30 if he wants to get back in on his old rank, and of course he will will if he goes back.  Well Ive still not heard what they did at the Easter meeting  no one has wrote me any thing so I guess I never did get anything – Well I’m so thankful you let them come to your house for the March meet.  I sure did hate it I couldn’t get there – but well anyway Ill be wherever?  Can come some of these days.  I had nice card from grandma Shieve? for Easter  enjoyed it a lot.  I get the Tribune but I know there is a lot of gossip they don’t dare print so you must write me all the news of that sort ha, ha, Hank I suspect your school days are about over, then for the fight with the big bad world all the rest of your life – Well I do wish you a lot of success as you go along the road of life and may God bless you abondantly in all you do – and don’t ever forget to thank mother for you owe it all to her – and God, for giving you such a grand mom.\n\nErma Blow(?) is still around here  she is in a beautiful home in Winnetka  gets $ 35.00 a week  they send the laundry out  she gets Thur after breakfast and Sunday after dinner off  the home she is in is a lovely big dutch Colonal and georgous  she said she never dreamed there were places like this out side of a story book.  I told her I tried to tell her the kind of place I had worked in but she say mom? well, it was hard to believe but it isent now for she is in one  Im glad for her  she wants to be here another 3 or 4 wks then will go on to Ky to Merritts (next word missing from page) but she hates to leave as long as Im here  she is so lost by herself  we go out a good bit togather and she just dont know straight up she is so turned around  says she would be afraid to start out alone if she hadent been there before.  I get a bang out of her  she is like a little kid at a circus  we do have fun.  She says why aint you afraid of getting lost  I told her as long as I could talk and ask questions I’d not get lost – I took her down in the loop and it just did me good to see how she did enjoy every minuet of it.  I am wondering how your mom has gotten  do hope able to get around by herself by now – its sure raining again now  it was (next word missing) Eastern? stor? – (could be: I was at Estern star, or store,  and they gave me etc.) and they gave me a red American beauty rose bud  I brought it home put it in the ground and its beging (beginning) to grow  Im so glad  hope I can keep it.  Well I sure hated it I could not get Windy the white pants but I seen where Sears have them now  maby if they would order them they might get them or better yet if they still want them I can order them to come here  they deliver out here  then I could send them on  maby I’d better do that as they may not have them in stock very long  I may even be to late now but I’ll try  Well I must get to my little bed so Ill say night to all and you too miss Grace  I love you so hope you dont for get the old pest  tell Inez Im still waiting to hear from her  loads of love your Pal Miranda"
+    ],
+    "Location": [
+      ""
+    ],
+    "Destination": [
+      ""
+    ]
+  },
+  "tags": [
+    "Alma C. Wilson",
+    "Easter",
+    "Erma Blow",
+    "God",
+    "Grace Vilson",
+    "Hong Kong",
+    "Minneapolis",
+    "Sears",
+    "Shanghai",
+    "US to US",
+    "Winnetka",
+    "clothes",
+    "furniture",
+    "newspapers",
+    "pants",
+    "passport",
+    "photos",
+    "soldiers"
+  ],
+  "files": [
+    {
+      "original": "Letter from a friend to Alma.pdf",
+      "filename": "f135723d0496d5cdbb7c53e368341135.pdf",
+      "mime_type": "application/pdf"
+    }
+  ],
+  "norwegian-tfidf": [
+    {
+      "term": "is",
+      "score": 0.8847216961088354
+    },
+    {
+      "term": "original",
+      "score": 0.8218930890386089
+    },
+    {
+      "term": "english",
+      "score": 0.7955529601241523
+    },
+    {
+      "term": "in",
+      "score": 0.7299618940072796
+    }
+  ],
+  "english-tfidf": [
+    {
+      "term": "im",
+      "score": 0.07029402090621026
+    },
+    {
+      "term": "ports",
+      "score": 0.04825665096969059
+    },
+    {
+      "term": "mom",
+      "score": 0.04158301826303407
+    },
+    {
+      "term": "pal",
+      "score": 0.03217110064646039
+    },
+    {
+      "term": "wks",
+      "score": 0.03217110064646039
+    },
+    {
+      "term": "maby",
+      "score": 0.03217110064646039
+    },
+    {
+      "term": "ill",
+      "score": 0.027222481910055756
+    },
+    {
+      "term": "ha",
+      "score": 0.025746467379395423
+    },
+    {
+      "term": "ever",
+      "score": 0.024501824644232603
+    },
+    {
+      "term": "sure",
+      "score": 0.02413904398881094
+    },
+    {
+      "term": "dont",
+      "score": 0.024064116078507815
+    },
+    {
+      "term": "missing",
+      "score": 0.022759183029886703
+    },
+    {
+      "term": "lost",
+      "score": 0.022428238871739357
+    },
+    {
+      "term": "easter",
+      "score": 0.021692975095419134
+    },
+    {
+      "term": "afraid",
+      "score": 0.020791509131517037
+    }
+  ]
+}

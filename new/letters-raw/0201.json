@@ -1,0 +1,170 @@
+{
+  "id": 201,
+  "added": "2010-12-30 22:05:29",
+  "modified": "2010-12-30 22:05:29",
+  "public": true,
+  "metadata": {
+    "Title": [
+      "Ola Holm 85th Birthday Clipping 1963"
+    ],
+    "Description": [
+      "AVISUTKLIPP OM OLA HOLMS 85-ÅRSDAG (1963).  DETTE FIKK JEG AV EINAR HOLM, AXELS SØNN DA JEG VAR PÅ BESØK I 1993.\n\n\n<-SPLITDESC->\n\n\nNEWSPAPER CLIPPING – OLA HOLM'S 85TH BIRTHDAY (1963).  THIS WAS GIVEN TO ME BY EINAR HOLM, AXEL'S SON, WHEN I VISITED IN 1993."
+    ],
+    "Date": [
+      "1963"
+    ],
+    "Language": [
+      "Norwegian",
+      "English trans."
+    ],
+    "Text": [
+      "Pensjonist Olav Holm, Kongens gate 93, fyller 85 år mandag 10. juni.  Han er født i Hegra og dro som tyveåring over til USA, hvor han arbeidet forskjellige steder.  Blant annet besøkte han indianerreservatet Sissytown i Dakota, hvor restene av siouxstammen levde et liv i gammer og jordhuler.  På et eneste rom levde hele familien, gamle og unge, og maten var ofte bedervede rester indianerne fant i søppeldunkene i de hvites landsbyer.  Atmosfæren i disse hulene var slik at blekansiktene raskt ble fordrevet derfra.  Senere dro Holm til hest den lange veien til Minneapolis og kom senere til Chicago, hvor han arbeidet ved et stort varehus.  En ny tid holdt sitt inntog og etter å ha gjennomgått en teknisk skole, dro han tilbake til South Dakota, hvor han i en prærieby etablerte et av de første bilverksteder.  — Da han vendte tilbake til Norge, var han en tid ansatt i Trondheim kommune, og i 1918 ble han tildelt håndverkerstipendium.  Han startet senere eget verksted som han drev inntil for noen år tilbake.\n\n \n\n<-SPLITTLETTER->\n\n\n\nPensioner Olav Holm, Kongens gate (King street) 93, turns 85 on Monday, June 10.  He was born in Hegra and went to the USA as a 20 year old (1898), where he worked in various places.  Among other places he visited the Indian reservation at Sissytown in Dakota, where the remnants of the Sioux tribe lived a life in turf caves and dirt caves.  In a single room lived the entire family, old and young, and the food was often perished leftovers that the Indians found in the trashcans in the villages of the white people.  The atmosphere in these caves was such that the pale faces quickly left.  Later Holm went by horse the long way to Minneapolis and later came to Chicago, where he worked at a large department store.  A new era was entering and after having gone to a technical school, he went back to South Dakota, where he established one of the first car repair shops in a prairie town.  — When he returned to Norway, he was employed by the Trondheim council for a while, and in 1918 he obtained a craft scholarship.  He later started his own repair shop which he ran until a few years back."
+    ],
+    "LetterDate": [
+      "1963"
+    ]
+  },
+  "tags": [
+    "Chicago",
+    "Hegra",
+    "Minneapolis",
+    "Ola Holm",
+    "Sioux",
+    "Sissytown",
+    "South Dakota",
+    "Trondheim",
+    "auto shop",
+    "department store"
+  ],
+  "files": [
+    {
+      "original": "Ola Holms 85-årsd.pdf",
+      "filename": "dc82045b879a05c23ad7b1187aa1fb86.pdf",
+      "mime_type": "application/pdf"
+    }
+  ],
+  "norwegian-tfidf": [
+    {
+      "term": "dro",
+      "score": 0.17504671064331875
+    },
+    {
+      "term": "levde",
+      "score": 0.10194999474320658
+    },
+    {
+      "term": "senere",
+      "score": 0.09082147671942754
+    },
+    {
+      "term": "tilbake",
+      "score": 0.06757982245226109
+    },
+    {
+      "term": "dakota",
+      "score": 0.06382745284473733
+    },
+    {
+      "term": "gate",
+      "score": 0.058348903547772925
+    },
+    {
+      "term": "93",
+      "score": 0.058348903547772925
+    },
+    {
+      "term": "85",
+      "score": 0.058348903547772925
+    },
+    {
+      "term": "tyveåring",
+      "score": 0.058348903547772925
+    },
+    {
+      "term": "indianerreservatet",
+      "score": 0.058348903547772925
+    },
+    {
+      "term": "sissytown",
+      "score": 0.058348903547772925
+    },
+    {
+      "term": "restene",
+      "score": 0.058348903547772925
+    },
+    {
+      "term": "siouxstammen",
+      "score": 0.058348903547772925
+    },
+    {
+      "term": "gammer",
+      "score": 0.058348903547772925
+    },
+    {
+      "term": "jordhuler",
+      "score": 0.058348903547772925
+    }
+  ],
+  "english-tfidf": [
+    {
+      "term": "caves",
+      "score": 0.15869014068879023
+    },
+    {
+      "term": "repair",
+      "score": 0.07484269804058898
+    },
+    {
+      "term": "later",
+      "score": 0.06256885674142855
+    },
+    {
+      "term": "dakota",
+      "score": 0.05800676078378321
+    },
+    {
+      "term": "places",
+      "score": 0.05646747794390751
+    },
+    {
+      "term": "kongens",
+      "score": 0.052896713562930076
+    },
+    {
+      "term": "gate",
+      "score": 0.052896713562930076
+    },
+    {
+      "term": "93",
+      "score": 0.052896713562930076
+    },
+    {
+      "term": "85",
+      "score": 0.052896713562930076
+    },
+    {
+      "term": "indian",
+      "score": 0.052896713562930076
+    },
+    {
+      "term": "reservation",
+      "score": 0.052896713562930076
+    },
+    {
+      "term": "sissytown",
+      "score": 0.052896713562930076
+    },
+    {
+      "term": "remnants",
+      "score": 0.052896713562930076
+    },
+    {
+      "term": "tribe",
+      "score": 0.052896713562930076
+    },
+    {
+      "term": "turf",
+      "score": 0.052896713562930076
+    }
+  ]
+}

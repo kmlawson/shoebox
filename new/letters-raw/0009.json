@@ -1,0 +1,187 @@
+{
+  "id": 9,
+  "added": "2010-12-23 21:22:35",
+  "modified": "2010-12-30 04:09:55",
+  "public": "true",
+  "metadata": {
+    "Title": [
+      "Alma C. Wilson to Stjørdalens Sparebank 1948.4.27"
+    ],
+    "Description": [
+      "KOPI AV MASKINSKREVET BREV FRA ALMA WILSON DATERT 27. APRIL – 1948, TIL STJØRDALENS SPAREBANK, STJØRDAL. INGEN KONVOLUTT.\n\n\n<-SPLITDESC->\n\n\nCARBON COPY OF A LETTER FROM ALMA WILSON DATED APRIL 27 – 1948, TO STJØRDALENS SPAREBANK, STJØRDAL. NO ENVELOPE."
+    ],
+    "Creator": [
+      "Alma C. Wilson",
+      "Siri Lawson, trans."
+    ],
+    "Date": [
+      "1948.04.27"
+    ],
+    "Language": [
+      "Norwegian",
+      "English trans."
+    ],
+    "Text": [
+      "Stjørdalens Sparebank.\n\nStjørdal. Norge.\n\nVi har mottatt Deres skrivelse .af den 23 Mars. 1948 Og Tak for samme.\n\nVi ser at det innestår kr. 5.160,05 eler ca. $ 1.030,-. \n\nDise penger Skal utbetales til Baker Axel Holm. Stjørdalen. For ham at utdele mellem John Holm sine søskend i Norge.\n\nSom er Axel Holm. Bror Stjørdalen. Norge\n\nBror Ole Holm. Rosenborg Gt 14. Trondheim. Norge\n\nSøster Laura Karlson. Stjørdalen. Norge\n\nSøster Hanna Eidum. Box 68. Narvik. Norge\n\nBror Markus sin Kone. Gjertine Holm. Sluppen. Strinda. Norge (datteren Klaras adresse)  Markus er Død.\n\nBror Conrad sin Kone Olava Holm. Hegre. Norge.  Conrad er ogsaa Død.\n\nDete er efter John Holm. Sit ønske.\n\nErbødigst og tak saa meget.\n\nMrs. John Holm\n\n(signert)\n\nAlma Holm. Exectrutrix.\n\n\n<-SPLITTLETTER->\n\n\nStjørdalens Sparebank.\n\nStjørdal. Norge.\n\nWe have received your letter .of the 23rd of March. 1948  And Thank you for same.\n\nWe see that there is kr. 5.160,05 or ca. $ 1.030,- on deposit. \n\nThis money Is to be paid out to Baker Axel Holm. Stjørdalen. For him to divide between John Holm’s siblings in Norway.\n\nWho are Axel Holm. Brother Stjørdalen. Norway\n\nBrother Ole Holm. Rosenborg Gt 14. Trondheim. Norway\n\nSister Laura Karlson. Stjørdalen. Norway\n\nSister Hanna Eidum. Box 68. Narvik. Norway\n\nBrother Markus’ Wife. Gjertine Holm. Sluppen. Strinda. Norway (her daughterKlara’s address)  Markus is Dead.\n\nBrother Conrad’s Wife Olava Holm. Hegre. Norway.  Conrad is also Dead.\n\nThis is according to John Holm’s. Wish.\n\nYours sincerely and thank you very much.\n\nMrs. John Holm\n\n(signed)\n\nAlma Holm. Exectrutrix."
+    ],
+    "LetterDate": [
+      "1948-04-27"
+    ],
+    "Location": [
+      "Dell Rapids"
+    ],
+    "Destination": [
+      "Stjørdal"
+    ]
+  },
+  "tags": [
+    "1940s",
+    "Alma C. Wilson",
+    "Baker Axel Holm",
+    "Gjertine Holm",
+    "Hanna Eidum",
+    "Hegre",
+    "Laura Karlson",
+    "Narvik",
+    "Olava Holm",
+    "Ole Holm",
+    "Stjørdal",
+    "Stjørdalens Sparebank",
+    "Trondheim",
+    "US to Norway",
+    "bank",
+    "finances",
+    "postwar"
+  ],
+  "files": [
+    {
+      "original": "Alma W-Stj Bank 27 apr-48.pdf",
+      "filename": "ee5a0299c28882efdcd882a38ad17899.pdf",
+      "mime_type": "application/pdf"
+    }
+  ],
+  "norwegian-tfidf": [
+    {
+      "term": "holm",
+      "score": 0.09552082639088169
+    },
+    {
+      "term": "norge",
+      "score": 0.08684547308336155
+    },
+    {
+      "term": "stjørdalen",
+      "score": 0.08107578673732782
+    },
+    {
+      "term": "bror",
+      "score": 0.07085863748218307
+    },
+    {
+      "term": "conrad",
+      "score": 0.057848890258092596
+    },
+    {
+      "term": "utbetales",
+      "score": 0.05713330139052765
+    },
+    {
+      "term": "utdele",
+      "score": 0.05713330139052765
+    },
+    {
+      "term": "rosenborg",
+      "score": 0.05713330139052765
+    },
+    {
+      "term": "strinda",
+      "score": 0.05713330139052765
+    },
+    {
+      "term": "exectrutrix",
+      "score": 0.05713330139052765
+    },
+    {
+      "term": "markus",
+      "score": 0.0565043377343932
+    },
+    {
+      "term": "innestår",
+      "score": 0.04991301825969489
+    },
+    {
+      "term": "030",
+      "score": 0.04991301825969489
+    },
+    {
+      "term": "gt",
+      "score": 0.04991301825969489
+    },
+    {
+      "term": "signert",
+      "score": 0.04991301825969489
+    }
+  ],
+  "english-tfidf": [
+    {
+      "term": "holm",
+      "score": 0.08980907140075528
+    },
+    {
+      "term": "stjørdalen",
+      "score": 0.07990060098057146
+    },
+    {
+      "term": "norway",
+      "score": 0.06985149997836522
+    },
+    {
+      "term": "rosenborg",
+      "score": 0.05730477302650758
+    },
+    {
+      "term": "strinda",
+      "score": 0.05730477302650758
+    },
+    {
+      "term": "daughterklara",
+      "score": 0.05730477302650758
+    },
+    {
+      "term": "exectrutrix",
+      "score": 0.05730477302650758
+    },
+    {
+      "term": "markus",
+      "score": 0.051181995267110494
+    },
+    {
+      "term": "dead",
+      "score": 0.051181995267110494
+    },
+    {
+      "term": "conrad",
+      "score": 0.0502128282747169
+    },
+    {
+      "term": "030",
+      "score": 0.05008448989567481
+    },
+    {
+      "term": "gt",
+      "score": 0.05008448989567481
+    },
+    {
+      "term": "23rd",
+      "score": 0.042864206764842046
+    },
+    {
+      "term": "160",
+      "score": 0.042864206764842046
+    },
+    {
+      "term": "ca",
+      "score": 0.042864206764842046
+    }
+  ]
+}

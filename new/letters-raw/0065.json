@@ -1,0 +1,179 @@
+{
+  "id": 65,
+  "added": "2010-12-26 21:13:30",
+  "modified": "2010-12-30 04:01:05",
+  "public": true,
+  "metadata": {
+    "Title": [
+      "Stjørdalens Sparebank to John Holm 1938.5.2"
+    ],
+    "Description": [
+      "BREV FRA STJØRDALENS SPAREBANK DATERT 2.  MAI – 1938, TIL HERR JOHN HOLM, JASPER, MINN, BOXT 16, U.S.A.  FRIMERKENE ER FJERNET.\n\n\n<-SPLITDESC->\n\n\nLETTER FROM STJØRDALENS SPAREBANK (SAVINGS BANK) DATED MAY 2 – 1938, TO HERR (MR.) JOHN HOLM, JASPER, MINN, BOXT 16, U.S.A.  THE STAMPS HAVE BEEN REMOVED."
+    ],
+    "Creator": [
+      "Stjørdalens Sparebank",
+      "Siri Lawson, trans."
+    ],
+    "Date": [
+      "1938.05.02"
+    ],
+    "Language": [
+      "Norwegian",
+      "English trans."
+    ],
+    "Text": [
+      "STJØRDALENS SPAREANK\n\n—oprettet 1847—\n\nTelefon nr. 20\n\nTelegramadr. SPAREBANKEN\n\nStjørdal den 2. Mai 1938\n\nHerr John Holm,\n\nJasper Minn, Boxt 16 U.S.A.\n\nI anledning Deres forespørgsel i brev av 14. April d.a. meddeles at vor bank f.t. forrenter innskudd på opsigelse (6mdr.) med 3 1/2 % pr. år.  Dette er den høieste rente De f.t. kan opnå i Norske banker.  Det er intet til hinder for at innskudsbevis (kontrabok) kan opbevares uten omkostninger her i banken og De vil da i tilfelle De senner penger hit få tilsent kvittering for mottakelsen av beløpet samt for opbevaringen av kontraboken.\n\nVi hører gjerne fra Dem og tegner\n\nÆrbødigst\n\nSTJØRDALENS SPAREBANK (Stempel)\n\nUleselig signatur – ser ut som S S, eller H Hegstet, eller Hugstad (?)\n \n\n\n<-SPLITTLETTER->\n\n\nSTJØRDALENS SPAREBANK\n\n—established 1847—\n\nTelephone No. 20\n\nTelegram adr.  SPAREBANKEN\n\nStjørdal the 2nd of May 1938\n\nMr. John Holm\n\nJasper Minn, Boxt 16 U.S.A.\n\nWith reference to Your inquiry in a letter of April 14 this year we can inform you that our bank at this time pays an interest of 3 1/2 % per year on deposits in a fixed term account (6 months).  This is the highest interest You can presently achieve in Norwegian banks.  There is nothing to prevent You from keeping the proof of deposit (the bankbook) here at the bank without cost and in case You send money here You’ll receive a receipt for the amount as well as for the bankbook.\n\nWe would be pleased to hear from You and sign\n\nSincerely\n\nSTJØRDALENS SPAREBANK (stamp)\n\nThe signature is illegible — looks like S S, or H Hegstet, or Hugstad (?)\n\n \n\nThe reason why the Y’s are capitalised in the text above is that a polite and formal form of “You”(singular and plural) was used in those days when speaking/writing to someone unknown to you, or in a higher position than you (the “du” would be changed to De, so the word for “you” changed completely.  This is common in many languages; it’s used in Spanish and French for instance.  This form is disappearing from the Norwegian language now."
+    ],
+    "LetterDate": [
+      "1938-05-02"
+    ],
+    "Location": [
+      "Stjørdal"
+    ],
+    "Destination": [
+      "Jasper"
+    ]
+  },
+  "tags": [
+    "1930s",
+    "Jasper Minn",
+    "John Holm",
+    "Stjørdal",
+    "Stjørdalens Sparebank",
+    "bank",
+    "finances",
+    "interest",
+    "prewar"
+  ],
+  "files": [
+    {
+      "original": "Stj Bank 2 mai-1938.pdf",
+      "filename": "771f67ae150e1fee2a1be9f97a7b3b13.pdf",
+      "mime_type": "application/pdf"
+    }
+  ],
+  "norwegian-tfidf": [
+    {
+      "term": "stjørdalens",
+      "score": 0.09118611022870617
+    },
+    {
+      "term": "f",
+      "score": 0.08408284918051405
+    },
+    {
+      "term": "t",
+      "score": 0.07621979409116751
+    },
+    {
+      "term": "spareank",
+      "score": 0.06771354238877351
+    },
+    {
+      "term": "1938",
+      "score": 0.06771354238877351
+    },
+    {
+      "term": "boxt",
+      "score": 0.06771354238877351
+    },
+    {
+      "term": "forespørgsel",
+      "score": 0.06771354238877351
+    },
+    {
+      "term": "meddeles",
+      "score": 0.06771354238877351
+    },
+    {
+      "term": "forrenter",
+      "score": 0.06771354238877351
+    },
+    {
+      "term": "opsigelse",
+      "score": 0.06771354238877351
+    },
+    {
+      "term": "6mdr",
+      "score": 0.06771354238877351
+    },
+    {
+      "term": "opnå",
+      "score": 0.06771354238877351
+    },
+    {
+      "term": "banker",
+      "score": 0.06771354238877351
+    },
+    {
+      "term": "hinder",
+      "score": 0.06771354238877351
+    },
+    {
+      "term": "innskudsbevis",
+      "score": 0.06771354238877351
+    }
+  ],
+  "english-tfidf": [
+    {
+      "term": "bankbook",
+      "score": 0.09484927949215047
+    },
+    {
+      "term": "stjørdalens",
+      "score": 0.06710034996742459
+    },
+    {
+      "term": "changed",
+      "score": 0.06710034996742459
+    },
+    {
+      "term": "sparebank",
+      "score": 0.05899683911836019
+    },
+    {
+      "term": "interest",
+      "score": 0.05899683911836019
+    },
+    {
+      "term": "form",
+      "score": 0.05350625754735097
+    },
+    {
+      "term": "1938",
+      "score": 0.047424639746075234
+    },
+    {
+      "term": "boxt",
+      "score": 0.047424639746075234
+    },
+    {
+      "term": "reference",
+      "score": 0.047424639746075234
+    },
+    {
+      "term": "inquiry",
+      "score": 0.047424639746075234
+    },
+    {
+      "term": "achieve",
+      "score": 0.047424639746075234
+    },
+    {
+      "term": "prevent",
+      "score": 0.047424639746075234
+    },
+    {
+      "term": "receipt",
+      "score": 0.047424639746075234
+    },
+    {
+      "term": "illegible",
+      "score": 0.047424639746075234
+    },
+    {
+      "term": "hegstet",
+      "score": 0.047424639746075234
+    }
+  ]
+}

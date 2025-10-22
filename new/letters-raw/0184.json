@@ -1,0 +1,180 @@
+{
+  "id": 184,
+  "added": "2010-12-30 02:15:46",
+  "modified": "2010-12-30 03:41:22",
+  "public": true,
+  "metadata": {
+    "Title": [
+      "Edvard Eidum to Alma C. Wilson 1947.12.4"
+    ],
+    "Description": [
+      "JULEHILSEN FRA EDVARD EIDUM DATERT 4.  DESEMBER – 1947, TIL MRS.  ALMA WILSON, DELL RAPIDS, SYD.  DAKOTA, U.S.A.  SKREVET PÅ ET KORT MED BILDE AV –DEN SOVENDE DRONNING–.  DET ER IKKE NOE FRIMERKE PÅ KORTET SÅ DET ER ANTAGELIG SENDT OPPI EN KONVOLUTT.\n\n\n<-SPLITDESC->\n\n\nCHRISTMAS GREETING FROM EDVARD EIDUM DATED DECEMBER 4 – 1947, TO MRS.  ALMA WILSON, DELL RAPIDS, SYD.DAKOTA, U.S.A.  WRITTEN ON A CARD PICTURING –DEN SOVENDE DRONNING– (–THE SLEEPING QUEEN–).  THERE IS NO STAMP ON THE CARD SO IT WAS PROBABLY SENT INSIDE AN ENVELOPE."
+    ],
+    "Creator": [
+      "Edvard Eidum",
+      "Siri Lawson, trans."
+    ],
+    "Date": [
+      "1947.12.04"
+    ],
+    "Language": [
+      "Norwegian",
+      "English trans."
+    ],
+    "Text": [
+      "Dette er Den Sovende Dronning.  Et fjellparti som ligger nære Narvik.  Her er mange slike Naturfænomen runt Narvik.  Hermed ønsker vi Dere en Glædelig julefest, samt et Godt og Velsignet Nyttår.  Vi har De som vanligt her.  Hils alle Deres fra os.\n\nE. Eidum\n\n4/12-47\n\n\n<-SPLITTLETTER->\n\n\nThis is Den Sovende Dronning.  A mountain range which is near Narvik.  There are a lot of such Natural phenomena around Narvik.  With this we wish You a Merry Christmas, and a Good and Blessed New Year.  We are as usual here.  Greet all of Yours from us.\n\nE. Eidum\n\n4-12-47"
+    ],
+    "LetterDate": [
+      "1947-12-04"
+    ],
+    "Destination": [
+      "Dell Rapids"
+    ],
+    "Location": [
+      "Norway"
+    ]
+  },
+  "tags": [
+    "1940s",
+    "Alma C. Wilson",
+    "Christmas",
+    "Den Sovende Dronning",
+    "Edvard Eidum",
+    "Narvik",
+    "New Year",
+    "Norway to US",
+    "nature",
+    "postwar"
+  ],
+  "files": [
+    {
+      "original": "Edv Eidum juleh 4 des 1947.pdf",
+      "filename": "744bceccc65d71c04d73ea2a39d5632b.pdf",
+      "mime_type": "application/pdf"
+    }
+  ],
+  "norwegian-tfidf": [
+    {
+      "term": "sovende",
+      "score": 0.2285332055621106
+    },
+    {
+      "term": "dronning",
+      "score": 0.2285332055621106
+    },
+    {
+      "term": "fjellparti",
+      "score": 0.2285332055621106
+    },
+    {
+      "term": "naturfænomen",
+      "score": 0.2285332055621106
+    },
+    {
+      "term": "12-47",
+      "score": 0.18275769353427274
+    },
+    {
+      "term": "glædelig",
+      "score": 0.1707709405154485
+    },
+    {
+      "term": "vanligt",
+      "score": 0.1707709405154485
+    },
+    {
+      "term": "hermed",
+      "score": 0.1614732925440231
+    },
+    {
+      "term": "julefest",
+      "score": 0.14745361601813922
+    },
+    {
+      "term": "nyttår",
+      "score": 0.13698218150643482
+    },
+    {
+      "term": "slike",
+      "score": 0.13259216002069205
+    },
+    {
+      "term": "runt",
+      "score": 0.12166031566787994
+    },
+    {
+      "term": "nære",
+      "score": 0.11857248349480817
+    },
+    {
+      "term": "samt",
+      "score": 0.11048264955976829
+    },
+    {
+      "term": "narvik",
+      "score": 0.10792851595535244
+    }
+  ],
+  "english-tfidf": [
+    {
+      "term": "den",
+      "score": 0.26196467669260604
+    },
+    {
+      "term": "sovende",
+      "score": 0.26196467669260604
+    },
+    {
+      "term": "dronning",
+      "score": 0.26196467669260604
+    },
+    {
+      "term": "range",
+      "score": 0.26196467669260604
+    },
+    {
+      "term": "natural",
+      "score": 0.26196467669260604
+    },
+    {
+      "term": "phenomena",
+      "score": 0.26196467669260604
+    },
+    {
+      "term": "4-12-47",
+      "score": 0.26196467669260604
+    },
+    {
+      "term": "mountain",
+      "score": 0.13300990521154843
+    },
+    {
+      "term": "merry",
+      "score": 0.12704975554707193
+    },
+    {
+      "term": "narvik",
+      "score": 0.12068111485213975
+    },
+    {
+      "term": "near",
+      "score": 0.11698741775339543
+    },
+    {
+      "term": "blessed",
+      "score": 0.11265542831502748
+    },
+    {
+      "term": "e",
+      "score": 0.1068172225011069
+    },
+    {
+      "term": "usual",
+      "score": 0.07862431470641278
+    },
+    {
+      "term": "eidum",
+      "score": 0.0766399005921
+    }
+  ]
+}

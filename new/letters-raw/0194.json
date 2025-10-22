@@ -1,0 +1,76 @@
+{
+  "id": 194,
+  "added": "2010-12-30 21:38:15",
+  "modified": "2010-12-30 21:38:15",
+  "public": true,
+  "metadata": {
+    "Title": [
+      "Hanna Eidum and Edvard Eidum Card Undated"
+    ],
+    "Creator": [
+      "Hanna Eidum",
+      "Edvard Eidum",
+      "Siri Lawson, trans."
+    ],
+    "Language": [
+      "Swedish",
+      "English trans."
+    ],
+    "Text": [
+      "(No transcription available - PDF scan only)"
+    ],
+    "LetterDate": [
+      ""
+    ],
+    "Location": [
+      ""
+    ],
+    "Destination": [
+      ""
+    ]
+  },
+  "tags": [
+    "Christmas",
+    "Edvard Eidum",
+    "Hanna Eidum",
+    "New Year",
+    "Norway to US"
+  ],
+  "files": [
+    {
+      "original": "Edvard Eidum Julekort.pdf",
+      "filename": "c1b98da9a435be41f7573d206699baca.pdf",
+      "mime_type": "application/pdf"
+    }
+  ],
+  "norwegian-tfidf": [
+    {
+      "term": "transcription",
+      "score": 0.7835424190700935
+    },
+    {
+      "term": "available",
+      "score": 0.7835424190700935
+    },
+    {
+      "term": "pdf",
+      "score": 0.7835424190700935
+    },
+    {
+      "term": "scan",
+      "score": 0.7835424190700935
+    },
+    {
+      "term": "only",
+      "score": 0.6265978064032208
+    },
+    {
+      "term": "no",
+      "score": 0.4065342291250566
+    },
+    {
+      "term": "-",
+      "score": 0.39667810462692066
+    }
+  ]
+}
