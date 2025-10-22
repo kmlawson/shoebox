@@ -50,6 +50,8 @@ function extractText(letter, language) {
 
 // Initialize
 document.addEventListener('DOMContentLoaded', () => {
+  console.log('=== STATS PAGE LOADING ===');
+  console.log('DOM Content Loaded');
   initializeUI();
   loadLettersData();
 });
@@ -170,40 +172,57 @@ function switchAnalysisType(type) {
 }
 
 async function loadLettersData() {
+  console.log('=== LOAD LETTERS DATA ===');
   const loading = document.getElementById('loading');
   const resultsView = document.getElementById('results-view');
 
+  console.log('Loading element:', loading);
+  console.log('Results view element:', resultsView);
+
   try {
     loading.style.display = 'flex';
+    console.log('Fetching ../letters.json...');
 
     // Try to load uncompressed JSON
     let response = await fetch('../letters.json');
+    console.log('Fetch response:', response.status, response.statusText);
 
     if (!response.ok) {
       throw new Error(`Failed to load letters.json: ${response.status}`);
     }
 
     const text = await response.text();
+    console.log('Text received, length:', text.length);
     lettersData = JSON.parse(text);
+    console.log('JSON parsed successfully');
 
     const dataLength = Array.isArray(lettersData) ? lettersData.length : Object.keys(lettersData).length;
     console.log('Letters loaded:', dataLength, 'Type:', Array.isArray(lettersData) ? 'array' : 'object');
 
+    console.log('Hiding loading screen...');
     loading.style.display = 'none';
+    console.log('Showing results view...');
     resultsView.hidden = false;
+    console.log('Results view hidden attribute:', resultsView.hidden);
 
     document.getElementById('results-count').textContent = `${dataLength} letters loaded`;
+    console.log('Results count updated');
 
     // Calculate and display corpus statistics
+    console.log('Calculating corpus stats...');
     calculateCorpusStats();
+    console.log('Corpus stats calculated');
 
     // Generate initial frequency list after a short delay to ensure UI is ready
+    console.log('Setting timeout to generate frequency list...');
     setTimeout(() => {
+      console.log('Timeout fired, calling generateFrequencyList...');
       generateFrequencyList();
     }, 100);
 
   } catch (error) {
-    console.error('Error loading letters:', error);
+    console.error('!!! Error loading letters:', error);
+    console.error('Error stack:', error.stack);
     loading.querySelector('p').textContent = 'Error loading letters data. Please refresh the page.';
   }
 }
