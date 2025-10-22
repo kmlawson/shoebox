@@ -27,10 +27,16 @@
   <div class="main-container">
     <!-- Sidebar for analysis options -->
     <aside id="sidebar" class="sidebar">
-      <button id="sidebar-toggle" class="sidebar-toggle" aria-expanded="false" aria-label="Toggle stats sidebar">
-        <span class="toggle-icon">☰</span>
-        <span class="toggle-text">Statistics Options</span>
-      </button>
+      <div class="sidebar-toggle-container">
+        <button id="sidebar-toggle" class="sidebar-toggle" aria-expanded="false" aria-label="Toggle stats sidebar">
+          <span class="toggle-icon">☰</span>
+          <span class="toggle-text">Statistics Options</span>
+        </button>
+        <div class="mobile-nav-buttons">
+          <a href="../index.html" class="mobile-nav-btn">Letters</a>
+          <a href="../map/" class="mobile-nav-btn" target="_blank">Map</a>
+        </div>
+      </div>
 
       <div class="sidebar-content">
         <div class="map-link-section">
@@ -95,7 +101,7 @@
         <hr class="sidebar-separator">
 
         <div class="map-link-section">
-          <a href="../map/map.html" class="map-link" target="_blank">
+          <a href="../map/" class="map-link" target="_blank">
             See Map
           </a>
         </div>

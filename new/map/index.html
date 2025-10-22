@@ -1,0 +1,1778 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Letters Map - A Shoebox of Norwegian Letters</title>
+
+  <!-- Leaflet CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+    crossorigin=""/>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      background-color: #f5f5f5;
+    }
+
+    header {
+      background-color: #2c3e50;
+      color: white;
+      padding: 1rem 1.5rem;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+
+    .header-content {
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+      flex-wrap: wrap;
+    }
+
+    header h1 {
+      font-size: 2rem;
+      margin: 0;
+    }
+
+    /* Responsive header sizing */
+    @media (max-width: 768px) {
+      header {
+        padding: 0.3rem 0.75rem;
+      }
+
+      .header-content {
+        gap: 0.5rem;
+        flex-wrap: nowrap;
+      }
+
+      header h1 {
+        font-size: 1.2rem;
+        flex-shrink: 1;
+        min-width: 0;
+      }
+
+      header p {
+        font-size: 0.85rem;
+      }
+
+      .filter-toggle-btn {
+        padding: 4px 10px;
+        font-size: 11px;
+      }
+
+      .back-btn {
+        padding: 4px 8px !important;
+        font-size: 1rem;
+      }
+
+      /* Scale down bottom buttons */
+      .about-btn,
+      .mode-toggle-btn,
+      .viz-toggle-btn {
+        padding: 8px 14px;
+        font-size: 12px;
+        bottom: 15px;
+      }
+
+      .mode-toggle-btn {
+        left: 70px;
+      }
+
+      .viz-toggle-btn {
+        left: 190px;
+        bottom: 15px;
+      }
+
+      /* Legend positioning */
+      .legend {
+        bottom: 15px;
+        right: 5px;
+        padding: 12px;
+        font-size: 12px;
+      }
+
+      /* Adjust map container for smaller header */
+      .map-container {
+        top: 60px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      header {
+        padding: 0.4rem 0.75rem;
+      }
+
+      .header-content {
+        gap: 0.5rem;
+        flex-wrap: nowrap;
+      }
+
+      header h1 {
+        font-size: 1.2rem;
+        flex-shrink: 1;
+        min-width: 0;
+      }
+
+      header p {
+        font-size: 0.85rem;
+      }
+
+      .filter-toggle-btn {
+        padding: 5px 10px;
+        font-size: 11px;
+      }
+
+      .back-btn {
+        padding: 4px 7px !important;
+        font-size: 0.95rem;
+      }
+
+      /* Further scale down bottom buttons on very small screens */
+      .about-btn,
+      .mode-toggle-btn,
+      .viz-toggle-btn {
+        padding: 6px 10px;
+        font-size: 11px;
+        bottom: 10px;
+        border-radius: 15px;
+      }
+
+      .about-btn {
+        left: 5px;
+      }
+
+      .mode-toggle-btn {
+        left: 60px;
+      }
+
+      .viz-toggle-btn {
+        left: 160px;
+        bottom: 10px;
+      }
+
+      /* Legend */
+      .legend {
+        bottom: 10px;
+        right: 5px;
+        padding: 10px;
+        font-size: 11px;
+      }
+
+      .legend h4 {
+        font-size: 13px;
+        margin-bottom: 8px;
+      }
+
+      /* Adjust map container for even smaller header */
+      .map-container {
+        top: 50px;
+      }
+    }
+
+    /* Landscape orientation adjustments for mobile */
+    @media (max-width: 768px) and (orientation: landscape) {
+      header {
+        padding: 0.3rem 0.75rem;
+      }
+
+      .header-content {
+        gap: 0.5rem;
+      }
+
+      header h1 {
+        font-size: 1rem;
+      }
+
+      .filter-toggle-btn {
+        padding: 3px 8px;
+        font-size: 10px;
+      }
+
+      .back-btn {
+        padding: 3px 6px !important;
+        font-size: 0.9rem;
+      }
+
+      /* Ensure buttons are at bottom in landscape */
+      .about-btn,
+      .mode-toggle-btn,
+      .viz-toggle-btn {
+        bottom: 5px;
+        padding: 5px 8px;
+        font-size: 10px;
+      }
+
+      .about-btn {
+        left: 5px;
+      }
+
+      .mode-toggle-btn {
+        left: 55px;
+      }
+
+      .viz-toggle-btn {
+        left: 140px;
+      }
+
+      /* Compact legend in landscape */
+      .legend {
+        bottom: 5px;
+        right: 5px;
+        padding: 8px;
+        font-size: 10px;
+        max-width: 150px;
+      }
+
+      .legend h4 {
+        font-size: 11px;
+        margin-bottom: 5px;
+      }
+
+      /* Adjust map container for smaller header in landscape */
+      .map-container {
+        top: 40px;
+      }
+
+      /* Adjust zoom controls */
+      .leaflet-top.leaflet-left {
+        top: 50px;
+      }
+    }
+
+    header p {
+      color: #ecf0f1;
+      font-size: 1.1rem;
+      margin: 0;
+    }
+
+    header a {
+      color: #3498db;
+      text-decoration: none;
+    }
+
+    header a:hover {
+      text-decoration: underline;
+    }
+
+    .back-btn {
+      min-width: auto;
+      padding: 8px 12px !important;
+      font-size: 1.2rem;
+      margin-left: auto;
+    }
+
+    .filter-controls {
+      background-color: white;
+      padding: 12px 20px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      flex-wrap: wrap;
+      transition: all 0.3s ease;
+      max-height: 200px;
+      overflow: hidden;
+    }
+
+    .filter-controls.collapsed {
+      max-height: 0;
+      padding: 0 20px;
+      opacity: 0;
+    }
+
+    .filter-toggle-btn {
+      padding: 8px 16px;
+      background-color: rgba(255, 255, 255, 0.2);
+      color: white;
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 14px;
+      font-weight: 600;
+      transition: background-color 0.2s;
+      margin-left: auto;
+    }
+
+    .filter-toggle-btn:hover {
+      background-color: rgba(255, 255, 255, 0.3);
+    }
+
+    .header-content {
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+      flex-wrap: wrap;
+    }
+
+    .filter-group {
+      display: flex;
+      flex-direction: column;
+      gap: 3px;
+      min-width: 160px;
+      flex: 1;
+    }
+
+    .filter-group label {
+      font-size: 14px;
+      color: #2c3e50;
+      font-weight: 600;
+    }
+
+    .filter-group label span {
+      color: #3498db;
+      font-weight: bold;
+    }
+
+    .filter-group input[type="range"] {
+      width: 100%;
+      cursor: pointer;
+    }
+
+    .reset-btn {
+      padding: 8px 16px;
+      background-color: #95a5a6;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 14px;
+      font-weight: 600;
+      transition: background-color 0.2s;
+    }
+
+    .reset-btn:hover {
+      background-color: #7f8c8d;
+    }
+
+    #map {
+      width: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      z-index: 1;
+    }
+
+    .map-container {
+      position: fixed;
+      top: 80px;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: 1;
+    }
+
+    .filter-controls {
+      position: relative;
+      z-index: 10;
+    }
+
+    header {
+      position: relative;
+      z-index: 100;
+    }
+
+    .legend {
+      position: absolute;
+      bottom: 30px;
+      right: 10px;
+      background: white;
+      padding: 15px;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+      z-index: 1000;
+      font-size: 14px;
+      transition: all 0.3s ease;
+      max-width: 250px;
+    }
+
+    .legend.collapsed {
+      padding: 0;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      overflow: hidden;
+      cursor: pointer;
+    }
+
+    .legend.collapsed:hover {
+      background-color: #ecf0f1;
+    }
+
+    .legend-content {
+      transition: opacity 0.2s ease;
+    }
+
+    .legend.collapsed .legend-content {
+      opacity: 0;
+      display: none;
+    }
+
+    .legend-toggle-icon {
+      display: none;
+      width: 100%;
+      height: 100%;
+      align-items: center;
+      justify-content: center;
+      font-size: 20px;
+      color: #2c3e50;
+      font-weight: bold;
+    }
+
+    .legend.collapsed .legend-toggle-icon {
+      display: flex;
+    }
+
+    .legend h4 {
+      margin-bottom: 10px;
+      font-size: 16px;
+      color: #2c3e50;
+      margin-top: 0;
+    }
+
+    .legend-collapse-btn {
+      background: rgba(127, 140, 141, 0.1);
+      border: 1px solid rgba(127, 140, 141, 0.3);
+      border-radius: 3px;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+      padding: 2px 8px;
+      color: #7f8c8d;
+      transition: all 0.2s;
+      line-height: 1;
+      float: right;
+      margin-bottom: 5px;
+    }
+
+    .legend-collapse-btn:hover {
+      background: rgba(127, 140, 141, 0.2);
+      color: #2c3e50;
+      border-color: #2c3e50;
+    }
+
+    .legend-item {
+      display: flex;
+      align-items: center;
+      margin-bottom: 8px;
+    }
+
+    .legend-line {
+      width: 40px;
+      height: 4px;
+      margin-right: 10px;
+      border-radius: 2px;
+    }
+
+    .legend-circle {
+      min-width: 12px;
+      min-height: 12px;
+      margin-right: 10px;
+      border-radius: 50%;
+      background-color: #3498db;
+      border: 2px solid #2980b9;
+    }
+
+    .tooltip-popup {
+      font-size: 14px;
+      min-width: 200px;
+    }
+
+    .tooltip-popup h3 {
+      margin-bottom: 8px;
+      color: #2c3e50;
+    }
+
+    .tooltip-popup p {
+      margin: 4px 0;
+      color: #555;
+    }
+
+    .tooltip-popup a {
+      display: inline-block;
+      margin-top: 8px;
+      padding: 6px 12px;
+      background-color: #3498db;
+      color: white;
+      text-decoration: none;
+      border-radius: 4px;
+      font-size: 13px;
+    }
+
+    .tooltip-popup a:hover {
+      background-color: #2980b9;
+    }
+
+    /* Cursor pointer for clickable lines */
+    .leaflet-interactive {
+      cursor: pointer;
+    }
+
+    /* About button */
+    .about-btn {
+      position: absolute;
+      bottom: 30px;
+      left: 10px;
+      background: white;
+      padding: 10px 20px;
+      border-radius: 20px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+      z-index: 1000;
+      font-size: 14px;
+      font-weight: 600;
+      color: #2c3e50;
+      border: none;
+      cursor: pointer;
+      transition: background-color 0.2s;
+    }
+
+    .about-btn:hover {
+      background-color: #ecf0f1;
+    }
+
+    /* Mode toggle button */
+    .mode-toggle-btn {
+      position: absolute;
+      bottom: 30px;
+      left: 100px;
+      background: white;
+      padding: 10px 20px;
+      border-radius: 20px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+      z-index: 1000;
+      font-size: 14px;
+      font-weight: 600;
+      color: #2c3e50;
+      border: none;
+      cursor: pointer;
+      transition: background-color 0.2s;
+    }
+
+    .mode-toggle-btn:hover {
+      background-color: #ecf0f1;
+    }
+
+    .mode-toggle-btn:active {
+      transform: scale(0.95);
+    }
+
+    .mode-toggle-btn.flash {
+      animation: buttonFlash 0.4s ease;
+    }
+
+    @keyframes buttonFlash {
+      0%, 100% {
+        background-color: white;
+        transform: scale(1);
+      }
+      50% {
+        background-color: #bdc3c7;
+        transform: scale(0.95);
+      }
+    }
+
+    /* Visualization toggle button (size/color) */
+    .viz-toggle-btn {
+      position: absolute;
+      bottom: 30px;
+      left: 230px;
+      background: white;
+      padding: 10px 20px;
+      border-radius: 20px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+      z-index: 1000;
+      font-size: 14px;
+      font-weight: 600;
+      color: #2c3e50;
+      border: none;
+      cursor: pointer;
+      transition: background-color 0.2s;
+      display: none;
+    }
+
+    .viz-toggle-btn:hover {
+      background-color: #ecf0f1;
+    }
+
+    .viz-toggle-btn.show {
+      display: block;
+    }
+
+    /* About modal */
+    .about-modal {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      z-index: 2000;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .about-modal.show {
+      display: flex;
+    }
+
+    .about-content {
+      background: white;
+      padding: 30px;
+      border-radius: 8px;
+      max-width: 500px;
+      margin: 20px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+      position: relative;
+    }
+
+    .about-content h2 {
+      margin-bottom: 15px;
+      color: #2c3e50;
+    }
+
+    .about-content p {
+      line-height: 1.6;
+      color: #555;
+      margin-bottom: 10px;
+    }
+
+    .close-modal {
+      position: absolute;
+      top: 15px;
+      right: 15px;
+      background: none;
+      border: none;
+      font-size: 24px;
+      color: #95a5a6;
+      cursor: pointer;
+      padding: 0;
+      width: 30px;
+      height: 30px;
+      line-height: 30px;
+      text-align: center;
+    }
+
+    .close-modal:hover {
+      color: #2c3e50;
+    }
+
+    /* Hover label for location markers */
+    .leaflet-tooltip {
+      font-size: 13px;
+      font-weight: 600;
+      background-color: rgba(44, 62, 80, 0.9);
+      color: white;
+      border: none;
+      border-radius: 4px;
+      padding: 4px 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+    }
+
+    .leaflet-tooltip::before {
+      display: none;
+    }
+
+    /* Move zoom controls down to avoid filter bar overlap */
+    .leaflet-top.leaflet-left {
+      top: 140px;
+    }
+
+    @media (max-width: 768px) {
+      .leaflet-top.leaflet-left {
+        top: 80px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .leaflet-top.leaflet-left {
+        top: 70px;
+      }
+    }
+
+    /* Dark mode styles */
+    [data-theme="dark"] header {
+      background-color: #1a1a1a;
+      border-bottom: 1px solid #404040;
+    }
+
+    [data-theme="dark"] header a {
+      color: #7bb3e0;
+    }
+
+    [data-theme="dark"] .filter-controls {
+      background-color: #1a1a1a;
+      border-bottom: 1px solid #404040;
+    }
+
+    [data-theme="dark"] .filter-group label {
+      color: #e8e8e8;
+    }
+
+    [data-theme="dark"] .filter-group label span {
+      color: #7bb3e0;
+    }
+
+    [data-theme="dark"] .filter-toggle-btn {
+      background-color: rgba(123, 179, 224, 0.2);
+      border-color: rgba(123, 179, 224, 0.3);
+    }
+
+    [data-theme="dark"] .filter-toggle-btn:hover {
+      background-color: rgba(123, 179, 224, 0.3);
+    }
+
+    [data-theme="dark"] .reset-btn {
+      background-color: #404040;
+      color: #e8e8e8;
+    }
+
+    [data-theme="dark"] .reset-btn:hover {
+      background-color: #505050;
+    }
+
+    [data-theme="dark"] .about-btn,
+    [data-theme="dark"] .mode-toggle-btn,
+    [data-theme="dark"] .viz-toggle-btn {
+      background-color: #2a2a2a;
+      color: #e8e8e8;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.5);
+    }
+
+    [data-theme="dark"] .about-btn:hover,
+    [data-theme="dark"] .mode-toggle-btn:hover,
+    [data-theme="dark"] .viz-toggle-btn:hover {
+      background-color: #3a3a3a;
+    }
+
+    [data-theme="dark"] .legend {
+      background-color: #2a2a2a;
+      color: #e8e8e8;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.5);
+    }
+
+    [data-theme="dark"] .legend h4 {
+      color: #7bb3e0;
+    }
+
+    [data-theme="dark"] .legend-collapse-btn {
+      background-color: rgba(123, 179, 224, 0.1);
+      border-color: rgba(123, 179, 224, 0.3);
+      color: #7bb3e0;
+    }
+
+    [data-theme="dark"] .legend-collapse-btn:hover {
+      background-color: rgba(123, 179, 224, 0.2);
+      border-color: #7bb3e0;
+    }
+
+    [data-theme="dark"] .legend.collapsed:hover {
+      background-color: #3a3a3a;
+    }
+
+    [data-theme="dark"] .about-modal {
+      background-color: rgba(0, 0, 0, 0.8);
+    }
+
+    [data-theme="dark"] .about-content {
+      background-color: #2a2a2a;
+      color: #e8e8e8;
+    }
+
+    [data-theme="dark"] .about-content h2 {
+      color: #7bb3e0;
+    }
+
+    [data-theme="dark"] .about-content p {
+      color: #cccccc;
+    }
+
+    [data-theme="dark"] .close-modal {
+      color: #aaaaaa;
+    }
+
+    [data-theme="dark"] .close-modal:hover {
+      color: #e8e8e8;
+    }
+
+    [data-theme="dark"] .tooltip-popup {
+      background-color: #2a2a2a;
+      color: #e8e8e8;
+    }
+
+    [data-theme="dark"] .tooltip-popup h3 {
+      color: #7bb3e0;
+    }
+
+    [data-theme="dark"] .tooltip-popup p {
+      color: #cccccc;
+    }
+
+    [data-theme="dark"] .tooltip-popup a {
+      background-color: #5b9bd5;
+    }
+
+    [data-theme="dark"] .tooltip-popup a:hover {
+      background-color: #4a8bc2;
+    }
+
+    [data-theme="dark"] .filter-group input[type="range"] {
+      background: linear-gradient(to right, #5b9bd5 0%, #404040 0%);
+    }
+
+    [data-theme="dark"] .filter-group input[type="range"]::-webkit-slider-thumb {
+      background-color: #7bb3e0;
+    }
+
+    [data-theme="dark"] .filter-group input[type="range"]::-moz-range-thumb {
+      background-color: #7bb3e0;
+    }
+
+    /* Leaflet popup container dark mode */
+    [data-theme="dark"] .leaflet-popup-content-wrapper {
+      background-color: #2a2a2a;
+      color: #e8e8e8;
+    }
+
+    [data-theme="dark"] .leaflet-popup-tip {
+      background-color: #2a2a2a;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="header-content">
+      <h1 id="map-title">Connections Map</h1>
+      <button class="filter-toggle-btn back-btn" onclick="window.location.href='../index.html'">←</button>
+      <button class="filter-toggle-btn" id="filter-toggle-btn">Hide Filters</button>
+    </div>
+  </header>
+
+  <div class="filter-controls" id="filter-controls">
+    <div class="filter-group">
+      <label for="min-letters">Min # letters: <span id="min-value">1</span></label>
+      <input type="range" id="min-letters" min="1" max="70" value="1" step="1">
+    </div>
+    <div class="filter-group">
+      <label for="max-letters">Max # letters: <span id="max-value">70</span></label>
+      <input type="range" id="max-letters" min="1" max="70" value="70" step="1">
+    </div>
+    <div class="filter-group">
+      <label for="after-year">After year: <span id="after-value">1911</span></label>
+      <input type="range" id="after-year" min="1911" max="2000" value="1911" step="1">
+    </div>
+    <div class="filter-group">
+      <label for="before-year">Before year: <span id="before-value">2000</span></label>
+      <input type="range" id="before-year" min="1911" max="2000" value="2000" step="1">
+    </div>
+    <button id="reset-filters" class="reset-btn">Reset</button>
+  </div>
+
+  <div class="map-container">
+    <div id="map"></div>
+  </div>
+
+  <button class="about-btn" id="about-btn">About</button>
+  <button class="mode-toggle-btn" id="mode-toggle-btn">Switch Map</button>
+  <button class="viz-toggle-btn" id="viz-toggle-btn">By Size</button>
+
+  <div class="about-modal" id="about-modal">
+    <div class="about-content">
+      <button class="close-modal" id="close-modal">×</button>
+      <h2 id="about-title">About This Map</h2>
+      <div id="about-correspondence-text">
+        <p>This map displays the from and destination locations for <strong id="map-letter-count">0</strong> out of a total <strong>248 documents</strong> in the collection.</p>
+        <p>Only those with known location data are displayed here. Locations are at the level of city or town and sometimes represent a best guess, e.g. Lakselvbukt.</p>
+      </div>
+      <div id="about-location-text" style="display: none;">
+        <p>This map displays letters by their "sent from" location, classified into 5 categories based on the number of letters sent from each location.</p>
+        <p>By default, locations are displayed with <strong>color coding</strong> (purple to teal gradient). Use the "By Size" button to view with <strong>graduated circle sizes</strong> instead.</p>
+        <p><strong id="location-letter-count">0</strong> out of a total <strong>248 letters</strong> have known location information.</p>
+        <p>Locations are at the level of city or town and sometimes represent a best guess, e.g. Lakselvbukt.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Correspondence Mode Legend -->
+  <div class="legend" id="correspondence-legend">
+    <div class="legend-toggle-icon">📋</div>
+    <div class="legend-content">
+      <button class="legend-collapse-btn" id="correspondence-collapse-btn" title="Collapse legend">−</button>
+      <h4>Connection Strength</h4>
+      <div class="legend-item">
+        <div class="legend-line" style="background-color: #e74c3c; width: 50px; height: 6px;"></div>
+        <span>50+ letters</span>
+      </div>
+      <div class="legend-item">
+        <div class="legend-line" style="background-color: #e67e22; width: 40px; height: 5px;"></div>
+        <span>20-49 letters</span>
+      </div>
+      <div class="legend-item">
+        <div class="legend-line" style="background-color: #f39c12; width: 30px; height: 4px;"></div>
+        <span>10-19 letters</span>
+      </div>
+      <div class="legend-item">
+        <div class="legend-line" style="background-color: #3498db; width: 20px; height: 3px;"></div>
+        <span>5-9 letters</span>
+      </div>
+      <div class="legend-item">
+        <div class="legend-line" style="background-color: #95a5a6; width: 15px; height: 2px;"></div>
+        <span>1-4 letters</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Location Mode Legend -->
+  <div class="legend" id="location-legend" style="display: none;">
+    <div class="legend-toggle-icon">📋</div>
+    <div class="legend-content">
+      <button class="legend-collapse-btn" id="location-collapse-btn" title="Collapse legend">−</button>
+      <h4>Letters by Location</h4>
+      <div id="location-legend-items">
+        <!-- Legend items will be dynamically generated -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Leaflet JS -->
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+    crossorigin=""></script>
+
+  <script>
+    // Load theme from localStorage and apply it
+    const savedTheme = localStorage.getItem('theme');
+    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+    const theme = savedTheme || (prefersDark ? 'dark' : 'light');
+    document.documentElement.setAttribute('data-theme', theme);
+
+    // Initialize map centered on Atlantic Ocean
+    const map = L.map('map').setView([50, -30], 3);
+
+    // Check if dark mode is active
+    const isDarkMode = theme === 'dark';
+
+    // Add CartoDB basemap (light or dark based on theme)
+    const basemapUrl = isDarkMode
+      ? 'https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png'
+      : 'https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png';
+
+    L.tileLayer(basemapUrl, {
+      attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>',
+      subdomains: 'abcd',
+      maxZoom: 20
+    }).addTo(map);
+
+    // Function to calculate line color and weight based on count
+    function getLineStyle(count) {
+      let color, weight;
+
+      if (count >= 50) {
+        color = '#e74c3c';  // Red
+        weight = 6;
+      } else if (count >= 20) {
+        color = '#e67e22';  // Orange
+        weight = 5;
+      } else if (count >= 10) {
+        color = '#f39c12';  // Yellow-orange
+        weight = 4;
+      } else if (count >= 5) {
+        color = '#3498db';  // Blue
+        weight = 3;
+      } else {
+        color = '#95a5a6';  // Gray
+        weight = 2;
+      }
+
+      return { color, weight };
+    }
+
+    // Track line count to vary curve directions
+    let lineCounter = 0;
+
+    // Store all lines with their letter counts and years for filtering
+    const allLines = [];
+
+    // Store all black node markers for correspondence mode
+    const allNodeMarkers = [];
+
+    // Store letters data for year filtering
+    let lettersData = {};
+
+    // Store original count for each line
+    const originalCounts = new Map();
+
+    // Function to create curved line between two points
+    function createCurvedLine(lat1, lon1, lat2, lon2, count, loc1, loc2, letterIDs) {
+      // Calculate midpoint for curve control point
+      const midLat = (lat1 + lat2) / 2;
+      const midLon = (lon1 + lon2) / 2;
+
+      // Calculate offset for curve (perpendicular to line)
+      const latDiff = lat2 - lat1;
+      const lonDiff = lon2 - lon1;
+      const distance = Math.sqrt(latDiff * latDiff + lonDiff * lonDiff);
+
+      // Vary curvature based on line index to reduce overlap
+      // Use modulo pattern to create more variation
+      lineCounter++;
+      const curveDirection = (lineCounter % 2 === 0) ? 1 : -1;
+      const variationPattern = lineCounter % 5; // 0, 1, 2, 3, 4
+      const curveVariation = 0.1 + variationPattern * 0.08; // 0.10, 0.18, 0.26, 0.34, 0.42
+      const curvature = distance * curveVariation * curveDirection;
+
+      const offsetLat = -lonDiff / distance * curvature;
+      const offsetLon = latDiff / distance * curvature;
+
+      // Calculate points along a quadratic bezier curve
+      const controlLat = midLat + offsetLat;
+      const controlLon = midLon + offsetLon;
+
+      const curvePoints = [];
+      const numPoints = 50; // Number of points to approximate the curve
+
+      for (let i = 0; i <= numPoints; i++) {
+        const t = i / numPoints;
+        const t1 = 1 - t;
+
+        // Quadratic Bezier formula: B(t) = (1-t)^2 * P0 + 2(1-t)t * P1 + t^2 * P2
+        const lat = t1 * t1 * lat1 + 2 * t1 * t * controlLat + t * t * lat2;
+        const lon = t1 * t1 * lon1 + 2 * t1 * t * controlLon + t * t * lon2;
+
+        curvePoints.push([lat, lon]);
+      }
+
+      const style = getLineStyle(count);
+
+      // Create invisible wider line for easier clicking
+      const clickableCurve = L.polyline(curvePoints, {
+        color: 'transparent',
+        weight: style.weight + 10,  // Much wider than visible line
+        opacity: 0,
+        smoothFactor: 1,
+        interactive: true
+      });
+
+      // Create visible line
+      const visibleCurve = L.polyline(curvePoints, {
+        color: style.color,
+        weight: style.weight,
+        opacity: 0.7,
+        smoothFactor: 1,
+        interactive: false  // Don't intercept clicks
+      });
+
+      // Add popup with information (without letter IDs list)
+      const letterIDsArray = letterIDs.split(';');
+
+      // Create a link using correspondence pair parameter (special handling)
+      const viewLink = `../index.html?pair=${encodeURIComponent(loc1)}&pair=${encodeURIComponent(loc2)}`;
+
+      const popupContent = `
+        <div class="tooltip-popup">
+          <h3>${loc1} ↔ ${loc2}</h3>
+          <p><strong>${count} letter${count !== 1 ? 's' : ''}</strong></p>
+          <a href="${viewLink}">View all letters →</a>
+        </div>
+      `;
+
+      // Bind popup to the clickable (invisible) line
+      clickableCurve.bindPopup(popupContent, {
+        maxWidth: 300
+      });
+
+      // Add hover effect to visible line when hovering over clickable area
+      clickableCurve.on('mouseover', function() {
+        visibleCurve.setStyle({ opacity: 1.0, weight: style.weight + 1 });
+      });
+
+      clickableCurve.on('mouseout', function() {
+        visibleCurve.setStyle({ opacity: 0.7, weight: style.weight });
+      });
+
+      // Return both as a layer group
+      return L.layerGroup([clickableCurve, visibleCurve]);
+    }
+
+    // Load letters data for year filtering and location mode
+    fetch('../letters.json')
+      .then(response => response.json())
+      .then(letters => {
+        // Store full letter objects (we'll extract year when needed)
+        letters.forEach(letter => {
+          lettersData[letter.id] = letter;
+        });
+        console.log('Loaded letter data for', Object.keys(lettersData).length, 'letters');
+      })
+      .catch(error => console.error('Error loading letters data:', error));
+
+    // Load and parse pairs.csv
+    fetch('pairs.csv')
+      .then(response => response.text())
+      .then(csvText => {
+        const lines = csvText.trim().split('\n');
+        const header = lines[0];  // Skip header
+
+        // Track all letters for each location
+        const locationData = {};
+        const lineData = [];
+
+        // First pass: collect all data
+        for (let i = 1; i < lines.length; i++) {
+          const parts = lines[i].split(',');
+
+          if (parts.length >= 10) {
+            const loc1 = parts[0];
+            const lat1 = parseFloat(parts[1]);
+            const lon1 = parseFloat(parts[2]);
+            const loc2 = parts[4];
+            const lat2 = parseFloat(parts[5]);
+            const lon2 = parseFloat(parts[6]);
+            const count = parseInt(parts[8]);
+            const letterIDs = parts[9];
+
+            // Track letters for each location
+            if (!locationData[loc1]) {
+              locationData[loc1] = { lat: lat1, lon: lon1, letterIds: new Set() };
+            }
+            if (!locationData[loc2]) {
+              locationData[loc2] = { lat: lat2, lon: lon2, letterIds: new Set() };
+            }
+
+            // Add letter IDs to both locations
+            letterIDs.split(';').forEach(id => {
+              locationData[loc1].letterIds.add(id.trim());
+              locationData[loc2].letterIds.add(id.trim());
+            });
+
+            // Store line data for later rendering
+            lineData.push({ lat1, lon1, lat2, lon2, count, loc1, loc2, letterIDs });
+          }
+        }
+
+        // Second pass: render all lines first (so they appear below markers)
+        lineData.forEach(data => {
+          const curve = createCurvedLine(data.lat1, data.lon1, data.lat2, data.lon2,
+                                         data.count, data.loc1, data.loc2, data.letterIDs);
+          curve.addTo(map);
+          // Store letter IDs for year filtering
+          const letterIds = data.letterIDs.split(';').map(id => id.trim());
+
+          // Get references to the individual layers in the group
+          const layers = curve.getLayers();
+          const clickableLayer = layers[0];
+          const visibleLayer = layers[1];
+
+          allLines.push({
+            layer: curve,
+            clickableLayer: clickableLayer,
+            visibleLayer: visibleLayer,
+            count: data.count,
+            letterIds: letterIds,
+            loc1: data.loc1,
+            loc2: data.loc2,
+            letterIDsString: data.letterIDs
+          });
+        });
+
+        // Third pass: create markers on top of lines
+        Object.entries(locationData).forEach(([location, data]) => {
+          const letterIdsArray = Array.from(data.letterIds).sort((a, b) => parseInt(a) - parseInt(b));
+          const letterCount = letterIdsArray.length;
+
+          // Filter by this location (either as from OR to destination)
+          const viewAllLink = `../index.html?locations=${encodeURIComponent(location)}`;
+
+          const nodeMarker = L.circleMarker([data.lat, data.lon], {
+            radius: 6,
+            fillColor: '#2c3e50',
+            color: '#fff',
+            weight: 2,
+            opacity: 1,
+            fillOpacity: 0.9
+          })
+          .bindPopup(`
+            <div class="tooltip-popup">
+              <h3>${location}</h3>
+              <p><strong>${letterCount} letter${letterCount !== 1 ? 's' : ''}</strong></p>
+              <a href="${viewAllLink}">View all letters →</a>
+            </div>
+          `, {
+            maxWidth: 300
+          })
+          .bindTooltip(location, {
+            permanent: false,
+            direction: 'top',
+            className: 'location-tooltip'
+          })
+          .addTo(map);
+
+          // Store reference to node marker
+          allNodeMarkers.push(nodeMarker);
+        });
+
+        console.log(`Loaded ${lines.length - 1} location pairs`);
+
+        // Count unique letters on the map
+        const uniqueLetters = new Set();
+        Object.values(locationData).forEach(data => {
+          data.letterIds.forEach(id => uniqueLetters.add(id));
+        });
+        const totalLettersOnMap = uniqueLetters.size;
+        document.getElementById('map-letter-count').textContent = totalLettersOnMap;
+        console.log(`Map displays ${totalLettersOnMap} letters out of 248 total`);
+
+        // Set up filter controls
+        const minSlider = document.getElementById('min-letters');
+        const maxSlider = document.getElementById('max-letters');
+        const minValue = document.getElementById('min-value');
+        const maxValue = document.getElementById('max-value');
+        const afterYearSlider = document.getElementById('after-year');
+        const beforeYearSlider = document.getElementById('before-year');
+        const afterYearValue = document.getElementById('after-value');
+        const beforeYearValue = document.getElementById('before-value');
+        const resetBtn = document.getElementById('reset-filters');
+
+        // Function to apply filters
+        function applyFilters() {
+          const minCount = parseInt(minSlider.value);
+          const maxCount = parseInt(maxSlider.value);
+          const afterYear = parseInt(afterYearSlider.value);
+          const beforeYear = parseInt(beforeYearSlider.value);
+
+          // Ensure min doesn't exceed max
+          if (minCount > maxCount) {
+            minSlider.value = maxCount;
+            minValue.textContent = maxCount;
+            return;
+          }
+
+          if (afterYear > beforeYear) {
+            afterYearSlider.value = beforeYear;
+            afterYearValue.textContent = beforeYear;
+            return;
+          }
+
+          // Update displayed values
+          minValue.textContent = minCount;
+          maxValue.textContent = maxCount;
+          afterYearValue.textContent = afterYear;
+          beforeYearValue.textContent = beforeYear;
+
+          // Filter lines
+          allLines.forEach(item => {
+            // Calculate how many letters fall within the year filter
+            let filteredCount = 0;
+            let filteredLetterIds = [];
+
+            if (item.letterIds && item.letterIds.length > 0) {
+              item.letterIds.forEach(letterId => {
+                const letter = lettersData[letterId];
+                if (letter) {
+                  const dateStr = letter.metadata?.LetterDate?.[0] || '';
+                  const year = dateStr ? parseInt(dateStr.substring(0, 4)) : null;
+                  if (year && year >= afterYear && year <= beforeYear) {
+                    filteredCount++;
+                    filteredLetterIds.push(letterId);
+                  }
+                }
+              });
+            }
+
+            // If no year data loaded yet, use original count
+            if (Object.keys(lettersData).length === 0) {
+              filteredCount = item.count;
+              filteredLetterIds = item.letterIds;
+            }
+
+            // Check if filtered count meets the count filter
+            const countMatch = filteredCount >= minCount && filteredCount <= maxCount;
+
+            // Show/hide and update style based on filtered count
+            if (filteredCount > 0 && countMatch) {
+              // Update line style based on filtered count
+              const newStyle = getLineStyle(filteredCount);
+              item.visibleLayer.setStyle({
+                color: newStyle.color,
+                weight: newStyle.weight
+              });
+
+              // Update clickable layer width
+              item.clickableLayer.setStyle({
+                weight: newStyle.weight + 10
+              });
+
+              // Update popup content with filtered count (without IDs list)
+              // Create a link using correspondence pair parameter (special handling)
+              const viewLink = `../index.html?pair=${encodeURIComponent(item.loc1)}&pair=${encodeURIComponent(item.loc2)}`;
+
+              const popupContent = `
+                <div class="tooltip-popup">
+                  <h3>${item.loc1} ↔ ${item.loc2}</h3>
+                  <p><strong>${filteredCount} letter${filteredCount !== 1 ? 's' : ''}</strong>${filteredCount !== item.count ? ` (of ${item.count} total)` : ''}</p>
+                  <a href="${viewLink}">View all letters →</a>
+                </div>
+              `;
+
+              item.clickableLayer.setPopupContent(popupContent);
+
+              // Show line if not already visible
+              if (!map.hasLayer(item.layer)) {
+                map.addLayer(item.layer);
+              }
+            } else {
+              // Hide line if it doesn't match filters
+              if (map.hasLayer(item.layer)) {
+                map.removeLayer(item.layer);
+              }
+            }
+          });
+        }
+
+        // Add event listeners
+        minSlider.addEventListener('input', applyFilters);
+        maxSlider.addEventListener('input', applyFilters);
+        afterYearSlider.addEventListener('input', applyFilters);
+        beforeYearSlider.addEventListener('input', applyFilters);
+
+        // Reset button
+        resetBtn.addEventListener('click', () => {
+          minSlider.value = 1;
+          maxSlider.value = 70;
+          afterYearSlider.value = 1911;
+          beforeYearSlider.value = 2000;
+          applyFilters();
+        });
+      })
+      .catch(error => {
+        console.error('Error loading pairs.csv:', error);
+        alert('Error loading map data. Please ensure pairs.csv exists.');
+      });
+
+    // Filter toggle handler
+    const filterToggleBtn = document.getElementById('filter-toggle-btn');
+    const filterControls = document.getElementById('filter-controls');
+
+    filterToggleBtn.addEventListener('click', () => {
+      filterControls.classList.toggle('collapsed');
+      if (filterControls.classList.contains('collapsed')) {
+        filterToggleBtn.textContent = 'Show Filters';
+      } else {
+        filterToggleBtn.textContent = 'Hide Filters';
+      }
+    });
+
+    // Legend toggle handlers
+    const correspondenceLegend = document.getElementById('correspondence-legend');
+    const locationLegend = document.getElementById('location-legend');
+    const correspondenceCollapseBtn = document.getElementById('correspondence-collapse-btn');
+    const locationCollapseBtn = document.getElementById('location-collapse-btn');
+
+    // Toggle when clicking the icon (when collapsed)
+    correspondenceLegend.addEventListener('click', (e) => {
+      if (correspondenceLegend.classList.contains('collapsed') && e.target.classList.contains('legend-toggle-icon')) {
+        correspondenceLegend.classList.remove('collapsed');
+      }
+    });
+
+    locationLegend.addEventListener('click', (e) => {
+      if (locationLegend.classList.contains('collapsed') && e.target.classList.contains('legend-toggle-icon')) {
+        locationLegend.classList.remove('collapsed');
+      }
+    });
+
+    // Collapse buttons
+    correspondenceCollapseBtn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      correspondenceLegend.classList.add('collapsed');
+    });
+
+    locationCollapseBtn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      locationLegend.classList.add('collapsed');
+    });
+
+    // About modal handlers
+    const aboutBtn = document.getElementById('about-btn');
+    const aboutModal = document.getElementById('about-modal');
+    const closeModal = document.getElementById('close-modal');
+
+    aboutBtn.addEventListener('click', () => {
+      aboutModal.classList.add('show');
+    });
+
+    closeModal.addEventListener('click', () => {
+      aboutModal.classList.remove('show');
+    });
+
+    // Close modal when clicking outside
+    aboutModal.addEventListener('click', (e) => {
+      if (e.target === aboutModal) {
+        aboutModal.classList.remove('show');
+      }
+    });
+
+    // Close modal on Escape key
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && aboutModal.classList.contains('show')) {
+        aboutModal.classList.remove('show');
+      }
+    });
+
+    // Mode toggle functionality
+    let currentMode = 'correspondence'; // 'correspondence' or 'location'
+    let visualizationType = 'color'; // 'size' or 'color' - default to color for location mode
+    const modeToggleBtn = document.getElementById('mode-toggle-btn');
+    const locationCircles = []; // Store location circles for filtering
+
+    const vizToggleBtn = document.getElementById('viz-toggle-btn');
+
+    modeToggleBtn.addEventListener('click', () => {
+      // Add flash effect
+      modeToggleBtn.classList.add('flash');
+      setTimeout(() => modeToggleBtn.classList.remove('flash'), 400);
+
+      if (currentMode === 'correspondence') {
+        currentMode = 'location';
+        // Update map title
+        document.getElementById('map-title').textContent = 'Letters by Location';
+        vizToggleBtn.classList.add('show');
+        // Hide filters and filter toggle button in location mode
+        filterControls.style.display = 'none';
+        filterToggleBtn.style.display = 'none';
+        showLocationMode();
+        // Update About modal
+        document.getElementById('about-correspondence-text').style.display = 'none';
+        document.getElementById('about-location-text').style.display = 'block';
+        // Update legends
+        document.getElementById('correspondence-legend').style.display = 'none';
+        document.getElementById('location-legend').style.display = 'block';
+      } else {
+        currentMode = 'correspondence';
+        // Update map title
+        document.getElementById('map-title').textContent = 'Connections Map';
+        vizToggleBtn.classList.remove('show');
+        // Show filters and filter toggle button in correspondence mode
+        filterControls.style.display = 'flex';
+        filterToggleBtn.style.display = 'block';
+        showCorrespondenceMode();
+        // Update About modal
+        document.getElementById('about-correspondence-text').style.display = 'block';
+        document.getElementById('about-location-text').style.display = 'none';
+        // Update legends
+        document.getElementById('correspondence-legend').style.display = 'block';
+        document.getElementById('location-legend').style.display = 'none';
+      }
+    });
+
+    vizToggleBtn.addEventListener('click', () => {
+      if (visualizationType === 'size') {
+        visualizationType = 'color';
+        vizToggleBtn.textContent = 'By Size';
+      } else {
+        visualizationType = 'size';
+        vizToggleBtn.textContent = 'By Color';
+      }
+      // Refresh the location mode view
+      showLocationMode();
+    });
+
+    function showLocationMode() {
+      // Hide all correspondence lines
+      allLines.forEach(line => {
+        if (line.layer) map.removeLayer(line.layer);
+        if (line.clickableLayer) map.removeLayer(line.clickableLayer);
+        if (line.visibleLayer) map.removeLayer(line.visibleLayer);
+      });
+
+      // Hide all black node markers
+      allNodeMarkers.forEach(marker => {
+        if (map.hasLayer(marker)) {
+          map.removeLayer(marker);
+        }
+      });
+
+      // Count letters by location from letters.json
+      const locationCounts = {};
+      let totalWithLocation = 0;
+
+      // Check if lettersData is available
+      if (!lettersData || typeof lettersData !== 'object') {
+        console.error('Letters data not loaded yet');
+        return;
+      }
+
+      // Count based on Location field in metadata
+      Object.keys(lettersData).forEach(letterId => {
+        const letter = lettersData[letterId];
+        if (letter && letter.metadata && letter.metadata.Location) {
+          const locations = letter.metadata.Location;
+          if (locations.length > 0) {
+            totalWithLocation++;
+            locations.forEach(loc => {
+              const locName = loc.trim();
+              if (locName) {
+                locationCounts[locName] = (locationCounts[locName] || 0) + 1;
+              }
+            });
+          }
+        }
+      });
+
+      // Update the location letter count in About modal
+      document.getElementById('location-letter-count').textContent = totalWithLocation;
+
+      // Load locations.csv to get coordinates
+      fetch('../locations.csv')
+        .then(response => response.text())
+        .then(csvText => {
+          const lines = csvText.trim().split('\n');
+          const locationsWithCoords = [];
+
+          for (let i = 1; i < lines.length; i++) {
+            const parts = lines[i].split(',');
+            if (parts.length >= 4) {
+              const locName = parts[0].trim();
+              const lat = parseFloat(parts[2].trim()); // Latitude is column 3
+              const lon = parseFloat(parts[3].trim()); // Longitude is column 4
+
+              // Only add if location has letters and valid coordinates
+              if (locationCounts[locName] && !isNaN(lat) && !isNaN(lon)) {
+                locationsWithCoords.push({
+                  name: locName,
+                  lat: lat,
+                  lon: lon,
+                  count: locationCounts[locName]
+                });
+              }
+            }
+          }
+
+          // Manual classification with fixed ranges:
+          // Class 1: 1 letter
+          // Class 2: 2-10 letters
+          // Class 3: 11-20 letters
+          // Class 4: 21-40 letters
+          // Class 5: 41-69 letters
+          const numClasses = 5;
+
+          locationsWithCoords.forEach(loc => {
+            if (loc.count === 1) {
+              loc.manualClass = 1;
+            } else if (loc.count >= 2 && loc.count <= 10) {
+              loc.manualClass = 2;
+            } else if (loc.count >= 11 && loc.count <= 20) {
+              loc.manualClass = 3;
+            } else if (loc.count >= 21 && loc.count <= 40) {
+              loc.manualClass = 4;
+            } else if (loc.count >= 41 && loc.count <= 69) {
+              loc.manualClass = 5;
+            } else {
+              // Fallback for counts > 69 (shouldn't happen with current data)
+              loc.manualClass = 5;
+            }
+          });
+
+          // Generate legend items with fixed manual ranges
+          const legendContainer = document.getElementById('location-legend-items');
+          legendContainer.innerHTML = '';
+
+          // Define the fixed class ranges
+          const classRanges = [
+            { class: 1, min: 1, max: 1, label: '1 letter' },
+            { class: 2, min: 2, max: 10, label: '2-10 letters' },
+            { class: 3, min: 11, max: 20, label: '11-20 letters' },
+            { class: 4, min: 21, max: 40, label: '21-40 letters' },
+            { class: 5, min: 41, max: 69, label: '41-69 letters' }
+          ];
+
+          // Color palette: purple to teal gradient (5 clear, distinct steps with good contrast)
+          const colorPalette = [
+            '#b39ddb', // Class 1 - light purple
+            '#9575cd', // Class 2 - medium purple
+            '#7e57c2', // Class 3 - purple-blue
+            '#5e9ea0', // Class 4 - blue-teal
+            '#4db6ac'  // Class 5 - teal
+          ];
+
+          // Display legend (largest to smallest)
+          for (let i = numClasses; i >= 1; i--) {
+            const range = classRanges.find(r => r.class === i);
+            if (range) {
+              const size = 8 + (i * 4); // Sizes: 12, 16, 20, 24, 28 pixels
+              const color = colorPalette[i - 1];
+              const legendItem = document.createElement('div');
+              legendItem.className = 'legend-item';
+
+              if (visualizationType === 'size') {
+                legendItem.innerHTML = `
+                  <div class="legend-circle" style="width: ${size}px; height: ${size}px;"></div>
+                  <span>${range.label}</span>
+                `;
+              } else {
+                legendItem.innerHTML = `
+                  <div class="legend-circle" style="width: 12px; height: 12px; background-color: ${color}; border-color: ${color};"></div>
+                  <span>${range.label}</span>
+                `;
+              }
+              legendContainer.appendChild(legendItem);
+            }
+          }
+
+          // Clear existing circles
+          locationCircles.forEach(circle => map.removeLayer(circle));
+          locationCircles.length = 0;
+
+          // Sort based on visualization type:
+          // - Size mode: largest first (draw on bottom, smaller on top for hover)
+          // - Color mode: lightest first (darkest on top)
+          if (visualizationType === 'size') {
+            locationsWithCoords.sort((a, b) => b.manualClass - a.manualClass); // Largest class first
+          } else {
+            locationsWithCoords.sort((a, b) => a.manualClass - b.manualClass); // Lightest class first
+          }
+
+          // Draw circles
+          locationsWithCoords.forEach(loc => {
+            let circleOptions;
+
+            if (visualizationType === 'size') {
+              const radius = getCircleRadiusFromClass(loc.manualClass);
+              circleOptions = {
+                color: '#3498db',
+                fillColor: '#3498db',
+                fillOpacity: 0.5,
+                weight: 2,
+                radius: radius
+              };
+            } else {
+              // Color mode - use small fixed circles slightly bigger than black nodes, vary color
+              const color = colorPalette[loc.manualClass - 1];
+              // Use circleMarker instead of circle for pixel-based radius
+              const circleMarker = L.circleMarker([loc.lat, loc.lon], {
+                radius: 8, // Slightly bigger than black nodes (was 6)
+                fillColor: color,
+                color: '#fff',
+                weight: 2,
+                opacity: 1,
+                fillOpacity: 0.9
+              }).addTo(map);
+
+              // Tooltip on hover
+              circleMarker.bindTooltip(`<strong>${loc.name}</strong><br>${loc.count} letter${loc.count !== 1 ? 's' : ''}`, {
+                direction: 'top',
+                offset: [0, -10]
+              });
+
+              // Popup on click
+              circleMarker.bindPopup(`
+                <div style="text-align: center;">
+                  <h3 style="margin: 0 0 10px 0;">${loc.name}</h3>
+                  <p style="margin: 5px 0;"><strong>${loc.count}</strong> letter${loc.count !== 1 ? 's' : ''}</p>
+                  <a href="../index.html?locations=${encodeURIComponent(loc.name)}" target="_blank"
+                     style="color: #3498db; text-decoration: underline;">
+                    View letters
+                  </a>
+                </div>
+              `);
+
+              locationCircles.push(circleMarker);
+              return; // Skip the regular circle creation below
+            }
+
+            const circle = L.circle([loc.lat, loc.lon], circleOptions).addTo(map);
+
+            // Tooltip on hover
+            circle.bindTooltip(`<strong>${loc.name}</strong><br>${loc.count} letter${loc.count !== 1 ? 's' : ''}`, {
+              direction: 'top',
+              offset: [0, -10]
+            });
+
+            // Popup on click
+            circle.bindPopup(`
+              <div style="text-align: center;">
+                <h3 style="margin: 0 0 10px 0;">${loc.name}</h3>
+                <p style="margin: 5px 0;"><strong>${loc.count}</strong> letter${loc.count !== 1 ? 's' : ''}</p>
+                <a href="../index.html?locations=${encodeURIComponent(loc.name)}" target="_blank"
+                   style="color: #3498db; text-decoration: underline;">
+                  View letters
+                </a>
+              </div>
+            `);
+
+            locationCircles.push(circle);
+          });
+        })
+        .catch(error => {
+          console.error('Error loading locations:', error);
+          alert('Error loading location data.');
+        });
+    }
+
+    function getCircleRadiusFromClass(quantileClass) {
+      // Convert quantile class (1-5) to radius in meters for Leaflet circle
+      // Larger circles for higher classes (more letters)
+      const baseRadius = 50000; // 50km base
+      return baseRadius * quantileClass;
+    }
+
+    function showCorrespondenceMode() {
+      // Hide all location circles
+      locationCircles.forEach(circle => {
+        if (circle) map.removeLayer(circle);
+      });
+      locationCircles.length = 0;
+
+      // Show correspondence lines (they should already be on the map, but re-add if needed)
+      allLines.forEach(line => {
+        if (line.layer && !map.hasLayer(line.layer)) {
+          map.addLayer(line.layer);
+        }
+      });
+
+      // Show all black node markers
+      allNodeMarkers.forEach(marker => {
+        if (!map.hasLayer(marker)) {
+          map.addLayer(marker);
+        }
+      });
+    }
+
+    // Mobile defaults: hide filters and collapse legend on small screens
+    function applyMobileDefaults() {
+      const isMobile = window.innerWidth <= 768;
+
+      if (isMobile) {
+        // Collapse filters
+        filterControls.classList.add('collapsed');
+        filterToggleBtn.textContent = 'Show Filters';
+
+        // Collapse both legends
+        correspondenceLegend.classList.add('collapsed');
+        locationLegend.classList.add('collapsed');
+      }
+    }
+
+    // Apply mobile defaults on page load
+    applyMobileDefaults();
+
+    // Re-apply on window resize (if user rotates device)
+    window.addEventListener('resize', () => {
+      // Only auto-collapse, don't auto-expand (respect user's choice if they expanded)
+      const isMobile = window.innerWidth <= 768;
+      if (isMobile && !filterControls.classList.contains('collapsed')) {
+        // Allow user to keep filters open if they explicitly opened them
+        // So we don't force collapse on resize
+      }
+    });
+  </script>
+</body>
+</html>

@@ -34,10 +34,16 @@
   <div class="main-container">
     <!-- Sidebar for filters -->
     <aside id="sidebar" class="sidebar">
-      <button id="sidebar-toggle" class="sidebar-toggle" aria-expanded="false" aria-label="Toggle filters sidebar">
-        <span class="toggle-icon">☰</span>
-        <span class="toggle-text">Filters & Search</span>
-      </button>
+      <div class="sidebar-toggle-container">
+        <button id="sidebar-toggle" class="sidebar-toggle" aria-expanded="false" aria-label="Toggle filters sidebar">
+          <span class="toggle-icon">☰</span>
+          <span class="toggle-text">Filters & Search</span>
+        </button>
+        <div class="mobile-nav-buttons">
+          <a href="map/" class="mobile-nav-btn" target="_blank">Map</a>
+          <a href="tools/index.html" class="mobile-nav-btn" target="_blank">Tools</a>
+        </div>
+      </div>
 
       <div class="sidebar-content">
         <!-- Search box -->
@@ -80,6 +86,12 @@
             <button class="filter-button" data-filter="locations">By Location</button>
             <button class="filter-button" data-filter="destinations">By Destination</button>
           </div>
+
+          <!-- Mobile inline filter options -->
+          <div id="mobile-filter-options" class="mobile-filter-options" hidden>
+            <div id="mobile-filter-hint" class="filter-hint"></div>
+            <div id="mobile-filter-options-chips" class="filter-chips-large"></div>
+          </div>
         </div>
 
         <div class="results-summary">
@@ -89,8 +101,14 @@
         <hr class="sidebar-separator">
 
         <div class="map-link-section">
-          <a href="map/map.html" class="map-link" target="_blank">
+          <a href="map/" class="map-link" target="_blank">
             See Map
+          </a>
+        </div>
+
+        <div class="map-link-section">
+          <a href="tools/index.html" class="map-link" target="_blank">
+            Tools
           </a>
         </div>
 
@@ -254,12 +272,12 @@
 
         <div class="form-row-double">
           <div class="form-col">
-            <label for="search-date-before">Date before:</label>
-            <input type="date" id="search-date-before" name="before">
+            <label for="search-date-after">Date after:</label>
+            <input type="text" id="search-date-after" name="after" placeholder="YYYY or YYYY-MM-DD">
           </div>
           <div class="form-col">
-            <label for="search-date-after">Date after:</label>
-            <input type="date" id="search-date-after" name="after">
+            <label for="search-date-before">Date before:</label>
+            <input type="text" id="search-date-before" name="before" placeholder="YYYY or YYYY-MM-DD">
           </div>
         </div>
 

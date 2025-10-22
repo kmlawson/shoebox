@@ -282,8 +282,11 @@ a:hover {
   height: calc(100vh - 73px);
 }
 
-.sidebar-toggle {
+.sidebar-toggle-container {
   display: none; /* Hidden on desktop */
+}
+
+.sidebar-toggle {
   padding: var(--spacing-md);
   background: var(--color-primary);
   color: white;
@@ -294,13 +297,14 @@ a:hover {
   cursor: pointer;
   text-align: left;
   width: 100%;
-  position: sticky;
-  top: 73px;
-  z-index: 150;
 }
 
 .sidebar-toggle:hover {
   background: var(--color-primary-hover);
+}
+
+.mobile-nav-buttons {
+  display: none; /* Hidden on desktop */
 }
 
 .sidebar-content {
@@ -1757,27 +1761,104 @@ a:hover {
     position: relative;
     width: 100%;
     height: auto;
+    min-height: auto;
     top: 0;
     border-right: none;
+    border-bottom: none;
+    z-index: 500;
+    overflow: visible;
+  }
+
+  .sidebar-toggle-container {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+    position: sticky;
+    top: 0;
+    z-index: 501;
+    background: var(--color-primary);
     border-bottom: 1px solid var(--color-border);
+    padding: var(--spacing-md);
   }
 
   .sidebar-toggle {
     display: block;
+    flex: 1;
+    padding: 0;
+    background: transparent;
+    border: none;
+  }
+
+  .mobile-nav-buttons {
+    display: flex;
+    gap: var(--spacing-sm);
+  }
+
+  .mobile-nav-btn {
+    padding: 8px 12px;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: white !important;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 1.3rem;
+    font-family: var(--font-sans);
+    font-weight: 600;
+    transition: background-color 0.2s;
+    white-space: nowrap;
+  }
+
+  .mobile-nav-btn:hover {
+    background-color: rgba(255, 255, 255, 0.35);
+    color: white !important;
+  }
+
+  .mobile-nav-btn:visited {
+    color: white !important;
+  }
+
+  /* Hide "Back to Letters" link on mobile since it's in the blue nav bar */
+  .sidebar-content .map-link-section:first-of-type {
+    display: none;
   }
 
   .sidebar-content {
     display: none;
-    opacity: 0;
-    max-height: 0;
-    overflow: hidden;
-    transition: opacity 0.3s ease, max-height 0.3s ease;
   }
 
   .sidebar.open .sidebar-content {
-    display: block;
-    opacity: 1;
-    max-height: 5000px;
+    display: block !important;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 500;
+    background-color: var(--color-bg-secondary);
+    overflow-y: auto;
+    padding-top: 60px;
+  }
+
+  /* Close button for mobile sidebar */
+  .sidebar.open .sidebar-toggle-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 501;
+  }
+
+  /* Mobile inline filter options */
+  .mobile-filter-options {
+    margin-top: var(--spacing-md);
+    padding: var(--spacing-md);
+    background-color: var(--color-bg);
+    border: 1px solid var(--color-border);
+    border-radius: var(--border-radius);
+  }
+
+  /* Hide desktop filter options on mobile */
+  .filter-options {
+    display: none !important;
   }
 
   .main-content {
