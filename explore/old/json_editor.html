@@ -1,0 +1,716 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON Editor - Edit All Fields</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            background: #f5f5f5;
+            color: #333;
+        }
+
+        header {
+            background: #3d4b79;
+            color: white;
+            padding: 1rem 2rem;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        header h1 {
+            font-size: 1.8rem;
+            margin-bottom: 0.3rem;
+        }
+
+        .controls {
+            background: white;
+            padding: 1rem 2rem;
+            border-bottom: 2px solid #ddd;
+            display: flex;
+            gap: 1rem;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .control-group {
+            display: flex;
+            gap: 0.5rem;
+            align-items: center;
+        }
+
+        label {
+            font-weight: bold;
+            color: #3d4b79;
+        }
+
+        select, button, input {
+            padding: 0.5rem 1rem;
+            border: 1px solid #3d4b79;
+            background: white;
+            color: #3d4b79;
+            cursor: pointer;
+            font-size: 1rem;
+            border-radius: 3px;
+        }
+
+        button:hover {
+            background: #3d4b79;
+            color: white;
+        }
+
+        button:disabled {
+            background: #ccc;
+            border-color: #999;
+            color: #666;
+            cursor: not-allowed;
+        }
+
+        .status {
+            padding: 1rem 2rem;
+            background: #d4edda;
+            border-left: 4px solid #28a745;
+            margin: 0;
+        }
+
+        .status.error {
+            background: #f8d7da;
+            border-left-color: #dc3545;
+        }
+
+        .status.warning {
+            background: #fff3cd;
+            border-left-color: #ffc107;
+        }
+
+        .status.hidden {
+            display: none;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 2rem auto;
+            padding: 0 2rem;
+        }
+
+        .letter-card {
+            background: white;
+            border-radius: 5px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+
+        .letter-header {
+            background: #3d4b79;
+            color: white;
+            padding: 1rem 1.5rem;
+        }
+
+        .letter-title {
+            font-size: 1.3rem;
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+        }
+
+        .letter-info {
+            font-size: 0.85rem;
+            opacity: 0.9;
+            display: flex;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+        }
+
+        .info-field {
+            display: inline;
+        }
+
+        .fields-editor {
+            padding: 1.5rem;
+        }
+
+        .field-group {
+            margin-bottom: 1.5rem;
+            border-bottom: 1px solid #dee2e6;
+            padding-bottom: 1rem;
+        }
+
+        .field-group:last-child {
+            border-bottom: none;
+        }
+
+        .field-label {
+            font-weight: bold;
+            color: #3d4b79;
+            margin-bottom: 0.5rem;
+            display: block;
+            font-size: 0.95rem;
+        }
+
+        .field-input, .field-textarea {
+            width: 100%;
+            padding: 0.6rem;
+            border: 2px solid #ddd;
+            border-radius: 3px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: 1rem;
+            background: #fffef8;
+        }
+
+        .field-input:focus, .field-textarea:focus {
+            outline: none;
+            border-color: #3d4b79;
+            background: white;
+        }
+
+        .field-textarea {
+            resize: none;
+            overflow: hidden;
+            line-height: 1.6;
+            min-height: 60px;
+        }
+
+        .field-array {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+
+        .array-item {
+            display: flex;
+            gap: 0.5rem;
+            align-items: center;
+        }
+
+        .array-item textarea {
+            flex: 1;
+        }
+
+        .remove-btn {
+            padding: 0.4rem 0.8rem;
+            background: #dc3545;
+            color: white;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+            font-size: 0.85rem;
+        }
+
+        .remove-btn:hover {
+            background: #c82333;
+        }
+
+        .actions {
+            padding: 1.5rem;
+            background: #f8f9fa;
+            border-top: 2px solid #dee2e6;
+            display: flex;
+            gap: 1rem;
+            justify-content: flex-start;
+            align-items: center;
+        }
+
+        .btn-primary {
+            background: #28a745;
+            border-color: #28a745;
+            color: white;
+            font-weight: bold;
+        }
+
+        .btn-primary:hover {
+            background: #218838;
+            border-color: #218838;
+        }
+
+        .section-title {
+            font-size: 1.2rem;
+            color: #3d4b79;
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid #3d4b79;
+        }
+
+        .field-row {
+            display: flex;
+            gap: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .field-row .field-group {
+            flex: 1;
+            margin-bottom: 0;
+            border-bottom: none;
+            padding-bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>🔧 JSON Editor</h1>
+        <p>Edit all letter fields • Arrow keys to navigate • Auto-saves timestamped backups</p>
+    </header>
+
+    <div class="controls">
+        <div class="control-group">
+            <label for="letterSelect">Select Letter:</label>
+            <select id="letterSelect" onchange="loadSelectedLetter()">
+                <option value="">Loading...</option>
+            </select>
+        </div>
+
+        <div class="control-group">
+            <button onclick="previousLetter()">← Previous</button>
+            <button onclick="nextLetter()">Next →</button>
+        </div>
+
+        <div class="control-group">
+            <button onclick="jumpToNumber()">Jump to #:</button>
+            <input type="number" id="jumpNumber" min="1" max="250" style="width: 80px;">
+        </div>
+    </div>
+
+    <div id="status" class="status hidden"></div>
+
+    <div class="container">
+        <div class="letter-card">
+            <div class="letter-header">
+                <div class="letter-title" id="letterTitle">No letter loaded</div>
+                <div class="letter-info" id="letterInfo"></div>
+            </div>
+
+            <div class="fields-editor" id="fieldsEditor">
+                <!-- Fields will be dynamically generated here -->
+            </div>
+
+            <div class="actions">
+                <button class="btn-primary" onclick="saveChanges()" id="saveBtn">
+                    💾 Save All Changes
+                </button>
+                <button onclick="reloadLetter()">
+                    🔄 Reload (Discard Changes)
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let letters = [];
+        let currentIndex = -1;
+        let currentLetter = null;
+        let hasUnsavedChanges = false;
+
+        async function init() {
+            await loadLetterList();
+            if (letters.length > 0) {
+                currentIndex = 0;
+                await loadLetter(letters[0]);
+            }
+        }
+
+        async function loadLetterList() {
+            try {
+                const files = [];
+                for (let i = 1; i <= 250; i++) {
+                    const num = String(i).padStart(4, '0');
+                    if (await fileExists(`letters/${num}.json`)) {
+                        files.push(num);
+                    }
+                }
+
+                letters = files;
+                const select = document.getElementById('letterSelect');
+                select.innerHTML = '<option value="">Select a letter...</option>';
+
+                letters.forEach((num, index) => {
+                    const option = document.createElement('option');
+                    option.value = index;
+                    option.textContent = `Letter ${num}`;
+                    select.appendChild(option);
+                });
+
+                showStatus(`Found ${letters.length} letters`, 'success', false);
+            } catch (error) {
+                showStatus(`Error loading letter list: ${error.message}`, 'error', false);
+            }
+        }
+
+        async function fileExists(path) {
+            try {
+                const response = await fetch(path, { method: 'HEAD' });
+                return response.ok;
+            } catch {
+                return false;
+            }
+        }
+
+        async function loadSelectedLetter() {
+            const select = document.getElementById('letterSelect');
+            const index = parseInt(select.value);
+
+            if (isNaN(index)) return;
+
+            if (hasUnsavedChanges) {
+                if (!confirm('You have unsaved changes. Discard them?')) {
+                    select.value = currentIndex;
+                    return;
+                }
+            }
+
+            currentIndex = index;
+            await loadLetter(letters[index]);
+        }
+
+        function autoResizeTextarea(textarea) {
+            textarea.style.height = 'auto';
+            textarea.style.height = textarea.scrollHeight + 'px';
+        }
+
+        function createFieldEditor(fieldName, fieldValue, isMetadata = false) {
+            const fieldGroup = document.createElement('div');
+            fieldGroup.className = 'field-group';
+
+            const label = document.createElement('label');
+            label.className = 'field-label';
+            label.textContent = fieldName;
+            fieldGroup.appendChild(label);
+
+            if (Array.isArray(fieldValue)) {
+                const arrayContainer = document.createElement('div');
+                arrayContainer.className = 'field-array';
+                arrayContainer.dataset.fieldName = fieldName;
+                arrayContainer.dataset.isMetadata = isMetadata;
+
+                fieldValue.forEach((item, index) => {
+                    const arrayItem = document.createElement('div');
+                    arrayItem.className = 'array-item';
+
+                    const textarea = document.createElement('textarea');
+                    textarea.className = 'field-textarea';
+                    textarea.value = item;
+                    textarea.dataset.arrayIndex = index;
+                    textarea.addEventListener('input', () => {
+                        hasUnsavedChanges = true;
+                        autoResizeTextarea(textarea);
+                    });
+                    // Defer auto-resize to after DOM insertion
+                    setTimeout(() => autoResizeTextarea(textarea), 0);
+
+                    arrayItem.appendChild(textarea);
+
+                    if (fieldValue.length > 1) {
+                        const removeBtn = document.createElement('button');
+                        removeBtn.className = 'remove-btn';
+                        removeBtn.textContent = '×';
+                        removeBtn.onclick = () => {
+                            arrayItem.remove();
+                            hasUnsavedChanges = true;
+                        };
+                        arrayItem.appendChild(removeBtn);
+                    }
+
+                    arrayContainer.appendChild(arrayItem);
+                });
+
+                fieldGroup.appendChild(arrayContainer);
+            } else if (typeof fieldValue === 'string' && (fieldValue.length > 50 || fieldValue.includes('\n'))) {
+                // Use textarea for long text or text with line breaks
+                const textarea = document.createElement('textarea');
+                textarea.className = 'field-textarea';
+                textarea.value = fieldValue;
+                textarea.dataset.fieldName = fieldName;
+                textarea.dataset.isMetadata = isMetadata;
+                textarea.addEventListener('input', () => {
+                    hasUnsavedChanges = true;
+                    autoResizeTextarea(textarea);
+                });
+                // Defer auto-resize to after DOM insertion
+                setTimeout(() => autoResizeTextarea(textarea), 0);
+                fieldGroup.appendChild(textarea);
+            } else {
+                const input = document.createElement('input');
+                input.className = 'field-input';
+                input.type = typeof fieldValue === 'number' ? 'number' : 'text';
+                input.value = fieldValue;
+                input.dataset.fieldName = fieldName;
+                input.dataset.isMetadata = isMetadata;
+                input.addEventListener('input', () => {
+                    hasUnsavedChanges = true;
+                });
+                fieldGroup.appendChild(input);
+            }
+
+            return fieldGroup;
+        }
+
+        async function loadLetter(letterNum) {
+            try {
+                // Scroll to top when loading new letter
+                window.scrollTo(0, 0);
+
+                const statusEl = document.getElementById('status');
+                statusEl.classList.add('hidden');
+
+                const timestamp = new Date().getTime();
+                const response = await fetch(`letters/${letterNum}.json?t=${timestamp}`, {
+                    cache: 'no-store'
+                });
+                if (!response.ok) throw new Error('Failed to load letter');
+
+                currentLetter = await response.json();
+
+                document.getElementById('letterTitle').textContent =
+                    currentLetter.metadata?.Title?.[0] || `Letter ${letterNum}`;
+
+                // Display all basic info on one line
+                const letterInfo = document.getElementById('letterInfo');
+                letterInfo.innerHTML = `
+                    <span class="info-field"><strong>ID:</strong> ${currentLetter.id}</span>
+                    <span class="info-field"><strong>Added:</strong> ${currentLetter.added || 'N/A'}</span>
+                    <span class="info-field"><strong>Modified:</strong> ${currentLetter.modified || 'N/A'}</span>
+                    <span class="info-field"><strong>Public:</strong> ${currentLetter.public !== undefined ? currentLetter.public : 'N/A'}</span>
+                    <span class="info-field"><strong>Date:</strong> ${currentLetter.metadata?.Date?.[0] || 'N/A'}</span>
+                `;
+
+                // Build the editor
+                const editor = document.getElementById('fieldsEditor');
+                editor.innerHTML = '';
+
+                // Metadata fields (skip Creator and Language)
+                const metaSection = document.createElement('div');
+                const metaTitle = document.createElement('h3');
+                metaTitle.className = 'section-title';
+                metaTitle.textContent = 'Metadata Fields';
+                metaSection.appendChild(metaTitle);
+
+                const skipFields = ['Creator', 'Language'];
+                const dateFields = ['Date', 'LetterDate'];
+                const locationFields = ['Location', 'Destination'];
+                const requiredFields = ['Text', 'Description', 'Date', 'LetterDate', 'Location', 'Destination']; // Always show these fields even if empty
+                let dateFieldsRow = null;
+                let locationFieldsRow = null;
+
+                if (currentLetter.metadata) {
+                    // Ensure required fields exist (create empty if missing)
+                    requiredFields.forEach(field => {
+                        if (!currentLetter.metadata[field]) {
+                            currentLetter.metadata[field] = [''];
+                        }
+                    });
+
+                    Object.keys(currentLetter.metadata).forEach(key => {
+                        if (!skipFields.includes(key)) {
+                            if (dateFields.includes(key)) {
+                                // Create a row for date fields if it doesn't exist
+                                if (!dateFieldsRow) {
+                                    dateFieldsRow = document.createElement('div');
+                                    dateFieldsRow.className = 'field-row';
+                                    metaSection.appendChild(dateFieldsRow);
+                                }
+                                dateFieldsRow.appendChild(createFieldEditor(key, currentLetter.metadata[key], true));
+                            } else if (locationFields.includes(key)) {
+                                // Create a row for location fields if it doesn't exist
+                                if (!locationFieldsRow) {
+                                    locationFieldsRow = document.createElement('div');
+                                    locationFieldsRow.className = 'field-row';
+                                    metaSection.appendChild(locationFieldsRow);
+                                }
+                                locationFieldsRow.appendChild(createFieldEditor(key, currentLetter.metadata[key], true));
+                            } else {
+                                metaSection.appendChild(createFieldEditor(key, currentLetter.metadata[key], true));
+                            }
+                        }
+                    });
+                }
+
+                editor.appendChild(metaSection);
+
+                // Tags
+                if (currentLetter.tags) {
+                    const tagsSection = document.createElement('div');
+                    const tagsTitle = document.createElement('h3');
+                    tagsTitle.className = 'section-title';
+                    tagsTitle.textContent = 'Tags';
+                    tagsSection.appendChild(tagsTitle);
+                    tagsSection.appendChild(createFieldEditor('tags', currentLetter.tags));
+                    editor.appendChild(tagsSection);
+                }
+
+                // Files (read-only display)
+                if (currentLetter.files && currentLetter.files.length > 0) {
+                    const filesSection = document.createElement('div');
+                    const filesTitle = document.createElement('h3');
+                    filesTitle.className = 'section-title';
+                    filesTitle.textContent = 'Files (read-only)';
+                    filesSection.appendChild(filesTitle);
+                    const filesInfo = document.createElement('div');
+                    filesInfo.style.padding = '0.5rem';
+                    filesInfo.style.background = '#f8f9fa';
+                    filesInfo.innerHTML = currentLetter.files.map(f =>
+                        `<strong>${f.original}</strong> (${f.mime_type})`
+                    ).join('<br>');
+                    filesSection.appendChild(filesInfo);
+                    editor.appendChild(filesSection);
+                }
+
+                hasUnsavedChanges = false;
+                updateSelectValue();
+
+            } catch (error) {
+                showStatus(`Error loading letter: ${error.message}`, 'error', false);
+            }
+        }
+
+        function gatherFieldData() {
+            const editor = document.getElementById('fieldsEditor');
+
+            // Update metadata fields (simple inputs/textareas)
+            editor.querySelectorAll('[data-field-name][data-is-metadata="true"]').forEach(field => {
+                const fieldName = field.dataset.fieldName;
+                currentLetter.metadata[fieldName] = field.value;
+            });
+
+            // Update metadata arrays
+            editor.querySelectorAll('.field-array[data-is-metadata="true"]').forEach(arrayContainer => {
+                const fieldName = arrayContainer.dataset.fieldName;
+                const values = Array.from(arrayContainer.querySelectorAll('textarea')).map(ta => ta.value);
+                currentLetter.metadata[fieldName] = values;
+            });
+
+            // Update tags array
+            editor.querySelectorAll('.field-array:not([data-is-metadata="true"])').forEach(arrayContainer => {
+                const fieldName = arrayContainer.dataset.fieldName;
+                const values = Array.from(arrayContainer.querySelectorAll('textarea')).map(ta => ta.value);
+                currentLetter[fieldName] = values;
+            });
+        }
+
+        async function saveChanges() {
+            if (!currentLetter) {
+                showStatus('No letter loaded', 'error', false);
+                return;
+            }
+
+            try {
+                // Gather all field data into currentLetter object
+                gatherFieldData();
+
+                const response = await fetch('save_letter.py', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({
+                        filename: letters[currentIndex] + '.json',
+                        data: currentLetter
+                    })
+                });
+
+                if (!response.ok) throw new Error('Save failed');
+
+                const result = await response.json();
+
+                hasUnsavedChanges = false;
+
+                let message = `✓ Saved: ${result.filename}`;
+                if (result.backup) {
+                    message += ` (Backup: ${result.backup})`;
+                }
+                showStatus(message, 'success', true);
+
+            } catch (error) {
+                showStatus(`Error saving: ${error.message}`, 'error', false);
+            }
+        }
+
+        async function reloadLetter() {
+            if (hasUnsavedChanges && !confirm('Discard unsaved changes?')) return;
+
+            if (currentIndex >= 0) {
+                await loadLetter(letters[currentIndex]);
+            }
+        }
+
+        function previousLetter() {
+            if (currentIndex > 0) {
+                if (hasUnsavedChanges && !confirm('Discard unsaved changes?')) return;
+                currentIndex--;
+                loadLetter(letters[currentIndex]);
+            }
+        }
+
+        function nextLetter() {
+            if (currentIndex < letters.length - 1) {
+                if (hasUnsavedChanges && !confirm('Discard unsaved changes?')) return;
+                currentIndex++;
+                loadLetter(letters[currentIndex]);
+            }
+        }
+
+        function jumpToNumber() {
+            const num = document.getElementById('jumpNumber').value;
+            if (!num) return;
+
+            const paddedNum = String(num).padStart(4, '0');
+            const index = letters.indexOf(paddedNum);
+
+            if (index === -1) {
+                showStatus(`Letter ${paddedNum} not found`, 'error', false);
+                return;
+            }
+
+            if (hasUnsavedChanges && !confirm('Discard unsaved changes?')) return;
+
+            currentIndex = index;
+            loadLetter(letters[index]);
+        }
+
+        function updateSelectValue() {
+            document.getElementById('letterSelect').value = currentIndex;
+        }
+
+        function showStatus(message, type = 'success', persistent = false) {
+            const status = document.getElementById('status');
+            status.textContent = message;
+            status.className = 'status';
+
+            if (type === 'error') {
+                status.classList.add('error');
+            } else if (type === 'warning') {
+                status.classList.add('warning');
+            }
+
+            status.classList.remove('hidden');
+
+            if (!persistent) {
+                setTimeout(() => {
+                    status.classList.add('hidden');
+                }, 5000);
+            }
+        }
+
+        window.addEventListener('beforeunload', (e) => {
+            if (hasUnsavedChanges) {
+                e.preventDefault();
+                e.returnValue = '';
+            }
+        });
+
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'ArrowRight') {
+                e.preventDefault();
+                nextLetter();
+            } else if (e.key === 'ArrowLeft') {
+                e.preventDefault();
+                previousLetter();
+            }
+        });
+
+        init();
+    </script>
+</body>
+</html>

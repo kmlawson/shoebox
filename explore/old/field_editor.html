@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Field Editor - Edit Description & Letter Text</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            background: #f5f5f5;
+            color: #333;
+        }
+
+        header {
+            background: #3d4b79;
+            color: white;
+            padding: 1rem 2rem;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        header h1 {
+            font-size: 1.8rem;
+            margin-bottom: 0.3rem;
+        }
+
+        .controls {
+            background: white;
+            padding: 1rem 2rem;
+            border-bottom: 2px solid #ddd;
+            display: flex;
+            gap: 1rem;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .control-group {
+            display: flex;
+            gap: 0.5rem;
+            align-items: center;
+        }
+
+        label {
+            font-weight: bold;
+            color: #3d4b79;
+        }
+
+        select, button, input {
+            padding: 0.5rem 1rem;
+            border: 1px solid #3d4b79;
+            background: white;
+            color: #3d4b79;
+            cursor: pointer;
+            font-size: 1rem;
+            border-radius: 3px;
+        }
+
+        button:hover {
+            background: #3d4b79;
+            color: white;
+        }
+
+        button:disabled {
+            background: #ccc;
+            border-color: #999;
+            color: #666;
+            cursor: not-allowed;
+        }
+
+        .status {
+            padding: 1rem 2rem;
+            background: #d4edda;
+            border-left: 4px solid #28a745;
+            margin: 0;
+        }
+
+        .status.error {
+            background: #f8d7da;
+            border-left-color: #dc3545;
+        }
+
+        .status.warning {
+            background: #fff3cd;
+            border-left-color: #ffc107;
+        }
+
+        .status.hidden {
+            display: none;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 2rem auto;
+            padding: 0 2rem;
+        }
+
+        .letter-card {
+            background: white;
+            border-radius: 5px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+
+        .letter-header {
+            background: #3d4b79;
+            color: white;
+            padding: 1rem 1.5rem;
+        }
+
+        .letter-title {
+            font-size: 1.3rem;
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+        }
+
+        .letter-info {
+            font-size: 0.9rem;
+            opacity: 0.9;
+        }
+
+        .metadata {
+            padding: 1rem 1.5rem;
+            background: #f8f9fa;
+            border-bottom: 2px solid #dee2e6;
+            font-size: 0.9rem;
+        }
+
+        .text-editor {
+            padding: 1.5rem;
+            position: relative;
+        }
+
+        .text-section {
+            margin-bottom: 1.5rem;
+        }
+
+        .text-section h4 {
+            color: #3d4b79;
+            margin-bottom: 0.5rem;
+            font-size: 1rem;
+        }
+
+        .text-section textarea {
+            width: 100%;
+            min-height: 200px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: 1.05rem;
+            line-height: 1.8;
+            padding: 1rem;
+            border: 2px solid #ddd;
+            border-radius: 3px;
+            resize: vertical;
+            white-space: pre-wrap;
+            word-wrap: break-word;
+            background: #fffef8;
+        }
+
+        .text-section textarea:focus {
+            outline: none;
+            border-color: #3d4b79;
+            background: white;
+        }
+
+        .actions {
+            padding: 1.5rem;
+            background: #f8f9fa;
+            border-top: 2px solid #dee2e6;
+            display: flex;
+            gap: 1rem;
+            justify-content: flex-start;
+            align-items: center;
+        }
+
+        .btn-primary {
+            background: #28a745;
+            border-color: #28a745;
+            color: white;
+            font-weight: bold;
+        }
+
+        .btn-primary:hover {
+            background: #218838;
+            border-color: #218838;
+        }
+
+        .edit-note {
+            background: #fff3cd;
+            border-left: 4px solid #ffc107;
+            padding: 1rem 1.5rem;
+            margin: 0;
+            font-size: 0.9rem;
+            color: #856404;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>📝 Field Editor</h1>
+        <p>Edit description and letter text fields • Arrow keys to navigate</p>
+    </header>
+
+    <div class="controls">
+        <div class="control-group">
+            <label for="letterSelect">Select Letter:</label>
+            <select id="letterSelect" onchange="loadSelectedLetter()">
+                <option value="">Loading...</option>
+            </select>
+        </div>
+
+        <div class="control-group">
+            <button onclick="previousLetter()">← Previous</button>
+            <button onclick="nextLetter()">Next →</button>
+        </div>
+
+        <div class="control-group">
+            <button onclick="jumpToNumber()">Jump to #:</button>
+            <input type="number" id="jumpNumber" min="1" max="250" style="width: 80px;">
+        </div>
+    </div>
+
+    <div id="status" class="status hidden"></div>
+
+    <div class="edit-note">
+        ⚠️ Edit fields carefully - content is saved exactly as entered (including any HTML markup)
+    </div>
+
+    <div class="container">
+        <div class="letter-card">
+            <div class="letter-header">
+                <div class="letter-title" id="letterTitle">No letter loaded</div>
+                <div class="letter-info" id="letterInfo"></div>
+            </div>
+
+            <div class="metadata" id="metadata"></div>
+
+            <div class="text-editor">
+                <div class="text-section">
+                    <h4>Description</h4>
+                    <textarea id="descriptionText" placeholder="Letter description will appear here..."></textarea>
+                </div>
+                <div class="text-section">
+                    <h4>Letter Text</h4>
+                    <textarea id="letterText" placeholder="Letter text will appear here..."></textarea>
+                </div>
+            </div>
+
+            <div class="actions">
+                <button class="btn-primary" onclick="saveFields()" id="saveBtn">
+                    💾 Save Changes
+                </button>
+                <button onclick="reloadLetter()">
+                    🔄 Reload (Discard Changes)
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let letters = [];
+        let currentIndex = -1;
+        let currentLetter = null;
+        let hasUnsavedChanges = false;
+
+        async function init() {
+            await loadLetterList();
+            // Auto-load the first letter
+            if (letters.length > 0) {
+                currentIndex = 0;
+                await loadLetter(letters[0]);
+            }
+        }
+
+        async function loadLetterList() {
+            try {
+                const files = [];
+                // Try to load letters 0001 through 0250
+                for (let i = 1; i <= 250; i++) {
+                    const num = String(i).padStart(4, '0');
+                    if (await fileExists(`letters/${num}.json`)) {
+                        files.push(num);
+                    }
+                }
+
+                letters = files;
+                const select = document.getElementById('letterSelect');
+                select.innerHTML = '<option value="">Select a letter...</option>';
+
+                letters.forEach((num, index) => {
+                    const option = document.createElement('option');
+                    option.value = index;
+                    option.textContent = `Letter ${num}`;
+                    select.appendChild(option);
+                });
+
+                showStatus(`Found ${letters.length} letters`, 'success', false);
+            } catch (error) {
+                showStatus(`Error loading letter list: ${error.message}`, 'error', false);
+            }
+        }
+
+        async function fileExists(path) {
+            try {
+                const response = await fetch(path, { method: 'HEAD' });
+                return response.ok;
+            } catch {
+                return false;
+            }
+        }
+
+        async function loadSelectedLetter() {
+            const select = document.getElementById('letterSelect');
+            const index = parseInt(select.value);
+
+            if (isNaN(index)) return;
+
+            if (hasUnsavedChanges) {
+                if (!confirm('You have unsaved changes. Discard them?')) {
+                    select.value = currentIndex;
+                    return;
+                }
+            }
+
+            currentIndex = index;
+            await loadLetter(letters[index]);
+        }
+
+        async function loadLetter(letterNum) {
+            try {
+                // Clear previous saved status when loading new letter
+                const statusEl = document.getElementById('status');
+                statusEl.classList.add('hidden');
+
+                // Add timestamp to prevent caching
+                const timestamp = new Date().getTime();
+                const response = await fetch(`letters/${letterNum}.json?t=${timestamp}`, {
+                    cache: 'no-store'
+                });
+                if (!response.ok) throw new Error('Failed to load letter');
+
+                currentLetter = await response.json();
+
+                // Display letter info
+                document.getElementById('letterTitle').textContent =
+                    currentLetter.metadata.Title ? currentLetter.metadata.Title[0] : `Letter ${letterNum}`;
+
+                document.getElementById('letterInfo').textContent =
+                    `ID: ${currentLetter.id} | Date: ${currentLetter.metadata.Date ? currentLetter.metadata.Date[0] : 'N/A'}`;
+
+                // Display metadata
+                const metadata = document.getElementById('metadata');
+                metadata.innerHTML = `
+                    <strong>Creator:</strong> ${currentLetter.metadata.Creator ? currentLetter.metadata.Creator.join(', ') : 'N/A'}<br>
+                    <strong>Language:</strong> ${currentLetter.metadata.Language ? currentLetter.metadata.Language[0] : 'N/A'}<br>
+                    <strong>Tags:</strong> ${currentLetter.tags ? currentLetter.tags.join(', ') : 'None'}
+                `;
+
+                // Load fields with raw content (no formatting or stripping)
+                const rawDescription = currentLetter.metadata.Description ? currentLetter.metadata.Description[0] : '';
+                const rawText = currentLetter.metadata.Text ? currentLetter.metadata.Text[0] : '';
+
+                document.getElementById('descriptionText').value = rawDescription;
+                document.getElementById('letterText').value = rawText;
+
+                hasUnsavedChanges = false;
+                updateSelectValue();
+
+                // Set focus to description field for editing
+                setTimeout(() => {
+                    document.getElementById('descriptionText').focus();
+                }, 50);
+
+            } catch (error) {
+                showStatus(`Error loading letter: ${error.message}`, 'error', false);
+            }
+        }
+
+        async function saveFields() {
+            if (!currentLetter) {
+                showStatus('No letter loaded', 'error', false);
+                return;
+            }
+
+            try {
+                const description = document.getElementById('descriptionText').value;
+                const text = document.getElementById('letterText').value;
+
+                // Save raw content exactly as entered
+                currentLetter.metadata.Description[0] = description;
+                currentLetter.metadata.Text[0] = text;
+
+                const response = await fetch('save_letter.py', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({
+                        filename: letters[currentIndex] + '.json',
+                        data: currentLetter
+                    })
+                });
+
+                if (!response.ok) throw new Error('Save failed');
+
+                const result = await response.json();
+
+                hasUnsavedChanges = false;
+
+                // Show saved message that stays until navigation
+                showStatus(`✓ Changes saved: ${result.filename}`, 'success', true);
+
+            } catch (error) {
+                showStatus(`Error saving changes: ${error.message}`, 'error', false);
+            }
+        }
+
+        async function reloadLetter() {
+            if (hasUnsavedChanges && !confirm('Discard unsaved changes?')) return;
+
+            if (currentIndex >= 0) {
+                await loadLetter(letters[currentIndex]);
+            }
+        }
+
+        function previousLetter() {
+            if (currentIndex > 0) {
+                if (hasUnsavedChanges && !confirm('Discard unsaved changes?')) return;
+                currentIndex--;
+                loadLetter(letters[currentIndex]);
+            }
+        }
+
+        function nextLetter() {
+            if (currentIndex < letters.length - 1) {
+                if (hasUnsavedChanges && !confirm('Discard unsaved changes?')) return;
+                currentIndex++;
+                loadLetter(letters[currentIndex]);
+            }
+        }
+
+        function jumpToNumber() {
+            const num = document.getElementById('jumpNumber').value;
+            if (!num) return;
+
+            const paddedNum = String(num).padStart(4, '0');
+            const index = letters.indexOf(paddedNum);
+
+            if (index === -1) {
+                showStatus(`Letter ${paddedNum} not found`, 'error', false);
+                return;
+            }
+
+            if (hasUnsavedChanges && !confirm('Discard unsaved changes?')) return;
+
+            currentIndex = index;
+            loadLetter(letters[index]);
+        }
+
+        function updateSelectValue() {
+            document.getElementById('letterSelect').value = currentIndex;
+        }
+
+        function showStatus(message, type = 'success', persistent = false) {
+            const status = document.getElementById('status');
+            status.textContent = message;
+            status.className = 'status';
+
+            if (type === 'error') {
+                status.classList.add('error');
+            } else if (type === 'warning') {
+                status.classList.add('warning');
+            }
+
+            status.classList.remove('hidden');
+
+            // Only auto-hide if not persistent
+            if (!persistent) {
+                setTimeout(() => {
+                    status.classList.add('hidden');
+                }, 5000);
+            }
+        }
+
+        // Track changes in textareas
+        document.addEventListener('DOMContentLoaded', () => {
+            const descriptionText = document.getElementById('descriptionText');
+            const letterText = document.getElementById('letterText');
+
+            descriptionText.addEventListener('input', () => {
+                hasUnsavedChanges = true;
+            });
+
+            letterText.addEventListener('input', () => {
+                hasUnsavedChanges = true;
+            });
+        });
+
+        // Warn before leaving with unsaved changes
+        window.addEventListener('beforeunload', (e) => {
+            if (hasUnsavedChanges) {
+                e.preventDefault();
+                e.returnValue = '';
+            }
+        });
+
+        // Keyboard shortcuts for navigation
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'ArrowRight') {
+                e.preventDefault();
+                nextLetter();
+            } else if (e.key === 'ArrowLeft') {
+                e.preventDefault();
+                previousLetter();
+            }
+        });
+
+        init();
+    </script>
+</body>
+</html>

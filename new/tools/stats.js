@@ -285,6 +285,10 @@ function initMobileSidebar() {
       if (toggleText) {
         toggleText.textContent = 'Statistics Options';
       }
+    } else if (!nowMobile && isMobile) {
+      // Switched to desktop - close sidebar if open
+      sidebar.classList.remove('open');
+      sidebarToggle.setAttribute('aria-expanded', 'false');
     }
   });
 }
@@ -292,8 +296,22 @@ function initMobileSidebar() {
 function switchAnalysisType(type) {
   currentAnalysis = type;
 
-  // Scroll to top when switching analysis types
-  window.scrollTo({ top: 0, behavior: 'smooth' });
+  // On mobile, close the sidebar when switching analysis types
+  const isMobile = window.innerWidth <= 768;
+  if (isMobile) {
+    const sidebar = document.getElementById('sidebar');
+    const sidebarToggle = document.getElementById('sidebar-toggle');
+    sidebar.classList.remove('open');
+    sidebarToggle.setAttribute('aria-expanded', 'false');
+
+    const toggleText = sidebarToggle.querySelector('.toggle-text');
+    if (toggleText) {
+      toggleText.textContent = 'Statistics Options';
+    }
+  }
+
+  // Scroll to top when switching analysis types (instant on mobile to prevent jumping)
+  window.scrollTo({ top: 0, behavior: isMobile ? 'instant' : 'smooth' });
 
   // Update button active states
   const analysisButtons = document.querySelectorAll('[data-analysis]');
@@ -1739,7 +1757,51 @@ function displayPlacesCloud(places, totalPlaces) {
         const searchUrl = `../index.html?search=${encodeURIComponent(d.text)}`;
         window.open(searchUrl, '_blank');
       });
+
+    // Add table below word cloud
+    addPlacesTable(places);
   }
+}
+
+// Add table showing places with frequencies
+function addPlacesTable(places) {
+  const container = document.getElementById('places-container');
+
+  // Create table container div
+  const tableContainer = document.createElement('div');
+  tableContainer.style.marginTop = '30px';
+  tableContainer.style.overflowX = 'auto';
+
+  // Build table HTML
+  let tableHTML = `
+    <table class="stats-table">
+      <thead>
+        <tr>
+          <th style="text-align: left;">Rank</th>
+          <th style="text-align: left;">Place</th>
+          <th style="text-align: right;">Mentions</th>
+        </tr>
+      </thead>
+      <tbody>
+  `;
+
+  places.forEach(([place, count], index) => {
+    tableHTML += `
+      <tr style="cursor: pointer;" onclick="window.open('../index.html?search=${encodeURIComponent(place)}', '_blank')">
+        <td>${index + 1}</td>
+        <td><strong>${place}</strong></td>
+        <td style="text-align: right;">${count}</td>
+      </tr>
+    `;
+  });
+
+  tableHTML += `
+      </tbody>
+    </table>
+  `;
+
+  tableContainer.innerHTML = tableHTML;
+  container.appendChild(tableContainer);
 }
 
 // Calculate corpus-wide statistics

@@ -130,6 +130,11 @@ class LettersApp {
       activeFiltersList: document.getElementById('active-filters-list'),
       clearFilters: document.getElementById('clear-filters'),
 
+      // Mobile filter options
+      mobileFilterOptions: document.getElementById('mobile-filter-options'),
+      mobileFilterOptionsChips: document.getElementById('mobile-filter-options-chips'),
+      mobileFilterHint: document.getElementById('mobile-filter-hint'),
+
       // Controls
       languageToggle: document.querySelectorAll('.language-toggle button'),
       darkModeToggle: document.getElementById('dark-mode-toggle'),
@@ -411,10 +416,26 @@ class LettersApp {
       'destinations': 'Click to select one destination'
     };
 
+    // Check if we're on mobile
+    const isMobile = window.innerWidth <= 768;
+
+    // If switching filter types on mobile, hide the previous one first
+    if (isMobile && this.currentOpenFilterType && this.currentOpenFilterType !== filterType) {
+      this.elements.mobileFilterOptions.hidden = true;
+    }
+
     this.currentOpenFilterType = filterType; // Track which panel is open
-    this.elements.filterOptionsTitle.textContent = titles[filterType];
-    this.elements.filterHint.textContent = hints[filterType];
-    this.elements.filterOptions.hidden = false;
+
+    if (isMobile) {
+      // Use mobile inline filter options
+      this.elements.mobileFilterHint.textContent = hints[filterType];
+      this.elements.mobileFilterOptions.hidden = false;
+    } else {
+      // Use desktop filter options
+      this.elements.filterOptionsTitle.textContent = titles[filterType];
+      this.elements.filterHint.textContent = hints[filterType];
+      this.elements.filterOptions.hidden = false;
+    }
 
     // Get items for this filter type
     const items = this.metadata[filterType] || [];
@@ -426,20 +447,23 @@ class LettersApp {
 
     // Special rendering for years - show bar chart
     if (filterType === 'years') {
-      this.renderYearChart(items);
+      this.renderYearChart(items, isMobile);
       return;
     }
 
+    // Determine which container to use
+    const chipsContainer = isMobile ? this.elements.mobileFilterOptionsChips : this.elements.filterOptionsChips;
+
     // Render chips for other filter types
     const isAndFilter = ['tags', 'creators', 'locations', 'destinations'].includes(filterType);
-    this.elements.filterOptionsChips.innerHTML = items.map(item => {
+    chipsContainer.innerHTML = items.map(item => {
       const isActive = this.currentFilters[filterType].has(item);
       const activeClass = isActive ? (isAndFilter ? 'active-and' : 'active') : '';
       return `<span class="filter-chip ${activeClass}" data-filter="${filterType}" data-value="${this.escapeHtml(item)}">${this.escapeHtml(item)}</span>`;
     }).join('');
 
     // Add click handlers
-    this.elements.filterOptionsChips.querySelectorAll('.filter-chip').forEach(chip => {
+    chipsContainer.querySelectorAll('.filter-chip').forEach(chip => {
       chip.addEventListener('click', (e) => {
         const filterType = chip.dataset.filter;
         const value = chip.dataset.value;
@@ -474,7 +498,10 @@ class LettersApp {
   /**
    * Render year chart visualization
    */
-  renderYearChart(years) {
+  renderYearChart(years, isMobile = false) {
+    // Determine which container to use
+    const chipsContainer = isMobile ? this.elements.mobileFilterOptionsChips : this.elements.filterOptionsChips;
+
     // Count letters per year
     const yearCounts = {};
     years.forEach(year => {
@@ -494,7 +521,7 @@ class LettersApp {
     // Get sorted years (excluding unknowns)
     const sortedYears = Object.keys(yearCounts).sort();
     if (sortedYears.length === 0) {
-      this.elements.filterOptionsChips.innerHTML = '<p>No year data available</p>';
+      chipsContainer.innerHTML = '<p>No year data available</p>';
       return;
     }
 
@@ -503,7 +530,7 @@ class LettersApp {
     const yearRange = maxYear - minYear + 1;
 
     // Determine bar grouping based on available width
-    const containerWidth = this.elements.filterOptionsChips.offsetWidth || 800;
+    const containerWidth = chipsContainer.offsetWidth || 800;
     const maxBars = Math.floor(containerWidth / 40); // Minimum 40px per bar
     const yearsPerBar = Math.max(1, Math.ceil(yearRange / maxBars));
 
@@ -561,10 +588,10 @@ class LettersApp {
       </div>
     `;
 
-    this.elements.filterOptionsChips.innerHTML = chartHTML;
+    chipsContainer.innerHTML = chartHTML;
 
     // Add click handlers
-    this.elements.filterOptionsChips.querySelectorAll('.year-bar').forEach(bar => {
+    chipsContainer.querySelectorAll('.year-bar').forEach(bar => {
       bar.addEventListener('click', (e) => {
         const years = bar.dataset.years.split(',');
 
@@ -599,6 +626,7 @@ class LettersApp {
    */
   hideFilterOptions() {
     this.elements.filterOptions.hidden = true;
+    this.elements.mobileFilterOptions.hidden = true;
     this.elements.filterButtons.forEach(btn => btn.classList.remove('active'));
     this.currentOpenFilterType = null; // Clear tracked filter panel
   }
@@ -957,6 +985,18 @@ class LettersApp {
    * Apply current filters to letters
    */
   applyFilters() {
+    // On mobile, close the sidebar when applying filters
+    const isMobile = window.innerWidth <= 768;
+    if (isMobile && this.elements.sidebar && this.elements.sidebar.classList.contains('open')) {
+      this.elements.sidebar.classList.remove('open');
+      this.elements.sidebarToggle.setAttribute('aria-expanded', 'false');
+
+      const toggleText = this.elements.sidebarToggle.querySelector('.toggle-text');
+      if (toggleText) {
+        toggleText.textContent = 'Filters & Search';
+      }
+    }
+
     this.filteredLetters = this.letters.filter(letter => {
       // Filter by specific letter IDs if set
       if (this.currentFilters.letterIds.size > 0) {
@@ -1935,6 +1975,14 @@ ${tfidfHtml}`;
         if (toggleText) {
           toggleText.textContent = 'Filters & Search';
         }
+      } else if (!nowMobile && isMobile) {
+        // Switched to desktop - hide mobile filter options
+        if (this.elements.mobileFilterOptions) {
+          this.elements.mobileFilterOptions.hidden = true;
+        }
+        // Also close sidebar if it's open
+        this.elements.sidebar.classList.remove('open');
+        this.elements.sidebarToggle.setAttribute('aria-expanded', 'false');
       }
     });
   }

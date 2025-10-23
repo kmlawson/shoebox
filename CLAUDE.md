@@ -452,3 +452,4 @@ Set via Apache, environment variable, or PHP-FPM config.
 
 For deployment details, see `SETUP.md`
 For security audit, see `SECURITY_AUDIT_SUMMARY.md`
+- never commit and push without explicit user permission

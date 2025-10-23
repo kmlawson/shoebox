@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Description Splitter - Split Norwegian/English</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            background: #f5f5f5;
+            color: #333;
+        }
+
+        header {
+            background: #3d4b79;
+            color: white;
+            padding: 1rem 2rem;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        header h1 {
+            font-size: 1.8rem;
+            margin-bottom: 0.3rem;
+        }
+
+        .controls {
+            background: white;
+            padding: 1rem 2rem;
+            border-bottom: 2px solid #ddd;
+            display: flex;
+            gap: 1rem;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .control-group {
+            display: flex;
+            gap: 0.5rem;
+            align-items: center;
+        }
+
+        label {
+            font-weight: bold;
+            color: #3d4b79;
+        }
+
+        select, button, input {
+            padding: 0.5rem 1rem;
+            border: 1px solid #3d4b79;
+            background: white;
+            color: #3d4b79;
+            cursor: pointer;
+            font-size: 1rem;
+            border-radius: 3px;
+        }
+
+        button:hover {
+            background: #3d4b79;
+            color: white;
+        }
+
+        button:disabled {
+            background: #ccc;
+            border-color: #999;
+            color: #666;
+            cursor: not-allowed;
+        }
+
+        .status {
+            padding: 1rem 2rem;
+            background: #d4edda;
+            border-left: 4px solid #28a745;
+            margin: 0;
+        }
+
+        .status.error {
+            background: #f8d7da;
+            border-left-color: #dc3545;
+        }
+
+        .status.warning {
+            background: #fff3cd;
+            border-left-color: #ffc107;
+        }
+
+        .status.hidden {
+            display: none;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 2rem auto;
+            padding: 0 2rem;
+        }
+
+        .letter-card {
+            background: white;
+            border-radius: 5px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+
+        .letter-header {
+            background: #3d4b79;
+            color: white;
+            padding: 1rem 1.5rem;
+        }
+
+        .letter-title {
+            font-size: 1.3rem;
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+        }
+
+        .letter-info {
+            font-size: 0.9rem;
+            opacity: 0.9;
+        }
+
+        .metadata {
+            padding: 1rem 1.5rem;
+            background: #f8f9fa;
+            border-bottom: 2px solid #dee2e6;
+            font-size: 0.9rem;
+        }
+
+        .text-editor {
+            padding: 1.5rem;
+            position: relative;
+        }
+
+        #descriptionText {
+            width: 100%;
+            min-height: 300px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: 1.05rem;
+            line-height: 1.8;
+            padding: 1rem;
+            border: 2px solid #ddd;
+            border-radius: 3px;
+            resize: none;
+            white-space: pre-wrap;
+            word-wrap: break-word;
+            cursor: crosshair;
+            background: #fffef8;
+            overflow: hidden;
+        }
+
+        #descriptionText:focus {
+            outline: none;
+            border-color: #3d4b79;
+        }
+
+        .actions {
+            padding: 1.5rem;
+            background: #f8f9fa;
+            border-top: 2px solid #dee2e6;
+            display: flex;
+            gap: 1rem;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .actions-left {
+            display: flex;
+            gap: 1rem;
+        }
+
+        .btn-primary {
+            background: #28a745;
+            border-color: #28a745;
+            color: white;
+            font-weight: bold;
+        }
+
+        .btn-primary:hover {
+            background: #218838;
+            border-color: #218838;
+        }
+
+        .btn-danger {
+            background: #dc3545;
+            border-color: #dc3545;
+            color: white;
+        }
+
+        .btn-danger:hover {
+            background: #c82333;
+            border-color: #c82333;
+        }
+
+        .marker-count {
+            font-weight: bold;
+            color: #3d4b79;
+            padding: 0.5rem 1rem;
+            background: #e7f3ff;
+            border-radius: 3px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>✂️ Description Splitter Tool</h1>
+        <p>Click anywhere in the description to insert split markers • Auto-saves instantly</p>
+    </header>
+
+    <div class="controls">
+        <div class="control-group">
+            <label for="letterSelect">Select Letter:</label>
+            <select id="letterSelect" onchange="loadSelectedLetter()">
+                <option value="">Loading...</option>
+            </select>
+        </div>
+
+        <div class="control-group">
+            <button onclick="previousLetter()">← Previous</button>
+            <button onclick="nextLetter()">Next →</button>
+        </div>
+
+        <div class="control-group">
+            <button onclick="jumpToNumber()">Jump to #:</button>
+            <input type="number" id="jumpNumber" min="1" max="250" style="width: 80px;">
+        </div>
+    </div>
+
+    <div id="status" class="status hidden"></div>
+
+    <div class="container">
+        <div class="letter-card">
+            <div class="letter-header">
+                <div class="letter-title" id="letterTitle">No letter loaded</div>
+                <div class="letter-info" id="letterInfo"></div>
+            </div>
+
+            <div class="metadata" id="metadata"></div>
+
+            <div class="text-editor">
+                <textarea id="descriptionText" placeholder="Select a letter to begin editing..."></textarea>
+            </div>
+
+            <div class="actions">
+                <div class="actions-left">
+                    <button class="btn-primary" onclick="insertMarker()" id="insertBtn">
+                        ✂️ Insert Split Marker at Cursor
+                    </button>
+                    <button onclick="removeLastMarker()">
+                        ↶ Remove Last Marker
+                    </button>
+                    <button onclick="clearAllMarkers()" class="btn-danger">
+                        🗑️ Clear All Markers
+                    </button>
+                </div>
+                <div class="marker-count" id="markerCount">Markers: 0</div>
+            </div>
+
+            <div class="actions">
+                <div class="actions-left">
+                    <button class="btn-primary" onclick="saveLetter()" id="saveBtn" disabled>
+                        💾 Save Description
+                    </button>
+                    <button onclick="reloadLetter()">
+                        🔄 Reload (Discard Changes)
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const SPLIT_MARKER = '<-SPLITDESC->';
+        let letters = [];
+        let currentIndex = -1;
+        let currentLetter = null;
+        let hasUnsavedChanges = false;
+
+        async function init() {
+            await loadLetterList();
+            // Auto-load the first letter
+            if (letters.length > 0) {
+                currentIndex = 0;
+                await loadLetter(letters[0]);
+            }
+            updateMarkerCount();
+        }
+
+        async function loadLetterList() {
+            try {
+                const files = [];
+                // Try to load letters 0001 through 0250
+                for (let i = 1; i <= 250; i++) {
+                    const num = String(i).padStart(4, '0');
+                    if (await fileExists(`letters/${num}.json`)) {
+                        files.push(num);
+                    }
+                }
+
+                letters = files;
+                const select = document.getElementById('letterSelect');
+                select.innerHTML = '<option value="">Select a letter...</option>';
+
+                letters.forEach((num, index) => {
+                    const option = document.createElement('option');
+                    option.value = index;
+                    option.textContent = `Letter ${num}`;
+                    select.appendChild(option);
+                });
+
+                showStatus(`Found ${letters.length} letters`, 'success');
+            } catch (error) {
+                showStatus(`Error loading letter list: ${error.message}`, 'error');
+            }
+        }
+
+        async function fileExists(path) {
+            try {
+                const response = await fetch(path, { method: 'HEAD' });
+                return response.ok;
+            } catch {
+                return false;
+            }
+        }
+
+        async function loadSelectedLetter() {
+            const select = document.getElementById('letterSelect');
+            const index = parseInt(select.value);
+
+            if (isNaN(index)) return;
+
+            if (hasUnsavedChanges) {
+                if (!confirm('You have unsaved changes. Discard them?')) {
+                    select.value = currentIndex;
+                    return;
+                }
+            }
+
+            currentIndex = index;
+            await loadLetter(letters[index]);
+        }
+
+        function formatDescriptionWithBreaks(text) {
+            if (!text) return '';
+
+            // First, protect any existing SPLITDESC markers
+            const PROTECTED_MARKER = '___PROTECTED_SPLITDESC_MARKER___';
+            text = text.replaceAll('\n\n' + SPLIT_MARKER + '\n\n', PROTECTED_MARKER);
+            text = text.replaceAll(SPLIT_MARKER, PROTECTED_MARKER);
+
+            // Add double line breaks after sentence-ending punctuation
+            // Look for period, exclamation, or question mark followed by space and capital letter
+            let formatted = text.replace(/([.!?])\s+([A-Z])/g, '$1\n\n$2');
+
+            // Also handle period followed by parenthetical note
+            formatted = formatted.replace(/([.!?])\s+(\()/g, '$1\n\n$2');
+
+            // Restore the SPLITDESC markers
+            formatted = formatted.replaceAll(PROTECTED_MARKER, '\n\n' + SPLIT_MARKER + '\n\n');
+
+            return formatted;
+        }
+
+        function removeFormattingBreaks(text) {
+            if (!text) return '';
+
+            // First, protect the SPLITDESC marker by replacing it temporarily
+            const PROTECTED_MARKER = '___PROTECTED_SPLITDESC_MARKER___';
+            text = text.replaceAll('\n\n' + SPLIT_MARKER + '\n\n', PROTECTED_MARKER);
+            text = text.replaceAll(SPLIT_MARKER, PROTECTED_MARKER);
+
+            // Remove the formatting line breaks we added
+            // Reverse the sentence break formatting
+            text = text.replace(/([.!?])\n\n([A-Z])/g, '$1  $2');
+            text = text.replace(/([.!?])\n\n(\()/g, '$1  $2');
+
+            // Restore the SPLITDESC markers
+            text = text.replaceAll(PROTECTED_MARKER, '\n\n' + SPLIT_MARKER + '\n\n');
+
+            return text;
+        }
+
+        function autoResizeTextarea() {
+            const textarea = document.getElementById('descriptionText');
+            // Reset height to auto to get the correct scrollHeight
+            textarea.style.height = 'auto';
+            // Set height to scrollHeight to show all content
+            textarea.style.height = textarea.scrollHeight + 'px';
+        }
+
+        async function loadLetter(letterNum) {
+            try {
+                // Add timestamp to prevent caching - always get fresh file
+                const timestamp = new Date().getTime();
+                const response = await fetch(`letters/${letterNum}.json?t=${timestamp}`, {
+                    cache: 'no-store'
+                });
+                if (!response.ok) throw new Error('Failed to load letter');
+
+                currentLetter = await response.json();
+
+                // Display letter info
+                document.getElementById('letterTitle').textContent =
+                    currentLetter.metadata.Title ? currentLetter.metadata.Title[0] : `Letter ${letterNum}`;
+
+                document.getElementById('letterInfo').textContent =
+                    `ID: ${currentLetter.id} | Date: ${currentLetter.metadata.Date ? currentLetter.metadata.Date[0] : 'N/A'}`;
+
+                // Display metadata
+                const metadata = document.getElementById('metadata');
+                metadata.innerHTML = `
+                    <strong>Creator:</strong> ${currentLetter.metadata.Creator ? currentLetter.metadata.Creator.join(', ') : 'N/A'}<br>
+                    <strong>Language:</strong> ${currentLetter.metadata.Language ? currentLetter.metadata.Language[0] : 'N/A'}<br>
+                    <strong>Tags:</strong> ${currentLetter.tags ? currentLetter.tags.join(', ') : 'None'}
+                `;
+
+                // Load description into editor with formatted breaks
+                const rawDescription = currentLetter.metadata.Description ? currentLetter.metadata.Description[0] : '';
+                const formattedDescription = formatDescriptionWithBreaks(rawDescription);
+                document.getElementById('descriptionText').value = formattedDescription;
+
+                // Auto-resize textarea to fit content
+                setTimeout(autoResizeTextarea, 10);
+
+                hasUnsavedChanges = false;
+                document.getElementById('saveBtn').disabled = true;
+                updateMarkerCount();
+                updateSelectValue();
+
+                showStatus(`Loaded letter ${letterNum}`, 'success');
+            } catch (error) {
+                showStatus(`Error loading letter: ${error.message}`, 'error');
+            }
+        }
+
+        function insertMarker() {
+            const textarea = document.getElementById('descriptionText');
+            const start = textarea.selectionStart;
+            const end = textarea.selectionEnd;
+            const text = textarea.value;
+
+            // Insert marker at cursor position
+            const before = text.substring(0, start);
+            const after = text.substring(end);
+
+            textarea.value = before + '\n\n' + SPLIT_MARKER + '\n\n' + after;
+
+            // Move cursor after the marker
+            const newPos = start + SPLIT_MARKER.length + 4;
+            textarea.selectionStart = newPos;
+            textarea.selectionEnd = newPos;
+            textarea.focus();
+
+            // Auto-resize after inserting marker
+            autoResizeTextarea();
+
+            hasUnsavedChanges = true;
+            document.getElementById('saveBtn').disabled = false;
+            updateMarkerCount();
+
+            showStatus('Split marker inserted', 'success');
+        }
+
+        function removeLastMarker() {
+            const textarea = document.getElementById('descriptionText');
+            const text = textarea.value;
+            const markerPattern = '\n\n' + SPLIT_MARKER + '\n\n';
+            const lastIndex = text.lastIndexOf(markerPattern);
+
+            if (lastIndex === -1) {
+                // Try without the newlines
+                const simpleIndex = text.lastIndexOf(SPLIT_MARKER);
+                if (simpleIndex === -1) {
+                    showStatus('No markers to remove', 'warning');
+                    return;
+                }
+                textarea.value = text.substring(0, simpleIndex) + text.substring(simpleIndex + SPLIT_MARKER.length);
+            } else {
+                textarea.value = text.substring(0, lastIndex) + text.substring(lastIndex + markerPattern.length);
+            }
+
+            autoResizeTextarea();
+            hasUnsavedChanges = true;
+            document.getElementById('saveBtn').disabled = false;
+            updateMarkerCount();
+
+            showStatus('Last marker removed', 'success');
+        }
+
+        function clearAllMarkers() {
+            if (!confirm('Remove all split markers from this description?')) return;
+
+            const textarea = document.getElementById('descriptionText');
+            textarea.value = textarea.value.replaceAll('\n\n' + SPLIT_MARKER + '\n\n', ' ').replaceAll(SPLIT_MARKER, ' ');
+            autoResizeTextarea();
+
+            hasUnsavedChanges = true;
+            document.getElementById('saveBtn').disabled = false;
+            updateMarkerCount();
+
+            showStatus('All markers cleared', 'success');
+        }
+
+        function updateMarkerCount() {
+            const textarea = document.getElementById('descriptionText');
+            const text = textarea.value;
+            const count = (text.match(new RegExp(SPLIT_MARKER.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'), 'g')) || []).length;
+
+            document.getElementById('markerCount').textContent = `Markers: ${count}`;
+        }
+
+        async function saveLetter() {
+            if (!currentLetter) {
+                showStatus('No letter loaded', 'error');
+                return;
+            }
+
+            try {
+                const textarea = document.getElementById('descriptionText');
+                // Remove the formatting line breaks when saving (keep only marker breaks)
+                let descriptionToSave = removeFormattingBreaks(textarea.value);
+
+                // Save to the Description field
+                currentLetter.metadata.Description[0] = descriptionToSave;
+
+                const response = await fetch('save_letter.py', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({
+                        filename: letters[currentIndex] + '.json',
+                        data: currentLetter
+                    })
+                });
+
+                if (!response.ok) throw new Error('Save failed');
+
+                const result = await response.json();
+
+                hasUnsavedChanges = false;
+                document.getElementById('saveBtn').disabled = true;
+
+                showStatus(`Description saved successfully: ${result.filename}`, 'success');
+            } catch (error) {
+                showStatus(`Error saving description: ${error.message}`, 'error');
+            }
+        }
+
+        async function reloadLetter() {
+            if (hasUnsavedChanges && !confirm('Discard unsaved changes?')) return;
+
+            if (currentIndex >= 0) {
+                await loadLetter(letters[currentIndex]);
+            }
+        }
+
+        function previousLetter() {
+            if (currentIndex > 0) {
+                if (hasUnsavedChanges && !confirm('Discard unsaved changes?')) return;
+                currentIndex--;
+                loadLetter(letters[currentIndex]);
+            }
+        }
+
+        function nextLetter() {
+            if (currentIndex < letters.length - 1) {
+                if (hasUnsavedChanges && !confirm('Discard unsaved changes?')) return;
+                currentIndex++;
+                loadLetter(letters[currentIndex]);
+            }
+        }
+
+        function jumpToNumber() {
+            const num = document.getElementById('jumpNumber').value;
+            if (!num) return;
+
+            const paddedNum = String(num).padStart(4, '0');
+            const index = letters.indexOf(paddedNum);
+
+            if (index === -1) {
+                showStatus(`Letter ${paddedNum} not found`, 'error');
+                return;
+            }
+
+            if (hasUnsavedChanges && !confirm('Discard unsaved changes?')) return;
+
+            currentIndex = index;
+            loadLetter(letters[index]);
+        }
+
+        function updateSelectValue() {
+            document.getElementById('letterSelect').value = currentIndex;
+        }
+
+        function showStatus(message, type = 'success') {
+            const status = document.getElementById('status');
+            status.textContent = message;
+            status.className = 'status';
+
+            if (type === 'error') {
+                status.classList.add('error');
+            } else if (type === 'warning') {
+                status.classList.add('warning');
+            }
+
+            status.classList.remove('hidden');
+
+            setTimeout(() => {
+                status.classList.add('hidden');
+            }, 5000);
+        }
+
+        // Track changes in textarea
+        document.addEventListener('DOMContentLoaded', () => {
+            const textarea = document.getElementById('descriptionText');
+
+            // Auto-insert marker on click
+            textarea.addEventListener('click', (e) => {
+                if (!currentLetter) return;
+
+                // Insert marker at click position
+                insertMarker();
+
+                // Auto-save after inserting marker
+                setTimeout(() => {
+                    saveLetter().then(() => {
+                        // Remove focus from textarea so arrow keys work for navigation
+                        textarea.blur();
+                    });
+                }, 100);
+            });
+
+            textarea.addEventListener('input', () => {
+                hasUnsavedChanges = true;
+                document.getElementById('saveBtn').disabled = false;
+                updateMarkerCount();
+            });
+        });
+
+        // Warn before leaving with unsaved changes
+        window.addEventListener('beforeunload', (e) => {
+            if (hasUnsavedChanges) {
+                e.preventDefault();
+                e.returnValue = '';
+            }
+        });
+
+        // Keyboard shortcuts for navigation
+        document.addEventListener('keydown', (e) => {
+            // Only trigger if not typing in textarea
+            if (e.target.id === 'descriptionText') return;
+
+            if (e.key === 'ArrowRight') {
+                e.preventDefault();
+                nextLetter();
+            } else if (e.key === 'ArrowLeft') {
+                e.preventDefault();
+                previousLetter();
+            }
+        });
+
+        init();
+    </script>
+</body>
+</html>

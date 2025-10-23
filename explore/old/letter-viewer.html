@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Letter Viewer - A Shoebox of Norwegian Letters</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f5f5f5;
+        }
+
+        header {
+            background: #3d4b79;
+            color: white;
+            padding: 1rem 2rem;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        header h1 {
+            font-size: 1.8rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .controls {
+            background: white;
+            padding: 1rem 2rem;
+            border-bottom: 2px solid #ddd;
+            display: flex;
+            gap: 2rem;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .control-group {
+            display: flex;
+            gap: 0.5rem;
+            align-items: center;
+        }
+
+        .control-group label {
+            font-weight: bold;
+            color: #3d4b79;
+        }
+
+        button, select {
+            padding: 0.5rem 1rem;
+            border: 1px solid #3d4b79;
+            background: white;
+            color: #3d4b79;
+            cursor: pointer;
+            font-size: 1rem;
+            border-radius: 3px;
+            transition: all 0.2s;
+        }
+
+        button:hover, select:hover {
+            background: #3d4b79;
+            color: white;
+        }
+
+        button.active {
+            background: #3d4b79;
+            color: white;
+        }
+
+        .status {
+            padding: 1rem 2rem;
+            background: #fff3cd;
+            border-bottom: 1px solid #ffc107;
+            font-size: 0.9rem;
+        }
+
+        .status.hidden {
+            display: none;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 2rem;
+        }
+
+        .letter-card {
+            background: white;
+            margin-bottom: 2rem;
+            border-radius: 5px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+
+        .letter-header {
+            background: #3d4b79;
+            color: white;
+            padding: 1rem 1.5rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .letter-title {
+            font-size: 1.3rem;
+            font-weight: bold;
+        }
+
+        .letter-nav {
+            display: flex;
+            gap: 0.5rem;
+        }
+
+        .letter-nav button {
+            padding: 0.3rem 0.8rem;
+            font-size: 0.9rem;
+            border-color: white;
+            color: white;
+        }
+
+        .letter-nav button:hover {
+            background: white;
+            color: #3d4b79;
+        }
+
+        .metadata {
+            padding: 1rem 1.5rem;
+            background: #f8f9fa;
+            border-bottom: 1px solid #dee2e6;
+        }
+
+        .metadata-row {
+            margin-bottom: 0.5rem;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .metadata-label {
+            font-weight: bold;
+            color: #3d4b79;
+            min-width: 100px;
+            margin-right: 1rem;
+        }
+
+        .metadata-value {
+            flex: 1;
+        }
+
+        .tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+
+        .tag {
+            background: #3d4b79;
+            color: white;
+            padding: 0.2rem 0.8rem;
+            border-radius: 15px;
+            font-size: 0.85rem;
+        }
+
+        .warning {
+            background: #fff3cd;
+            border-left: 4px solid #ffc107;
+            padding: 0.8rem 1rem;
+            margin: 1rem 1.5rem;
+            border-radius: 3px;
+        }
+
+        .warning-title {
+            font-weight: bold;
+            color: #856404;
+            margin-bottom: 0.3rem;
+        }
+
+        .language-sections-wrapper {
+            display: flex;
+            gap: 0;
+        }
+
+        .language-sections-wrapper.single-column {
+            flex-direction: column;
+        }
+
+        .language-section {
+            padding: 1.5rem;
+            flex: 1;
+            min-width: 0;
+        }
+
+        .language-sections-wrapper:not(.single-column) .language-section {
+            border-right: 2px solid #e0e0e0;
+        }
+
+        .language-sections-wrapper:not(.single-column) .language-section:last-child {
+            border-right: none;
+        }
+
+        .language-section.hidden {
+            display: none;
+        }
+
+        .language-label {
+            background: #6f728c;
+            color: white;
+            padding: 0.5rem 1rem;
+            margin: -1.5rem -1.5rem 1rem -1.5rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            font-size: 0.9rem;
+        }
+
+        .letter-content {
+            font-size: 1.05rem;
+            line-height: 1.8;
+        }
+
+        .letter-content p {
+            margin-bottom: 1em;
+        }
+
+        .letter-content em {
+            color: #666;
+            font-style: italic;
+        }
+
+        .loading {
+            text-align: center;
+            padding: 3rem;
+            font-size: 1.2rem;
+            color: #666;
+        }
+
+        .error {
+            background: #f8d7da;
+            border-left: 4px solid #dc3545;
+            padding: 1rem;
+            margin: 2rem;
+            border-radius: 3px;
+            color: #721c24;
+        }
+
+        .no-letters {
+            text-align: center;
+            padding: 3rem;
+            color: #666;
+            background: white;
+            border-radius: 5px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            color: #666;
+            font-size: 0.9rem;
+        }
+
+        /* Responsive: stack on smaller screens */
+        @media (max-width: 768px) {
+            .language-sections-wrapper {
+                flex-direction: column !important;
+            }
+
+            .language-sections-wrapper:not(.single-column) .language-section {
+                border-right: none;
+                border-bottom: 2px solid #e0e0e0;
+            }
+
+            .language-sections-wrapper:not(.single-column) .language-section:last-child {
+                border-bottom: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>📬 A Shoebox of Norwegian Letters</h1>
+        <p>Browse bilingual family correspondence (1911-1956) • Side-by-side reading</p>
+    </header>
+
+    <div class="controls">
+        <div class="control-group">
+            <label>View:</label>
+            <button id="viewBoth" class="active" onclick="setView('both')">Both Languages</button>
+            <button id="viewNorwegian" onclick="setView('norwegian')">Norwegian Only</button>
+            <button id="viewEnglish" onclick="setView('english')">English Only</button>
+        </div>
+
+        <div class="control-group">
+            <label for="letterSelect">Jump to Letter:</label>
+            <select id="letterSelect" onchange="jumpToLetter(this.value)">
+                <option value="">Select...</option>
+            </select>
+        </div>
+
+        <div class="control-group">
+            <button onclick="scrollToTop()">↑ Top</button>
+        </div>
+    </div>
+
+    <div id="status" class="status hidden"></div>
+
+    <div id="container" class="container">
+        <div class="loading">Loading letters...</div>
+    </div>
+
+    <footer>
+        <p>Transcriptions and translations by Siri Holm Lawson | Digital archive by Konrad M. Lawson</p>
+        <p>Powered by Omeka | Letter Viewer created with Claude Code</p>
+    </footer>
+
+    <script>
+        let letters = [];
+        let currentView = 'both';
+
+        async function loadLetters() {
+            try {
+                const container = document.getElementById('container');
+                const status = document.getElementById('status');
+
+                // Get list of all letter files
+                const norwegianFiles = await getFileList('norwegian_letters');
+                const englishFiles = await getFileList('english_letters');
+
+                status.textContent = `Found ${norwegianFiles.length} Norwegian and ${englishFiles.length} English letters`;
+                status.classList.remove('hidden');
+
+                // Create a map of letter numbers to files
+                const letterMap = new Map();
+
+                // Process Norwegian files
+                for (const file of norwegianFiles) {
+                    const num = file.replace('.json', '');
+                    if (!letterMap.has(num)) {
+                        letterMap.set(num, { number: num, norwegian: null, english: null });
+                    }
+                    letterMap.get(num).norwegian = file;
+                }
+
+                // Process English files (handling -mixed suffix)
+                for (const file of englishFiles) {
+                    const match = file.match(/^(\d+)(-mixed)?\.json$/);
+                    if (match) {
+                        const num = match[1];
+                        const suffix = match[2] || '';
+                        if (!letterMap.has(num)) {
+                            letterMap.set(num, { number: num, norwegian: null, english: null });
+                        }
+                        letterMap.get(num).english = file;
+                        if (suffix) {
+                            letterMap.get(num).hasMixedSuffix = true;
+                        }
+                    }
+                }
+
+                // Sort by number
+                const sortedNumbers = Array.from(letterMap.keys()).sort((a, b) => parseInt(a) - parseInt(b));
+
+                // Load all letters
+                letters = [];
+                for (const num of sortedNumbers) {
+                    const letterInfo = letterMap.get(num);
+                    const letter = await loadLetter(letterInfo);
+                    if (letter) {
+                        letters.push(letter);
+                    }
+                }
+
+                // Populate letter selector
+                const select = document.getElementById('letterSelect');
+                letters.forEach((letter, index) => {
+                    const option = document.createElement('option');
+                    option.value = index;
+                    option.textContent = `${letter.number} - ${letter.title}`;
+                    select.appendChild(option);
+                });
+
+                // Render all letters
+                renderLetters();
+
+                status.textContent = `Loaded ${letters.length} letters successfully`;
+                setTimeout(() => {
+                    status.classList.add('hidden');
+                }, 3000);
+
+            } catch (error) {
+                console.error('Error loading letters:', error);
+                document.getElementById('container').innerHTML = `
+                    <div class="error">
+                        <strong>Error loading letters:</strong> ${error.message}
+                    </div>
+                `;
+            }
+        }
+
+        async function getFileList(directory) {
+            // Since we can't directly list directory contents in the browser,
+            // we'll try to load all possible letter numbers
+            const files = [];
+
+            // Known -mixed files in english_letters
+            const knownMixedFiles = ['0061', '0078'];
+
+            for (let i = 1; i <= 250; i++) {
+                const num = String(i).padStart(4, '0');
+
+                // Try normal file
+                if (await fileExists(`${directory}/${num}.json`)) {
+                    files.push(`${num}.json`);
+                }
+
+                // Try -mixed suffix only for known cases
+                if (directory === 'english_letters' && knownMixedFiles.includes(num)) {
+                    if (await fileExists(`${directory}/${num}-mixed.json`)) {
+                        files.push(`${num}-mixed.json`);
+                    }
+                }
+            }
+            return files;
+        }
+
+        async function fileExists(path) {
+            try {
+                const response = await fetch(path, { method: 'HEAD' });
+                return response.ok;
+            } catch {
+                return false;
+            }
+        }
+
+        async function loadLetter(letterInfo) {
+            const letter = {
+                number: letterInfo.number,
+                norwegian: null,
+                english: null,
+                warnings: []
+            };
+
+            // Load Norwegian version
+            if (letterInfo.norwegian) {
+                try {
+                    const response = await fetch(`norwegian_letters/${letterInfo.norwegian}`);
+                    if (response.ok) {
+                        letter.norwegian = await response.json();
+                    }
+                } catch (error) {
+                    console.error(`Error loading Norwegian ${letterInfo.norwegian}:`, error);
+                }
+            }
+
+            // Load English version
+            if (letterInfo.english) {
+                try {
+                    const response = await fetch(`english_letters/${letterInfo.english}`);
+                    if (response.ok) {
+                        letter.english = await response.json();
+
+                        if (letterInfo.hasMixedSuffix) {
+                            letter.warnings.push(`English version has "-mixed" suffix (file: ${letterInfo.english})`);
+                        }
+                    }
+                } catch (error) {
+                    console.error(`Error loading English ${letterInfo.english}:`, error);
+                }
+            }
+
+            // Check if at least one version exists
+            if (!letter.norwegian && !letter.english) {
+                return null;
+            }
+
+            // Use Norwegian metadata as primary, or English if Norwegian doesn't exist
+            const primaryData = letter.norwegian || letter.english;
+            letter.id = primaryData.id;
+            letter.title = primaryData.metadata.Title ? primaryData.metadata.Title[0] : `Letter ${letter.number}`;
+            letter.date = primaryData.metadata.Date ? primaryData.metadata.Date[0] : '';
+            letter.creator = primaryData.metadata.Creator ? primaryData.metadata.Creator.join(', ') : '';
+            letter.tags = primaryData.tags || [];
+            letter.files = primaryData.files || [];
+
+            // Warn if one version is missing
+            if (!letter.norwegian) {
+                letter.warnings.push('⚠️ Norwegian version not found');
+            }
+            if (!letter.english) {
+                letter.warnings.push('⚠️ English version not found');
+            }
+
+            // Compare metadata between versions
+            if (letter.norwegian && letter.english) {
+                compareMetadata(letter);
+            }
+
+            return letter;
+        }
+
+        function compareMetadata(letter) {
+            const n = letter.norwegian.metadata;
+            const e = letter.english.metadata;
+
+            // Compare key fields (skip Language - it's expected to differ)
+            const fieldsToCompare = ['Title', 'Creator', 'Date'];
+
+            for (const field of fieldsToCompare) {
+                const nValue = JSON.stringify(n[field] || []);
+                const eValue = JSON.stringify(e[field] || []);
+
+                if (nValue !== eValue) {
+                    letter.warnings.push(`Metadata mismatch in ${field}: Norwegian ${nValue} vs English ${eValue}`);
+                }
+            }
+
+            // Compare tags
+            const nTags = JSON.stringify((letter.norwegian.tags || []).sort());
+            const eTags = JSON.stringify((letter.english.tags || []).sort());
+            if (nTags !== eTags) {
+                letter.warnings.push(`Tags mismatch between versions`);
+            }
+
+            // Compare ID
+            if (letter.norwegian.id !== letter.english.id) {
+                letter.warnings.push(`ID mismatch: Norwegian ${letter.norwegian.id} vs English ${letter.english.id}`);
+            }
+        }
+
+        function renderLetters() {
+            const container = document.getElementById('container');
+
+            if (letters.length === 0) {
+                container.innerHTML = '<div class="no-letters">No letters found</div>';
+                return;
+            }
+
+            let html = '';
+
+            letters.forEach((letter, index) => {
+                html += renderLetter(letter, index);
+            });
+
+            container.innerHTML = html;
+        }
+
+        function renderLetter(letter, index) {
+            const showNorwegian = currentView === 'both' || currentView === 'norwegian';
+            const showEnglish = currentView === 'both' || currentView === 'english';
+
+            let html = `
+                <div class="letter-card" id="letter-${index}" data-number="${letter.number}">
+                    <div class="letter-header">
+                        <div class="letter-title">#${letter.number}: ${escapeHtml(letter.title)}</div>
+                        <div class="letter-nav">
+                            ${index > 0 ? `<button onclick="jumpToLetter(${index - 1})">← Prev</button>` : ''}
+                            ${index < letters.length - 1 ? `<button onclick="jumpToLetter(${index + 1})">Next →</button>` : ''}
+                        </div>
+                    </div>
+
+                    <div class="metadata">
+                        ${letter.date ? `<div class="metadata-row"><span class="metadata-label">Date:</span><span class="metadata-value">${escapeHtml(letter.date)}</span></div>` : ''}
+                        ${letter.creator ? `<div class="metadata-row"><span class="metadata-label">Creator:</span><span class="metadata-value">${escapeHtml(letter.creator)}</span></div>` : ''}
+                        ${letter.tags.length > 0 ? `
+                            <div class="metadata-row">
+                                <span class="metadata-label">Tags:</span>
+                                <div class="tags">
+                                    ${letter.tags.map(tag => `<span class="tag">${escapeHtml(tag)}</span>`).join('')}
+                                </div>
+                            </div>
+                        ` : ''}
+                        ${letter.files.length > 0 ? `<div class="metadata-row"><span class="metadata-label">Files:</span><span class="metadata-value">${letter.files.map(f => escapeHtml(f.original)).join(', ')}</span></div>` : ''}
+                    </div>
+
+                    ${letter.warnings.length > 0 ? `
+                        <div class="warning">
+                            <div class="warning-title">⚠️ Warnings</div>
+                            ${letter.warnings.map(w => `<div>• ${escapeHtml(w)}</div>`).join('')}
+                        </div>
+                    ` : ''}
+            `;
+
+            // Wrapper for language sections (side-by-side or stacked)
+            const wrapperClass = currentView === 'both' ? '' : 'single-column';
+            html += `<div class="language-sections-wrapper ${wrapperClass}" id="wrapper-${index}">`;
+
+            // Norwegian section
+            if (letter.norwegian) {
+                const norwegianText = letter.norwegian.metadata.Text ? letter.norwegian.metadata.Text[0] : '';
+                const norwegianDesc = letter.norwegian.metadata.Description ? letter.norwegian.metadata.Description[0] : '';
+
+                html += `
+                    <div class="language-section ${showNorwegian ? '' : 'hidden'}" id="norwegian-${index}">
+                        <div class="language-label">🇳🇴 Norwegian</div>
+                        ${norwegianDesc ? `<div class="letter-content" style="font-style: italic; color: #666; margin-bottom: 1rem;">${norwegianDesc}</div>` : ''}
+                        <div class="letter-content">${norwegianText}</div>
+                    </div>
+                `;
+            }
+
+            // English section
+            if (letter.english) {
+                const englishText = letter.english.metadata.Text ? letter.english.metadata.Text[0] : '';
+                const englishDesc = letter.english.metadata.Description ? letter.english.metadata.Description[0] : '';
+
+                html += `
+                    <div class="language-section ${showEnglish ? '' : 'hidden'}" id="english-${index}">
+                        <div class="language-label">🇬🇧 English Translation</div>
+                        ${englishDesc ? `<div class="letter-content" style="font-style: italic; color: #666; margin-bottom: 1rem;">${englishDesc}</div>` : ''}
+                        <div class="letter-content">${englishText}</div>
+                    </div>
+                `;
+            }
+
+            html += '</div>'; // Close wrapper
+            html += '</div>'; // Close letter-card
+
+            return html;
+        }
+
+        function setView(view) {
+            currentView = view;
+
+            // Update button states
+            document.querySelectorAll('.controls button').forEach(btn => {
+                btn.classList.remove('active');
+            });
+
+            if (view === 'both') {
+                document.getElementById('viewBoth').classList.add('active');
+            } else if (view === 'norwegian') {
+                document.getElementById('viewNorwegian').classList.add('active');
+            } else if (view === 'english') {
+                document.getElementById('viewEnglish').classList.add('active');
+            }
+
+            // Update wrapper classes for side-by-side vs stacked layout
+            document.querySelectorAll('.language-sections-wrapper').forEach(wrapper => {
+                if (view === 'both') {
+                    wrapper.classList.remove('single-column');
+                } else {
+                    wrapper.classList.add('single-column');
+                }
+            });
+
+            // Show/hide language sections
+            document.querySelectorAll('.language-section').forEach(section => {
+                const id = section.id;
+                if (id.startsWith('norwegian-')) {
+                    section.classList.toggle('hidden', view === 'english');
+                } else if (id.startsWith('english-')) {
+                    section.classList.toggle('hidden', view === 'norwegian');
+                }
+            });
+        }
+
+        function jumpToLetter(index) {
+            if (index === '') return;
+
+            const element = document.getElementById(`letter-${index}`);
+            if (element) {
+                element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+
+                // Update select
+                document.getElementById('letterSelect').value = index;
+            }
+        }
+
+        function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        function escapeHtml(text) {
+            const div = document.createElement('div');
+            div.textContent = text;
+            return div.innerHTML;
+        }
+
+        // Load letters when page loads
+        window.addEventListener('DOMContentLoaded', loadLetters);
+    </script>
+</body>
+</html>
